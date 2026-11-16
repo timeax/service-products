@@ -1,0 +1,3535 @@
+{
+  "schema_version": 1,
+  "purpose": "Build roadmap: platforms, general service categories, and customer-facing services to define.",
+  "status_legend": {
+    "not_started": "Listed for future ProductDefinition work. No ProductDefinition has been started or created for this service.",
+    "definition_created": "A canonical JSON file exists, but the service has not completed required validation."
+  },
+  "summary": {
+    "handler_service_records_reviewed": 5734,
+    "platforms_identified": 58,
+    "general_categories_identified": 61,
+    "service_work_items": 295,
+    "product_definitions_created": 1,
+    "handler_rows_needing_service_family_review": 0
+  },
+  "product_definitions": [
+    {
+      "id": "instagram-likes-likes",
+      "name": "Instagram Likes",
+      "file": "products/instagram-likes.json"
+    }
+  ],
+  "platforms": [
+    {
+      "name": "Apple Music",
+      "categories": [
+        {
+          "name": "Plays",
+          "services": [
+            {
+              "id": "apple-music-plays-plays",
+              "name": "Apple Music Plays",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Favorites",
+          "services": [
+            {
+              "id": "apple-music-favorites-favorites",
+              "name": "Apple Music Favorites",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Ratings",
+          "services": [
+            {
+              "id": "apple-music-ratings-ratings",
+              "name": "Apple Music Ratings",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Audiomack",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "audiomack-likes-likes",
+              "name": "Audiomack Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "audiomack-followers-followers",
+              "name": "Audiomack Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Plays",
+          "services": [
+            {
+              "id": "audiomack-plays-plays",
+              "name": "Audiomack Plays",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Streams",
+          "services": [
+            {
+              "id": "audiomack-streams-streams",
+              "name": "Audiomack Streams",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Playlists",
+          "services": [
+            {
+              "id": "audiomack-playlists-playlists",
+              "name": "Audiomack Playlists",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Re-Ups",
+          "services": [
+            {
+              "id": "audiomack-re-ups-re-ups",
+              "name": "Audiomack Re-Ups",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bluesky",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "bluesky-likes-likes",
+              "name": "Bluesky Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "bluesky-followers-followers",
+              "name": "Bluesky Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Boomplay",
+      "categories": [
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "boomplay-followers-followers",
+              "name": "Boomplay Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Comments",
+          "services": [
+            {
+              "id": "boomplay-comments-comments",
+              "name": "Boomplay Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Streams",
+          "services": [
+            {
+              "id": "boomplay-streams-streams",
+              "name": "Boomplay Streams",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Clubhouse",
+      "categories": [
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "clubhouse-followers-followers",
+              "name": "Clubhouse Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Visits",
+          "services": [
+            {
+              "id": "clubhouse-visits-visits",
+              "name": "Clubhouse Visits",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Invitations",
+          "services": [
+            {
+              "id": "clubhouse-invitations-invitations",
+              "name": "Clubhouse Invitations",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Packages",
+          "services": [
+            {
+              "id": "clubhouse-packages-packages",
+              "name": "Clubhouse Packages",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CoinGecko",
+      "categories": [
+        {
+          "name": "Favorites",
+          "services": [
+            {
+              "id": "coingecko-favorites-favorites",
+              "name": "CoinGecko Favorites",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Rankings",
+          "services": [
+            {
+              "id": "coingecko-rankings-rankings",
+              "name": "CoinGecko Rankings",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CoinHunt",
+      "categories": [
+        {
+          "name": "Rankings",
+          "services": [
+            {
+              "id": "coinhunt-rankings-rankings",
+              "name": "CoinHunt Rankings",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Votes",
+          "services": [
+            {
+              "id": "coinhunt-votes-votes",
+              "name": "CoinHunt Votes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CoinMarketCap",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "coinmarketcap-likes-likes",
+              "name": "CoinMarketCap Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "coinmarketcap-followers-followers",
+              "name": "CoinMarketCap Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "coinmarketcap-views-views",
+              "name": "CoinMarketCap Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Shares",
+          "services": [
+            {
+              "id": "coinmarketcap-shares-shares",
+              "name": "CoinMarketCap Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Posts",
+          "services": [
+            {
+              "id": "coinmarketcap-posts-posts",
+              "name": "CoinMarketCap Posts",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Rankings",
+          "services": [
+            {
+              "id": "coinmarketcap-rankings-rankings",
+              "name": "CoinMarketCap Rankings",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CoinSniper",
+      "categories": [
+        {
+          "name": "Rankings",
+          "services": [
+            {
+              "id": "coinsniper-rankings-rankings",
+              "name": "CoinSniper Rankings",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Votes",
+          "services": [
+            {
+              "id": "coinsniper-votes-votes",
+              "name": "CoinSniper Votes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Coub",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "coub-likes-likes",
+              "name": "Coub Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Subscribers",
+          "services": [
+            {
+              "id": "coub-subscribers-subscribers",
+              "name": "Coub Subscribers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Shares",
+          "services": [
+            {
+              "id": "coub-shares-shares",
+              "name": "Coub Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crypto / NFT",
+      "categories": [
+        {
+          "name": "Rankings",
+          "services": [
+            {
+              "id": "crypto-nft-rankings-rankings",
+              "name": "Crypto / NFT Rankings",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Votes",
+          "services": [
+            {
+              "id": "crypto-nft-votes-votes",
+              "name": "Crypto / NFT Votes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Deezer",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "deezer-likes-likes",
+              "name": "Deezer Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "deezer-followers-followers",
+              "name": "Deezer Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Playlists",
+          "services": [
+            {
+              "id": "deezer-playlists-playlists",
+              "name": "Deezer Playlists",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Discord",
+      "categories": [
+        {
+          "name": "Members",
+          "services": [
+            {
+              "id": "discord-members-members",
+              "name": "Discord Members",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Boosts",
+          "services": [
+            {
+              "id": "discord-boosts-boosts",
+              "name": "Discord Boosts",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Messages",
+          "services": [
+            {
+              "id": "discord-messages-messages",
+              "name": "Discord Messages",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dribble",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "dribble-likes-likes",
+              "name": "Dribble Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "dribble-followers-followers",
+              "name": "Dribble Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Facebook",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "facebook-likes-likes",
+              "name": "Facebook Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "facebook-followers-followers",
+              "name": "Facebook Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "facebook-views-views",
+              "name": "Facebook Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Comments",
+          "services": [
+            {
+              "id": "facebook-comments-comments",
+              "name": "Facebook Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Shares",
+          "services": [
+            {
+              "id": "facebook-shares-shares",
+              "name": "Facebook Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Reactions",
+          "services": [
+            {
+              "id": "facebook-reactions-reactions",
+              "name": "Facebook Reactions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Reach",
+          "services": [
+            {
+              "id": "facebook-reach-reach",
+              "name": "Facebook Reach",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Members",
+          "services": [
+            {
+              "id": "facebook-members-members",
+              "name": "Facebook Members",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Friends",
+          "services": [
+            {
+              "id": "facebook-friends-friends",
+              "name": "Facebook Friends",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Live Streaming",
+          "services": [
+            {
+              "id": "facebook-live-streaming-live-streaming",
+              "name": "Facebook Live Streaming",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Plays",
+          "services": [
+            {
+              "id": "facebook-plays-plays",
+              "name": "Facebook Plays",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Streams",
+          "services": [
+            {
+              "id": "facebook-streams-streams",
+              "name": "Facebook Streams",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Reels",
+          "services": [
+            {
+              "id": "facebook-reels-reels",
+              "name": "Facebook Reels",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Stories",
+          "services": [
+            {
+              "id": "facebook-stories-stories",
+              "name": "Facebook Stories",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Events",
+          "services": [
+            {
+              "id": "facebook-events-events",
+              "name": "Facebook Events",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Groups",
+          "services": [
+            {
+              "id": "facebook-groups-groups",
+              "name": "Facebook Groups",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Packages",
+          "services": [
+            {
+              "id": "facebook-packages-packages",
+              "name": "Facebook Packages",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Posts",
+          "services": [
+            {
+              "id": "facebook-posts-posts",
+              "name": "Facebook Posts",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Ratings",
+          "services": [
+            {
+              "id": "facebook-ratings-ratings",
+              "name": "Facebook Ratings",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Recommendations",
+          "services": [
+            {
+              "id": "facebook-recommendations-recommendations",
+              "name": "Facebook Recommendations",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Reviews",
+          "services": [
+            {
+              "id": "facebook-reviews-reviews",
+              "name": "Facebook Reviews",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Social Signals",
+          "services": [
+            {
+              "id": "facebook-social-signals-social-signals",
+              "name": "Facebook Social Signals",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Subscriptions",
+          "services": [
+            {
+              "id": "facebook-subscriptions-subscriptions",
+              "name": "Facebook Subscriptions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Google",
+      "categories": [
+        {
+          "name": "Visits",
+          "services": [
+            {
+              "id": "google-visits-visits",
+              "name": "Google Visits",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Citations",
+          "services": [
+            {
+              "id": "google-citations-citations",
+              "name": "Google Citations",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Knowledge Panels",
+          "services": [
+            {
+              "id": "google-knowledge-panels-knowledge-panels",
+              "name": "Google Knowledge Panels",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Packages",
+          "services": [
+            {
+              "id": "google-packages-packages",
+              "name": "Google Packages",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Rankings",
+          "services": [
+            {
+              "id": "google-rankings-rankings",
+              "name": "Google Rankings",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Instagram",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "instagram-likes-likes",
+              "name": "Instagram Likes",
+              "status": "definition_created",
+              "product_definition_file": "products/instagram-likes.json"
+            },
+            {
+              "id": "threads-likes-likes",
+              "name": "Threads Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "instagram-followers-followers",
+              "name": "Instagram Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            },
+            {
+              "id": "threads-followers-followers",
+              "name": "Threads Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "instagram-views-views",
+              "name": "Instagram Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Comments",
+          "services": [
+            {
+              "id": "instagram-comments-comments",
+              "name": "Instagram Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            },
+            {
+              "id": "threads-comments-comments",
+              "name": "Threads Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Shares",
+          "services": [
+            {
+              "id": "instagram-shares-shares",
+              "name": "Instagram Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            },
+            {
+              "id": "threads-shares-shares",
+              "name": "Threads Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Saves",
+          "services": [
+            {
+              "id": "instagram-saves-saves",
+              "name": "Instagram Saves",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Visits",
+          "services": [
+            {
+              "id": "instagram-visits-visits",
+              "name": "Instagram Visits",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Engagement",
+          "services": [
+            {
+              "id": "instagram-engagement-engagement",
+              "name": "Instagram Engagement",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Impressions",
+          "services": [
+            {
+              "id": "instagram-impressions-impressions",
+              "name": "Instagram Impressions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Reach",
+          "services": [
+            {
+              "id": "instagram-reach-reach",
+              "name": "Instagram Reach",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Mentions",
+          "services": [
+            {
+              "id": "instagram-mentions-mentions",
+              "name": "Instagram Mentions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Members",
+          "services": [
+            {
+              "id": "instagram-members-members",
+              "name": "Instagram Members",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Live Streaming",
+          "services": [
+            {
+              "id": "instagram-live-streaming-live-streaming",
+              "name": "Instagram Live Streaming",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Reels",
+          "services": [
+            {
+              "id": "instagram-reels-reels",
+              "name": "Instagram Reels",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Stories",
+          "services": [
+            {
+              "id": "instagram-stories-stories",
+              "name": "Instagram Stories",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Profile Visits",
+          "services": [
+            {
+              "id": "instagram-profile-visits-profile-visits",
+              "name": "Instagram Profile Visits",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Clicks",
+          "services": [
+            {
+              "id": "instagram-clicks-clicks",
+              "name": "Instagram Clicks",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Highlights",
+          "services": [
+            {
+              "id": "instagram-highlights-highlights",
+              "name": "Instagram Highlights",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "NFT Services",
+          "services": [
+            {
+              "id": "instagram-nft-services-nft-services",
+              "name": "Instagram NFT Services",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Packages",
+          "services": [
+            {
+              "id": "instagram-packages-packages",
+              "name": "Instagram Packages",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Polls",
+          "services": [
+            {
+              "id": "instagram-polls-polls",
+              "name": "Instagram Polls",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Posts",
+          "services": [
+            {
+              "id": "instagram-posts-posts",
+              "name": "Instagram Posts",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Promotions",
+          "services": [
+            {
+              "id": "instagram-promotions-promotions",
+              "name": "Instagram Promotions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Subscriptions",
+          "services": [
+            {
+              "id": "instagram-subscriptions-subscriptions",
+              "name": "Instagram Subscriptions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Votes",
+          "services": [
+            {
+              "id": "instagram-votes-votes",
+              "name": "Instagram Votes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kick",
+      "categories": [
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "kick-followers-followers",
+              "name": "Kick Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "kick-views-views",
+              "name": "Kick Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Live Streaming",
+          "services": [
+            {
+              "id": "kick-live-streaming-live-streaming",
+              "name": "Kick Live Streaming",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Chat",
+          "services": [
+            {
+              "id": "kick-chat-chat",
+              "name": "Kick Chat",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kwai",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "kwai-likes-likes",
+              "name": "Kwai Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "kwai-followers-followers",
+              "name": "Kwai Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "kwai-views-views",
+              "name": "Kwai Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Comments",
+          "services": [
+            {
+              "id": "kwai-comments-comments",
+              "name": "Kwai Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Shares",
+          "services": [
+            {
+              "id": "kwai-shares-shares",
+              "name": "Kwai Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Live Streaming",
+          "services": [
+            {
+              "id": "kwai-live-streaming-live-streaming",
+              "name": "Kwai Live Streaming",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Likee",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "likee-likes-likes",
+              "name": "Likee Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "likee-followers-followers",
+              "name": "Likee Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "likee-views-views",
+              "name": "Likee Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Comments",
+          "services": [
+            {
+              "id": "likee-comments-comments",
+              "name": "Likee Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Shares",
+          "services": [
+            {
+              "id": "likee-shares-shares",
+              "name": "Likee Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "line-likes-likes",
+              "name": "Line Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "line-followers-followers",
+              "name": "Line Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Comments",
+          "services": [
+            {
+              "id": "line-comments-comments",
+              "name": "Line Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Reactions",
+          "services": [
+            {
+              "id": "line-reactions-reactions",
+              "name": "Line Reactions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Posts",
+          "services": [
+            {
+              "id": "line-posts-posts",
+              "name": "Line Posts",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LinkedIn",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "linkedin-likes-likes",
+              "name": "LinkedIn Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "linkedin-followers-followers",
+              "name": "LinkedIn Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "linkedin-views-views",
+              "name": "LinkedIn Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Comments",
+          "services": [
+            {
+              "id": "linkedin-comments-comments",
+              "name": "LinkedIn Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Shares",
+          "services": [
+            {
+              "id": "linkedin-shares-shares",
+              "name": "LinkedIn Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Connections",
+          "services": [
+            {
+              "id": "linkedin-connections-connections",
+              "name": "LinkedIn Connections",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Employees",
+          "services": [
+            {
+              "id": "linkedin-employees-employees",
+              "name": "LinkedIn Employees",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Endorsements",
+          "services": [
+            {
+              "id": "linkedin-endorsements-endorsements",
+              "name": "LinkedIn Endorsements",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Posts",
+          "services": [
+            {
+              "id": "linkedin-posts-posts",
+              "name": "LinkedIn Posts",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Recommendations",
+          "services": [
+            {
+              "id": "linkedin-recommendations-recommendations",
+              "name": "LinkedIn Recommendations",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Medium",
+      "categories": [
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "medium-followers-followers",
+              "name": "Medium Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mentimeter",
+      "categories": [
+        {
+          "name": "Polls",
+          "services": [
+            {
+              "id": "mentimeter-polls-polls",
+              "name": "Mentimeter Polls",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Votes",
+          "services": [
+            {
+              "id": "mentimeter-votes-votes",
+              "name": "Mentimeter Votes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mobile Apps",
+      "categories": [
+        {
+          "name": "Traffic",
+          "services": [
+            {
+              "id": "mobile-apps-traffic-traffic",
+              "name": "Mobile Apps Traffic",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "App Installs",
+          "services": [
+            {
+              "id": "mobile-apps-app-installs-app-installs",
+              "name": "Mobile App Installs",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NFTSniper",
+      "categories": [
+        {
+          "name": "Votes",
+          "services": [
+            {
+              "id": "nftsniper-votes-votes",
+              "name": "NFTSniper Votes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OK.ru",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "ok-ru-likes-likes",
+              "name": "OK.ru Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "ok-ru-followers-followers",
+              "name": "OK.ru Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "ok-ru-views-views",
+              "name": "OK.ru Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Shares",
+          "services": [
+            {
+              "id": "ok-ru-shares-shares",
+              "name": "OK.ru Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Groups",
+          "services": [
+            {
+              "id": "ok-ru-groups-groups",
+              "name": "OK.ru Groups",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OpenSea",
+      "categories": [
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "opensea-views-views",
+              "name": "OpenSea Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Favorites",
+          "services": [
+            {
+              "id": "opensea-favorites-favorites",
+              "name": "OpenSea Favorites",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pinterest",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "pinterest-likes-likes",
+              "name": "Pinterest Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "pinterest-followers-followers",
+              "name": "Pinterest Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Social Signals",
+          "services": [
+            {
+              "id": "pinterest-social-signals-social-signals",
+              "name": "Pinterest Social Signals",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Podcasts",
+      "categories": [
+        {
+          "name": "Subscribers",
+          "services": [
+            {
+              "id": "podcasts-subscribers-subscribers",
+              "name": "Podcasts Subscribers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Streams",
+          "services": [
+            {
+              "id": "podcasts-streams-streams",
+              "name": "Podcasts Streams",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Downloads",
+          "services": [
+            {
+              "id": "podcasts-downloads-downloads",
+              "name": "Podcasts Downloads",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Favorites",
+          "services": [
+            {
+              "id": "podcasts-favorites-favorites",
+              "name": "Podcasts Favorites",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Promotions",
+          "services": [
+            {
+              "id": "podcasts-promotions-promotions",
+              "name": "Podcasts Promotions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Ratings",
+          "services": [
+            {
+              "id": "podcasts-ratings-ratings",
+              "name": "Podcasts Ratings",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Subscriptions",
+          "services": [
+            {
+              "id": "podcasts-subscriptions-subscriptions",
+              "name": "Podcasts Subscriptions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Quora",
+      "categories": [
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "quora-followers-followers",
+              "name": "Quora Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "quora-views-views",
+              "name": "Quora Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Shares",
+          "services": [
+            {
+              "id": "quora-shares-shares",
+              "name": "Quora Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Answers",
+          "services": [
+            {
+              "id": "quora-answers-answers",
+              "name": "Quora Answers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Votes",
+          "services": [
+            {
+              "id": "quora-votes-votes",
+              "name": "Quora Votes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rarible",
+      "categories": [
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "rarible-followers-followers",
+              "name": "Rarible Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Favorites",
+          "services": [
+            {
+              "id": "rarible-favorites-favorites",
+              "name": "Rarible Favorites",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reddit",
+      "categories": [
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "reddit-followers-followers",
+              "name": "Reddit Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Subscribers",
+          "services": [
+            {
+              "id": "reddit-subscribers-subscribers",
+              "name": "Reddit Subscribers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Votes",
+          "services": [
+            {
+              "id": "reddit-votes-votes",
+              "name": "Reddit Votes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RedNote",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "rednote-likes-likes",
+              "name": "RedNote Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "rednote-followers-followers",
+              "name": "RedNote Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ReverbNation",
+      "categories": [
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "reverbnation-followers-followers",
+              "name": "ReverbNation Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Saves",
+          "services": [
+            {
+              "id": "reverbnation-saves-saves",
+              "name": "ReverbNation Saves",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rumble",
+      "categories": [
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "rumble-views-views",
+              "name": "Rumble Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rutube",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "rutube-likes-likes",
+              "name": "Rutube Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "rutube-followers-followers",
+              "name": "Rutube Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "rutube-views-views",
+              "name": "Rutube Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Comments",
+          "services": [
+            {
+              "id": "rutube-comments-comments",
+              "name": "Rutube Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SEO",
+      "categories": [
+        {
+          "name": "Backlinks",
+          "services": [
+            {
+              "id": "seo-backlinks-backlinks",
+              "name": "SEO Backlinks",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Packages",
+          "services": [
+            {
+              "id": "seo-packages-packages",
+              "name": "SEO Packages",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Promotions",
+          "services": [
+            {
+              "id": "seo-promotions-promotions",
+              "name": "SEO Promotions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shazam",
+      "categories": [
+        {
+          "name": "Plays",
+          "services": [
+            {
+              "id": "shazam-plays-plays",
+              "name": "Shazam Plays",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shopee",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "shopee-likes-likes",
+              "name": "Shopee Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "shopee-views-views",
+              "name": "Shopee Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Snapchat",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "snapchat-likes-likes",
+              "name": "Snapchat Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "snapchat-followers-followers",
+              "name": "Snapchat Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "snapchat-views-views",
+              "name": "Snapchat Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Stories",
+          "services": [
+            {
+              "id": "snapchat-stories-stories",
+              "name": "Snapchat Stories",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Rankings",
+          "services": [
+            {
+              "id": "snapchat-rankings-rankings",
+              "name": "Snapchat Rankings",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Spotlight",
+          "services": [
+            {
+              "id": "snapchat-spotlight-spotlight",
+              "name": "Snapchat Spotlight",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Subscriptions",
+          "services": [
+            {
+              "id": "snapchat-subscriptions-subscriptions",
+              "name": "Snapchat Subscriptions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SoundCloud",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "soundcloud-likes-likes",
+              "name": "SoundCloud Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "soundcloud-followers-followers",
+              "name": "SoundCloud Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Comments",
+          "services": [
+            {
+              "id": "soundcloud-comments-comments",
+              "name": "SoundCloud Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Shares",
+          "services": [
+            {
+              "id": "soundcloud-shares-shares",
+              "name": "SoundCloud Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Plays",
+          "services": [
+            {
+              "id": "soundcloud-plays-plays",
+              "name": "SoundCloud Plays",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Playlists",
+          "services": [
+            {
+              "id": "soundcloud-playlists-playlists",
+              "name": "SoundCloud Playlists",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Spinnin Records",
+      "categories": [
+        {
+          "name": "Promotions",
+          "services": [
+            {
+              "id": "spinnin-records-promotions-promotions",
+              "name": "Spinnin Records Promotions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Spotify",
+      "categories": [
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "spotify-followers-followers",
+              "name": "Spotify Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Saves",
+          "services": [
+            {
+              "id": "spotify-saves-saves",
+              "name": "Spotify Saves",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Plays",
+          "services": [
+            {
+              "id": "spotify-plays-plays",
+              "name": "Spotify Plays",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Listeners",
+          "services": [
+            {
+              "id": "spotify-listeners-listeners",
+              "name": "Spotify Listeners",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Packages",
+          "services": [
+            {
+              "id": "spotify-packages-packages",
+              "name": "Spotify Packages",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Playlists",
+          "services": [
+            {
+              "id": "spotify-playlists-playlists",
+              "name": "Spotify Playlists",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Promotions",
+          "services": [
+            {
+              "id": "spotify-promotions-promotions",
+              "name": "Spotify Promotions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Telegram",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "telegram-likes-likes",
+              "name": "Telegram Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "telegram-views-views",
+              "name": "Telegram Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Comments",
+          "services": [
+            {
+              "id": "telegram-comments-comments",
+              "name": "Telegram Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Reactions",
+          "services": [
+            {
+              "id": "telegram-reactions-reactions",
+              "name": "Telegram Reactions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Members",
+          "services": [
+            {
+              "id": "telegram-members-members",
+              "name": "Telegram Members",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Dislikes",
+          "services": [
+            {
+              "id": "telegram-dislikes-dislikes",
+              "name": "Telegram Dislikes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Groups",
+          "services": [
+            {
+              "id": "telegram-groups-groups",
+              "name": "Telegram Groups",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Packages",
+          "services": [
+            {
+              "id": "telegram-packages-packages",
+              "name": "Telegram Packages",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Polls",
+          "services": [
+            {
+              "id": "telegram-polls-polls",
+              "name": "Telegram Polls",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Posts",
+          "services": [
+            {
+              "id": "telegram-posts-posts",
+              "name": "Telegram Posts",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Subscriptions",
+          "services": [
+            {
+              "id": "telegram-subscriptions-subscriptions",
+              "name": "Telegram Subscriptions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Votes",
+          "services": [
+            {
+              "id": "telegram-votes-votes",
+              "name": "Telegram Votes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tidal",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "tidal-likes-likes",
+              "name": "Tidal Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "tidal-followers-followers",
+              "name": "Tidal Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Plays",
+          "services": [
+            {
+              "id": "tidal-plays-plays",
+              "name": "Tidal Plays",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Listeners",
+          "services": [
+            {
+              "id": "tidal-listeners-listeners",
+              "name": "Tidal Listeners",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Playlists",
+          "services": [
+            {
+              "id": "tidal-playlists-playlists",
+              "name": "Tidal Playlists",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TikTok",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "tiktok-likes-likes",
+              "name": "TikTok Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "tiktok-followers-followers",
+              "name": "TikTok Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "tiktok-views-views",
+              "name": "TikTok Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Comments",
+          "services": [
+            {
+              "id": "tiktok-comments-comments",
+              "name": "TikTok Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Shares",
+          "services": [
+            {
+              "id": "tiktok-shares-shares",
+              "name": "TikTok Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Saves",
+          "services": [
+            {
+              "id": "tiktok-saves-saves",
+              "name": "TikTok Saves",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Live Streaming",
+          "services": [
+            {
+              "id": "tiktok-live-streaming-live-streaming",
+              "name": "TikTok Live Streaming",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Stories",
+          "services": [
+            {
+              "id": "tiktok-stories-stories",
+              "name": "TikTok Stories",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Battle Points",
+          "services": [
+            {
+              "id": "tiktok-battle-points-battle-points",
+              "name": "TikTok Battle Points",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Packages",
+          "services": [
+            {
+              "id": "tiktok-packages-packages",
+              "name": "TikTok Packages",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Posts",
+          "services": [
+            {
+              "id": "tiktok-posts-posts",
+              "name": "TikTok Posts",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Trovo",
+      "categories": [
+        {
+          "name": "Live Streaming",
+          "services": [
+            {
+              "id": "trovo-live-streaming-live-streaming",
+              "name": "Trovo Live Streaming",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Streams",
+          "services": [
+            {
+              "id": "trovo-streams-streams",
+              "name": "Trovo Streams",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tumblr",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "tumblr-likes-likes",
+              "name": "Tumblr Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "tumblr-followers-followers",
+              "name": "Tumblr Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Shares",
+          "services": [
+            {
+              "id": "tumblr-shares-shares",
+              "name": "Tumblr Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Twitch",
+      "categories": [
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "twitch-followers-followers",
+              "name": "Twitch Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "twitch-views-views",
+              "name": "Twitch Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Packages",
+          "services": [
+            {
+              "id": "twitch-packages-packages",
+              "name": "Twitch Packages",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vimeo",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "vimeo-likes-likes",
+              "name": "Vimeo Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "vimeo-followers-followers",
+              "name": "Vimeo Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "vimeo-views-views",
+              "name": "Vimeo Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Packages",
+          "services": [
+            {
+              "id": "vimeo-packages-packages",
+              "name": "Vimeo Packages",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VK",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "vk-likes-likes",
+              "name": "VK Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "vk-followers-followers",
+              "name": "VK Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "vk-views-views",
+              "name": "VK Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Comments",
+          "services": [
+            {
+              "id": "vk-comments-comments",
+              "name": "VK Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Shares",
+          "services": [
+            {
+              "id": "vk-shares-shares",
+              "name": "VK Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Friends",
+          "services": [
+            {
+              "id": "vk-friends-friends",
+              "name": "VK Friends",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Plays",
+          "services": [
+            {
+              "id": "vk-plays-plays",
+              "name": "VK Plays",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Groups",
+          "services": [
+            {
+              "id": "vk-groups-groups",
+              "name": "VK Groups",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Playlists",
+          "services": [
+            {
+              "id": "vk-playlists-playlists",
+              "name": "VK Playlists",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Posts",
+          "services": [
+            {
+              "id": "vk-posts-posts",
+              "name": "VK Posts",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Websites",
+      "categories": [
+        {
+          "name": "Visits",
+          "services": [
+            {
+              "id": "websites-visits-visits",
+              "name": "Websites Visits",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Traffic",
+          "services": [
+            {
+              "id": "websites-traffic-traffic",
+              "name": "Website Traffic",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "WhatsApp",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "whatsapp-likes-likes",
+              "name": "WhatsApp Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Reactions",
+          "services": [
+            {
+              "id": "whatsapp-reactions-reactions",
+              "name": "WhatsApp Reactions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Members",
+          "services": [
+            {
+              "id": "whatsapp-members-members",
+              "name": "WhatsApp Members",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Posts",
+          "services": [
+            {
+              "id": "whatsapp-posts-posts",
+              "name": "WhatsApp Posts",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "X (Twitter)",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "x-twitter-likes-likes",
+              "name": "X (Twitter) Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Followers",
+          "services": [
+            {
+              "id": "x-twitter-followers-followers",
+              "name": "X (Twitter) Followers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "x-twitter-views-views",
+              "name": "X (Twitter) Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Comments",
+          "services": [
+            {
+              "id": "x-twitter-comments-comments",
+              "name": "X (Twitter) Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Shares",
+          "services": [
+            {
+              "id": "x-twitter-shares-shares",
+              "name": "X (Twitter) Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Visits",
+          "services": [
+            {
+              "id": "x-twitter-visits-visits",
+              "name": "X (Twitter) Visits",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Engagement",
+          "services": [
+            {
+              "id": "x-twitter-engagement-engagement",
+              "name": "X (Twitter) Engagement",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Impressions",
+          "services": [
+            {
+              "id": "x-twitter-impressions-impressions",
+              "name": "X (Twitter) Impressions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Mentions",
+          "services": [
+            {
+              "id": "x-twitter-mentions-mentions",
+              "name": "X (Twitter) Mentions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Profile Visits",
+          "services": [
+            {
+              "id": "x-twitter-profile-visits-profile-visits",
+              "name": "X (Twitter) Profile Visits",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Listeners",
+          "services": [
+            {
+              "id": "x-twitter-listeners-listeners",
+              "name": "X (Twitter) Listeners",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Bookmarks",
+          "services": [
+            {
+              "id": "x-twitter-bookmarks-bookmarks",
+              "name": "X (Twitter) Bookmarks",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Clicks",
+          "services": [
+            {
+              "id": "x-twitter-clicks-clicks",
+              "name": "X (Twitter) Clicks",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "NFT Services",
+          "services": [
+            {
+              "id": "x-twitter-nft-services-nft-services",
+              "name": "X (Twitter) NFT Services",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Packages",
+          "services": [
+            {
+              "id": "x-twitter-packages-packages",
+              "name": "X (Twitter) Packages",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Polls",
+          "services": [
+            {
+              "id": "x-twitter-polls-polls",
+              "name": "X (Twitter) Polls",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Posts",
+          "services": [
+            {
+              "id": "x-twitter-posts-posts",
+              "name": "X (Twitter) Posts",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Votes",
+          "services": [
+            {
+              "id": "x-twitter-votes-votes",
+              "name": "X (Twitter) Votes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Yandex",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "yandex-likes-likes",
+              "name": "Yandex Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "yandex-views-views",
+              "name": "Yandex Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Comments",
+          "services": [
+            {
+              "id": "yandex-comments-comments",
+              "name": "Yandex Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Subscribers",
+          "services": [
+            {
+              "id": "yandex-subscribers-subscribers",
+              "name": "Yandex Subscribers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Plays",
+          "services": [
+            {
+              "id": "yandex-plays-plays",
+              "name": "Yandex Plays",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Reading",
+          "services": [
+            {
+              "id": "yandex-reading-reading",
+              "name": "Yandex Reading",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "YouTube",
+      "categories": [
+        {
+          "name": "Likes",
+          "services": [
+            {
+              "id": "youtube-likes-likes",
+              "name": "YouTube Likes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Views",
+          "services": [
+            {
+              "id": "youtube-views-views",
+              "name": "YouTube Views",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Comments",
+          "services": [
+            {
+              "id": "youtube-comments-comments",
+              "name": "YouTube Comments",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Subscribers",
+          "services": [
+            {
+              "id": "youtube-subscribers-subscribers",
+              "name": "YouTube Subscribers",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Shares",
+          "services": [
+            {
+              "id": "youtube-shares-shares",
+              "name": "YouTube Shares",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Traffic",
+          "services": [
+            {
+              "id": "youtube-traffic-traffic",
+              "name": "YouTube Traffic",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Engagement",
+          "services": [
+            {
+              "id": "youtube-engagement-engagement",
+              "name": "YouTube Engagement",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Reach",
+          "services": [
+            {
+              "id": "youtube-reach-reach",
+              "name": "YouTube Reach",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Live Streaming",
+          "services": [
+            {
+              "id": "youtube-live-streaming-live-streaming",
+              "name": "YouTube Live Streaming",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Streams",
+          "services": [
+            {
+              "id": "youtube-streams-streams",
+              "name": "YouTube Streams",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Watch Time",
+          "services": [
+            {
+              "id": "youtube-watch-time-watch-time",
+              "name": "YouTube Watch Time",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Polls",
+          "services": [
+            {
+              "id": "youtube-polls-polls",
+              "name": "YouTube Polls",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Posts",
+          "services": [
+            {
+              "id": "youtube-posts-posts",
+              "name": "YouTube Posts",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Promotions",
+          "services": [
+            {
+              "id": "youtube-promotions-promotions",
+              "name": "YouTube Promotions",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Rankings",
+          "services": [
+            {
+              "id": "youtube-rankings-rankings",
+              "name": "YouTube Rankings",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        },
+        {
+          "name": "Votes",
+          "services": [
+            {
+              "id": "youtube-votes-votes",
+              "name": "YouTube Votes",
+              "status": "not_started",
+              "product_definition_file": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Handler registry refresh — 2026-11-16
+
+The project-root `handler services.json` was replaced with the user's pasted `Pasted text.txt` on 2026-11-16. The exact previous bytes are preserved in `handler-services-before-2026-11-16-import.json` (SHA-256 `2db21628d06a0c48c6d1c6afe96524620a82c27f7d047dde23212577fd3ea2ff`). The imported file's SHA-256 is `aebfdff1c04851ea2102b3b938cc508b71c895936ee0e19c13933cb30ba271e3`.
+
+Both files are JSON arrays of handler records with `dgp_handler_id: 1` and `payload.panel_key: "jap"` throughout. Neither identifies the storefront site or tenant. The previous file has 5,734 rows, mostly last seen at `2026-11-13T18:00:15+00:00`; the new file has 5,726 rows, mostly last seen at `2026-11-16T12:00:16+00:00`. These are scoped snapshots, not interchangeable registries or evidence of live storefront availability.
+
+The new snapshot adds root row IDs 11681, 11686, 11687, and 11688. It omits 401, 403, 404, 405, 407, 898, 2438, 2439, 2440, 2441, 2442, and 2497. Absence is not an encoded disabled or locked state. Among shared rows, 58 rates, 12 minimums, 33 maximums, and 27 capability objects changed; these sets can overlap. Names, categories, types, state flags, and external IDs did not change on shared rows.
+
+The existing `products/instagram-likes.json` references rows whose facts changed: row 236 has `payload.max` 850,000 instead of 1,000,000, and row 1323 has `dripfeed.enabled: true` instead of false. The product, its analysis, the ID mapping, and catalog were not changed as part of this registry import. Reconcile these facts during the service's renewed analysis and approval review before editing the ProductDefinition. The catalog's `handler_service_records_reviewed: 5734` still describes the previous review, not a completed review of this new snapshot.

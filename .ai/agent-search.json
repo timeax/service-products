@@ -1,0 +1,173 @@
+{
+  "format_version": 1,
+  "purpose": "Local source index for agents working on the service catalog and future ProductDefinitions. Use these paths to inspect the actual registries, package interfaces, schemas, and Builder behavior.",
+  "local_first": {
+    "rule": "Use the local files listed here before consulting any remote page. Do not visit or fetch the online Gist by default; this workspace and the installed/source packages are available locally.",
+    "inspection": "Read the relevant package AGENTS.md and README.md, then inspect its package manifest, exported declarations/interfaces, source, schemas, and focused tests. A package overview or GIST.md is not a substitute for the package contract.",
+    "scope": "Treat each registry, installed package, and source repository as scoped evidence. Never combine handler IDs or service capability claims across registries without explicit evidence that they share a scope.",
+    "validation_claims": "Do not claim Builder validation unless the actual Builder validation was run. Local interfaces support analysis but do not prove live availability or acceptance."
+  },
+  "approval_gate": {
+    "scope": "Each actual service analyzed from the current catalog and handler records before its ProductDefinition is created or changed.",
+    "required_sequence": [
+      "Inspect the target service in catalog.json and its ID list in catalog-handler-service-ids.json; resolve mapped IDs and independently search for relevant omitted rows in handler services.json.",
+      "Analyze the actual service using the applicable DGP/Builder contracts and the full relevant handler set.",
+      "Present the detailed analysis in chat first and save the same report under analysis/<service-slug>/ for site-owner review.",
+      "Stop and wait for the user to explicitly approve the analysis.",
+      "Only after approval, create or change the actual ProductDefinition under products/; make related catalog status changes only as approved and validate the result."
+    ],
+    "analysis_location": "analysis/<service-slug>/",
+    "presentation": "Chat is the primary analysis/review space. Save a readable copy in the analysis folder so the site owner can review what was done and why.",
+    "before_approval": "Do not create or edit a ProductDefinition JSON or mark the service in_progress based on the analysis. Do not make catalog service JSON changes unless the user explicitly included them in the approved scope.",
+    "approval_scope": "Approval applies only to the service analysis and scope presented. A different service, material source change, or materially revised mapping requires a new analysis and approval.",
+    "not_gated": "Reading sources, preparing/presenting analysis, saving its Markdown report, and maintaining guidance or imported source snapshots requested by the user do not require this approval gate.",
+    "examples_rule": "Use examples/ as completed/reference work only. Never treat an example ProductDefinition or example handler registry as the actual service being built."
+  },
+  "project_sources": [
+    {
+      "name": "Current handler services registry",
+      "path": "D:\\Projects\\Archives\\service-products\\handler services.json",
+      "role": "User-supplied handler/service records for discovering platforms, general service categories, and service families. Preserve its scope and leave the input unchanged.",
+      "authority": "Current imported source, subject to verifying its embedded scope and snapshot context.",
+      "inspect": ["Entire JSON structure and metadata", "Actual record fields", "State and capability values"]
+    },
+    {
+      "name": "Service roadmap catalog",
+      "path": "D:\\Projects\\Archives\\service-products\\catalog.json",
+      "role": "Roadmap organized by platform, general category, and customer-facing service, with build status per service.",
+      "authority": "Project planning artifact; it does not assert that services are live or that ProductDefinitions exist.",
+      "constraint": "This is a roadmap. Inspect the current per-service status; update a status only within the user's approved scope."
+    },
+    {
+      "name": "Catalog service-to-handler ID map",
+      "path": "D:\\Projects\\Archives\\service-products\\catalog-handler-service-ids.json",
+      "role": "Lists handler row IDs associated with catalog service keys. It is a lookup map, not a record source or proof of complete/current coverage.",
+      "authority": "Cross-check all mapped IDs against handler services.json, identify stale IDs, and search for relevant current rows omitted from each list before mapping a ProductDefinition."
+    },
+    {
+      "name": "Per-service analysis archive",
+      "path": "D:\\Projects\\Archives\\service-products\\analysis",
+      "role": "Readable per-service analysis reports discussed in chat and saved for site-owner review before ProductDefinition work.",
+      "inspect": ["README.md", "<service-slug>/"]
+    },
+    {
+      "name": "Actual ProductDefinitions",
+      "path": "D:\\Projects\\Archives\\service-products\\products",
+      "role": "Canonical JSON definitions for actual services. Inspect the current state; do not populate from examples.",
+      "constraint": "Create or edit a service only after its analysis is explicitly approved."
+    },
+    {
+      "name": "Service Builder capability and template snapshot",
+      "path": "D:\\Projects\\Archives\\service-products\\.ai\\service-builder-capabilities.json",
+      "role": "User-provided authoritative snapshot of registered Service Builder input capabilities, one field template, and publication-policy context.",
+      "authority": "Use for the Builder state represented by the paste. The Builder version is unspecified, so recheck the open Builder when a later task depends on current state.",
+      "constraint": "Publication policies are context only and must not be changed or generated."
+    },
+    {
+      "name": "TygerBooster Service Builder normalization guide",
+      "path": "D:\\Projects\\Archives\\service-products\\.ai\\TYGERBOOSTER-SERVICE-BUILDER.md",
+      "role": "User-provided host-specific guidance for normalizing raw JAP provider services into TygerBooster ordering experiences.",
+      "authority": "Normalization context alongside the Service Builder/DGP contract; not a source of current service facts.",
+      "constraint": "Compatibility policies are discussed conceptually, but the current workspace restriction forbids changing or generating policies."
+    },
+    {
+      "name": "JAP service types and order fields guide",
+      "path": "D:\\Projects\\Archives\\service-products\\.ai\\JAP-SERVICE-TYPES.md",
+      "role": "User-provided TygerBooster guide for required/optional/conditional JAP add-order fields by service type.",
+      "authority": "Use with each selected handler's actual payload.type and the current Builder/DGP contract; do not infer request fields from provider names."
+    },
+    {
+      "name": "Project workflow and rules",
+      "path": "D:\\Projects\\Archives\\service-products\\.ai",
+      "role": "Step-by-step analysis, data model, validation, and agent source-index guidance.",
+      "inspect": ["README.md", "WORKFLOW.md", "DATA-MODEL.md", "VALIDATION.md", "agent-search.json", "service-builder-capabilities.json"]
+    }
+  ],
+  "dgp_packages": [
+    {
+      "name": "@elqora/dgp-sdk",
+      "version": "0.1.0",
+      "path": "D:\\Projects\\GitHub\\elqora\\digital-goods-protocol\\dgp-sdk",
+      "role": "PHP domain/backend SDK; consult its handler-service and capability definitions when reasoning about handler records and runtime concepts.",
+      "entry_points": ["AGENTS.md", "README.md", "composer.json", "src"],
+      "key_interfaces": ["src/Catalog/Services/HandlerService.php", "src/Catalog/Services/ServiceCapability.php", "src/Catalog/Services/ServiceCapabilitySet.php", "src/Catalog/Services/HandlerServiceState.php", "src/Catalog/Services/ServiceQuery.php"]
+    },
+    {
+      "name": "@elqora/dgp-spec",
+      "version": "1.6.0",
+      "path": "D:\\Projects\\GitHub\\service-builder\\node_modules\\@elqora\\dgp-spec",
+      "role": "Installed local canonical ProductDefinition contracts, type declarations, schemas, and fixtures consumed by Service Builder.",
+      "entry_points": ["package.json", "README.md", "dist/index.d.ts", "schemas", "fixtures"],
+      "authority": "Use the exact locally installed version for this consumer context; check package metadata and declarations before defining fields."
+    },
+    {
+      "name": "@elqora/dgp-core",
+      "version": "1.1.0",
+      "path": "D:\\Projects\\GitHub\\elqora\\digital-goods-protocol\\dgp-core",
+      "installed_consumer_copy": "D:\\Projects\\GitHub\\service-builder\\node_modules\\@elqora\\dgp-core",
+      "role": "Framework-neutral ProductDefinition interpretation and product model behavior.",
+      "entry_points": ["AGENTS.md", "README.md", "package.json", "src/index.ts"],
+      "consumer_declarations": ["dist/index.d.ts"]
+    },
+    {
+      "name": "@elqora/dgp-validation",
+      "version": "1.2.0",
+      "path": "D:\\Projects\\GitHub\\elqora\\digital-goods-protocol\\dgp-validation",
+      "installed_consumer_copy": "D:\\Projects\\GitHub\\service-builder\\node_modules\\@elqora\\dgp-validation",
+      "role": "Structural and semantic publication validation rules. Inspect source and exports for supported checks; do not imply these checks were run merely because the package is present.",
+      "entry_points": ["AGENTS.md", "README.md", "package.json", "src/index.ts"],
+      "consumer_declarations": ["dist/index.d.ts"]
+    },
+    {
+      "name": "@elqora/dgp-ordering",
+      "version": "1.1.1",
+      "path": "D:\\Projects\\GitHub\\service-builder\\node_modules\\@elqora\\dgp-ordering",
+      "role": "Installed local ordering/runtime contract and behavior relevant to order inputs and submission.",
+      "entry_points": ["package.json", "README.md", "dist/index.d.ts"]
+    },
+    {
+      "name": "@elqora/dgp-workspace",
+      "version": "1.1.0",
+      "path": "D:\\Projects\\GitHub\\elqora\\digital-goods-protocol\\dgp-workspace",
+      "installed_consumer_copy": "D:\\Projects\\GitHub\\service-builder\\node_modules\\@elqora\\dgp-workspace",
+      "role": "Headless editorial sessions and backend workspace orchestration; use when investigating editing/session workflows.",
+      "entry_points": ["AGENTS.md", "README.md", "package.json", "src/index.ts"],
+      "consumer_declarations": ["dist/index.d.ts"]
+    },
+    {
+      "name": "@elqora/dgp-studio",
+      "version": "0.1.0",
+      "path": "D:\\Projects\\GitHub\\elqora\\digital-goods-protocol\\dgp-studio",
+      "role": "Visual DGP authoring, preview, diagnostics, and publication integration. Consult only for Studio-specific behavior.",
+      "entry_points": ["AGENTS.md", "README.md", "package.json", "src/index.ts", "src/react/index.ts"]
+    },
+    {
+      "name": "@elqora/dgp-ordering-form-palette",
+      "version": "1.1.5",
+      "path": "D:\\Projects\\GitHub\\elqora\\digital-goods-protocol\\dgp-ordering-form-palette",
+      "installed_consumer_copy": "D:\\Projects\\GitHub\\service-builder\\node_modules\\@elqora\\dgp-ordering-form-palette",
+      "role": "Optional React ordering form palette integration; use for supported form controls and palette behavior.",
+      "entry_points": ["AGENTS.md", "README.md", "package.json", "src/index.ts"],
+      "consumer_declarations": ["dist/index.d.ts"]
+    }
+  ],
+  "consumers_and_related_sources": [
+    {
+      "name": "Service Builder",
+      "path": "D:\\Projects\\GitHub\\service-builder",
+      "role": "Local consumer application; inspect its actual integration and runtime behavior when a definition is intended for this Builder.",
+      "entry_points": ["AGENTS.md", "package.json", "src", "node_modules/@elqora"],
+      "overview_only": ["GIST.md"],
+      "rule": "The local GIST.md may help navigate the project, but inspect the local code and installed interfaces directly. Do not follow any online Gist URL by default."
+    },
+
+    {
+      "name": "DGP services provider SDK",
+      "path": "D:\\Projects\\GitHub\\dgp-services-sdk",
+      "role": "Related provider-driver SDK and provider plugin contracts. Keep it distinct from the canonical DGP ProductDefinition spec and from the active handler registry.",
+      "entry_points": ["composer.json", "docs/README.md", "src", "prodex"],
+      "authority": "Provider-driver implementation details only, unless the active site registry explicitly links a record to this SDK."
+    }
+  ],
+  "agent_starting_rule": "For catalog analysis, begin with the project handler services JSON and the workflow. For a future ProductDefinition, inspect the applicable local dgp-spec contract, dgp-core, validation package, target Builder source, and scoped handler registry. Follow concern-specific ownership in each package's AGENTS.md."
+}
