@@ -1,0 +1,271 @@
+{
+  "id": "instagram-views-views",
+  "name": "Instagram Views",
+  "description": "Preview of one-time Instagram views grouped by media type and delivery. Delivery labels reflect the provider listing.",
+  "schema_version": "1",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "Instagram Views",
+      "service_id": 706
+    },
+    {
+      "id": "t:video",
+      "label": "Video Post Views",
+      "bind_id": "t:root",
+      "service_id": 706
+    },
+    {
+      "id": "t:reel",
+      "label": "Reel Views",
+      "bind_id": "t:root",
+      "service_id": 780
+    },
+    {
+      "id": "t:photo",
+      "label": "Photo Post Views",
+      "bind_id": "t:root",
+      "service_id": 722
+    },
+    {
+      "id": "t:priority",
+      "label": "Priority Delivery",
+      "bind_id": "t:root",
+      "service_id": 728
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:video-delivery",
+      "type": "select",
+      "variant": "default",
+      "label": "Video delivery",
+      "bind_id": "t:video",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose video delivery"
+      },
+      "description": "Provider-listed start times and delivery rates.",
+      "options": [
+        {
+          "id": "o:video:within-hour-20m-day",
+          "label": "Starts within 1 hour · 20M views/day",
+          "value": "within-hour-20m-day",
+          "service_id": 706
+        },
+        {
+          "id": "o:video:instant-5m-day",
+          "label": "Instant start · 5M views/day",
+          "value": "instant-5m-day",
+          "service_id": 751
+        },
+        {
+          "id": "o:video:within-hour-5m-hour",
+          "label": "Starts within 1 hour · 5M views/hour",
+          "value": "within-hour-5m-hour",
+          "service_id": 739
+        }
+      ]
+    },
+    {
+      "id": "f:reel-delivery",
+      "type": "select",
+      "variant": "default",
+      "label": "Reel delivery",
+      "bind_id": "t:reel",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose Reel delivery"
+      },
+      "description": "Provider-listed start times and delivery rates.",
+      "options": [
+        {
+          "id": "o:reel:within-hour-500k-day",
+          "label": "Starts within 1 hour · 500K views/day",
+          "value": "within-hour-500k-day",
+          "service_id": 781
+        },
+        {
+          "id": "o:reel:within-hour-5m-day",
+          "label": "Starts within 1 hour · 5M views/day",
+          "value": "within-hour-5m-day",
+          "service_id": 780
+        },
+        {
+          "id": "o:reel:within-hour-100m-day",
+          "label": "Starts within 1 hour · 100M views/day",
+          "value": "within-hour-100m-day",
+          "service_id": 790
+        },
+        {
+          "id": "o:reel:within-three-hours-1m-day",
+          "label": "Starts within 3 hours · 1M views/day",
+          "value": "within-three-hours-1m-day",
+          "service_id": 786
+        }
+      ]
+    },
+    {
+      "id": "f:priority-delivery",
+      "type": "select",
+      "variant": "default",
+      "label": "Priority media type",
+      "bind_id": "t:priority",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a media type"
+      },
+      "description": "Provider-listed start times and delivery rates for priority services.",
+      "options": [
+        {
+          "id": "o:priority:video",
+          "label": "Video post · Starts within 1 hour · 400K views/day",
+          "value": "video",
+          "service_id": 728
+        },
+        {
+          "id": "o:priority:reel",
+          "label": "Reel · Starts within 1 hour · 5M views/day",
+          "value": "reel",
+          "service_id": 783
+        }
+      ]
+    },
+    {
+      "id": "f:link",
+      "type": "text",
+      "variant": "default",
+      "label": "Instagram media link",
+      "name": "link",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Paste an Instagram link"
+      },
+      "validation": [
+        {
+          "op": "match",
+          "pattern": "^https?://(?:www\\.|m\\.)?instagram\\.com/\\S+$",
+          "pattern_flags": "i",
+          "message": "Enter an Instagram media link."
+        }
+      ]
+    },
+    {
+      "id": "f:quantity",
+      "type": "number",
+      "variant": "default",
+      "label": "Quantity",
+      "name": "quantity",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 1,000",
+        "step": 1,
+        "tags": [
+          {
+            "label": "Min: {preview.min ?? \"—\"}"
+          },
+          {
+            "label": "Max: {preview.max ?? \"—\"}"
+          }
+        ]
+      },
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "value"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:drip_feed",
+      "type": "toggle",
+      "variant": "default",
+      "label": "Drip feed",
+      "name": "drip_feed",
+      "bind_id": "t:root",
+      "button": true,
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.capabilities?.dripfeed?.enabled === true)"
+      }
+    },
+    {
+      "id": "f:runs",
+      "type": "number",
+      "variant": "default",
+      "label": "Runs",
+      "name": "runs",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 5"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:interval",
+      "type": "number",
+      "variant": "default",
+      "label": "Interval (minutes)",
+      "name": "interval",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 60"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    }
+  ],
+  "order_for_tags": {
+    "t:video": [
+      "f:video-delivery"
+    ],
+    "t:reel": [
+      "f:reel-delivery"
+    ],
+    "t:priority": [
+      "f:priority-delivery"
+    ]
+  },
+  "includes_for_buttons": {
+    "f:drip_feed": [
+      "f:runs",
+      "f:interval"
+    ]
+  },
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {},
+  "fallbacks": null,
+  "notices": [],
+  "meta": {}
+}
