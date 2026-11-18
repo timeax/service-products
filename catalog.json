@@ -10,7 +10,7 @@
     "platforms_identified": 58,
     "general_categories_identified": 61,
     "service_work_items": 295,
-    "product_definitions_created": 1,
+    "product_definitions_created": 2,
     "handler_rows_needing_service_family_review": 0
   },
   "product_definitions": [
@@ -18,6 +18,11 @@
       "id": "instagram-likes-likes",
       "name": "Instagram Likes",
       "file": "products/instagram-likes.json"
+    },
+    {
+      "id": "instagram-comments-comments",
+      "name": "Instagram Comments",
+      "file": "products/instagram-comments.json"
     }
   ],
   "platforms": [
@@ -936,8 +941,8 @@
             {
               "id": "instagram-comments-comments",
               "name": "Instagram Comments",
-              "status": "not_started",
-              "product_definition_file": null
+              "status": "definition_created",
+              "product_definition_file": "products/instagram-comments.json"
             },
             {
               "id": "threads-comments-comments",

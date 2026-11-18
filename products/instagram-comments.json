@@ -1,0 +1,3207 @@
+{
+  "id": "instagram-comments-comments",
+  "name": "Instagram Comments",
+  "description": "Instagram comment services organized by order type and mapped category.",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "Instagram Comments",
+      "service_id": 895
+    },
+    {
+      "id": "t:default",
+      "label": "Default",
+      "bind_id": "t:root",
+      "service_id": 871
+    },
+    {
+      "id": "t:custom-comments",
+      "label": "Custom Comments",
+      "bind_id": "t:root",
+      "service_id": 862
+    },
+    {
+      "id": "t:package",
+      "label": "Package",
+      "bind_id": "t:root",
+      "service_id": 1446
+    },
+    {
+      "id": "t:custom-comments-package",
+      "label": "Custom Comments Package",
+      "bind_id": "t:root",
+      "service_id": 1455
+    },
+    {
+      "id": "t:default-standard",
+      "label": "Standard",
+      "bind_id": "t:default",
+      "service_id": 868
+    },
+    {
+      "id": "t:default-exclusive",
+      "label": "Exclusive",
+      "bind_id": "t:default",
+      "service_id": 64
+    },
+    {
+      "id": "t:default-reels",
+      "label": "Reels",
+      "bind_id": "t:default",
+      "service_id": 803
+    },
+    {
+      "id": "t:default-verified",
+      "label": "Verified accounts",
+      "bind_id": "t:default",
+      "service_id": 993
+    },
+    {
+      "id": "t:default-regions",
+      "label": "Countries/regions",
+      "bind_id": "t:default",
+      "service_id": 1337
+    },
+    {
+      "id": "t:default-live",
+      "label": "Live video",
+      "bind_id": "t:default",
+      "service_id": 1044
+    },
+    {
+      "id": "t:default-channel",
+      "label": "Channel comments",
+      "bind_id": "t:default",
+      "service_id": 1156
+    },
+    {
+      "id": "t:custom-standard",
+      "label": "Standard custom comments",
+      "bind_id": "t:custom-comments",
+      "service_id": 860
+    },
+    {
+      "id": "t:custom-reels",
+      "label": "Reel custom comments",
+      "bind_id": "t:custom-comments",
+      "service_id": 816
+    },
+    {
+      "id": "t:custom-verified",
+      "label": "Verified account comments",
+      "bind_id": "t:custom-comments",
+      "service_id": 995
+    },
+    {
+      "id": "t:custom-super",
+      "label": "Super Services",
+      "bind_id": "t:custom-comments",
+      "service_id": 1039
+    },
+    {
+      "id": "t:custom-exclusive",
+      "label": "Exclusive custom comments",
+      "bind_id": "t:custom-comments",
+      "service_id": 56
+    },
+    {
+      "id": "t:custom-regions",
+      "label": "Countries/regions custom comments",
+      "bind_id": "t:custom-comments",
+      "service_id": 1338
+    },
+    {
+      "id": "t:package-fixed",
+      "label": "Comment packages",
+      "bind_id": "t:package",
+      "service_id": 1445
+    },
+    {
+      "id": "t:package-auto",
+      "label": "Auto Comments",
+      "bind_id": "t:package",
+      "service_id": 1504
+    },
+    {
+      "id": "t:custom-package-fixed",
+      "label": "Custom comment packages",
+      "bind_id": "t:custom-comments-package",
+      "service_id": 1454
+    },
+    {
+      "id": "t:custom-package-auto",
+      "label": "Custom Auto Comments",
+      "bind_id": "t:custom-comments-package",
+      "service_id": 1505
+    },
+    {
+      "id": "t:poll",
+      "label": "Poll",
+      "bind_id": "t:root",
+      "service_id": 936
+    },
+    {
+      "id": "t:replies",
+      "label": "Comment Replies",
+      "bind_id": "t:root",
+      "service_id": 943
+    },
+    {
+      "id": "t:default-standard-style-or-tone",
+      "label": "Style or tone",
+      "bind_id": "t:default-standard",
+      "service_id": 855
+    },
+    {
+      "id": "t:default-standard-relevance-or-context",
+      "label": "Relevance",
+      "bind_id": "t:default-standard",
+      "service_id": 864
+    },
+    {
+      "id": "t:default-standard-audience",
+      "label": "Audience (Standard)",
+      "bind_id": "t:default-standard",
+      "service_id": 867
+    },
+    {
+      "id": "t:default-standard-language-or-region",
+      "label": "Language/region (Standard)",
+      "bind_id": "t:default-standard",
+      "service_id": 874
+    },
+    {
+      "id": "t:default-exclusive-power-or-explore",
+      "label": "Power/Explore (Exclusive)",
+      "bind_id": "t:default-exclusive",
+      "service_id": 33
+    },
+    {
+      "id": "t:default-exclusive-audience",
+      "label": "Audience (Exclusive)",
+      "bind_id": "t:default-exclusive",
+      "service_id": 34
+    },
+    {
+      "id": "t:default-exclusive-language-or-region",
+      "label": "Language/region (Exclusive)",
+      "bind_id": "t:default-exclusive",
+      "service_id": 38
+    },
+    {
+      "id": "t:default-reels-audience",
+      "label": "Audience (Reels)",
+      "bind_id": "t:default-reels",
+      "service_id": 804
+    },
+    {
+      "id": "t:default-reels-language-or-region",
+      "label": "Language/region (Reels)",
+      "bind_id": "t:default-reels",
+      "service_id": 807
+    },
+    {
+      "id": "t:default-reels-hq-wording",
+      "label": "HQ wording (Reels)",
+      "bind_id": "t:default-reels",
+      "service_id": 806
+    },
+    {
+      "id": "t:default-verified-power-or-explore",
+      "label": "Power/Explore (Verified)",
+      "bind_id": "t:default-verified",
+      "service_id": 951
+    },
+    {
+      "id": "t:default-verified-audience",
+      "label": "Audience (Verified)",
+      "bind_id": "t:default-verified",
+      "service_id": 944
+    },
+    {
+      "id": "t:default-verified-language-or-region",
+      "label": "Language/region (Verified)",
+      "bind_id": "t:default-verified",
+      "service_id": 963
+    },
+    {
+      "id": "t:default-live-random",
+      "label": "Random (Live)",
+      "bind_id": "t:default-live",
+      "service_id": 1045
+    },
+    {
+      "id": "t:default-live-audience",
+      "label": "Audience (Live)",
+      "bind_id": "t:default-live",
+      "service_id": 1046
+    },
+    {
+      "id": "t:custom-standard-general-custom-comments",
+      "label": "General custom comments",
+      "bind_id": "t:custom-standard",
+      "service_id": 861
+    },
+    {
+      "id": "t:custom-standard-language-or-region",
+      "label": "Language/region (Custom standard)",
+      "bind_id": "t:custom-standard",
+      "service_id": 853
+    },
+    {
+      "id": "t:custom-standard-gender",
+      "label": "Gender (Custom standard)",
+      "bind_id": "t:custom-standard",
+      "service_id": 909
+    },
+    {
+      "id": "t:custom-standard-relevance",
+      "label": "Relevance (Custom)",
+      "bind_id": "t:custom-standard",
+      "service_id": 866
+    },
+    {
+      "id": "t:custom-standard-premium-or-high-end",
+      "label": "Premium/high-end",
+      "bind_id": "t:custom-standard",
+      "service_id": 903
+    },
+    {
+      "id": "t:custom-reels-gender",
+      "label": "Gender (Custom Reels)",
+      "bind_id": "t:custom-reels",
+      "service_id": 818
+    },
+    {
+      "id": "t:custom-reels-language-or-region",
+      "label": "Language/region (Custom Reels)",
+      "bind_id": "t:custom-reels",
+      "service_id": 822
+    },
+    {
+      "id": "t:custom-reels-hq-wording",
+      "label": "HQ wording (Custom Reels)",
+      "bind_id": "t:custom-reels",
+      "service_id": 819
+    },
+    {
+      "id": "t:default-standard-general-random",
+      "label": "General/random",
+      "bind_id": "t:default-standard",
+      "service_id": 869
+    },
+    {
+      "id": "t:default-standard-delivery",
+      "label": "Delivery details (Standard)",
+      "bind_id": "t:default-standard",
+      "service_id": 856
+    },
+    {
+      "id": "t:default-exclusive-delivery",
+      "label": "Delivery details (Exclusive)",
+      "bind_id": "t:default-exclusive",
+      "service_id": 35
+    },
+    {
+      "id": "t:default-live-instant-delivery",
+      "label": "Instant delivery",
+      "bind_id": "t:default-live",
+      "service_id": 1048
+    },
+    {
+      "id": "t:default-channel-positive",
+      "label": "Positive tone",
+      "bind_id": "t:default-channel",
+      "service_id": 1156
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:link",
+      "type": "text",
+      "label": "Instagram content link",
+      "bind_id": "t:root",
+      "name": "link",
+      "required": true,
+      "description": "Link to the Instagram content receiving comments.",
+      "defaults": {
+        "placeholder": "Paste an Instagram link"
+      }
+    },
+    {
+      "id": "f:quantity",
+      "type": "number",
+      "label": "Quantity",
+      "bind_id": "t:root",
+      "name": "quantity",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 100",
+        "tags": [
+          {
+            "label": "Min: {preview.min ?? \"—\"}"
+          },
+          {
+            "label": "Max: {preview.max ?? \"—\"}"
+          }
+        ]
+      },
+      "description": "Number of comments requested.",
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "value",
+        "multiply": 1
+      },
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.meta?.provider_payload_type === \"Default\")"
+      }
+    },
+    {
+      "id": "f:drip_feed",
+      "type": "toggle",
+      "label": "Drip feed",
+      "bind_id": "t:root",
+      "name": "drip_feed",
+      "required": false,
+      "description": "Deliver the order in multiple runs.",
+      "button": true,
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.meta?.provider_payload_type === \"Default\") && preview.service_context.every(service => service.capabilities?.dripfeed?.enabled === true)"
+      }
+    },
+    {
+      "id": "f:runs",
+      "type": "number",
+      "label": "Runs",
+      "name": "runs",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 5"
+      },
+      "description": "Number of deliveries in the drip-feed schedule.",
+      "bind_id": "t:root",
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.meta?.provider_payload_type === \"Default\") && preview.service_context.every(service => service.capabilities?.dripfeed?.enabled === true) && preview.selection.trigger_ids.includes(\"f:drip_feed\")"
+      }
+    },
+    {
+      "id": "f:interval",
+      "type": "number",
+      "label": "Interval (minutes)",
+      "name": "interval",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 60"
+      },
+      "description": "Minutes between each drip-feed run.",
+      "bind_id": "t:root",
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.meta?.provider_payload_type === \"Default\") && preview.service_context.every(service => service.capabilities?.dripfeed?.enabled === true) && preview.selection.trigger_ids.includes(\"f:drip_feed\")"
+      }
+    },
+    {
+      "id": "f:comments",
+      "type": "chips",
+      "variant": "default",
+      "label": "Comments to post",
+      "bind_id": "t:root",
+      "name": "comments",
+      "required": true,
+      "defaults": {
+        "separators": [
+          "Enter"
+        ],
+        "textareaMode": true,
+        "placeholder": "Type a comment and press Enter"
+      },
+      "description": "Enter one comment per line.",
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "length",
+        "multiply": 1
+      },
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.meta?.provider_payload_type === \"Custom Comments\")"
+      }
+    },
+    {
+      "id": "f:poll-answer",
+      "type": "number",
+      "label": "Poll answer number",
+      "bind_id": "t:root",
+      "name": "answer_number",
+      "required": true,
+      "description": "Poll option number to receive votes.",
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.meta?.provider_payload_type === \"Poll\")"
+      },
+      "defaults": {
+        "placeholder": "Enter the poll answer number"
+      }
+    },
+    {
+      "id": "f:reply-username",
+      "type": "text",
+      "label": "Comment owner username",
+      "bind_id": "t:root",
+      "name": "username",
+      "required": true,
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.meta?.provider_payload_type === \"Comment Replies\")"
+      },
+      "defaults": {
+        "placeholder": "Enter the comment author’s username"
+      }
+    },
+    {
+      "id": "f:service-default-regions",
+      "type": "select",
+      "variant": "default",
+      "label": "Language or region",
+      "bind_id": "t:default-regions",
+      "required": true,
+      "options": [
+        {
+          "id": "o:default-regions:1327",
+          "label": "USA/UK · Power comments",
+          "value": "handler-38",
+          "service_id": 38
+        },
+        {
+          "id": "o:default-regions:1337",
+          "label": "USA · 5–500 comments",
+          "value": "handler-1337",
+          "service_id": 1337
+        },
+        {
+          "id": "o:default-regions:1359",
+          "label": "USA · 5–50 comments",
+          "value": "handler-1359",
+          "service_id": 1359
+        },
+        {
+          "id": "o:default-regions:1371",
+          "label": "France",
+          "value": "handler-1371",
+          "service_id": 1371
+        },
+        {
+          "id": "o:default-regions:1377",
+          "label": "Brazil · Power comments",
+          "value": "handler-972",
+          "service_id": 972
+        },
+        {
+          "id": "o:default-regions:1421",
+          "label": "Brazil",
+          "value": "handler-1421",
+          "service_id": 1421
+        },
+        {
+          "id": "o:default-regions:1428",
+          "label": "South Korea · Power comments",
+          "value": "handler-976",
+          "service_id": 976
+        },
+        {
+          "id": "o:default-regions:1431",
+          "label": "Nigeria",
+          "value": "handler-1431",
+          "service_id": 1431
+        },
+        {
+          "id": "o:default-regions:1435",
+          "label": "Italy",
+          "value": "handler-1435",
+          "service_id": 1435
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a language or region"
+      }
+    },
+    {
+      "id": "f:service-custom-verified",
+      "type": "select",
+      "variant": "default",
+      "label": "Targeting",
+      "bind_id": "t:custom-verified",
+      "required": true,
+      "options": [
+        {
+          "id": "o:custom-verified:989",
+          "label": "Arab/Gulf",
+          "value": "handler-989",
+          "service_id": 989
+        },
+        {
+          "id": "o:custom-verified:991",
+          "label": "10K+ followers · 5 comments (source label)",
+          "value": "handler-991",
+          "service_id": 991
+        },
+        {
+          "id": "o:custom-verified:992",
+          "label": "10K+ followers · 10 comments (source label)",
+          "value": "handler-992",
+          "service_id": 992
+        },
+        {
+          "id": "o:custom-verified:995",
+          "label": "Verified",
+          "value": "handler-995",
+          "service_id": 995
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a targeting option"
+      }
+    },
+    {
+      "id": "f:service-custom-super",
+      "type": "select",
+      "variant": "default",
+      "label": "Region",
+      "bind_id": "t:custom-super",
+      "required": true,
+      "options": [
+        {
+          "id": "o:custom-super:1039",
+          "label": "USA/UK",
+          "value": "handler-1039",
+          "service_id": 1039
+        },
+        {
+          "id": "o:custom-super:1040",
+          "label": "Germany",
+          "value": "handler-1040",
+          "service_id": 1040
+        },
+        {
+          "id": "o:custom-super:1041",
+          "label": "Sweden",
+          "value": "handler-1041",
+          "service_id": 1041
+        },
+        {
+          "id": "o:custom-super:1042",
+          "label": "Spain",
+          "value": "handler-1042",
+          "service_id": 1042
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a region"
+      }
+    },
+    {
+      "id": "f:service-custom-exclusive",
+      "type": "select",
+      "variant": "default",
+      "label": "Region",
+      "bind_id": "t:custom-exclusive",
+      "required": true,
+      "options": [
+        {
+          "id": "o:custom-exclusive:56",
+          "label": "USA",
+          "value": "handler-56",
+          "service_id": 56
+        },
+        {
+          "id": "o:custom-exclusive:63",
+          "label": "USA/Europe",
+          "value": "handler-63",
+          "service_id": 63
+        },
+        {
+          "id": "o:custom-exclusive:100",
+          "label": "USA · African American audience",
+          "value": "handler-100",
+          "service_id": 100
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a region"
+      }
+    },
+    {
+      "id": "f:service-custom-regions",
+      "type": "select",
+      "variant": "default",
+      "label": "Language or region",
+      "bind_id": "t:custom-regions",
+      "required": true,
+      "options": [
+        {
+          "id": "o:custom-regions:1338",
+          "label": "USA",
+          "value": "handler-1338",
+          "service_id": 1338
+        },
+        {
+          "id": "o:custom-regions:1420",
+          "label": "Brazil",
+          "value": "handler-1420",
+          "service_id": 1420
+        },
+        {
+          "id": "o:custom-regions:1436",
+          "label": "Italy",
+          "value": "handler-1436",
+          "service_id": 1436
+        },
+        {
+          "id": "o:custom-regions:1444",
+          "label": "Turkey",
+          "value": "handler-1444",
+          "service_id": 1444
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a language or region"
+      }
+    },
+    {
+      "id": "f:service-package-fixed",
+      "type": "select",
+      "variant": "default",
+      "label": "Package size",
+      "bind_id": "t:package-fixed",
+      "required": true,
+      "options": [
+        {
+          "id": "o:package-fixed:1445",
+          "label": "1 comment · Verified · Artist",
+          "value": "handler-1445",
+          "service_id": 1445
+        },
+        {
+          "id": "o:package-fixed:1446",
+          "label": "2 comments · Verified · Artist",
+          "value": "handler-1446",
+          "service_id": 1446
+        },
+        {
+          "id": "o:package-fixed:1447",
+          "label": "3 comments · Verified · Artist",
+          "value": "handler-1447",
+          "service_id": 1447
+        },
+        {
+          "id": "o:package-fixed:1448",
+          "label": "4 comments · Verified · Artist",
+          "value": "handler-1448",
+          "service_id": 1448
+        },
+        {
+          "id": "o:package-fixed:1449",
+          "label": "5 comments · Verified · Artist",
+          "value": "handler-1449",
+          "service_id": 1449
+        },
+        {
+          "id": "o:package-fixed:1450",
+          "label": "6 comments · Verified · Artist",
+          "value": "handler-1450",
+          "service_id": 1450
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a package size"
+      }
+    },
+    {
+      "id": "f:service-custom-package-fixed",
+      "type": "select",
+      "variant": "default",
+      "label": "Package size",
+      "bind_id": "t:custom-package-fixed",
+      "required": true,
+      "options": [
+        {
+          "id": "o:custom-package-fixed:1454",
+          "label": "1 comment · Verified · Egypt",
+          "value": "handler-1454",
+          "service_id": 1454
+        },
+        {
+          "id": "o:custom-package-fixed:1455",
+          "label": "2 comments · Verified · Egypt",
+          "value": "handler-1455",
+          "service_id": 1455
+        },
+        {
+          "id": "o:custom-package-fixed:1456",
+          "label": "3 comments · Verified · Egypt",
+          "value": "handler-1456",
+          "service_id": 1456
+        },
+        {
+          "id": "o:custom-package-fixed:1457",
+          "label": "4 comments · Verified · Egypt",
+          "value": "handler-1457",
+          "service_id": 1457
+        },
+        {
+          "id": "o:custom-package-fixed:1458",
+          "label": "5 comments · Verified · Egypt",
+          "value": "handler-1458",
+          "service_id": 1458
+        },
+        {
+          "id": "o:custom-package-fixed:1459",
+          "label": "10 comments · Verified · Egypt",
+          "value": "handler-1459",
+          "service_id": 1459
+        },
+        {
+          "id": "o:custom-package-fixed:1460",
+          "label": "15 comments · Verified · Egypt",
+          "value": "handler-1460",
+          "service_id": 1460
+        },
+        {
+          "id": "o:custom-package-fixed:1461",
+          "label": "20 comments · Verified · Egypt",
+          "value": "handler-1461",
+          "service_id": 1461
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a package size"
+      }
+    },
+    {
+      "id": "f:service-default-standard-style-or-tone",
+      "type": "select",
+      "variant": "default",
+      "label": "Comment style",
+      "bind_id": "t:default-standard-style-or-tone",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-standard-style-or-tone:855",
+          "label": "Hype",
+          "value": "handler-855",
+          "service_id": 855
+        },
+        {
+          "id": "t:default-standard-style-or-tone:856",
+          "label": "Positive emoji · 10–200,000 comments",
+          "value": "handler-856",
+          "service_id": 856
+        },
+        {
+          "id": "t:default-standard-style-or-tone:857",
+          "label": "Negative emoji · 10–200,000 comments",
+          "value": "handler-857",
+          "service_id": 857
+        },
+        {
+          "id": "t:default-standard-style-or-tone:858",
+          "label": "Positive emoji · 5–20,000 comments",
+          "value": "handler-858",
+          "service_id": 858
+        },
+        {
+          "id": "t:default-standard-style-or-tone:859",
+          "label": "Negative emoji · 10–20,000 comments",
+          "value": "handler-859",
+          "service_id": 859
+        },
+        {
+          "id": "t:default-standard-style-or-tone:870",
+          "label": "HQ emoji · 10–500,000 comments",
+          "value": "handler-870",
+          "service_id": 870
+        },
+        {
+          "id": "t:default-standard-style-or-tone:872",
+          "label": "Emoji · 10–50,000 comments",
+          "value": "handler-872",
+          "service_id": 872
+        },
+        {
+          "id": "t:default-standard-style-or-tone:877",
+          "label": "HQ emoji · 20–50,000 comments",
+          "value": "handler-877",
+          "service_id": 877
+        },
+        {
+          "id": "t:default-standard-style-or-tone:892",
+          "label": "Russian · positive",
+          "value": "handler-892",
+          "service_id": 892
+        },
+        {
+          "id": "t:default-standard-style-or-tone:893",
+          "label": "Russian · neutral",
+          "value": "handler-893",
+          "service_id": 893
+        },
+        {
+          "id": "t:default-standard-style-or-tone:897",
+          "label": "Emoji · 10–100,000 comments",
+          "value": "handler-897",
+          "service_id": 897
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a comment style"
+      }
+    },
+    {
+      "id": "f:service-default-standard-relevance-or-context",
+      "type": "select",
+      "variant": "default",
+      "label": "Relevance",
+      "bind_id": "t:default-standard-relevance-or-context",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-standard-relevance-or-context:864",
+          "label": "AI-relevant · 1–20,000 comments",
+          "value": "handler-864",
+          "service_id": 864
+        },
+        {
+          "id": "t:default-standard-relevance-or-context:865",
+          "label": "AI-relevant · 1–2,000 comments",
+          "value": "handler-865",
+          "service_id": 865
+        },
+        {
+          "id": "t:default-standard-relevance-or-context:867",
+          "label": "Relevant · 10K+ followers",
+          "value": "handler-867",
+          "service_id": 867
+        },
+        {
+          "id": "t:default-standard-relevance-or-context:879",
+          "label": "Post-related",
+          "value": "handler-879",
+          "service_id": 879
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a relevance option"
+      }
+    },
+    {
+      "id": "f:service-default-standard-audience",
+      "type": "select",
+      "variant": "default",
+      "label": "Audience",
+      "bind_id": "t:default-standard-audience",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-standard-audience:867",
+          "label": "Relevant · 10K+ followers",
+          "value": "handler-867",
+          "service_id": 867
+        },
+        {
+          "id": "t:default-standard-audience:875",
+          "label": "Male · HQ",
+          "value": "handler-875",
+          "service_id": 875
+        },
+        {
+          "id": "t:default-standard-audience:876",
+          "label": "Female · HQ",
+          "value": "handler-876",
+          "service_id": 876
+        },
+        {
+          "id": "t:default-standard-audience:886",
+          "label": "Power comments · unspecified region",
+          "value": "handler-886",
+          "service_id": 886
+        },
+        {
+          "id": "t:default-standard-audience:888",
+          "label": "Arabic · Power comments",
+          "value": "handler-888",
+          "service_id": 888
+        },
+        {
+          "id": "t:default-standard-audience:889",
+          "label": "Female · 10–200 comments",
+          "value": "handler-889",
+          "service_id": 889
+        },
+        {
+          "id": "t:default-standard-audience:915",
+          "label": "Male",
+          "value": "handler-915",
+          "service_id": 915
+        },
+        {
+          "id": "t:default-standard-audience:917",
+          "label": "Female · 10–500 comments",
+          "value": "handler-917",
+          "service_id": 917
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select an audience"
+      }
+    },
+    {
+      "id": "f:service-default-standard-language-or-region",
+      "type": "select",
+      "variant": "default",
+      "label": "Language or region",
+      "bind_id": "t:default-standard-language-or-region",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-standard-language-or-region:874",
+          "label": "Worldwide · English",
+          "value": "handler-874",
+          "service_id": 874
+        },
+        {
+          "id": "t:default-standard-language-or-region:880",
+          "label": "USA · 5–300 comments",
+          "value": "handler-880",
+          "service_id": 880
+        },
+        {
+          "id": "t:default-standard-language-or-region:888",
+          "label": "Arabic · Power comments",
+          "value": "handler-888",
+          "service_id": 888
+        },
+        {
+          "id": "t:default-standard-language-or-region:891",
+          "label": "Russian · random · non-drop wording",
+          "value": "handler-891",
+          "service_id": 891
+        },
+        {
+          "id": "t:default-standard-language-or-region:892",
+          "label": "Russian · positive",
+          "value": "handler-892",
+          "service_id": 892
+        },
+        {
+          "id": "t:default-standard-language-or-region:893",
+          "label": "Russian · neutral",
+          "value": "handler-893",
+          "service_id": 893
+        },
+        {
+          "id": "t:default-standard-language-or-region:894",
+          "label": "India · 1–1,000 comments",
+          "value": "handler-894",
+          "service_id": 894
+        },
+        {
+          "id": "t:default-standard-language-or-region:905",
+          "label": "English · non-drop wording",
+          "value": "handler-905",
+          "service_id": 905
+        },
+        {
+          "id": "t:default-standard-language-or-region:906",
+          "label": "Brazil",
+          "value": "handler-906",
+          "service_id": 906
+        },
+        {
+          "id": "t:default-standard-language-or-region:907",
+          "label": "India · 5–20 comments",
+          "value": "handler-907",
+          "service_id": 907
+        },
+        {
+          "id": "t:default-standard-language-or-region:911",
+          "label": "USA · 10–500 comments",
+          "value": "handler-911",
+          "service_id": 911
+        },
+        {
+          "id": "t:default-standard-language-or-region:912",
+          "label": "France",
+          "value": "handler-912",
+          "service_id": 912
+        },
+        {
+          "id": "t:default-standard-language-or-region:913",
+          "label": "Italy",
+          "value": "handler-913",
+          "service_id": 913
+        },
+        {
+          "id": "t:default-standard-language-or-region:914",
+          "label": "Germany",
+          "value": "handler-914",
+          "service_id": 914
+        },
+        {
+          "id": "t:default-standard-language-or-region:916",
+          "label": "English · Iranian accounts",
+          "value": "handler-916",
+          "service_id": 916
+        },
+        {
+          "id": "t:default-standard-language-or-region:919",
+          "label": "India · 10–250 comments",
+          "value": "handler-919",
+          "service_id": 919
+        },
+        {
+          "id": "t:default-standard-language-or-region:920",
+          "label": "Turkey",
+          "value": "handler-920",
+          "service_id": 920
+        },
+        {
+          "id": "t:default-standard-language-or-region:922",
+          "label": "Thailand",
+          "value": "handler-922",
+          "service_id": 922
+        },
+        {
+          "id": "t:default-standard-language-or-region:923",
+          "label": "Japan",
+          "value": "handler-923",
+          "service_id": 923
+        },
+        {
+          "id": "t:default-standard-language-or-region:941",
+          "label": "Indonesia",
+          "value": "handler-941",
+          "service_id": 941
+        },
+        {
+          "id": "t:default-standard-language-or-region:942",
+          "label": "Arab",
+          "value": "handler-942",
+          "service_id": 942
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a language or region"
+      }
+    },
+    {
+      "id": "f:service-default-exclusive-power-or-explore",
+      "type": "select",
+      "variant": "default",
+      "label": "Audience",
+      "bind_id": "t:default-exclusive-power-or-explore",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-exclusive-power-or-explore:33",
+          "label": "South Korea · Power comments",
+          "value": "handler-33",
+          "service_id": 33
+        },
+        {
+          "id": "t:default-exclusive-power-or-explore:34",
+          "label": "Brazil · Power comments",
+          "value": "handler-34",
+          "service_id": 34
+        },
+        {
+          "id": "t:default-exclusive-power-or-explore:37",
+          "label": "Worldwide · Power comments",
+          "value": "handler-37",
+          "service_id": 37
+        },
+        {
+          "id": "t:default-exclusive-power-or-explore:40",
+          "label": "USA/UK · Power comments",
+          "value": "handler-40",
+          "service_id": 40
+        },
+        {
+          "id": "t:default-exclusive-power-or-explore:41",
+          "label": "Arabic · Power comments",
+          "value": "handler-41",
+          "service_id": 41
+        },
+        {
+          "id": "t:default-exclusive-power-or-explore:42",
+          "label": "Power comments · unspecified region",
+          "value": "handler-42",
+          "service_id": 42
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select an audience"
+      }
+    },
+    {
+      "id": "f:service-default-exclusive-audience",
+      "type": "select",
+      "variant": "default",
+      "label": "Audience",
+      "bind_id": "t:default-exclusive-audience",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-exclusive-audience:33",
+          "label": "South Korea · Power comments",
+          "value": "handler-33",
+          "service_id": 33
+        },
+        {
+          "id": "t:default-exclusive-audience:34",
+          "label": "Brazil · Power comments",
+          "value": "handler-34",
+          "service_id": 34
+        },
+        {
+          "id": "t:default-exclusive-audience:37",
+          "label": "Worldwide · Power comments",
+          "value": "handler-37",
+          "service_id": 37
+        },
+        {
+          "id": "t:default-exclusive-audience:40",
+          "label": "USA/UK · Power comments",
+          "value": "handler-40",
+          "service_id": 40
+        },
+        {
+          "id": "t:default-exclusive-audience:41",
+          "label": "Arabic · Power comments",
+          "value": "handler-41",
+          "service_id": 41
+        },
+        {
+          "id": "t:default-exclusive-audience:42",
+          "label": "Power comments · unspecified region",
+          "value": "handler-42",
+          "service_id": 42
+        },
+        {
+          "id": "t:default-exclusive-audience:88",
+          "label": "Female",
+          "value": "handler-88",
+          "service_id": 88
+        },
+        {
+          "id": "t:default-exclusive-audience:89",
+          "label": "Male",
+          "value": "handler-89",
+          "service_id": 89
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select an audience"
+      }
+    },
+    {
+      "id": "f:service-default-exclusive-language-or-region",
+      "type": "select",
+      "variant": "default",
+      "label": "Language or region",
+      "bind_id": "t:default-exclusive-language-or-region",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-exclusive-language-or-region:40",
+          "label": "USA/UK · Power comments",
+          "value": "handler-40",
+          "service_id": 40
+        },
+        {
+          "id": "t:default-exclusive-language-or-region:41",
+          "label": "Arabic · Power comments",
+          "value": "handler-41",
+          "service_id": 41
+        },
+        {
+          "id": "t:default-exclusive-language-or-region:57",
+          "label": "USA",
+          "value": "handler-57",
+          "service_id": 57
+        },
+        {
+          "id": "t:default-exclusive-language-or-region:64",
+          "label": "USA/Europe",
+          "value": "handler-64",
+          "service_id": 64
+        },
+        {
+          "id": "t:default-exclusive-language-or-region:101",
+          "label": "USA · African American audience",
+          "value": "handler-101",
+          "service_id": 101
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a language or region"
+      }
+    },
+    {
+      "id": "f:service-default-reels-audience",
+      "type": "select",
+      "variant": "default",
+      "label": "Audience",
+      "bind_id": "t:default-reels-audience",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-reels-audience:803",
+          "label": "Male",
+          "value": "handler-803",
+          "service_id": 803
+        },
+        {
+          "id": "t:default-reels-audience:804",
+          "label": "Female",
+          "value": "handler-804",
+          "service_id": 804
+        },
+        {
+          "id": "t:default-reels-audience:805",
+          "label": "India",
+          "value": "handler-805",
+          "service_id": 805
+        },
+        {
+          "id": "t:default-reels-audience:806",
+          "label": "Hispanic · HQ",
+          "value": "handler-806",
+          "service_id": 806
+        },
+        {
+          "id": "t:default-reels-audience:811",
+          "label": "Female · Brazil · HQ",
+          "value": "handler-811",
+          "service_id": 811
+        },
+        {
+          "id": "t:default-reels-audience:813",
+          "label": "Arab · HQ",
+          "value": "handler-813",
+          "service_id": 813
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select an audience"
+      }
+    },
+    {
+      "id": "f:service-default-reels-language-or-region",
+      "type": "select",
+      "variant": "default",
+      "label": "Language or region",
+      "bind_id": "t:default-reels-language-or-region",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-reels-language-or-region:807",
+          "label": "Turkey",
+          "value": "handler-807",
+          "service_id": 807
+        },
+        {
+          "id": "t:default-reels-language-or-region:808",
+          "label": "France",
+          "value": "handler-808",
+          "service_id": 808
+        },
+        {
+          "id": "t:default-reels-language-or-region:809",
+          "label": "Japan/China mix",
+          "value": "handler-809",
+          "service_id": 809
+        },
+        {
+          "id": "t:default-reels-language-or-region:810",
+          "label": "Germany",
+          "value": "handler-810",
+          "service_id": 810
+        },
+        {
+          "id": "t:default-reels-language-or-region:811",
+          "label": "Brazil",
+          "value": "handler-811",
+          "service_id": 811
+        },
+        {
+          "id": "t:default-reels-language-or-region:812",
+          "label": "Korea/Thailand mix",
+          "value": "handler-812",
+          "service_id": 812
+        },
+        {
+          "id": "t:default-reels-language-or-region:813",
+          "label": "Arab · HQ",
+          "value": "handler-813",
+          "service_id": 813
+        },
+        {
+          "id": "t:default-reels-language-or-region:814",
+          "label": "Russia",
+          "value": "handler-814",
+          "service_id": 814
+        },
+        {
+          "id": "t:default-reels-language-or-region:815",
+          "label": "Italy",
+          "value": "handler-815",
+          "service_id": 815
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a language or region"
+      }
+    },
+    {
+      "id": "f:service-default-reels-hq-wording",
+      "type": "select",
+      "variant": "default",
+      "label": "Quality",
+      "bind_id": "t:default-reels-hq-wording",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-reels-hq-wording:806",
+          "label": "Hispanic · HQ",
+          "value": "handler-806",
+          "service_id": 806
+        },
+        {
+          "id": "t:default-reels-hq-wording:807",
+          "label": "Turkey · HQ",
+          "value": "handler-807",
+          "service_id": 807
+        },
+        {
+          "id": "t:default-reels-hq-wording:808",
+          "label": "France · HQ",
+          "value": "handler-808",
+          "service_id": 808
+        },
+        {
+          "id": "t:default-reels-hq-wording:809",
+          "label": "Japan/China mix",
+          "value": "handler-809",
+          "service_id": 809
+        },
+        {
+          "id": "t:default-reels-hq-wording:810",
+          "label": "Germany · HQ",
+          "value": "handler-810",
+          "service_id": 810
+        },
+        {
+          "id": "t:default-reels-hq-wording:811",
+          "label": "Brazil · Female · HQ",
+          "value": "handler-811",
+          "service_id": 811
+        },
+        {
+          "id": "t:default-reels-hq-wording:812",
+          "label": "Korea/Thailand mix",
+          "value": "handler-812",
+          "service_id": 812
+        },
+        {
+          "id": "t:default-reels-hq-wording:813",
+          "label": "Arab · HQ",
+          "value": "handler-813",
+          "service_id": 813
+        },
+        {
+          "id": "t:default-reels-hq-wording:814",
+          "label": "Russia · HQ",
+          "value": "handler-814",
+          "service_id": 814
+        },
+        {
+          "id": "t:default-reels-hq-wording:815",
+          "label": "Italy · HQ",
+          "value": "handler-815",
+          "service_id": 815
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a quality option"
+      }
+    },
+    {
+      "id": "f:service-default-verified-power-or-explore",
+      "type": "select",
+      "variant": "default",
+      "label": "Audience",
+      "bind_id": "t:default-verified-power-or-explore",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-verified-power-or-explore:955",
+          "label": "Female accounts · 10K+ followers",
+          "value": "handler-955",
+          "service_id": 955
+        },
+        {
+          "id": "t:default-verified-power-or-explore:962",
+          "label": "Worldwide · Power comments",
+          "value": "handler-962",
+          "service_id": 962
+        },
+        {
+          "id": "t:default-verified-power-or-explore:968",
+          "label": "USA/UK · Power comments",
+          "value": "handler-968",
+          "service_id": 968
+        },
+        {
+          "id": "t:default-verified-power-or-explore:972",
+          "label": "Brazil · Power comments",
+          "value": "handler-972",
+          "service_id": 972
+        },
+        {
+          "id": "t:default-verified-power-or-explore:976",
+          "label": "South Korea · Power comments",
+          "value": "handler-976",
+          "service_id": 976
+        },
+        {
+          "id": "t:default-verified-power-or-explore:981",
+          "label": "Arabic · Power comments",
+          "value": "handler-981",
+          "service_id": 981
+        },
+        {
+          "id": "t:default-verified-power-or-explore:985",
+          "label": "Power comments · unspecified region",
+          "value": "handler-985",
+          "service_id": 985
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select an audience"
+      }
+    },
+    {
+      "id": "f:service-default-verified-audience",
+      "type": "select",
+      "variant": "default",
+      "label": "Audience",
+      "bind_id": "t:default-verified-audience",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-verified-audience:950",
+          "label": "Female accounts",
+          "value": "handler-950",
+          "service_id": 950
+        },
+        {
+          "id": "t:default-verified-audience:955",
+          "label": "Female accounts · 10K+ followers",
+          "value": "handler-955",
+          "service_id": 955
+        },
+        {
+          "id": "t:default-verified-audience:962",
+          "label": "Worldwide · Power comments",
+          "value": "handler-962",
+          "service_id": 962
+        },
+        {
+          "id": "t:default-verified-audience:968",
+          "label": "USA/UK · Power comments",
+          "value": "handler-968",
+          "service_id": 968
+        },
+        {
+          "id": "t:default-verified-audience:972",
+          "label": "Brazil · Power comments",
+          "value": "handler-972",
+          "service_id": 972
+        },
+        {
+          "id": "t:default-verified-audience:976",
+          "label": "South Korea · Power comments",
+          "value": "handler-976",
+          "service_id": 976
+        },
+        {
+          "id": "t:default-verified-audience:981",
+          "label": "Arabic · Power comments",
+          "value": "handler-981",
+          "service_id": 981
+        },
+        {
+          "id": "t:default-verified-audience:985",
+          "label": "Power comments · unspecified region",
+          "value": "handler-985",
+          "service_id": 985
+        },
+        {
+          "id": "t:default-verified-audience:993",
+          "label": "Verified accounts",
+          "value": "handler-993",
+          "service_id": 993
+        },
+        {
+          "id": "t:default-verified-audience:997",
+          "label": "Top tier",
+          "value": "handler-997",
+          "service_id": 997
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select an audience"
+      }
+    },
+    {
+      "id": "f:service-default-verified-language-or-region",
+      "type": "select",
+      "variant": "default",
+      "label": "Language or region",
+      "bind_id": "t:default-verified-language-or-region",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-verified-language-or-region:968",
+          "label": "USA/UK · Power comments",
+          "value": "handler-968",
+          "service_id": 968
+        },
+        {
+          "id": "t:default-verified-language-or-region:981",
+          "label": "Arabic · Power comments",
+          "value": "handler-981",
+          "service_id": 981
+        },
+        {
+          "id": "t:default-verified-language-or-region:988",
+          "label": "Arab/Gulf · random",
+          "value": "handler-988",
+          "service_id": 988
+        },
+        {
+          "id": "t:default-verified-language-or-region:990",
+          "label": "Arab/Gulf · emoji",
+          "value": "handler-990",
+          "service_id": 990
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a language or region"
+      }
+    },
+    {
+      "id": "f:service-default-live-random",
+      "type": "select",
+      "variant": "default",
+      "label": "Comment style",
+      "bind_id": "t:default-live-random",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-live-random:1044",
+          "label": "Random",
+          "value": "handler-1044",
+          "service_id": 1044
+        },
+        {
+          "id": "t:default-live-random:1045",
+          "label": "Male",
+          "value": "handler-1045",
+          "service_id": 1045
+        },
+        {
+          "id": "t:default-live-random:1046",
+          "label": "Female",
+          "value": "handler-1046",
+          "service_id": 1046
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a comment style"
+      }
+    },
+    {
+      "id": "f:service-default-live-audience",
+      "type": "select",
+      "variant": "default",
+      "label": "Audience",
+      "bind_id": "t:default-live-audience",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-live-audience:1045",
+          "label": "Male",
+          "value": "handler-1045",
+          "service_id": 1045
+        },
+        {
+          "id": "t:default-live-audience:1046",
+          "label": "Female",
+          "value": "handler-1046",
+          "service_id": 1046
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select an audience"
+      }
+    },
+    {
+      "id": "f:service-custom-standard-general-custom-comments",
+      "type": "select",
+      "variant": "default",
+      "label": "Custom comments",
+      "bind_id": "t:custom-standard-general-custom-comments",
+      "required": true,
+      "options": [
+        {
+          "id": "t:custom-standard-general-custom-comments:860",
+          "label": "1–20,000 comments",
+          "value": "handler-860",
+          "service_id": 860
+        },
+        {
+          "id": "t:custom-standard-general-custom-comments:861",
+          "label": "50–50,000 comments",
+          "value": "handler-861",
+          "service_id": 861
+        },
+        {
+          "id": "t:custom-standard-general-custom-comments:862",
+          "label": "1–50,000 comments",
+          "value": "handler-862",
+          "service_id": 862
+        },
+        {
+          "id": "t:custom-standard-general-custom-comments:863",
+          "label": "1–2,000 comments",
+          "value": "handler-863",
+          "service_id": 863
+        },
+        {
+          "id": "t:custom-standard-general-custom-comments:878",
+          "label": "Start 0 - 1 Hour · Speed 5K/Day",
+          "value": "handler-878",
+          "service_id": 878
+        },
+        {
+          "id": "t:custom-standard-general-custom-comments:896",
+          "label": "20–100,000 comments",
+          "value": "handler-896",
+          "service_id": 896
+        },
+        {
+          "id": "t:custom-standard-general-custom-comments:904",
+          "label": "Start 0-1 Hr · Speed Up to 1K/D",
+          "value": "handler-904",
+          "service_id": 904
+        },
+        {
+          "id": "t:custom-standard-general-custom-comments:890",
+          "label": "Start 1 Hour · Speed 300/Day",
+          "value": "handler-890",
+          "service_id": 890
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a quantity range"
+      }
+    },
+    {
+      "id": "f:service-custom-standard-language-or-region",
+      "type": "select",
+      "variant": "default",
+      "label": "Language or region",
+      "bind_id": "t:custom-standard-language-or-region",
+      "required": true,
+      "options": [
+        {
+          "id": "t:custom-standard-language-or-region:853",
+          "label": "Ukrainian",
+          "value": "handler-853",
+          "service_id": 853
+        },
+        {
+          "id": "t:custom-standard-language-or-region:881",
+          "label": "USA · 5–300 comments",
+          "value": "handler-881",
+          "service_id": 881
+        },
+        {
+          "id": "t:custom-standard-language-or-region:899",
+          "label": "United Kingdom",
+          "value": "handler-899",
+          "service_id": 899
+        },
+        {
+          "id": "t:custom-standard-language-or-region:908",
+          "label": "Brazil · 1–10,000 comments",
+          "value": "handler-908",
+          "service_id": 908
+        },
+        {
+          "id": "t:custom-standard-language-or-region:924",
+          "label": "USA · 10–500 comments",
+          "value": "handler-924",
+          "service_id": 924
+        },
+        {
+          "id": "t:custom-standard-language-or-region:925",
+          "label": "Italy",
+          "value": "handler-925",
+          "service_id": 925
+        },
+        {
+          "id": "t:custom-standard-language-or-region:928",
+          "label": "India",
+          "value": "handler-928",
+          "service_id": 928
+        },
+        {
+          "id": "t:custom-standard-language-or-region:929",
+          "label": "Turkey",
+          "value": "handler-929",
+          "service_id": 929
+        },
+        {
+          "id": "t:custom-standard-language-or-region:930",
+          "label": "Russia",
+          "value": "handler-930",
+          "service_id": 930
+        },
+        {
+          "id": "t:custom-standard-language-or-region:931",
+          "label": "Thailand",
+          "value": "handler-931",
+          "service_id": 931
+        },
+        {
+          "id": "t:custom-standard-language-or-region:932",
+          "label": "Japan",
+          "value": "handler-932",
+          "service_id": 932
+        },
+        {
+          "id": "t:custom-standard-language-or-region:933",
+          "label": "Hispanic",
+          "value": "handler-933",
+          "service_id": 933
+        },
+        {
+          "id": "t:custom-standard-language-or-region:934",
+          "label": "Brazil · 10–250 comments",
+          "value": "handler-934",
+          "service_id": 934
+        },
+        {
+          "id": "t:custom-standard-language-or-region:935",
+          "label": "Arab",
+          "value": "handler-935",
+          "service_id": 935
+        },
+        {
+          "id": "t:custom-standard-language-or-region:937",
+          "label": "France",
+          "value": "handler-937",
+          "service_id": 937
+        },
+        {
+          "id": "t:custom-standard-language-or-region:938",
+          "label": "Germany",
+          "value": "handler-938",
+          "service_id": 938
+        },
+        {
+          "id": "t:custom-standard-language-or-region:940",
+          "label": "Indonesia",
+          "value": "handler-940",
+          "service_id": 940
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a language or region"
+      }
+    },
+    {
+      "id": "f:service-custom-standard-gender",
+      "type": "select",
+      "variant": "default",
+      "label": "Audience",
+      "bind_id": "t:custom-standard-gender",
+      "required": true,
+      "options": [
+        {
+          "id": "t:custom-standard-gender:909",
+          "label": "Female · Brazil",
+          "value": "handler-909",
+          "service_id": 909
+        },
+        {
+          "id": "t:custom-standard-gender:910",
+          "label": "Male · Brazil",
+          "value": "handler-910",
+          "service_id": 910
+        },
+        {
+          "id": "t:custom-standard-gender:926",
+          "label": "Male",
+          "value": "handler-926",
+          "service_id": 926
+        },
+        {
+          "id": "t:custom-standard-gender:927",
+          "label": "Female",
+          "value": "handler-927",
+          "service_id": 927
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select an audience"
+      }
+    },
+    {
+      "id": "f:service-custom-standard-relevance",
+      "type": "select",
+      "variant": "default",
+      "label": "Relevance",
+      "bind_id": "t:custom-standard-relevance",
+      "required": true,
+      "options": [
+        {
+          "id": "t:custom-standard-relevance:866",
+          "label": "Relevant",
+          "value": "handler-866",
+          "service_id": 866
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a relevance option"
+      }
+    },
+    {
+      "id": "f:service-custom-standard-premium-or-high-end",
+      "type": "select",
+      "variant": "default",
+      "label": "Service type",
+      "bind_id": "t:custom-standard-premium-or-high-end",
+      "required": true,
+      "options": [
+        {
+          "id": "t:custom-standard-premium-or-high-end:903",
+          "label": "Premium",
+          "value": "handler-903",
+          "service_id": 903
+        },
+        {
+          "id": "t:custom-standard-premium-or-high-end:939",
+          "label": "High-end",
+          "value": "handler-939",
+          "service_id": 939
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a comment type"
+      }
+    },
+    {
+      "id": "f:service-custom-reels-gender",
+      "type": "select",
+      "variant": "default",
+      "label": "Audience",
+      "bind_id": "t:custom-reels-gender",
+      "required": true,
+      "options": [
+        {
+          "id": "t:custom-reels-gender:816",
+          "label": "Male",
+          "value": "handler-816",
+          "service_id": 816
+        },
+        {
+          "id": "t:custom-reels-gender:818",
+          "label": "Female",
+          "value": "handler-818",
+          "service_id": 818
+        },
+        {
+          "id": "t:custom-reels-gender:825",
+          "label": "Female · Brazil · HQ",
+          "value": "handler-825",
+          "service_id": 825
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select an audience"
+      }
+    },
+    {
+      "id": "f:service-custom-reels-language-or-region",
+      "type": "select",
+      "variant": "default",
+      "label": "Language or region",
+      "bind_id": "t:custom-reels-language-or-region",
+      "required": true,
+      "options": [
+        {
+          "id": "t:custom-reels-language-or-region:822",
+          "label": "France",
+          "value": "handler-822",
+          "service_id": 822
+        },
+        {
+          "id": "t:custom-reels-language-or-region:823",
+          "label": "Germany",
+          "value": "handler-823",
+          "service_id": 823
+        },
+        {
+          "id": "t:custom-reels-language-or-region:824",
+          "label": "Korea/Thailand mix",
+          "value": "handler-824",
+          "service_id": 824
+        },
+        {
+          "id": "t:custom-reels-language-or-region:825",
+          "label": "Brazil",
+          "value": "handler-825",
+          "service_id": 825
+        },
+        {
+          "id": "t:custom-reels-language-or-region:826",
+          "label": "Arab · HQ",
+          "value": "handler-826",
+          "service_id": 826
+        },
+        {
+          "id": "t:custom-reels-language-or-region:827",
+          "label": "Russia",
+          "value": "handler-827",
+          "service_id": 827
+        },
+        {
+          "id": "t:custom-reels-language-or-region:828",
+          "label": "Italy",
+          "value": "handler-828",
+          "service_id": 828
+        },
+        {
+          "id": "t:custom-reels-language-or-region:817",
+          "label": "India",
+          "value": "handler-817",
+          "service_id": 817
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a language or region"
+      }
+    },
+    {
+      "id": "f:service-custom-reels-hq-wording",
+      "type": "select",
+      "variant": "default",
+      "label": "Quality",
+      "bind_id": "t:custom-reels-hq-wording",
+      "required": true,
+      "options": [
+        {
+          "id": "t:custom-reels-hq-wording:819",
+          "label": "Turkey · HQ",
+          "value": "handler-819",
+          "service_id": 819
+        },
+        {
+          "id": "t:custom-reels-hq-wording:820",
+          "label": "Hispanic · HQ",
+          "value": "handler-820",
+          "service_id": 820
+        },
+        {
+          "id": "t:custom-reels-hq-wording:821",
+          "label": "Japan/China mix",
+          "value": "handler-821",
+          "service_id": 821
+        },
+        {
+          "id": "t:custom-reels-hq-wording:822",
+          "label": "France · HQ",
+          "value": "handler-822",
+          "service_id": 822
+        },
+        {
+          "id": "t:custom-reels-hq-wording:823",
+          "label": "Germany · HQ",
+          "value": "handler-823",
+          "service_id": 823
+        },
+        {
+          "id": "t:custom-reels-hq-wording:824",
+          "label": "Korea/Thailand mix",
+          "value": "handler-824",
+          "service_id": 824
+        },
+        {
+          "id": "t:custom-reels-hq-wording:825",
+          "label": "Brazil · Female · HQ",
+          "value": "handler-825",
+          "service_id": 825
+        },
+        {
+          "id": "t:custom-reels-hq-wording:826",
+          "label": "Arab · HQ",
+          "value": "handler-826",
+          "service_id": 826
+        },
+        {
+          "id": "t:custom-reels-hq-wording:827",
+          "label": "Russia · HQ",
+          "value": "handler-827",
+          "service_id": 827
+        },
+        {
+          "id": "t:custom-reels-hq-wording:828",
+          "label": "Italy · HQ",
+          "value": "handler-828",
+          "service_id": 828
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a quality option"
+      }
+    },
+    {
+      "id": "f:comments-package",
+      "type": "chips",
+      "variant": "default",
+      "label": "Package comments",
+      "bind_id": "t:root",
+      "name": "package_comments",
+      "required": true,
+      "defaults": {
+        "separators": [
+          "Enter"
+        ],
+        "textareaMode": true,
+        "placeholder": "Type a comment and press Enter"
+      },
+      "description": "Enter one comment per line.",
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "length",
+        "multiply": 1
+      },
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.meta?.provider_payload_type === \"Custom Comments Package\")"
+      }
+    },
+    {
+      "id": "f:comments-replies",
+      "type": "chips",
+      "variant": "default",
+      "label": "Reply text",
+      "bind_id": "t:root",
+      "name": "reply_comments",
+      "required": true,
+      "defaults": {
+        "separators": [
+          "Enter"
+        ],
+        "textareaMode": true,
+        "placeholder": "Type a reply and press Enter"
+      },
+      "description": "Enter one comment per line.",
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "length",
+        "multiply": 1
+      },
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.meta?.provider_payload_type === \"Comment Replies\")"
+      }
+    },
+    {
+      "id": "f:poll-quantity",
+      "type": "number",
+      "variant": "default",
+      "label": "Poll quantity",
+      "bind_id": "t:root",
+      "required": true,
+      "name": "poll_quantity",
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.meta?.provider_payload_type === \"Poll\")"
+      },
+      "defaults": {
+        "placeholder": "Enter the number of votes"
+      }
+    },
+    {
+      "id": "f:service-default-standard-general-random",
+      "type": "select",
+      "variant": "default",
+      "label": "Comment style",
+      "bind_id": "t:default-standard-general-random",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-standard-general-random:868",
+          "label": "Random · no drip feed",
+          "value": "handler-868",
+          "service_id": 868
+        },
+        {
+          "id": "t:default-standard-general-random:869",
+          "label": "HQ random",
+          "value": "handler-869",
+          "service_id": 869
+        },
+        {
+          "id": "t:default-standard-general-random:871",
+          "label": "Random · 10–50,000 comments",
+          "value": "handler-871",
+          "service_id": 871
+        },
+        {
+          "id": "t:default-standard-general-random:874",
+          "label": "Worldwide · English",
+          "value": "handler-874",
+          "service_id": 874
+        },
+        {
+          "id": "t:default-standard-general-random:879",
+          "label": "Post-related",
+          "value": "handler-879",
+          "service_id": 879
+        },
+        {
+          "id": "t:default-standard-general-random:895",
+          "label": "Random · 10–100,000 comments",
+          "value": "handler-895",
+          "service_id": 895
+        },
+        {
+          "id": "t:default-standard-general-random:900",
+          "label": "Random · non-drop wording",
+          "value": "handler-900",
+          "service_id": 900
+        },
+        {
+          "id": "t:default-standard-general-random:902",
+          "label": "Premium random",
+          "value": "handler-902",
+          "service_id": 902
+        },
+        {
+          "id": "t:default-standard-general-random:905",
+          "label": "English · non-drop wording",
+          "value": "handler-905",
+          "service_id": 905
+        },
+        {
+          "id": "t:default-standard-general-random:918",
+          "label": "Hispanic random",
+          "value": "handler-918",
+          "service_id": 918
+        },
+        {
+          "id": "t:default-standard-general-random:921",
+          "label": "Russian random",
+          "value": "handler-921",
+          "service_id": 921
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a comment style"
+      }
+    },
+    {
+      "id": "f:service-default-standard-delivery",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:default-standard-delivery",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-standard-delivery:855",
+          "label": "Comments · HYPE/THRILL · Start 0-1 Hr · Up to 20k/D",
+          "value": "handler-855",
+          "service_id": 855
+        },
+        {
+          "id": "t:default-standard-delivery:856",
+          "label": "Comments · Positive EMOJI · Start 0 - 3 Hours · 2K/Day",
+          "value": "handler-856",
+          "service_id": 856
+        },
+        {
+          "id": "t:default-standard-delivery:857",
+          "label": "Comments · Negative EMOJI · Start 0 - 3 Hours · 2K/Day",
+          "value": "handler-857",
+          "service_id": 857
+        },
+        {
+          "id": "t:default-standard-delivery:858",
+          "label": "Comments · Random Positive Emoji · Start 0 - 2 Hrs · 20K/D",
+          "value": "handler-858",
+          "service_id": 858
+        },
+        {
+          "id": "t:default-standard-delivery:859",
+          "label": "Negative emoji · Start 0 - 2 Hrs · 20K/D",
+          "value": "handler-859",
+          "service_id": 859
+        },
+        {
+          "id": "t:default-standard-delivery:864",
+          "label": "AI-relevant · Start 0 - 2 Hrs · Up to 3K/D",
+          "value": "handler-864",
+          "service_id": 864
+        },
+        {
+          "id": "t:default-standard-delivery:865",
+          "label": "AI-relevant · Start 0 - 2 Hrs · Up to 2K/D",
+          "value": "handler-865",
+          "service_id": 865
+        },
+        {
+          "id": "t:default-standard-delivery:867",
+          "label": "Random Comments · RELEVENT COMMENT · From 10k+ Followers · Start 0-3 Hrs · 500/Day",
+          "value": "handler-867",
+          "service_id": 867
+        },
+        {
+          "id": "t:default-standard-delivery:868",
+          "label": "Random · no drip feed · Start 0 - 1 Hour · 5K/Day",
+          "value": "handler-868",
+          "service_id": 868
+        },
+        {
+          "id": "t:default-standard-delivery:869",
+          "label": "HQ random · Start 0 - 3 Hours · 20K/Day",
+          "value": "handler-869",
+          "service_id": 869
+        },
+        {
+          "id": "t:default-standard-delivery:870",
+          "label": "HQ emoji · Start 0 - 3 Hours · 20K/Day",
+          "value": "handler-870",
+          "service_id": 870
+        },
+        {
+          "id": "t:default-standard-delivery:871",
+          "label": "Random · Start 0 - 3 Hours · 25K/Day",
+          "value": "handler-871",
+          "service_id": 871
+        },
+        {
+          "id": "t:default-standard-delivery:872",
+          "label": "Emoji · Start 0 - 3 Hours · 25K/Day",
+          "value": "handler-872",
+          "service_id": 872
+        },
+        {
+          "id": "t:default-standard-delivery:874",
+          "label": "Worldwide · English · Start 6 Hours · 2.5K/Day",
+          "value": "handler-874",
+          "service_id": 874
+        },
+        {
+          "id": "t:default-standard-delivery:875",
+          "label": "Random Comments · Male · High quality  · Start 0-6 Hours · 1K/Day",
+          "value": "handler-875",
+          "service_id": 875
+        },
+        {
+          "id": "t:default-standard-delivery:876",
+          "label": "Random Comments · Female · High quality  · Start 0-6 Hours · 1K/Day",
+          "value": "handler-876",
+          "service_id": 876
+        },
+        {
+          "id": "t:default-standard-delivery:877",
+          "label": "HQ emoji · Start 0-6 Hours · 1K/Day",
+          "value": "handler-877",
+          "service_id": 877
+        },
+        {
+          "id": "t:default-standard-delivery:879",
+          "label": "Comments · RANDOM POST RELATED · Start 0 - 1 Hr · 2K/D",
+          "value": "handler-879",
+          "service_id": 879
+        },
+        {
+          "id": "t:default-standard-delivery:880",
+          "label": "Comments · RANDOM - USA · 300 · Start 0 - 1 Hour · 150/Day",
+          "value": "handler-880",
+          "service_id": 880
+        },
+        {
+          "id": "t:default-standard-delivery:882",
+          "label": "Power comments · unspecified region · Start 0-1 Hour · 5/Hour",
+          "value": "handler-882",
+          "service_id": 882
+        },
+        {
+          "id": "t:default-standard-delivery:886",
+          "label": "Power comments · unspecified region · Start 0-1 Hour · 10/Hour",
+          "value": "handler-886",
+          "service_id": 886
+        },
+        {
+          "id": "t:default-standard-delivery:887",
+          "label": "Arabic · Power comments · Start 0-1 Hour · 5/Hour",
+          "value": "handler-887",
+          "service_id": 887
+        },
+        {
+          "id": "t:default-standard-delivery:888",
+          "label": "Arabic · Power comments · Start 0-1 Hour · 10/Hour",
+          "value": "handler-888",
+          "service_id": 888
+        },
+        {
+          "id": "t:default-standard-delivery:889",
+          "label": "Female · Start 0 - 1 Hr · 2K/D",
+          "value": "handler-889",
+          "service_id": 889
+        },
+        {
+          "id": "t:default-standard-delivery:891",
+          "label": "Russian · random · non-drop wording · Start 1 Hour · 300/Day",
+          "value": "handler-891",
+          "service_id": 891
+        },
+        {
+          "id": "t:default-standard-delivery:892",
+          "label": "Russian · positive · Start 1 Hour · 300/Day",
+          "value": "handler-892",
+          "service_id": 892
+        },
+        {
+          "id": "t:default-standard-delivery:893",
+          "label": "Russian · neutral · Start 1 Hour · 300/Day",
+          "value": "handler-893",
+          "service_id": 893
+        },
+        {
+          "id": "t:default-standard-delivery:894",
+          "label": "India · Start 1 Hour · 500/Day",
+          "value": "handler-894",
+          "service_id": 894
+        },
+        {
+          "id": "t:default-standard-delivery:895",
+          "label": "Random · Start 0-1 Hour · 10K/Day",
+          "value": "handler-895",
+          "service_id": 895
+        },
+        {
+          "id": "t:default-standard-delivery:897",
+          "label": "Emoji · Start 0-1 Hour · 10K/Day",
+          "value": "handler-897",
+          "service_id": 897
+        },
+        {
+          "id": "t:default-standard-delivery:900",
+          "label": "Random · non-drop wording · Start 0-1 Hour · INSTANT",
+          "value": "handler-900",
+          "service_id": 900
+        },
+        {
+          "id": "t:default-standard-delivery:902",
+          "label": "Premium random · Start 0 - 3 Hours · 250/Day",
+          "value": "handler-902",
+          "service_id": 902
+        },
+        {
+          "id": "t:default-standard-delivery:905",
+          "label": "English · non-drop wording · Start 0-1 Hour · 2K/Day",
+          "value": "handler-905",
+          "service_id": 905
+        },
+        {
+          "id": "t:default-standard-delivery:906",
+          "label": "BRAZIL Comments · RANDOM · Start 1 Hour · 500/Day",
+          "value": "handler-906",
+          "service_id": 906
+        },
+        {
+          "id": "t:default-standard-delivery:907",
+          "label": "India · Start 0 - 1 Hour · 500/Day",
+          "value": "handler-907",
+          "service_id": 907
+        },
+        {
+          "id": "t:default-standard-delivery:911",
+          "label": "Comments · RANDOM · USA · Start 0-1 Hour · Fast",
+          "value": "handler-911",
+          "service_id": 911
+        },
+        {
+          "id": "t:default-standard-delivery:912",
+          "label": "Comments · RANDOM · FRENCH · Start 0-1 Hour · Fast",
+          "value": "handler-912",
+          "service_id": 912
+        },
+        {
+          "id": "t:default-standard-delivery:913",
+          "label": "Comments · RANDOM · ITALIAN · Start 0-1 Hour · Fast",
+          "value": "handler-913",
+          "service_id": 913
+        },
+        {
+          "id": "t:default-standard-delivery:914",
+          "label": "Comments · RANDOM · GERMANY · Start 0-1 Hour · Fast",
+          "value": "handler-914",
+          "service_id": 914
+        },
+        {
+          "id": "t:default-standard-delivery:915",
+          "label": "Comments · RANDOM · MALE · Start 1 Hour · 500/Day",
+          "value": "handler-915",
+          "service_id": 915
+        },
+        {
+          "id": "t:default-standard-delivery:916",
+          "label": "English · Iranian accounts · Start 0 - 1 Hour · 500/Day",
+          "value": "handler-916",
+          "service_id": 916
+        },
+        {
+          "id": "t:default-standard-delivery:917",
+          "label": "Female · Start 1 Hour · 500/Day",
+          "value": "handler-917",
+          "service_id": 917
+        },
+        {
+          "id": "t:default-standard-delivery:918",
+          "label": "Hispanic random · Start 1 Hour · 100/Day",
+          "value": "handler-918",
+          "service_id": 918
+        },
+        {
+          "id": "t:default-standard-delivery:919",
+          "label": "India · Start 1 Hour · 100/Day",
+          "value": "handler-919",
+          "service_id": 919
+        },
+        {
+          "id": "t:default-standard-delivery:920",
+          "label": "Comments · RANDOM · TURKEY · Start 1 Hour · 100/Day",
+          "value": "handler-920",
+          "service_id": 920
+        },
+        {
+          "id": "t:default-standard-delivery:921",
+          "label": "Russian random · Start 1 Hour · 100/Day",
+          "value": "handler-921",
+          "service_id": 921
+        },
+        {
+          "id": "t:default-standard-delivery:922",
+          "label": "Comments · RANDOM · KOREAN THAILAND · Start 1 Hour · 100/Day",
+          "value": "handler-922",
+          "service_id": 922
+        },
+        {
+          "id": "t:default-standard-delivery:923",
+          "label": "Comments · RANDOM · JAPAN CHINA · Start 1 Hour · 100/Day",
+          "value": "handler-923",
+          "service_id": 923
+        },
+        {
+          "id": "t:default-standard-delivery:942",
+          "label": "Comments · RANDOM · ARAB · Start 0-1 Hour · FAST",
+          "value": "handler-942",
+          "service_id": 942
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a delivery option"
+      }
+    },
+    {
+      "id": "f:service-default-exclusive-delivery",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:default-exclusive-delivery",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-exclusive-delivery:33",
+          "label": "South Korea · Power comments · Start 0-1 Hour · 1 Hour Delivery",
+          "value": "handler-33",
+          "service_id": 33
+        },
+        {
+          "id": "t:default-exclusive-delivery:34",
+          "label": "Brazil · Power comments · Start 0-1 Hour · 1 Hour Delivery",
+          "value": "handler-34",
+          "service_id": 34
+        },
+        {
+          "id": "t:default-exclusive-delivery:37",
+          "label": "Worldwide · Power comments · Start 0-1 Hour · 1 Hour Delivery",
+          "value": "handler-37",
+          "service_id": 37
+        },
+        {
+          "id": "t:default-exclusive-delivery:40",
+          "label": "USA/UK · Power comments · Start 0-1 Hour · 1 Hour Delivery",
+          "value": "handler-40",
+          "service_id": 40
+        },
+        {
+          "id": "t:default-exclusive-delivery:41",
+          "label": "Arabic · Power comments · Start 0-1 Hour · 1 Hour Delivery",
+          "value": "handler-41",
+          "service_id": 41
+        },
+        {
+          "id": "t:default-exclusive-delivery:42",
+          "label": "Power comments · unspecified region · Start 0-1 Hour · 1 Hour Delivery",
+          "value": "handler-42",
+          "service_id": 42
+        },
+        {
+          "id": "t:default-exclusive-delivery:57",
+          "label": "Comments · RANDOM - USA · 150 · Start 0 - 1 Hour · 150/Day",
+          "value": "handler-57",
+          "service_id": 57
+        },
+        {
+          "id": "t:default-exclusive-delivery:87",
+          "label": "Comments · NON DROP · Start 0-1 Hour · 24 Hours Delivery",
+          "value": "handler-87",
+          "service_id": 87
+        },
+        {
+          "id": "t:default-exclusive-delivery:88",
+          "label": "Female Comments · NON DROP · Start 0-1 Hour · 24 Hours Delivery",
+          "value": "handler-88",
+          "service_id": 88
+        },
+        {
+          "id": "t:default-exclusive-delivery:89",
+          "label": "Male Comments · NON DROP · Start 0-1 Hour · 24 Hours Delivery",
+          "value": "handler-89",
+          "service_id": 89
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a delivery option"
+      }
+    },
+    {
+      "id": "f:service-default-live-instant-delivery",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:default-live-instant-delivery",
+      "required": true,
+      "options": [
+        {
+          "id": "t:default-live-instant-delivery:1044",
+          "label": "Random · Start INSTANT",
+          "value": "handler-1044",
+          "service_id": 1044
+        },
+        {
+          "id": "t:default-live-instant-delivery:1045",
+          "label": "Male · Start INSTANT",
+          "value": "handler-1045",
+          "service_id": 1045
+        },
+        {
+          "id": "t:default-live-instant-delivery:1046",
+          "label": "Female · Start INSTANT",
+          "value": "handler-1046",
+          "service_id": 1046
+        }
+      ],
+      "defaults": {
+        "placeholder": "Select a delivery option"
+      }
+    }
+  ],
+  "order_for_tags": {
+    "t:root": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:runs",
+      "f:interval",
+      "f:comments",
+      "f:comments-package",
+      "f:comments-replies",
+      "f:poll-answer",
+      "f:poll-quantity",
+      "f:reply-username"
+    ],
+    "t:default-standard": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed"
+    ],
+    "t:default-exclusive": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed"
+    ],
+    "t:default-reels": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed"
+    ],
+    "t:default-verified": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed"
+    ],
+    "t:default-regions": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-regions"
+    ],
+    "t:default-live": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed"
+    ],
+    "t:default-channel": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed"
+    ],
+    "t:custom-standard": [
+      "f:link",
+      "f:comments"
+    ],
+    "t:custom-reels": [
+      "f:link",
+      "f:comments"
+    ],
+    "t:custom-verified": [
+      "f:link",
+      "f:comments",
+      "f:service-custom-verified"
+    ],
+    "t:custom-super": [
+      "f:link",
+      "f:comments",
+      "f:service-custom-super"
+    ],
+    "t:custom-exclusive": [
+      "f:link",
+      "f:comments",
+      "f:service-custom-exclusive"
+    ],
+    "t:custom-regions": [
+      "f:link",
+      "f:comments",
+      "f:service-custom-regions"
+    ],
+    "t:package-fixed": [
+      "f:link",
+      "f:service-package-fixed"
+    ],
+    "t:package-auto": [
+      "f:link"
+    ],
+    "t:custom-package-fixed": [
+      "f:link",
+      "f:comments-package",
+      "f:service-custom-package-fixed"
+    ],
+    "t:custom-package-auto": [
+      "f:link",
+      "f:comments-package"
+    ],
+    "t:poll": [
+      "f:link",
+      "f:poll-quantity",
+      "f:poll-answer"
+    ],
+    "t:replies": [
+      "f:link",
+      "f:reply-username",
+      "f:comments-replies"
+    ],
+    "t:default": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed"
+    ],
+    "t:custom-comments": [
+      "f:link",
+      "f:comments"
+    ],
+    "t:package": [
+      "f:link"
+    ],
+    "t:custom-comments-package": [
+      "f:link",
+      "f:comments-package"
+    ],
+    "t:default-standard-style-or-tone": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-standard-style-or-tone"
+    ],
+    "t:default-standard-relevance-or-context": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-standard-relevance-or-context"
+    ],
+    "t:default-standard-audience": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-standard-audience"
+    ],
+    "t:default-standard-language-or-region": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-standard-language-or-region"
+    ],
+    "t:default-exclusive-power-or-explore": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-exclusive-power-or-explore"
+    ],
+    "t:default-exclusive-audience": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-exclusive-audience"
+    ],
+    "t:default-exclusive-language-or-region": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-exclusive-language-or-region"
+    ],
+    "t:default-reels-audience": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-reels-audience"
+    ],
+    "t:default-reels-language-or-region": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-reels-language-or-region"
+    ],
+    "t:default-reels-hq-wording": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-reels-hq-wording"
+    ],
+    "t:default-verified-power-or-explore": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-verified-power-or-explore"
+    ],
+    "t:default-verified-audience": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-verified-audience"
+    ],
+    "t:default-verified-language-or-region": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-verified-language-or-region"
+    ],
+    "t:default-live-random": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-live-random"
+    ],
+    "t:default-live-audience": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-live-audience"
+    ],
+    "t:custom-standard-general-custom-comments": [
+      "f:link",
+      "f:comments",
+      "f:service-custom-standard-general-custom-comments"
+    ],
+    "t:custom-standard-language-or-region": [
+      "f:link",
+      "f:comments",
+      "f:service-custom-standard-language-or-region"
+    ],
+    "t:custom-standard-gender": [
+      "f:link",
+      "f:comments",
+      "f:service-custom-standard-gender"
+    ],
+    "t:custom-standard-relevance": [
+      "f:link",
+      "f:comments",
+      "f:service-custom-standard-relevance"
+    ],
+    "t:custom-standard-premium-or-high-end": [
+      "f:link",
+      "f:comments",
+      "f:service-custom-standard-premium-or-high-end"
+    ],
+    "t:custom-reels-gender": [
+      "f:link",
+      "f:comments",
+      "f:service-custom-reels-gender"
+    ],
+    "t:custom-reels-language-or-region": [
+      "f:link",
+      "f:comments",
+      "f:service-custom-reels-language-or-region"
+    ],
+    "t:custom-reels-hq-wording": [
+      "f:link",
+      "f:comments",
+      "f:service-custom-reels-hq-wording"
+    ],
+    "t:default-standard-general-random": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-standard-general-random"
+    ],
+    "t:default-standard-delivery": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-standard-delivery"
+    ],
+    "t:default-exclusive-delivery": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-exclusive-delivery"
+    ],
+    "t:default-live-instant-delivery": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed",
+      "f:service-default-live-instant-delivery"
+    ],
+    "t:default-channel-positive": [
+      "f:link",
+      "f:quantity",
+      "f:drip_feed"
+    ]
+  },
+  "includes_for_buttons": {
+    "f:drip_feed": [
+      "f:runs",
+      "f:interval"
+    ]
+  },
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {},
+  "schema_version": "1",
+  "fallbacks": {
+    "nodes": {
+      "t:default-standard": [
+        871
+      ],
+      "t:default-verified": [
+        994
+      ],
+      "t:custom-exclusive": [
+        881
+      ],
+      "t:default-exclusive-power-or-explore": [
+        975,
+        1427
+      ],
+      "t:default-exclusive-audience": [
+        971,
+        1376
+      ],
+      "t:default-exclusive-language-or-region": [
+        965,
+        1327
+      ],
+      "t:default-verified-language-or-region": [
+        1325
+      ],
+      "t:custom-standard-general-custom-comments": [
+        873
+      ],
+      "t:default-exclusive-delivery": [
+        958
+      ],
+      "o:custom-exclusive:56": [
+        881
+      ],
+      "t:default-standard-audience:888": [
+        978
+      ],
+      "t:default-standard-language-or-region:888": [
+        978
+      ],
+      "t:default-exclusive-power-or-explore:33": [
+        975,
+        1427
+      ],
+      "t:default-exclusive-power-or-explore:34": [
+        971,
+        1376
+      ],
+      "t:default-exclusive-power-or-explore:37": [
+        962
+      ],
+      "t:default-exclusive-power-or-explore:40": [
+        968
+      ],
+      "t:default-exclusive-power-or-explore:41": [
+        979
+      ],
+      "t:default-exclusive-power-or-explore:42": [
+        985
+      ],
+      "t:default-exclusive-audience:33": [
+        975,
+        1427
+      ],
+      "t:default-exclusive-audience:34": [
+        971,
+        1376
+      ],
+      "t:default-exclusive-audience:37": [
+        962
+      ],
+      "t:default-exclusive-audience:40": [
+        968
+      ],
+      "t:default-exclusive-audience:41": [
+        979
+      ],
+      "t:default-exclusive-audience:42": [
+        985
+      ],
+      "t:default-exclusive-language-or-region:40": [
+        968
+      ],
+      "t:default-exclusive-language-or-region:41": [
+        979
+      ],
+      "t:default-exclusive-language-or-region:57": [
+        880
+      ],
+      "t:default-verified-power-or-explore:972": [
+        1377
+      ],
+      "t:default-verified-power-or-explore:976": [
+        1428
+      ],
+      "t:default-verified-audience:972": [
+        1377
+      ],
+      "t:default-verified-audience:976": [
+        1428
+      ],
+      "t:default-verified-audience:993": [
+        994
+      ],
+      "t:custom-standard-general-custom-comments:861": [
+        873
+      ],
+      "t:default-standard-general-random:868": [
+        871
+      ],
+      "t:default-exclusive-delivery:33": [
+        975,
+        1427
+      ],
+      "t:default-exclusive-delivery:34": [
+        971,
+        1376
+      ],
+      "t:default-exclusive-delivery:37": [
+        962
+      ],
+      "t:default-exclusive-delivery:40": [
+        968
+      ],
+      "t:default-exclusive-delivery:41": [
+        979
+      ],
+      "t:default-exclusive-delivery:42": [
+        985
+      ],
+      "t:default-exclusive-delivery:57": [
+        880
+      ],
+      "o:default-regions:1327": [
+        965,
+        1327
+      ],
+      "o:default-regions:1377": [
+        1377
+      ],
+      "o:default-regions:1428": [
+        1428
+      ]
+    },
+    "global": {}
+  },
+  "notices": [],
+  "meta": {
+    "source_mapping_key": "instagram-comments-comments",
+    "source_registry": "service-products/handler services.json snapshot 2026-11-16",
+    "source_registry_scope": "payload.panel_key jap; target site/tenant not identified in source",
+    "mapped_handler_count": 233,
+    "selection_model": "Each tag has a default service; its service-choice field lists mapped services in that category. Fallbacks are attached only to compatible choices with evidenced overlap.",
+    "quantity_conflict_handler_ids": [
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      882,
+      883,
+      884,
+      885,
+      886,
+      887,
+      888,
+      944,
+      945,
+      946,
+      947,
+      948,
+      949,
+      950,
+      951,
+      952,
+      953,
+      954,
+      955,
+      956,
+      957,
+      958,
+      959,
+      960,
+      961,
+      962,
+      963,
+      964,
+      965,
+      966,
+      967,
+      968,
+      969,
+      970,
+      971,
+      972,
+      973,
+      974,
+      975,
+      976,
+      977,
+      978,
+      979,
+      980,
+      981,
+      982,
+      983,
+      984,
+      985,
+      986,
+      987,
+      996,
+      997,
+      1325,
+      1326,
+      1327,
+      1373,
+      1374,
+      1376,
+      1377,
+      1425,
+      1426,
+      1427,
+      1428
+    ],
+    "unresolved_auto_comment_rows": [
+      1504,
+      1505
+    ],
+    "deferred_fixed_quantity_handler_ids": [
+      36,
+      39,
+      883,
+      884,
+      885,
+      945,
+      946,
+      947,
+      948,
+      949,
+      952,
+      953,
+      954,
+      956,
+      957,
+      959,
+      960,
+      961,
+      964,
+      966,
+      967,
+      969,
+      970,
+      973,
+      974,
+      977,
+      980,
+      982,
+      983,
+      984,
+      986,
+      987,
+      996,
+      1326,
+      1373,
+      1374,
+      1425,
+      1426
+    ]
+  }
+}
