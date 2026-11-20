@@ -1,0 +1,388 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic [aria-hidden]:
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=1]: Service Builder
+                    - button:
+                      - generic: Active branch - main
+                - generic:
+                  - button
+            - generic:
+              - generic:
+                - tablist [aria-hidden]:
+                  - tab [selected]:
+                    - generic: Layers
+                  - tab:
+                    - generic: Assets
+                - tabpanel "Layers":
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic [aria-hidden]:
+                          - generic:
+                            - heading [level=3]: Tag hierarchy
+                            - paragraph: Structure the visible groups and inheritance tree.
+                          - generic:
+                            - button
+                            - button
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic [aria-hidden]:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - button:
+                                            - generic:
+                                              - generic: Instagram Views
+                                              - button
+                                - status
+                    - generic:
+                      - generic [aria-hidden]:
+                        - generic:
+                          - heading [level=3]: Fields in view
+                          - paragraph: Under Instagram Views
+                        - generic:
+                          - button
+                          - button [disabled]
+                          - button
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic [aria-hidden]:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - button:
+                                          - generic:
+                                            - generic: Instagram media link
+                                            - button
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - button:
+                                          - generic:
+                                            - generic: Quantity
+                                            - button
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - button:
+                                          - generic:
+                                            - generic: Drip feed
+                                            - button
+                              - status
+        - generic:
+          - generic:
+            - application:
+              - generic [aria-hidden]:
+                - generic:
+                  - generic:
+                    - img:
+                      - group [ref=e481] [cursor=pointer]
+                    - img:
+                      - group [ref=e482] [cursor=pointer]
+                    - img:
+                      - group [ref=e483] [cursor=pointer]
+                    - img:
+                      - group [ref=e484] [cursor=pointer]
+                    - img:
+                      - group [ref=e485] [cursor=pointer]
+                    - img:
+                      - group [ref=e486] [cursor=pointer]
+                    - img:
+                      - group [ref=e487] [cursor=pointer]
+                    - img:
+                      - group [ref=e488] [cursor=pointer]
+                    - img:
+                      - group [ref=e489] [cursor=pointer]
+                    - generic:
+                      - group [ref=e334]:
+                        - generic [ref=e336]: Instagram Views
+                      - group [ref=e345]:
+                        - generic [ref=e347]: Video Post Views
+                      - group [ref=e356]:
+                        - generic [ref=e358]: Reel Views
+                      - group [ref=e367]:
+                        - generic [ref=e369]: Photo Post Views
+                      - group [ref=e378]:
+                        - generic [ref=e380]: Priority Delivery
+                      - group [ref=e389]:
+                        - generic [ref=e391]: Others
+                      - group [ref=e400]:
+                        - generic [ref=e402]: Video delivery
+                      - group [ref=e409]:
+                        - generic [ref=e411]: Reel delivery
+                      - group [ref=e418]:
+                        - generic [ref=e420]: Priority delivery
+                      - group [ref=e427]:
+                        - generic [ref=e429]: Other views options
+                      - group [ref=e436]:
+                        - generic [ref=e438]: Instagram media link
+                      - group [ref=e445]:
+                        - generic [ref=e447]: Quantity
+                      - group [ref=e454]:
+                        - generic [ref=e456]: Drip feed
+                      - group [ref=e463]:
+                        - generic [ref=e465]: Runs
+                      - group [ref=e472]:
+                        - generic [ref=e474]: Interval (minutes)
+              - generic [aria-hidden]:
+                - generic:
+                  - generic [ref=e165]:
+                    - button [ref=e490]
+                    - button [ref=e491]
+                    - button [ref=e492]
+                  - button [ref=e493]
+                  - button [ref=e494]
+              - generic [aria-hidden]:
+                - generic [ref=e173]:
+                  - button [ref=e495]
+                  - button [ref=e496]
+                - generic [ref=e177]:
+                  - button [ref=e497]
+                  - button [disabled]
+                  - button [disabled]
+                  - button [ref=e498]
+                  - button [ref=e499]
+                  - button [ref=e500]
+                  - button [ref=e501]
+                  - button [ref=e502]
+              - generic [aria-hidden]:
+                - link:
+                  - /url: https://reactflow.dev
+                  - text: React Flow
+        - generic [aria-hidden]:
+          - generic:
+            - generic:
+              - generic:
+                - button
+                - button
+              - button
+            - generic:
+              - tablist:
+                - tab: Comments
+                - tab: Properties
+                - tab [selected]: Wireframe
+              - tabpanel:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: "Tags:"
+                                  - generic:
+                                    - button:
+                                      - generic: Instagram Views
+                                    - button:
+                                      - generic: Video Post Views
+                                    - button:
+                                      - generic: Reel Views
+                                    - button:
+                                      - generic: Photo Post Views
+                                    - button:
+                                      - generic: Priority Delivery
+                                    - button:
+                                      - generic: Others
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - group:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - text: Instagram media link
+                                              - generic: "*"
+                                        - generic:
+                                          - generic:
+                                            - textbox:
+                                              - /placeholder: Paste an Instagram link
+                                  - generic:
+                                    - generic:
+                                      - group:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - text: Quantity
+                                              - generic: "*"
+                                          - generic:
+                                            - generic:
+                                              - generic: "Min: 100"
+                                              - generic: "Max: 100000000"
+                                        - generic:
+                                          - generic:
+                                            - spinbutton
+                                - generic: 2 customer input issues in this preview.
+                    - generic:
+                      - button [expanded]:
+                        - generic: Order preview summary
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Tag:"
+                            - generic: Instagram Views
+                        - generic:
+                          - generic:
+                            - generic: "Visible fields:"
+                            - generic: "2"
+                        - generic:
+                          - generic:
+                            - generic: "Selected options:"
+                            - generic: "0"
+                        - generic:
+                          - generic:
+                            - generic: "Quantity:"
+                            - generic: "1"
+                        - generic:
+                          - generic:
+                            - generic: "Min/Max:"
+                            - generic: 100 - 100,000,000
+                        - button:
+                          - generic:
+                            - generic: "Services:"
+                            - generic: "1"
+                        - button:
+                          - generic:
+                            - generic: "Base:"
+                            - generic: "0.25"
+                        - button:
+                          - generic:
+                            - generic: "Utilities:"
+                            - generic: "0"
+                        - button:
+                          - generic:
+                            - generic: "Total:"
+                            - generic: "0.25"
+                        - button:
+                          - generic:
+                            - generic: "Utility lines:"
+                            - generic: "0"
+      - generic [aria-hidden]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - button:
+                  - generic: Console
+                  - generic: "0"
+                - button:
+                  - generic: Active Services
+                  - generic: "62"
+                - button:
+                  - generic: All Services
+                  - generic: "70"
+              - generic:
+                - button:
+                  - generic: Drag panel
+                - button: Close
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - paragraph: Validation Console
+                              - paragraph: Validation rows reflect canonical definition and publication consistency checks.
+                              - generic:
+                                - generic: Console idle
+                                - generic: Ctrl/Cmd + J
+                                - generic: Press Escape to close
+                            - generic:
+                              - button: Minimize
+                              - button: Dismiss
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button:
+                                - generic: Validation
+                                - generic: "0"
+                              - button:
+                                - generic: Logs
+                                - generic: "0"
+                              - button:
+                                - generic: Notices
+                                - generic: "0"
+                          - generic:
+                            - generic: Scope
+                            - button: All items
+                            - button: Active node
+                            - generic: Severity
+                            - button: all
+                            - button: error
+                            - button: warning
+                            - button: info
+                        - generic:
+                          - heading [level=4]: No validation rows for this filter
+                          - paragraph: No validation rows match the current severity filter.
+  - dialog [ref=e504]:
+    - generic [ref=e505]:
+      - generic [ref=e506]:
+        - heading "Preview Order" [level=2] [ref=e757]
+        - paragraph [ref=e508]: Preview the customer order form for this branch.
+        - button "Close" [ref=e758]
+      - generic [ref=e514]:
+        - generic [ref=e515]:
+          - generic "Order tags" [ref=e759]:
+            - generic [ref=e517]: "Tags:"
+            - button "Back to parent tag" [ref=e760]
+            - button "Others" [pressed] [ref=e761] [cursor=pointer]
+          - generic [ref=e523]:
+            - group [ref=e574]:
+              - generic [ref=e577]:
+                - text: Other views options
+                - generic [ref=e578]: "*"
+              - generic [ref=e581]:
+                - combobox [active] [ref=e582]:
+                  - generic [ref=e583]:
+                    - generic [ref=e584]: General views · Within 1 hour · Delivery speed varies · Cancellation available, no drip feed
+                    - button "Clear selection" [ref=e765]
+                - combobox [aria-hidden] [ref=e766]
+              - paragraph [ref=e587]: Choose an offer by media type and provider-listed delivery. General views have no stated media type.
+            - group [ref=e526]:
+              - generic [ref=e529]:
+                - text: Instagram media link
+                - generic [ref=e530]: "*"
+              - textbox "Instagram media link *" [ref=e767]:
+                - /placeholder: Paste an Instagram link
+            - group [ref=e536]:
+              - generic [ref=e537]:
+                - generic [ref=e539]:
+                  - text: Quantity
+                  - generic [ref=e540]: "*"
+                - generic [ref=e542]:
+                  - generic [ref=e543]: "Min: 100"
+                  - generic [ref=e545]: "Max: 2147483647"
+              - spinbutton "Quantity *" [ref=e768]
+        - generic [ref=e550]:
+          - generic "Order preview summary" [ref=e769]:
+            - generic [ref=e552]:
+              - generic [ref=e553]: Quantity
+              - generic [ref=e554]: "1"
+            - generic [ref=e555]:
+              - generic [ref=e556]: Amount to pay
+              - generic [ref=e557]: "0.00"
+            - generic [ref=e558]:
+              - generic [ref=e559]: "Catalog rate: 1.25 per 1,000"
+              - status "Not ready to submit" [ref=e770]
+            - group [ref=e565]:
+              - generic "Preview details" [ref=e771] [cursor=pointer]
+          - paragraph [ref=e567]: Preview only. Orders cannot be submitted from this lab.

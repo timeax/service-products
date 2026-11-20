@@ -1,0 +1,272 @@
+{
+  "id": "instagram-shares-shares",
+  "name": "Instagram Shares",
+  "description": "One-time Instagram shares and reposts. Delivery figures and region labels come from the provider listing.",
+  "schema_version": "1",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "Instagram Shares",
+      "service_id": 1158
+    },
+    {
+      "id": "t:shares",
+      "label": "Shares",
+      "bind_id": "t:root",
+      "service_id": 1158
+    },
+    {
+      "id": "t:reposts",
+      "label": "Reposts",
+      "bind_id": "t:root",
+      "service_id": 1177
+    },
+    {
+      "id": "t:regional-reposts",
+      "label": "Reposts by Region",
+      "bind_id": "t:root",
+      "service_id": 1173
+    },
+    {
+      "id": "t:reposts-reach",
+      "label": "Reposts + Reach",
+      "bind_id": "t:root",
+      "service_id": 1178
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:share-delivery",
+      "type": "select",
+      "variant": "default",
+      "label": "Share delivery",
+      "bind_id": "t:shares",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose share delivery"
+      },
+      "description": "Provider-listed start times and delivery rates.",
+      "options": [
+        {
+          "id": "o:shares:200k-day",
+          "label": "Starts within 1 hour · 200K shares/day",
+          "value": "200k-day",
+          "service_id": 1158
+        },
+        {
+          "id": "o:shares:100k-day",
+          "label": "Starts within 1 hour · 100K shares/day · From 10",
+          "value": "100k-day",
+          "service_id": 1159
+        },
+        {
+          "id": "o:shares:5m-day",
+          "label": "Starts within 1 hour · 5M shares/day",
+          "value": "5m-day",
+          "service_id": 1162
+        }
+      ]
+    },
+    {
+      "id": "f:repost-delivery",
+      "type": "select",
+      "variant": "default",
+      "label": "Repost delivery",
+      "bind_id": "t:reposts",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose repost delivery"
+      },
+      "description": "Provider-listed start times and delivery rates.",
+      "options": [
+        {
+          "id": "o:reposts:from-one",
+          "label": "Starts within 1 hour · From 1 repost",
+          "value": "from-one",
+          "service_id": 1177
+        },
+        {
+          "id": "o:reposts:up-to-50k-day",
+          "label": "Starts within 1 hour · Up to 50K reposts/day",
+          "value": "up-to-50k-day",
+          "service_id": 1172
+        }
+      ]
+    },
+    {
+      "id": "f:region",
+      "type": "select",
+      "variant": "default",
+      "label": "Region",
+      "bind_id": "t:regional-reposts",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a region"
+      },
+      "description": "Regions are listed by the provider.",
+      "options": [
+        {
+          "id": "o:region:brazil",
+          "label": "Brazil",
+          "value": "brazil",
+          "service_id": 1173
+        },
+        {
+          "id": "o:region:spain",
+          "label": "Spain",
+          "value": "spain",
+          "service_id": 1174
+        },
+        {
+          "id": "o:region:united-kingdom",
+          "label": "United Kingdom",
+          "value": "united-kingdom",
+          "service_id": 1175
+        },
+        {
+          "id": "o:region:united-states",
+          "label": "United States",
+          "value": "united-states",
+          "service_id": 1176
+        }
+      ]
+    },
+    {
+      "id": "f:link",
+      "type": "text",
+      "variant": "default",
+      "label": "Instagram media link",
+      "name": "link",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Paste an Instagram link"
+      },
+      "validation": [
+        {
+          "op": "match",
+          "pattern": "^https?://(?:www\\.|m\\.)?instagram\\.com/\\S+$",
+          "pattern_flags": "i",
+          "message": "Enter an Instagram media link."
+        }
+      ]
+    },
+    {
+      "id": "f:quantity",
+      "type": "number",
+      "variant": "default",
+      "label": "Quantity",
+      "name": "quantity",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 100",
+        "step": 1,
+        "tags": [
+          {
+            "label": "Min: {preview.min ?? \"—\"}"
+          },
+          {
+            "label": "Max: {preview.max ?? \"—\"}"
+          }
+        ]
+      },
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "value"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:drip_feed",
+      "type": "toggle",
+      "variant": "default",
+      "label": "Drip feed",
+      "description": "Schedule multiple deliveries by setting the number of runs and the minutes between them.",
+      "name": "drip_feed",
+      "bind_id": "t:root",
+      "button": true,
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.capabilities?.dripfeed?.enabled === true)"
+      }
+    },
+    {
+      "id": "f:runs",
+      "type": "number",
+      "variant": "default",
+      "label": "Runs",
+      "name": "runs",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 5"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:interval",
+      "type": "number",
+      "variant": "default",
+      "label": "Interval (minutes)",
+      "name": "interval",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 60"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    }
+  ],
+  "order_for_tags": {
+    "t:shares": [
+      "f:share-delivery"
+    ],
+    "t:reposts": [
+      "f:repost-delivery"
+    ],
+    "t:regional-reposts": [
+      "f:region"
+    ]
+  },
+  "includes_for_buttons": {
+    "f:drip_feed": [
+      "f:runs",
+      "f:interval"
+    ]
+  },
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {},
+  "fallbacks": null,
+  "notices": [],
+  "meta": {}
+}

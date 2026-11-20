@@ -1,5 +1,7 @@
 # Instagram Comments — analysis and ProductDefinition (2026-11-17)
 
+The approved 2026-11-20 revision covers all 233 mapped handlers and corrects Poll and Custom Comments Package quantity handling. See the [current coverage analysis and verification](coverage-reanalysis-2026-11-20.md). The analysis below records the earlier revision.
+
 Reanalyzed and implemented 2026-11-17 against the current catalog mapping and project-root handler registry. The scope is **Instagram → Comments → Instagram Comments**, using the 233 mapped row IDs only. The canonical ProductDefinition now exists at `products/instagram-comments.json` and is mirrored in the Service Builder comments seed for visualization. Static DGP structural and semantic validation pass; Service Builder UI validation was not run. The source registry and mapping file remain unchanged.
 
 ## Recommendation summary

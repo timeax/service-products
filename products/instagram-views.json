@@ -1,19 +1,19 @@
 {
   "id": "instagram-views-views",
   "name": "Instagram Views",
-  "description": "Preview of one-time Instagram views grouped by media type and delivery. Delivery labels reflect the provider listing.",
+  "description": "One-time Instagram views by media type. General delivery allows speed to vary. Other delivery options show the provider's listed start times and speeds.",
   "schema_version": "1",
   "filters": [
     {
       "id": "t:root",
       "label": "Instagram Views",
-      "service_id": 706
+      "service_id": 727
     },
     {
       "id": "t:video",
       "label": "Video Post Views",
       "bind_id": "t:root",
-      "service_id": 706
+      "service_id": 727
     },
     {
       "id": "t:reel",
@@ -32,6 +32,12 @@
       "label": "Priority Delivery",
       "bind_id": "t:root",
       "service_id": 728
+    },
+    {
+      "id": "t:others",
+      "label": "Others",
+      "bind_id": "t:root",
+      "service_id": 715
     }
   ],
   "fields": [
@@ -48,10 +54,40 @@
       "description": "Provider-listed start times and delivery rates.",
       "options": [
         {
+          "id": "o:video:general",
+          "label": "General delivery · Starts within 1 hour",
+          "value": "general",
+          "service_id": 727
+        },
+        {
+          "id": "o:video:within-hour-1m-day",
+          "label": "Starts within 1 hour · 1M views/day",
+          "value": "within-hour-1m-day",
+          "service_id": 708
+        },
+        {
+          "id": "o:video:within-hour-5m-day",
+          "label": "Starts within 1 hour · 5M views/day",
+          "value": "within-hour-5m-day",
+          "service_id": 751
+        },
+        {
+          "id": "o:video:within-hour-10m-day",
+          "label": "Starts within 1 hour · 10M views/day",
+          "value": "within-hour-10m-day",
+          "service_id": 720
+        },
+        {
           "id": "o:video:within-hour-20m-day",
           "label": "Starts within 1 hour · 20M views/day",
           "value": "within-hour-20m-day",
           "service_id": 706
+        },
+        {
+          "id": "o:video:within-hour-10k-hour",
+          "label": "Starts within 1 hour · 10K views/hour",
+          "value": "within-hour-10k-hour",
+          "service_id": 737
         },
         {
           "id": "o:video:instant-5m-day",
@@ -79,6 +115,12 @@
       },
       "description": "Provider-listed start times and delivery rates.",
       "options": [
+        {
+          "id": "o:reel:general",
+          "label": "General delivery · Starts within 1 hour",
+          "value": "general",
+          "service_id": 780
+        },
         {
           "id": "o:reel:within-hour-500k-day",
           "label": "Starts within 1 hour · 500K views/day",
@@ -109,11 +151,11 @@
       "id": "f:priority-delivery",
       "type": "select",
       "variant": "default",
-      "label": "Priority media type",
+      "label": "Priority delivery",
       "bind_id": "t:priority",
       "required": true,
       "defaults": {
-        "placeholder": "Choose a media type"
+        "placeholder": "Choose priority delivery"
       },
       "description": "Provider-listed start times and delivery rates for priority services.",
       "options": [
@@ -124,10 +166,319 @@
           "service_id": 728
         },
         {
+          "id": "o:priority:video-within-hour-500k-day",
+          "label": "Video post · Starts within 1 hour · 500K views/day",
+          "value": "video-within-hour-500k-day",
+          "service_id": 760
+        },
+        {
           "id": "o:priority:reel",
           "label": "Reel · Starts within 1 hour · 5M views/day",
           "value": "reel",
           "service_id": 783
+        }
+      ]
+    },
+    {
+      "id": "f:others-delivery",
+      "type": "select",
+      "variant": "default",
+      "label": "Other views options",
+      "bind_id": "t:others",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a views option",
+        "searchable": true
+      },
+      "description": "Choose an offer by media type and provider-listed delivery. General views have no stated media type.",
+      "options": [
+        {
+          "id": "o:others:704",
+          "label": "General views · Within 1 hour · 200K/day",
+          "value": "views-704",
+          "service_id": 704
+        },
+        {
+          "id": "o:others:705",
+          "label": "General views · Within 1 hour · 500K/day · Alternate",
+          "value": "views-705",
+          "service_id": 705
+        },
+        {
+          "id": "o:others:707",
+          "label": "General views · Starts in 1–4 hours · 5M/day",
+          "value": "views-707",
+          "service_id": 707
+        },
+        {
+          "id": "o:others:709",
+          "label": "Emergency views · Within 1 hour · 50K/day",
+          "value": "views-709",
+          "service_id": 709
+        },
+        {
+          "id": "o:others:710",
+          "label": "General views · Within 1 hour · 100K/day",
+          "value": "views-710",
+          "service_id": 710
+        },
+        {
+          "id": "o:others:711",
+          "label": "General views · Within 1 hour · 1M/day",
+          "value": "views-711",
+          "service_id": 711
+        },
+        {
+          "id": "o:others:712",
+          "label": "All Links · Emergency · Within 3 hours · 500K/day",
+          "value": "views-712",
+          "service_id": 712
+        },
+        {
+          "id": "o:others:713",
+          "label": "General views · Within 1 hour · 100K/day · Drip feed available, cancellation unavailable",
+          "value": "views-713",
+          "service_id": 713
+        },
+        {
+          "id": "o:others:715",
+          "label": "General views · Within 1 hour · 500K/day",
+          "value": "views-715",
+          "service_id": 715
+        },
+        {
+          "id": "o:others:717",
+          "label": "All Links · Within 1 hour · 500K/day",
+          "value": "views-717",
+          "service_id": 717
+        },
+        {
+          "id": "o:others:718",
+          "label": "General views · Within 1 hour · 5M/day",
+          "value": "views-718",
+          "service_id": 718
+        },
+        {
+          "id": "o:others:719",
+          "label": "General views · Instant start · 3K/minute",
+          "value": "views-719",
+          "service_id": 719
+        },
+        {
+          "id": "o:others:724",
+          "label": "General views · Within 1 hour · 5M/day · Drip feed available, cancellation unavailable",
+          "value": "views-724",
+          "service_id": 724
+        },
+        {
+          "id": "o:others:726",
+          "label": "All · Within 1 hour · 100K/day",
+          "value": "views-726",
+          "service_id": 726
+        },
+        {
+          "id": "o:others:729",
+          "label": "General views · Starts around 1 hour · 500K/day · Minimum 50",
+          "value": "views-729",
+          "service_id": 729
+        },
+        {
+          "id": "o:others:730",
+          "label": "General views · Within 1 hour · 60K/day",
+          "value": "views-730",
+          "service_id": 730
+        },
+        {
+          "id": "o:others:731",
+          "label": "General views · Instant start · 5M/day · Cancellation available",
+          "value": "views-731",
+          "service_id": 731
+        },
+        {
+          "id": "o:others:733",
+          "label": "General views · Within 1 hour · 1M/day · Cancellation available, no drip feed",
+          "value": "views-733",
+          "service_id": 733
+        },
+        {
+          "id": "o:others:734",
+          "label": "General views · Within 1 hour · 5M/day · Alternate",
+          "value": "views-734",
+          "service_id": 734
+        },
+        {
+          "id": "o:others:735",
+          "label": "All Links · Within 1 hour · 1M/day",
+          "value": "views-735",
+          "service_id": 735
+        },
+        {
+          "id": "o:others:736",
+          "label": "All · Emergency · Within 1 hour · 500K/day",
+          "value": "views-736",
+          "service_id": 736
+        },
+        {
+          "id": "o:others:738",
+          "label": "General views · Starts around 1 hour · 1M/day",
+          "value": "views-738",
+          "service_id": 738
+        },
+        {
+          "id": "o:others:740",
+          "label": "Emergency views · Instant start · 50K/day",
+          "value": "views-740",
+          "service_id": 740
+        },
+        {
+          "id": "o:others:741",
+          "label": "All Links · Within 1 hour · 50K/hour",
+          "value": "views-741",
+          "service_id": 741
+        },
+        {
+          "id": "o:others:742",
+          "label": "General views · Within 1 hour · Delivery listed as “Instant”",
+          "value": "views-742",
+          "service_id": 742
+        },
+        {
+          "id": "o:others:743",
+          "label": "General views · Instant start · 10M/day",
+          "value": "views-743",
+          "service_id": 743
+        },
+        {
+          "id": "o:others:746",
+          "label": "General views · Starts around 1 hour · 10M/day",
+          "value": "views-746",
+          "service_id": 746
+        },
+        {
+          "id": "o:others:749",
+          "label": "General views · Within 1 hour · Up to 2M/day",
+          "value": "views-749",
+          "service_id": 749
+        },
+        {
+          "id": "o:others:750",
+          "label": "General views · Within 1 hour · 5M/day · Cancellation available, no drip feed",
+          "value": "views-750",
+          "service_id": 750
+        },
+        {
+          "id": "o:others:flexible-within-hour",
+          "label": "General views · Within 1 hour · Delivery speed varies · Cancellation available, no drip feed",
+          "value": "flexible-within-hour",
+          "service_id": 750
+        },
+        {
+          "id": "o:others:753",
+          "label": "General views · Within 15 minutes · 5M/day",
+          "value": "views-753",
+          "service_id": 753
+        },
+        {
+          "id": "o:others:755",
+          "label": "All Links · Within 1 hour · 100K/day · Cancellation available, no drip feed",
+          "value": "views-755",
+          "service_id": 755
+        },
+        {
+          "id": "o:others:756",
+          "label": "General views · 1M/day · Start wording unclear",
+          "value": "views-756",
+          "service_id": 756
+        },
+        {
+          "id": "o:others:758",
+          "label": "Video views · Emergency · “Auto on/off”",
+          "value": "views-758",
+          "service_id": 758
+        },
+        {
+          "id": "o:others:759",
+          "label": "General views · Within 1 hour · Delivery listed as “Instant” · Alternate",
+          "value": "views-759",
+          "service_id": 759
+        },
+        {
+          "id": "o:others:761",
+          "label": "Video views · “PRVT” · Within 1 hour · 500K/day",
+          "value": "views-761",
+          "service_id": 761
+        },
+        {
+          "id": "o:others:763",
+          "label": "Legacy IGTV · Within 1 hour · Delivery listed as “Instant”",
+          "value": "views-763",
+          "service_id": 763
+        },
+        {
+          "id": "o:others:765",
+          "label": "Legacy IGTV · Within 1 hour · 50K/hour",
+          "value": "views-765",
+          "service_id": 765
+        },
+        {
+          "id": "o:others:767",
+          "label": "Legacy IGTV · Within 1 hour · 10M/day",
+          "value": "views-767",
+          "service_id": 767
+        },
+        {
+          "id": "o:others:768",
+          "label": "Legacy IGTV · Within 1 hour · 5M/day",
+          "value": "views-768",
+          "service_id": 768
+        },
+        {
+          "id": "o:others:769",
+          "label": "Legacy IGTV · Within 1 hour · 1M/day",
+          "value": "views-769",
+          "service_id": 769
+        },
+        {
+          "id": "o:others:771",
+          "label": "Legacy IGTV · General delivery · Within 1 hour",
+          "value": "views-771",
+          "service_id": 771
+        },
+        {
+          "id": "o:others:773",
+          "label": "Legacy IGTV · General delivery · Within 6 hours · Up to 100M per order",
+          "value": "views-773",
+          "service_id": 773
+        },
+        {
+          "id": "o:others:774",
+          "label": "Legacy IGTV · General delivery · Within 1 hour · Alternate",
+          "value": "views-774",
+          "service_id": 774
+        },
+        {
+          "id": "o:others:775",
+          "label": "Legacy IGTV · Within 1 hour · 10K/hour",
+          "value": "views-775",
+          "service_id": 775
+        },
+        {
+          "id": "o:others:777",
+          "label": "Legacy IGTV · Within 1 hour · 1M/day · Cancellation available, no drip feed",
+          "value": "views-777",
+          "service_id": 777
+        },
+        {
+          "id": "o:others:778",
+          "label": "Legacy IGTV · Starts around 2 hours · 5M/day · Minimum 1,000",
+          "value": "views-778",
+          "service_id": 778
+        },
+        {
+          "id": "o:others:779",
+          "label": "Legacy IGTV · Starts around 15 minutes · 5M/day · Cancellation available, no drip feed",
+          "value": "views-779",
+          "service_id": 779
         }
       ]
     },
@@ -192,6 +543,7 @@
       "type": "toggle",
       "variant": "default",
       "label": "Drip feed",
+      "description": "Schedule multiple deliveries by setting the number of runs and the minutes between them.",
       "name": "drip_feed",
       "bind_id": "t:root",
       "button": true,
@@ -254,6 +606,9 @@
     ],
     "t:priority": [
       "f:priority-delivery"
+    ],
+    "t:others": [
+      "f:others-delivery"
     ]
   },
   "includes_for_buttons": {
@@ -265,7 +620,55 @@
   "excludes_for_buttons": {},
   "option_effects_for_buttons": {},
   "value_effects_for_triggers": {},
-  "fallbacks": null,
+  "fallbacks": {
+    "nodes": {
+      "t:root": [
+        732
+      ],
+      "t:video": [
+        732
+      ],
+      "t:reel": [
+        781
+      ],
+      "o:video:general": [
+        732
+      ],
+      "o:reel:general": [
+        781
+      ],
+      "o:video:within-hour-5m-day": [
+        748
+      ],
+      "o:others:715": [
+        714
+      ],
+      "o:others:750": [
+        747
+      ],
+      "o:others:753": [
+        752
+      ],
+      "o:others:771": [
+        770
+      ],
+      "o:others:773": [
+        764
+      ],
+      "o:others:774": [
+        772
+      ],
+      "o:others:flexible-within-hour": [
+        747,
+        746,
+        749
+      ],
+      "t:others": [
+        714
+      ]
+    },
+    "global": {}
+  },
   "notices": [],
   "meta": {}
 }

@@ -1,0 +1,52 @@
+[    3426ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=d46e109a:14338
+[  130339ms] [ERROR] In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <SelectProvider required={undefined} scope={undefined} trigger={HTMLButtonElement} ...>
+      <SelectCollectionProvider scope={undefined}>
+        <SelectCollectionProviderProvider scope={undefined} itemMap={Map} collectionRef={{...}}>
+          <SelectProvider scope={undefined} onNativeOptionAdd={function} onNativeOptionRemove={function}>
+            <SelectTrigger onPointerDown={function onPointerDown} className="w-full jus..." style={undefined}>
+              <SelectTrigger data-slot="select-tri..." data-size="default" className={"border-i..."} ...>
+                <PopperAnchor asChild={true} __scopePopper={{Popper:[...]}}>
+                  <Primitive.div asChild={true} ref={function}>
+                    <Primitive.div.Slot ref={function}>
+                      <Primitive.div.SlotClone ref={function}>
+                        <Primitive.button type="button" role="combobox" aria-controls="radix-_r_13_" ...>
+>                         <button
+>                           type="button"
+>                           role="combobox"
+>                           aria-controls="radix-_r_13_"
+>                           aria-expanded={false}
+>                           aria-required={undefined}
+>                           aria-autocomplete="none"
+>                           dir="ltr"
+>                           data-state="closed"
+>                           disabled={false}
+>                           data-disabled={undefined}
+>                           data-placeholder={undefined}
+>                           data-slot="select-trigger"
+>                           data-size="default"
+>                           className={"border-input data-[placeholder]:text-muted-foreground [&_svg:not([class*='tex..."}
+>                           onPointerDown={function handleEvent}
+>                           style={{}}
+>                           onClick={function handleEvent}
+>                           onKeyDown={function handleEvent}
+>                           ref={function}
+>                         >
+                            <div className="flex w-ful...">
+                              <div>
+                              <div className="flex items...">
+>                               <button
+>                                 data-slot="clear"
+>                                 type="button"
+>                                 aria-label="Clear selection"
+>                                 className="flex h-4 w-4 items-center justify-center rounded hover:bg-muted"
+>                               >
+                            ...
+            ...
+      ...
+ @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=d46e109a:1773
+[  130339ms] [ERROR] <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button> @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=d46e109a:1775

@@ -2,6 +2,21 @@
 
 This project is the roadmap for services that may later become ProductDefinitions. It is independent of the TygerBooster repository. Do not add this project to TygerBooster or change that repository's `.gitignore` for this workspace.
 
+## Required: full handler coverage
+
+> [!IMPORTANT]
+> **EVERY HANDLER SERVICE TIED TO THE PRODUCT MUST BE ACCOUNTED FOR.**
+>
+> **Favor more fallbacks than primaries wherever compatibility allows.** Give each distinct customer choice one primary and an ordered list of compatible backups. If the primary fails, the next handler can take over without asking the customer to choose again. This improves the odds that their first choice works and makes it easier to retire unreliable handlers without removing the option.
+
+Record a decision for every handler ID in the product's source set before presenting the analysis for approval. If there are 14 handlers, show where all 14 go. Provider services can fail at fulfillment, so the handlers that are hardest to place may be the ones that work.
+
+- Place every available, unlocked handler as a primary, an ordered fallback, or a selectable option under the **Others** tag. Only unavailable or locked handlers may be excluded. Record the source evidence for each exclusion and reconcile missing or stale IDs without assuming their state.
+- Put the closest matches first in each fallback chain. A hard-to-place handler tied to the same product can serve as a last-resort fallback when its `payload.type` matches the primary, it passes the applicable rate policy, its minimum is at or below the primary's minimum, and its maximum is at or above the primary's maximum. Provider name qualifiers such as “male” or “female” alone do not disqualify a handler.
+- If an available, unlocked handler cannot be placed as a primary or fallback, give it an explicit, selectable option under **Others**. Include its handler ID and placement in the analysis.
+
+This rule takes precedence over general mapping and fallback guidance in `.ai/` and the examples for handlers confirmed to belong to the product. Apply the existing rate policy and ProductDefinition contract.
+
 ## Current project state
 
 `catalog.json` is the service roadmap. Actual ProductDefinitions belong under `products/`; inspect the current contents at the start of each task instead of assuming the folder is empty. `examples/` contains completed/reference work for learning the method only. Never copy an example definition or its service IDs into the actual product workspace.
@@ -44,7 +59,7 @@ Use `.ai/agent-search.json` as the local source index for the handler registry, 
 - Distinguish a customer-facing product from backend handler records. Many handlers can implement one product; their count does not prove product availability.
 - Catalog status tracks build progress only. Do not imply that a planned service is already a ProductDefinition or a live storefront product.
 - Keep provider names and opaque IDs out of customer labels unless that is the deliberate user-facing meaning.
-- Treat disabled, locked, restricted, and enabled states exactly as encoded by the intended site's source. A locked handler is not usable or replaceable unless the site contract explicitly permits it. Never infer a lock from an ID, name, or missing record.
+- Treat disabled, locked, restricted, and enabled states exactly as encoded by the intended site's source. Exclude locked handlers from the product and document their state. Never infer a lock from an ID, name, or missing record.
 - When analyzing the handler source, separate product family from variations such as targeting, quality, speed, refill, and account type. Keep the catalog at the customer service-family level; analyze handler compatibility later during ProductDefinition work.
 
 ## Project map

@@ -1,0 +1,644 @@
+- generic [ref=e3]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - heading "Ready" [level=3] [ref=e12]
+      - paragraph [ref=e13]: All required workspace sections finished loading and the editor is ready.
+      - generic [ref=e14]:
+        - generic [ref=e15]: 10/10 complete
+        - generic [ref=e16]: 10 ok
+    - generic [ref=e17]:
+      - button "Retry all" [ref=e18]
+      - button "Dismiss workspace boot status" [ref=e19]
+  - generic [ref=e23]:
+    - generic [ref=e25]:
+      - generic [ref=e27]:
+        - generic [ref=e33]:
+          - heading "Service Builder" [level=1] [ref=e34]
+          - button "Active branch - main" [ref=e35] [cursor=pointer]
+        - button "Menu" [ref=e40]
+      - generic [ref=e45]:
+        - tablist [ref=e46]:
+          - tab "Layers" [selected] [ref=e47]
+          - tab "Assets" [ref=e50]
+        - tabpanel "Layers" [ref=e53]:
+          - generic [ref=e54]:
+            - generic [ref=e56]:
+              - generic [ref=e57]:
+                - generic [ref=e58]:
+                  - heading "Tag hierarchy" [level=3] [ref=e59]
+                  - paragraph [ref=e60]: Structure the visible groups and inheritance tree.
+                - generic [ref=e61]:
+                  - button "Add tag" [ref=e62] [cursor=pointer]
+                  - button [ref=e65] [cursor=pointer]
+              - generic [ref=e72]:
+                - button "Instagram Comments Expand" [ref=e79]:
+                  - generic [ref=e80]:
+                    - generic [ref=e81]: Instagram Comments
+                    - button "Expand" [ref=e89] [cursor=pointer]
+                - status [ref=e91]
+            - generic [ref=e92]:
+              - generic [ref=e93]:
+                - generic [ref=e94]:
+                  - heading "Fields in view" [level=3] [ref=e95]
+                  - paragraph [ref=e96]: Under Instagram Comments
+                - generic [ref=e97]:
+                  - button [ref=e98] [cursor=pointer]
+                  - button "Add option" [disabled] [ref=e102] [cursor=pointer]
+                  - button "Add field" [ref=e105] [cursor=pointer]
+              - generic [ref=e112]:
+                - generic [ref=e113]:
+                  - button "Instagram content link Expand" [ref=e119]:
+                    - generic [ref=e120]:
+                      - generic [ref=e121]: Instagram content link
+                      - button "Expand" [ref=e127] [cursor=pointer]
+                  - button "Quantity Expand" [ref=e134]:
+                    - generic [ref=e135]:
+                      - generic [ref=e136]: Quantity
+                      - button "Expand" [ref=e142] [cursor=pointer]
+                  - button "Drip feed Expand" [ref=e149]:
+                    - generic [ref=e150]:
+                      - generic [ref=e151]: Drip feed
+                      - button "Expand" [ref=e157] [cursor=pointer]
+                - status [ref=e159]
+    - application [ref=e162]:
+      - generic [ref=e164]:
+        - generic:
+          - generic:
+            - img:
+              - group "Edge from t:root to t:default"
+            - img:
+              - group "Edge from t:root to t:custom-comments"
+            - img:
+              - group "Edge from t:root to t:package"
+            - img:
+              - group "Edge from t:root to t:custom-comments-package" [ref=e165] [cursor=pointer]
+            - img:
+              - group "Edge from t:default to t:default-standard" [ref=e168] [cursor=pointer]
+            - img:
+              - group "Edge from t:default to t:default-exclusive" [ref=e171] [cursor=pointer]
+            - img:
+              - group "Edge from t:default to t:default-reels" [ref=e174] [cursor=pointer]
+            - img:
+              - group "Edge from t:default to t:default-verified" [ref=e177] [cursor=pointer]
+            - img:
+              - group "Edge from t:default to t:default-regions" [ref=e180] [cursor=pointer]
+            - img:
+              - group "Edge from t:default to t:default-live" [ref=e183] [cursor=pointer]
+            - img:
+              - group "Edge from t:default to t:default-channel" [ref=e186] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-comments to t:custom-standard" [ref=e189] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-comments to t:custom-reels" [ref=e192] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-comments to t:custom-verified" [ref=e195] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-comments to t:custom-super" [ref=e198] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-comments to t:custom-exclusive" [ref=e201] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-comments to t:custom-regions" [ref=e204] [cursor=pointer]
+            - img:
+              - group "Edge from t:package to t:package-fixed" [ref=e207] [cursor=pointer]
+            - img:
+              - group "Edge from t:package to t:package-auto" [ref=e210] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-comments-package to t:custom-package-fixed" [ref=e213] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-comments-package to t:custom-package-auto" [ref=e216] [cursor=pointer]
+            - img:
+              - group "Edge from t:root to t:poll" [ref=e219] [cursor=pointer]
+            - img:
+              - group "Edge from t:root to t:replies" [ref=e222] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-standard to t:default-standard-style-or-tone" [ref=e225] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-standard to t:default-standard-relevance-or-context" [ref=e228] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-standard to t:default-standard-audience" [ref=e231] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-standard to t:default-standard-language-or-region" [ref=e234] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-exclusive to t:default-exclusive-power-or-explore" [ref=e237] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-exclusive to t:default-exclusive-audience" [ref=e240] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-exclusive to t:default-exclusive-language-or-region" [ref=e243] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-reels to t:default-reels-audience" [ref=e246] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-reels to t:default-reels-language-or-region" [ref=e249] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-reels to t:default-reels-hq-wording" [ref=e252] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-verified to t:default-verified-power-or-explore" [ref=e255] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-verified to t:default-verified-audience" [ref=e258] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-verified to t:default-verified-language-or-region" [ref=e261] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-live to t:default-live-random" [ref=e264] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-live to t:default-live-audience" [ref=e267] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-standard to t:custom-standard-general-custom-comments" [ref=e270] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-standard to t:custom-standard-language-or-region" [ref=e273] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-standard to t:custom-standard-gender" [ref=e276] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-standard to t:custom-standard-relevance" [ref=e279] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-standard to t:custom-standard-premium-or-high-end" [ref=e282] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-reels to t:custom-reels-gender" [ref=e285] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-reels to t:custom-reels-language-or-region" [ref=e288] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-reels to t:custom-reels-hq-wording" [ref=e291] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-standard to t:default-standard-general-random" [ref=e294] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-standard to t:default-standard-delivery" [ref=e297] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-exclusive to t:default-exclusive-delivery" [ref=e300] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-live to t:default-live-instant-delivery" [ref=e303] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-channel to t:default-channel-positive" [ref=e306] [cursor=pointer]
+            - img:
+              - group "Edge from t:root to t:others" [ref=e309] [cursor=pointer]
+            - img:
+              - group "Edge from t:root to f:link" [ref=e312] [cursor=pointer]
+            - img:
+              - group "Edge from t:root to f:quantity" [ref=e315] [cursor=pointer]
+            - img:
+              - group "Edge from t:root to f:drip_feed" [ref=e318] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-comments to f:comments" [ref=e321] [cursor=pointer]
+            - img:
+              - group "Edge from t:poll to f:poll-answer" [ref=e324] [cursor=pointer]
+            - img:
+              - group "Edge from t:replies to f:reply-username" [ref=e327] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-regions to f:service-default-regions" [ref=e330] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-verified to f:service-custom-verified" [ref=e333] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-super to f:service-custom-super" [ref=e336] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-exclusive to f:service-custom-exclusive" [ref=e339] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-regions to f:service-custom-regions" [ref=e342] [cursor=pointer]
+            - img:
+              - group "Edge from t:package-fixed to f:service-package-fixed" [ref=e345] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-package-fixed to f:service-custom-package-fixed" [ref=e348] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-standard-style-or-tone to f:service-default-standard-style-or-tone" [ref=e351] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-standard-relevance-or-context to f:service-default-standard-relevance-or-context" [ref=e354] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-standard-audience to f:service-default-standard-audience" [ref=e357] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-standard-language-or-region to f:service-default-standard-language-or-region" [ref=e360] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-exclusive-power-or-explore to f:service-default-exclusive-power-or-explore" [ref=e363] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-exclusive-audience to f:service-default-exclusive-audience" [ref=e366] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-exclusive-language-or-region to f:service-default-exclusive-language-or-region" [ref=e369] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-reels-audience to f:service-default-reels-audience" [ref=e372] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-reels-language-or-region to f:service-default-reels-language-or-region" [ref=e375] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-reels-hq-wording to f:service-default-reels-hq-wording" [ref=e378] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-verified-power-or-explore to f:service-default-verified-power-or-explore" [ref=e381] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-verified-audience to f:service-default-verified-audience" [ref=e384] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-verified-language-or-region to f:service-default-verified-language-or-region" [ref=e387] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-live-random to f:service-default-live-random" [ref=e390] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-live-audience to f:service-default-live-audience" [ref=e393] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-standard-general-custom-comments to f:service-custom-standard-general-custom-comments" [ref=e396] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-standard-language-or-region to f:service-custom-standard-language-or-region" [ref=e399] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-standard-gender to f:service-custom-standard-gender" [ref=e402] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-standard-relevance to f:service-custom-standard-relevance" [ref=e405] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-standard-premium-or-high-end to f:service-custom-standard-premium-or-high-end" [ref=e408] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-reels-gender to f:service-custom-reels-gender" [ref=e411] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-reels-language-or-region to f:service-custom-reels-language-or-region" [ref=e414] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-reels-hq-wording to f:service-custom-reels-hq-wording" [ref=e417] [cursor=pointer]
+            - img:
+              - group "Edge from t:custom-comments-package to f:comments-package" [ref=e420] [cursor=pointer]
+            - img:
+              - group "Edge from t:replies to f:comments-replies" [ref=e423] [cursor=pointer]
+            - img:
+              - group "Edge from t:poll to f:poll-quantity" [ref=e426] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-standard-general-random to f:service-default-standard-general-random" [ref=e429] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-standard-delivery to f:service-default-standard-delivery" [ref=e432] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-exclusive-delivery to f:service-default-exclusive-delivery" [ref=e435] [cursor=pointer]
+            - img:
+              - group "Edge from t:default-live-instant-delivery to f:service-default-live-instant-delivery" [ref=e438] [cursor=pointer]
+            - img:
+              - group "Edge from t:others to f:service-others" [ref=e441] [cursor=pointer]
+            - img:
+              - group "Edge from f:drip_feed to f:runs" [ref=e444] [cursor=pointer]
+            - img:
+              - group "Edge from f:drip_feed to f:interval" [ref=e447] [cursor=pointer]
+          - generic:
+            - group [ref=e450]:
+              - generic [ref=e452]: Instagram Comments
+            - group [ref=e461]:
+              - generic [ref=e463]: Default
+            - group [ref=e472]:
+              - generic [ref=e474]: Custom Comments
+            - group [ref=e483]:
+              - generic [ref=e485]: Package
+            - group [ref=e494]:
+              - generic [ref=e496]: Custom Comments Package
+            - group [ref=e505]:
+              - generic [ref=e507]: Standard
+            - group [ref=e516]:
+              - generic [ref=e518]: Exclusive
+            - group [ref=e527]:
+              - generic [ref=e529]: Reels
+            - group [ref=e538]:
+              - generic [ref=e540]: Verified accounts
+            - group [ref=e549]:
+              - generic [ref=e551]: Countries/regions
+            - group [ref=e560]:
+              - generic [ref=e562]: Live video
+            - group [ref=e571]:
+              - generic [ref=e573]: Channel comments
+            - group [ref=e582]:
+              - generic [ref=e584]: Standard custom comments
+            - group [ref=e593]:
+              - generic [ref=e595]: Reel custom comments
+            - group [ref=e604]:
+              - generic [ref=e606]: Verified account comments
+            - group [ref=e615]:
+              - generic [ref=e617]: Super Services
+            - group [ref=e626]:
+              - generic [ref=e628]: Exclusive custom comments
+            - group [ref=e637]:
+              - generic [ref=e639]: Countries/regions custom comments
+            - group [ref=e648]:
+              - generic [ref=e650]: Comment packages
+            - group [ref=e659]:
+              - generic [ref=e661]: Auto Comments
+            - group [ref=e670]:
+              - generic [ref=e672]: Custom comment packages
+            - group [ref=e681]:
+              - generic [ref=e683]: Custom Auto Comments
+            - group [ref=e692]:
+              - generic [ref=e694]: Poll
+            - group [ref=e703]:
+              - generic [ref=e705]: Comment Replies
+            - group [ref=e714]:
+              - generic [ref=e716]: Style or tone
+            - group [ref=e725]:
+              - generic [ref=e727]: Relevance
+            - group [ref=e736]:
+              - generic [ref=e738]: Audience (Standard)
+            - group [ref=e747]:
+              - generic [ref=e749]: Language/region (Standard)
+            - group [ref=e758]:
+              - generic [ref=e760]: Power/Explore (Exclusive)
+            - group [ref=e769]:
+              - generic [ref=e771]: Audience (Exclusive)
+            - group [ref=e780]:
+              - generic [ref=e782]: Language/region (Exclusive)
+            - group [ref=e791]:
+              - generic [ref=e793]: Audience (Reels)
+            - group [ref=e802]:
+              - generic [ref=e804]: Language/region (Reels)
+            - group [ref=e813]:
+              - generic [ref=e815]: HQ wording (Reels)
+            - group [ref=e824]:
+              - generic [ref=e826]: Power/Explore (Verified)
+            - group [ref=e835]:
+              - generic [ref=e837]: Audience (Verified)
+            - group [ref=e846]:
+              - generic [ref=e848]: Language/region (Verified)
+            - group [ref=e857]:
+              - generic [ref=e859]: Random (Live)
+            - group [ref=e868]:
+              - generic [ref=e870]: Audience (Live)
+            - group [ref=e879]:
+              - generic [ref=e881]: General custom comments
+            - group [ref=e890]:
+              - generic [ref=e892]: Language/region (Custom standard)
+            - group [ref=e901]:
+              - generic [ref=e903]: Gender (Custom standard)
+            - group [ref=e912]:
+              - generic [ref=e914]: Relevance (Custom)
+            - group [ref=e923]:
+              - generic [ref=e925]: Premium/high-end
+            - group [ref=e934]:
+              - generic [ref=e936]: Gender (Custom Reels)
+            - group [ref=e945]:
+              - generic [ref=e947]: Language/region (Custom Reels)
+            - group [ref=e956]:
+              - generic [ref=e958]: HQ wording (Custom Reels)
+            - group [ref=e967]:
+              - generic [ref=e969]: General/random
+            - group [ref=e978]:
+              - generic [ref=e980]: Delivery details (Standard)
+            - group [ref=e989]:
+              - generic [ref=e991]: Delivery details (Exclusive)
+            - group [ref=e1000]:
+              - generic [ref=e1002]: Instant delivery
+            - group [ref=e1011]:
+              - generic [ref=e1013]: Positive tone
+            - group [ref=e1022]:
+              - generic [ref=e1024]: Others
+            - group [ref=e1033]:
+              - generic [ref=e1035]: Instagram content link
+            - group [ref=e1042]:
+              - generic [ref=e1044]: Quantity
+            - group [ref=e1051]:
+              - generic [ref=e1053]: Drip feed
+            - group [ref=e1060]:
+              - generic [ref=e1062]: Runs
+            - group [ref=e1069]:
+              - generic [ref=e1071]: Interval (minutes)
+            - group [ref=e1078]:
+              - generic [ref=e1080]: Comments to post
+            - group [ref=e1087]:
+              - generic [ref=e1089]: Poll answer number
+            - group [ref=e1096]:
+              - generic [ref=e1098]: Comment owner username
+            - group [ref=e1105]:
+              - generic [ref=e1107]: Language or region
+            - group [ref=e1114]:
+              - generic [ref=e1116]: Targeting
+            - group [ref=e1123]:
+              - generic [ref=e1125]: Region
+            - group [ref=e1132]:
+              - generic [ref=e1134]: Region
+            - group [ref=e1141]:
+              - generic [ref=e1143]: Language or region
+            - group [ref=e1150]:
+              - generic [ref=e1152]: Package size
+            - group [ref=e1159]:
+              - generic [ref=e1161]: Package size
+            - group [ref=e1168]:
+              - generic [ref=e1170]: Comment style
+            - group [ref=e1177]:
+              - generic [ref=e1179]: Relevance
+            - group [ref=e1186]:
+              - generic [ref=e1188]: Audience
+            - group [ref=e1195]:
+              - generic [ref=e1197]: Language or region
+            - group [ref=e1204]:
+              - generic [ref=e1206]: Audience
+            - group [ref=e1213]:
+              - generic [ref=e1215]: Audience
+            - group [ref=e1222]:
+              - generic [ref=e1224]: Language or region
+            - group [ref=e1231]:
+              - generic [ref=e1233]: Audience
+            - group [ref=e1240]:
+              - generic [ref=e1242]: Language or region
+            - group [ref=e1249]:
+              - generic [ref=e1251]: Quality
+            - group [ref=e1258]:
+              - generic [ref=e1260]: Audience
+            - group [ref=e1267]:
+              - generic [ref=e1269]: Audience
+            - group [ref=e1276]:
+              - generic [ref=e1278]: Language or region
+            - group [ref=e1285]:
+              - generic [ref=e1287]: Comment style
+            - group [ref=e1294]:
+              - generic [ref=e1296]: Audience
+            - group [ref=e1303]:
+              - generic [ref=e1305]: Custom comments
+            - group [ref=e1312]:
+              - generic [ref=e1314]: Language or region
+            - group [ref=e1321]:
+              - generic [ref=e1323]: Audience
+            - group [ref=e1330]:
+              - generic [ref=e1332]: Relevance
+            - group [ref=e1339]:
+              - generic [ref=e1341]: Service type
+            - group [ref=e1348]:
+              - generic [ref=e1350]: Audience
+            - group [ref=e1357]:
+              - generic [ref=e1359]: Language or region
+            - group [ref=e1366]:
+              - generic [ref=e1368]: Quality
+            - group [ref=e1375]:
+              - generic [ref=e1377]: Package comments
+            - group [ref=e1384]:
+              - generic [ref=e1386]: Reply text
+            - group [ref=e1393]:
+              - generic [ref=e1395]: Poll quantity
+            - group [ref=e1402]:
+              - generic [ref=e1404]: Comment style
+            - group [ref=e1411]:
+              - generic [ref=e1413]: Delivery
+            - group [ref=e1420]:
+              - generic [ref=e1422]: Delivery
+            - group [ref=e1429]:
+              - generic [ref=e1431]: Delivery
+            - group [ref=e1438]:
+              - generic [ref=e1440]: Fixed-quantity comment options
+            - group [ref=e1447]:
+              - generic [ref=e1448]:
+                - generic [ref=e1449]: Service context
+                - generic [ref=e1450]: "Active tag: Instagram Comments"
+                - generic [ref=e1451]: "Selected buttons: 0"
+                - generic [ref=e1453]:
+                  - generic [ref=e1454]:
+                    - generic [ref=e1455]: "Instagram Comments [RANDOM] [Max: 75K] [Start Time: 0-1 Hour] [Speed: 10K/Day] 💧"
+                    - generic [ref=e1456]: Rate 5.625
+                  - generic [ref=e1457]: Meets filter capabilities
+      - generic:
+        - generic:
+          - generic [ref=e1458]:
+            - button "Bind" [ref=e1459]
+            - button "Include" [ref=e1460]
+            - button "Exclude" [ref=e1461]
+          - button "Canvas view" [ref=e1463]
+          - button "Switch to vertical toolbar" [ref=e1465]
+      - generic:
+        - generic [ref=e1466]:
+          - button "Save snapshot" [ref=e1467]
+          - button "Publish commit" [ref=e1469]
+        - generic [ref=e1470]:
+          - button "Import JSON" [ref=e1471]
+          - button "Undo" [disabled]
+          - button "Redo" [disabled]
+          - button "History" [ref=e1472]
+          - button "Add comment on canvas" [ref=e1473]
+          - button "Toggle error markers" [ref=e1474]
+          - button "Toggle console" [ref=e1475]
+          - button "Toggle notices manager" [ref=e1476]
+      - link "React Flow attribution" [ref=e1478] [cursor=pointer]:
+        - /url: https://reactflow.dev
+        - text: React Flow
+    - generic [ref=e1481]:
+      - generic [ref=e1482]:
+        - generic [ref=e1483]:
+          - button [ref=e1484]
+          - button "Preview current branch" [ref=e1487]
+        - button "Share branch" [ref=e1491]
+      - generic [ref=e1494]:
+        - tablist [ref=e1495]:
+          - tab "Comments" [ref=e1496]
+          - tab "Properties" [ref=e1497]
+          - tab "Wireframe" [selected] [ref=e1498]
+        - tabpanel "Wireframe" [ref=e1499]:
+          - generic [ref=e1501]:
+            - generic [ref=e1507]:
+              - generic [ref=e1508]:
+                - generic [ref=e1509] [cursor=pointer]: "Tags:"
+                - generic [ref=e1510]:
+                  - button "Instagram Comments" [ref=e1511] [cursor=pointer]
+                  - button "Default" [ref=e1516] [cursor=pointer]
+                  - button "Custom Comments" [ref=e1518] [cursor=pointer]
+                  - button "Package" [ref=e1520] [cursor=pointer]
+                  - button "Custom Comments Package" [ref=e1522] [cursor=pointer]
+                  - button "Poll" [ref=e1524] [cursor=pointer]
+                  - button "Comment Replies" [ref=e1526] [cursor=pointer]
+                  - button "Others" [ref=e1528] [cursor=pointer]
+              - generic [ref=e1530]:
+                - group [ref=e1533] [cursor=pointer]:
+                  - generic [ref=e1536]:
+                    - text: Instagram content link
+                    - generic [ref=e1537]: "*"
+                  - textbox "Instagram content link *" [ref=e1540]:
+                    - /placeholder: Paste an Instagram link
+                  - paragraph [ref=e1541]: Link to the Instagram content receiving comments.
+                - group [ref=e1544] [cursor=pointer]:
+                  - generic [ref=e1545]:
+                    - generic [ref=e1547]:
+                      - text: Quantity
+                      - generic [ref=e1548]: "*"
+                    - generic [ref=e1550]:
+                      - generic [ref=e1551]: "Min: 10"
+                      - generic [ref=e1553]: "Max: 100000"
+                  - spinbutton "Quantity *" [ref=e1557]
+                  - paragraph [ref=e1558]: Number of comments requested.
+                - group [ref=e1561] [cursor=pointer]:
+                  - generic [ref=e1562]:
+                    - generic [ref=e1567]:
+                      - switch "Drip feed" [ref=e1568]
+                      - checkbox [aria-hidden]
+                    - generic [ref=e1569]:
+                      - generic [ref=e1570]: Drip feed
+                      - paragraph [ref=e1573]: Deliver the order in multiple runs.
+              - generic [ref=e1574]: 2 customer input issues in this preview.
+            - generic [ref=e1575]:
+              - button "Order preview summary" [expanded] [ref=e1576]
+              - generic [ref=e1580]:
+                - generic [ref=e1582]:
+                  - generic [ref=e1583]: "Tag:"
+                  - generic [ref=e1584]: Instagram Comments
+                - generic [ref=e1586]:
+                  - generic [ref=e1587]: "Visible fields:"
+                  - generic [ref=e1588]: "3"
+                - generic [ref=e1590]:
+                  - generic [ref=e1591]: "Selected options:"
+                  - generic [ref=e1592]: "0"
+                - generic [ref=e1594]:
+                  - generic [ref=e1595]: "Quantity:"
+                  - generic [ref=e1596]: "1"
+                - generic [ref=e1598]:
+                  - generic [ref=e1599]: "Min/Max:"
+                  - generic [ref=e1600]: 10 - 100,000
+                - button "Services details" [ref=e1601]:
+                  - generic [ref=e1602]:
+                    - generic [ref=e1603]: "Services:"
+                    - generic [ref=e1604]: "1"
+                - button "Base details" [ref=e1605]:
+                  - generic [ref=e1606]:
+                    - generic [ref=e1607]: "Base:"
+                    - generic [ref=e1608]: "5.625"
+                - button "Utilities details" [ref=e1609]:
+                  - generic [ref=e1610]:
+                    - generic [ref=e1611]: "Utilities:"
+                    - generic [ref=e1612]: "0"
+                - button "Total details" [ref=e1613]:
+                  - generic [ref=e1614]:
+                    - generic [ref=e1615]: "Total:"
+                    - generic [ref=e1616]: "5.625"
+                - button "Utility lines details" [ref=e1617]:
+                  - generic [ref=e1618]:
+                    - generic [ref=e1619]: "Utility lines:"
+                    - generic [ref=e1620]: "0"
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - button "Console 0":
+              - generic: Console
+              - generic: "0"
+            - button "Active Services 211":
+              - generic: Active Services
+              - generic: "211"
+            - button "All Services 233":
+              - generic: All Services
+              - generic: "233"
+          - generic:
+            - button "Drag panel"
+            - button "Close"
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - paragraph: Validation Console
+                          - paragraph: Validation rows reflect canonical definition and publication consistency checks.
+                          - generic:
+                            - generic: Validating...
+                            - generic: Ctrl/Cmd + J
+                            - generic: Press Escape to close
+                        - generic:
+                          - button "Minimize"
+                          - button "Dismiss"
+                    - generic:
+                      - generic:
+                        - generic:
+                          - button "Validation 0":
+                            - generic: Validation
+                            - generic: "0"
+                          - button "Logs 0":
+                            - generic: Logs
+                            - generic: "0"
+                          - button "Notices 0":
+                            - generic: Notices
+                            - generic: "0"
+                      - generic:
+                        - generic: Scope
+                        - button "All items"
+                        - button "Active node"
+                        - generic: Severity
+                        - button "all"
+                        - button "error"
+                        - button "warning"
+                        - button "info"
+                    - generic:
+                      - heading "No validation rows for this filter" [level=4]
+                      - paragraph: No validation rows match the current severity filter.

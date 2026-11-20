@@ -18,19 +18,33 @@
       "id": "t:custom-comments",
       "label": "Custom Comments",
       "bind_id": "t:root",
-      "service_id": 862
+      "service_id": 862,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:package",
       "label": "Package",
       "bind_id": "t:root",
-      "service_id": 1446
+      "service_id": 1446,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ],
+      "quantity_default": 1
     },
     {
       "id": "t:custom-comments-package",
       "label": "Custom Comments Package",
       "bind_id": "t:root",
-      "service_id": 1455
+      "service_id": 1455,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ],
+      "quantity_default": 1
     },
     {
       "id": "t:default-standard",
@@ -78,73 +92,125 @@
       "id": "t:custom-standard",
       "label": "Standard custom comments",
       "bind_id": "t:custom-comments",
-      "service_id": 860
+      "service_id": 860,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:custom-reels",
       "label": "Reel custom comments",
       "bind_id": "t:custom-comments",
-      "service_id": 816
+      "service_id": 816,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:custom-verified",
       "label": "Verified account comments",
       "bind_id": "t:custom-comments",
-      "service_id": 995
+      "service_id": 995,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:custom-super",
       "label": "Super Services",
       "bind_id": "t:custom-comments",
-      "service_id": 1039
+      "service_id": 1039,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:custom-exclusive",
       "label": "Exclusive custom comments",
       "bind_id": "t:custom-comments",
-      "service_id": 56
+      "service_id": 56,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:custom-regions",
       "label": "Countries/regions custom comments",
       "bind_id": "t:custom-comments",
-      "service_id": 1338
+      "service_id": 1338,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:package-fixed",
       "label": "Comment packages",
       "bind_id": "t:package",
-      "service_id": 1445
+      "service_id": 1445,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ],
+      "quantity_default": 1
     },
     {
       "id": "t:package-auto",
       "label": "Auto Comments",
       "bind_id": "t:package",
-      "service_id": 1504
+      "service_id": 1504,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ],
+      "quantity_default": 1
     },
     {
       "id": "t:custom-package-fixed",
       "label": "Custom comment packages",
       "bind_id": "t:custom-comments-package",
-      "service_id": 1454
+      "service_id": 1454,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ],
+      "quantity_default": 1
     },
     {
       "id": "t:custom-package-auto",
       "label": "Custom Auto Comments",
       "bind_id": "t:custom-comments-package",
-      "service_id": 1505
+      "service_id": 1505,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ],
+      "quantity_default": 1
     },
     {
       "id": "t:poll",
       "label": "Poll",
       "bind_id": "t:root",
-      "service_id": 936
+      "service_id": 936,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:replies",
       "label": "Comment Replies",
       "bind_id": "t:root",
-      "service_id": 943
+      "service_id": 943,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:default-standard-style-or-tone",
@@ -240,49 +306,81 @@
       "id": "t:custom-standard-general-custom-comments",
       "label": "General custom comments",
       "bind_id": "t:custom-standard",
-      "service_id": 861
+      "service_id": 861,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:custom-standard-language-or-region",
       "label": "Language/region (Custom standard)",
       "bind_id": "t:custom-standard",
-      "service_id": 853
+      "service_id": 853,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:custom-standard-gender",
       "label": "Gender (Custom standard)",
       "bind_id": "t:custom-standard",
-      "service_id": 909
+      "service_id": 909,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:custom-standard-relevance",
       "label": "Relevance (Custom)",
       "bind_id": "t:custom-standard",
-      "service_id": 866
+      "service_id": 866,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:custom-standard-premium-or-high-end",
       "label": "Premium/high-end",
       "bind_id": "t:custom-standard",
-      "service_id": 903
+      "service_id": 903,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:custom-reels-gender",
       "label": "Gender (Custom Reels)",
       "bind_id": "t:custom-reels",
-      "service_id": 818
+      "service_id": 818,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:custom-reels-language-or-region",
       "label": "Language/region (Custom Reels)",
       "bind_id": "t:custom-reels",
-      "service_id": 822
+      "service_id": 822,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:custom-reels-hq-wording",
       "label": "HQ wording (Custom Reels)",
       "bind_id": "t:custom-reels",
-      "service_id": 819
+      "service_id": 819,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
     },
     {
       "id": "t:default-standard-general-random",
@@ -313,6 +411,16 @@
       "label": "Positive tone",
       "bind_id": "t:default-channel",
       "service_id": 1156
+    },
+    {
+      "id": "t:others",
+      "label": "Others",
+      "bind_id": "t:root",
+      "service_id": 36,
+      "quantity_default": 1000,
+      "excludes": [
+        "f:quantity"
+      ]
     }
   ],
   "fields": [
@@ -354,7 +462,7 @@
       },
       "visibility_expression": {
         "language": "javascript",
-        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.meta?.provider_payload_type === \"Default\")"
+        "body": "preview.selection.filter_id !== \"t:others\" && preview.service_context.length > 0 && preview.service_context.every(service => service.meta?.provider_payload_type === \"Default\")"
       }
     },
     {
@@ -381,7 +489,6 @@
         "placeholder": "e.g. 5"
       },
       "description": "Number of deliveries in the drip-feed schedule.",
-      "bind_id": "t:root",
       "visibility_expression": {
         "language": "javascript",
         "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.meta?.provider_payload_type === \"Default\") && preview.service_context.every(service => service.capabilities?.dripfeed?.enabled === true) && preview.selection.trigger_ids.includes(\"f:drip_feed\")"
@@ -397,7 +504,6 @@
         "placeholder": "e.g. 60"
       },
       "description": "Minutes between each drip-feed run.",
-      "bind_id": "t:root",
       "visibility_expression": {
         "language": "javascript",
         "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.meta?.provider_payload_type === \"Default\") && preview.service_context.every(service => service.capabilities?.dripfeed?.enabled === true) && preview.selection.trigger_ids.includes(\"f:drip_feed\")"
@@ -408,7 +514,7 @@
       "type": "chips",
       "variant": "default",
       "label": "Comments to post",
-      "bind_id": "t:root",
+      "bind_id": "t:custom-comments",
       "name": "comments",
       "required": true,
       "defaults": {
@@ -433,7 +539,7 @@
       "id": "f:poll-answer",
       "type": "number",
       "label": "Poll answer number",
-      "bind_id": "t:root",
+      "bind_id": "t:poll",
       "name": "answer_number",
       "required": true,
       "description": "Poll option number to receive votes.",
@@ -449,7 +555,7 @@
       "id": "f:reply-username",
       "type": "text",
       "label": "Comment owner username",
-      "bind_id": "t:root",
+      "bind_id": "t:replies",
       "name": "username",
       "required": true,
       "visibility_expression": {
@@ -2085,7 +2191,7 @@
       "type": "chips",
       "variant": "default",
       "label": "Package comments",
-      "bind_id": "t:root",
+      "bind_id": "t:custom-comments-package",
       "name": "package_comments",
       "required": true,
       "defaults": {
@@ -2096,11 +2202,6 @@
         "placeholder": "Type a comment and press Enter"
       },
       "description": "Enter one comment per line.",
-      "pricing_role": "base",
-      "quantity": {
-        "value_by": "length",
-        "multiply": 1
-      },
       "visibility_expression": {
         "language": "javascript",
         "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.meta?.provider_payload_type === \"Custom Comments Package\")"
@@ -2111,7 +2212,7 @@
       "type": "chips",
       "variant": "default",
       "label": "Reply text",
-      "bind_id": "t:root",
+      "bind_id": "t:replies",
       "name": "reply_comments",
       "required": true,
       "defaults": {
@@ -2137,7 +2238,7 @@
       "type": "number",
       "variant": "default",
       "label": "Poll quantity",
-      "bind_id": "t:root",
+      "bind_id": "t:poll",
       "required": true,
       "name": "poll_quantity",
       "visibility_expression": {
@@ -2146,6 +2247,11 @@
       },
       "defaults": {
         "placeholder": "Enter the number of votes"
+      },
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "value",
+        "multiply": 1
       }
     },
     {
@@ -2637,6 +2743,207 @@
       "defaults": {
         "placeholder": "Select a delivery option"
       }
+    },
+    {
+      "id": "f:service-others",
+      "type": "select",
+      "variant": "default",
+      "label": "Fixed-quantity comment options",
+      "bind_id": "t:others",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a fixed-quantity comment option",
+        "searchable": true
+      },
+      "description": "The order quantity is fixed at 1,000 for these offers. The provider lists a separate comment count. Confirm delivered counts before ordering.",
+      "options": [
+        {
+          "id": "o:others:36",
+          "label": "Worldwide Power comments · Provider lists 80",
+          "value": "36",
+          "service_id": 36
+        },
+        {
+          "id": "o:others:39",
+          "label": "USA/UK Power comments · Provider lists 40",
+          "value": "39",
+          "service_id": 39
+        },
+        {
+          "id": "o:others:883",
+          "label": "Power comments, region unspecified · Provider lists 10",
+          "value": "883",
+          "service_id": 883
+        },
+        {
+          "id": "o:others:884",
+          "label": "Power comments, region unspecified · Provider lists 40",
+          "value": "884",
+          "service_id": 884
+        },
+        {
+          "id": "o:others:885",
+          "label": "Power comments, region unspecified · Provider lists 100",
+          "value": "885",
+          "service_id": 885
+        },
+        {
+          "id": "o:others:945",
+          "label": "Comments from female accounts · Provider lists 10",
+          "value": "945",
+          "service_id": 945
+        },
+        {
+          "id": "o:others:946",
+          "label": "Comments from female accounts · Provider lists 20",
+          "value": "946",
+          "service_id": 946
+        },
+        {
+          "id": "o:others:947",
+          "label": "Comments from female accounts · Provider lists 40",
+          "value": "947",
+          "service_id": 947
+        },
+        {
+          "id": "o:others:948",
+          "label": "Comments from female accounts · Provider lists 80",
+          "value": "948",
+          "service_id": 948
+        },
+        {
+          "id": "o:others:949",
+          "label": "Comments from female accounts · Provider lists 100",
+          "value": "949",
+          "service_id": 949
+        },
+        {
+          "id": "o:others:952",
+          "label": "Female accounts with 10K+ followers · Provider lists 10",
+          "value": "952",
+          "service_id": 952
+        },
+        {
+          "id": "o:others:953",
+          "label": "Female accounts with 10K+ followers · Provider lists 20",
+          "value": "953",
+          "service_id": 953
+        },
+        {
+          "id": "o:others:954",
+          "label": "Female accounts with 10K+ followers · Provider lists 40",
+          "value": "954",
+          "service_id": 954
+        },
+        {
+          "id": "o:others:956",
+          "label": "Worldwide Power comments · Provider lists 5",
+          "value": "956",
+          "service_id": 956
+        },
+        {
+          "id": "o:others:957",
+          "label": "Worldwide Power comments · Provider lists 10",
+          "value": "957",
+          "service_id": 957
+        },
+        {
+          "id": "o:others:959",
+          "label": "Worldwide Power comments · Provider lists 40",
+          "value": "959",
+          "service_id": 959
+        },
+        {
+          "id": "o:others:961",
+          "label": "Worldwide Power comments · Provider lists 100",
+          "value": "961",
+          "service_id": 961
+        },
+        {
+          "id": "o:others:964",
+          "label": "USA/UK Power comments · Provider lists 10",
+          "value": "964",
+          "service_id": 964
+        },
+        {
+          "id": "o:others:967",
+          "label": "USA/UK Power comments · Provider lists 80",
+          "value": "967",
+          "service_id": 967
+        },
+        {
+          "id": "o:others:969",
+          "label": "Brazil Power comments · Provider lists 5",
+          "value": "969",
+          "service_id": 969
+        },
+        {
+          "id": "o:others:970",
+          "label": "Brazil Power comments · Provider lists 10",
+          "value": "970",
+          "service_id": 970
+        },
+        {
+          "id": "o:others:973",
+          "label": "South Korea Power comments · Provider lists 5",
+          "value": "973",
+          "service_id": 973
+        },
+        {
+          "id": "o:others:974",
+          "label": "South Korea Power comments · Provider lists 10",
+          "value": "974",
+          "service_id": 974
+        },
+        {
+          "id": "o:others:980",
+          "label": "Arabic Power comments · Provider lists 40",
+          "value": "980",
+          "service_id": 980
+        },
+        {
+          "id": "o:others:982",
+          "label": "Arabic Power comments · Provider lists 80",
+          "value": "982",
+          "service_id": 982
+        },
+        {
+          "id": "o:others:983",
+          "label": "Power comments, French flag in listing · Provider lists 5",
+          "value": "983",
+          "service_id": 983
+        },
+        {
+          "id": "o:others:984",
+          "label": "Power comments, French flag in listing · Provider lists 10",
+          "value": "984",
+          "service_id": 984
+        },
+        {
+          "id": "o:others:986",
+          "label": "Female accounts with 10K+ followers · Provider lists 20 · Alternate",
+          "value": "986",
+          "service_id": 986
+        },
+        {
+          "id": "o:others:987",
+          "label": "Female accounts with 10K+ followers · Provider lists 40 · Alternate",
+          "value": "987",
+          "service_id": 987
+        },
+        {
+          "id": "o:others:996",
+          "label": "Top tier comments · Provider lists 300",
+          "value": "996",
+          "service_id": 996
+        },
+        {
+          "id": "o:others:887",
+          "label": "Arabic Power comments · Provider lists 5 · Delivery pace varies",
+          "value": "887",
+          "service_id": 887
+        }
+      ]
     }
   ],
   "order_for_tags": {
@@ -2645,13 +2952,7 @@
       "f:quantity",
       "f:drip_feed",
       "f:runs",
-      "f:interval",
-      "f:comments",
-      "f:comments-package",
-      "f:comments-replies",
-      "f:poll-answer",
-      "f:poll-quantity",
-      "f:reply-username"
+      "f:interval"
     ],
     "t:default-standard": [
       "f:link",
@@ -2917,6 +3218,10 @@
       "f:link",
       "f:quantity",
       "f:drip_feed"
+    ],
+    "t:others": [
+      "f:link",
+      "f:service-others"
     ]
   },
   "includes_for_buttons": {
@@ -3072,6 +3377,33 @@
       ],
       "o:default-regions:1428": [
         1428
+      ],
+      "o:others:36": [
+        960
+      ],
+      "o:others:39": [
+        966
+      ],
+      "o:others:964": [
+        1326
+      ],
+      "o:others:969": [
+        1373
+      ],
+      "o:others:970": [
+        1374
+      ],
+      "o:others:973": [
+        1425
+      ],
+      "o:others:974": [
+        1426
+      ],
+      "o:others:887": [
+        977
+      ],
+      "t:others": [
+        960
       ]
     },
     "global": {}
@@ -3079,10 +3411,10 @@
   "notices": [],
   "meta": {
     "source_mapping_key": "instagram-comments-comments",
-    "source_registry": "service-products/handler services.json snapshot 2026-11-16",
+    "source_registry": "service-products/handler services.json snapshot 2026-11-18",
     "source_registry_scope": "payload.panel_key jap; target site/tenant not identified in source",
     "mapped_handler_count": 233,
-    "selection_model": "Each tag has a default service; its service-choice field lists mapped services in that category. Fallbacks are attached only to compatible choices with evidenced overlap.",
+    "selection_model": "Each tag has a default service. Compatible alternatives use ordered node fallbacks. Others exposes fixed-quantity options with provider-listed counts distinguished from quantity bounds.",
     "quantity_conflict_handler_ids": [
       33,
       34,
@@ -3162,46 +3494,6 @@
     "unresolved_auto_comment_rows": [
       1504,
       1505
-    ],
-    "deferred_fixed_quantity_handler_ids": [
-      36,
-      39,
-      883,
-      884,
-      885,
-      945,
-      946,
-      947,
-      948,
-      949,
-      952,
-      953,
-      954,
-      956,
-      957,
-      959,
-      960,
-      961,
-      964,
-      966,
-      967,
-      969,
-      970,
-      973,
-      974,
-      977,
-      980,
-      982,
-      983,
-      984,
-      986,
-      987,
-      996,
-      1326,
-      1373,
-      1374,
-      1425,
-      1426
     ]
   }
 }

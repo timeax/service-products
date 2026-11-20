@@ -1,0 +1,748 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic [aria-hidden]:
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=1]: Service Builder
+                    - button:
+                      - generic: Active branch - main
+                - generic:
+                  - button
+            - generic:
+              - generic:
+                - tablist [aria-hidden]:
+                  - tab [selected]:
+                    - generic: Layers
+                  - tab:
+                    - generic: Assets
+                - tabpanel "Layers":
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic [aria-hidden]:
+                          - generic:
+                            - heading [level=3]: Tag hierarchy
+                            - paragraph: Structure the visible groups and inheritance tree.
+                          - generic:
+                            - button
+                            - button
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic [aria-hidden]:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - button:
+                                            - generic:
+                                              - generic: Instagram Comments
+                                              - button
+                                - status
+                    - generic:
+                      - generic [aria-hidden]:
+                        - generic:
+                          - heading [level=3]: Fields in view
+                          - paragraph: Under Instagram Comments
+                        - generic:
+                          - button
+                          - button [disabled]
+                          - button
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic [aria-hidden]:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - button:
+                                          - generic:
+                                            - generic: Instagram content link
+                                            - button
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - button:
+                                          - generic:
+                                            - generic: Quantity
+                                            - button
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - button:
+                                          - generic:
+                                            - generic: Drip feed
+                                            - button
+                              - status
+        - generic:
+          - generic:
+            - application:
+              - generic [aria-hidden]:
+                - generic:
+                  - generic:
+                    - img:
+                      - group [ref=e3127] [cursor=pointer]
+                    - img:
+                      - group [ref=e3128] [cursor=pointer]
+                    - img:
+                      - group [ref=e3129] [cursor=pointer]
+                    - img:
+                      - group [ref=e3130] [cursor=pointer]
+                    - img:
+                      - group [ref=e3131] [cursor=pointer]
+                    - img:
+                      - group [ref=e3132] [cursor=pointer]
+                    - img:
+                      - group [ref=e3133] [cursor=pointer]
+                    - img:
+                      - group [ref=e3134] [cursor=pointer]
+                    - img:
+                      - group [ref=e3135] [cursor=pointer]
+                    - img:
+                      - group [ref=e3136] [cursor=pointer]
+                    - img:
+                      - group [ref=e3137] [cursor=pointer]
+                    - img:
+                      - group [ref=e3138] [cursor=pointer]
+                    - img:
+                      - group [ref=e3139] [cursor=pointer]
+                    - img:
+                      - group [ref=e3140] [cursor=pointer]
+                    - img:
+                      - group [ref=e3141] [cursor=pointer]
+                    - img:
+                      - group [ref=e3142] [cursor=pointer]
+                    - img:
+                      - group [ref=e3143] [cursor=pointer]
+                    - img:
+                      - group [ref=e3144] [cursor=pointer]
+                    - img:
+                      - group [ref=e3145] [cursor=pointer]
+                    - img:
+                      - group [ref=e3146] [cursor=pointer]
+                    - img:
+                      - group [ref=e3147] [cursor=pointer]
+                    - img:
+                      - group [ref=e3148] [cursor=pointer]
+                    - img:
+                      - group [ref=e3149] [cursor=pointer]
+                    - img:
+                      - group [ref=e3150] [cursor=pointer]
+                    - img:
+                      - group [ref=e3151] [cursor=pointer]
+                    - img:
+                      - group [ref=e3152] [cursor=pointer]
+                    - img:
+                      - group [ref=e3153] [cursor=pointer]
+                    - img:
+                      - group [ref=e3154] [cursor=pointer]
+                    - img:
+                      - group [ref=e3155] [cursor=pointer]
+                    - img:
+                      - group [ref=e3156] [cursor=pointer]
+                    - img:
+                      - group [ref=e3157] [cursor=pointer]
+                    - img:
+                      - group [ref=e3158] [cursor=pointer]
+                    - img:
+                      - group [ref=e3159] [cursor=pointer]
+                    - img:
+                      - group [ref=e3160] [cursor=pointer]
+                    - img:
+                      - group [ref=e3161] [cursor=pointer]
+                    - img:
+                      - group [ref=e3162] [cursor=pointer]
+                    - img:
+                      - group [ref=e3163] [cursor=pointer]
+                    - img:
+                      - group [ref=e3164] [cursor=pointer]
+                    - img:
+                      - group [ref=e3165] [cursor=pointer]
+                    - img:
+                      - group [ref=e3166] [cursor=pointer]
+                    - img:
+                      - group [ref=e3167] [cursor=pointer]
+                    - img:
+                      - group [ref=e3168] [cursor=pointer]
+                    - img:
+                      - group [ref=e3169] [cursor=pointer]
+                    - img:
+                      - group [ref=e3170] [cursor=pointer]
+                    - img:
+                      - group [ref=e3171] [cursor=pointer]
+                    - img:
+                      - group [ref=e3172] [cursor=pointer]
+                    - img:
+                      - group [ref=e3173] [cursor=pointer]
+                    - img:
+                      - group [ref=e3174] [cursor=pointer]
+                    - img:
+                      - group [ref=e3175] [cursor=pointer]
+                    - img:
+                      - group [ref=e3176] [cursor=pointer]
+                    - img:
+                      - group [ref=e3177] [cursor=pointer]
+                    - img:
+                      - group [ref=e3178] [cursor=pointer]
+                    - img:
+                      - group [ref=e3179] [cursor=pointer]
+                    - img:
+                      - group [ref=e3180] [cursor=pointer]
+                    - img:
+                      - group [ref=e3181] [cursor=pointer]
+                    - img:
+                      - group [ref=e3182] [cursor=pointer]
+                    - img:
+                      - group [ref=e3183] [cursor=pointer]
+                    - img:
+                      - group [ref=e3184] [cursor=pointer]
+                    - img:
+                      - group [ref=e3185] [cursor=pointer]
+                    - img:
+                      - group [ref=e3186] [cursor=pointer]
+                    - img:
+                      - group [ref=e3187] [cursor=pointer]
+                    - img:
+                      - group [ref=e3188] [cursor=pointer]
+                    - img:
+                      - group [ref=e3189] [cursor=pointer]
+                    - img:
+                      - group [ref=e3190] [cursor=pointer]
+                    - img:
+                      - group [ref=e3191] [cursor=pointer]
+                    - img:
+                      - group [ref=e3192] [cursor=pointer]
+                    - img:
+                      - group [ref=e3193] [cursor=pointer]
+                    - img:
+                      - group [ref=e3194] [cursor=pointer]
+                    - img:
+                      - group [ref=e3195] [cursor=pointer]
+                    - img:
+                      - group [ref=e3196] [cursor=pointer]
+                    - img:
+                      - group [ref=e3197] [cursor=pointer]
+                    - img:
+                      - group [ref=e3198] [cursor=pointer]
+                    - img:
+                      - group [ref=e3199] [cursor=pointer]
+                    - img:
+                      - group [ref=e3200] [cursor=pointer]
+                    - img:
+                      - group [ref=e3201] [cursor=pointer]
+                    - img:
+                      - group [ref=e3202] [cursor=pointer]
+                    - img:
+                      - group [ref=e3203] [cursor=pointer]
+                    - img:
+                      - group [ref=e3204] [cursor=pointer]
+                    - img:
+                      - group [ref=e3205] [cursor=pointer]
+                    - img:
+                      - group [ref=e3206] [cursor=pointer]
+                    - img:
+                      - group [ref=e3207] [cursor=pointer]
+                    - img:
+                      - group [ref=e3208] [cursor=pointer]
+                    - img:
+                      - group [ref=e3209] [cursor=pointer]
+                    - img:
+                      - group [ref=e3210] [cursor=pointer]
+                    - img:
+                      - group [ref=e3211] [cursor=pointer]
+                    - img:
+                      - group [ref=e3212] [cursor=pointer]
+                    - img:
+                      - group [ref=e3213] [cursor=pointer]
+                    - img:
+                      - group [ref=e3214] [cursor=pointer]
+                    - img:
+                      - group [ref=e3215] [cursor=pointer]
+                    - img:
+                      - group [ref=e3216] [cursor=pointer]
+                    - img:
+                      - group [ref=e3217] [cursor=pointer]
+                    - img:
+                      - group [ref=e3218] [cursor=pointer]
+                    - img:
+                      - group [ref=e3219] [cursor=pointer]
+                    - img:
+                      - group [ref=e3220] [cursor=pointer]
+                    - img:
+                      - group [ref=e3221] [cursor=pointer]
+                    - generic:
+                      - group [ref=e1976]:
+                        - generic [ref=e1978]: Instagram Comments
+                      - group [ref=e1987]:
+                        - generic [ref=e1989]: Default
+                      - group [ref=e1998]:
+                        - generic [ref=e2000]: Custom Comments
+                      - group [ref=e2009]:
+                        - generic [ref=e2011]: Package
+                      - group [ref=e2020]:
+                        - generic [ref=e2022]: Custom Comments Package
+                      - group [ref=e2031]:
+                        - generic [ref=e2033]: Standard
+                      - group [ref=e2042]:
+                        - generic [ref=e2044]: Exclusive
+                      - group [ref=e2053]:
+                        - generic [ref=e2055]: Reels
+                      - group [ref=e2064]:
+                        - generic [ref=e2066]: Verified accounts
+                      - group [ref=e2075]:
+                        - generic [ref=e2077]: Countries/regions
+                      - group [ref=e2086]:
+                        - generic [ref=e2088]: Live video
+                      - group [ref=e2097]:
+                        - generic [ref=e2099]: Channel comments
+                      - group [ref=e2108]:
+                        - generic [ref=e2110]: Standard custom comments
+                      - group [ref=e2119]:
+                        - generic [ref=e2121]: Reel custom comments
+                      - group [ref=e2130]:
+                        - generic [ref=e2132]: Verified account comments
+                      - group [ref=e2141]:
+                        - generic [ref=e2143]: Super Services
+                      - group [ref=e2152]:
+                        - generic [ref=e2154]: Exclusive custom comments
+                      - group [ref=e2163]:
+                        - generic [ref=e2165]: Countries/regions custom comments
+                      - group [ref=e2174]:
+                        - generic [ref=e2176]: Comment packages
+                      - group [ref=e2185]:
+                        - generic [ref=e2187]: Auto Comments
+                      - group [ref=e2196]:
+                        - generic [ref=e2198]: Custom comment packages
+                      - group [ref=e2207]:
+                        - generic [ref=e2209]: Custom Auto Comments
+                      - group [ref=e2218]:
+                        - generic [ref=e2220]: Poll
+                      - group [ref=e2229]:
+                        - generic [ref=e2231]: Comment Replies
+                      - group [ref=e2240]:
+                        - generic [ref=e2242]: Style or tone
+                      - group [ref=e2251]:
+                        - generic [ref=e2253]: Relevance
+                      - group [ref=e2262]:
+                        - generic [ref=e2264]: Audience (Standard)
+                      - group [ref=e2273]:
+                        - generic [ref=e2275]: Language/region (Standard)
+                      - group [ref=e2284]:
+                        - generic [ref=e2286]: Power/Explore (Exclusive)
+                      - group [ref=e2295]:
+                        - generic [ref=e2297]: Audience (Exclusive)
+                      - group [ref=e2306]:
+                        - generic [ref=e2308]: Language/region (Exclusive)
+                      - group [ref=e2317]:
+                        - generic [ref=e2319]: Audience (Reels)
+                      - group [ref=e2328]:
+                        - generic [ref=e2330]: Language/region (Reels)
+                      - group [ref=e2339]:
+                        - generic [ref=e2341]: HQ wording (Reels)
+                      - group [ref=e2350]:
+                        - generic [ref=e2352]: Power/Explore (Verified)
+                      - group [ref=e2361]:
+                        - generic [ref=e2363]: Audience (Verified)
+                      - group [ref=e2372]:
+                        - generic [ref=e2374]: Language/region (Verified)
+                      - group [ref=e2383]:
+                        - generic [ref=e2385]: Random (Live)
+                      - group [ref=e2394]:
+                        - generic [ref=e2396]: Audience (Live)
+                      - group [ref=e2405]:
+                        - generic [ref=e2407]: General custom comments
+                      - group [ref=e2416]:
+                        - generic [ref=e2418]: Language/region (Custom standard)
+                      - group [ref=e2427]:
+                        - generic [ref=e2429]: Gender (Custom standard)
+                      - group [ref=e2438]:
+                        - generic [ref=e2440]: Relevance (Custom)
+                      - group [ref=e2449]:
+                        - generic [ref=e2451]: Premium/high-end
+                      - group [ref=e2460]:
+                        - generic [ref=e2462]: Gender (Custom Reels)
+                      - group [ref=e2471]:
+                        - generic [ref=e2473]: Language/region (Custom Reels)
+                      - group [ref=e2482]:
+                        - generic [ref=e2484]: HQ wording (Custom Reels)
+                      - group [ref=e2493]:
+                        - generic [ref=e2495]: General/random
+                      - group [ref=e2504]:
+                        - generic [ref=e2506]: Delivery details (Standard)
+                      - group [ref=e2515]:
+                        - generic [ref=e2517]: Delivery details (Exclusive)
+                      - group [ref=e2526]:
+                        - generic [ref=e2528]: Instant delivery
+                      - group [ref=e2537]:
+                        - generic [ref=e2539]: Positive tone
+                      - group [ref=e2548]:
+                        - generic [ref=e2550]: Others
+                      - group [ref=e2559]:
+                        - generic [ref=e2561]: Instagram content link
+                      - group [ref=e2568]:
+                        - generic [ref=e2570]: Quantity
+                      - group [ref=e2577]:
+                        - generic [ref=e2579]: Drip feed
+                      - group [ref=e2586]:
+                        - generic [ref=e2588]: Runs
+                      - group [ref=e2595]:
+                        - generic [ref=e2597]: Interval (minutes)
+                      - group [ref=e2604]:
+                        - generic [ref=e2606]: Comments to post
+                      - group [ref=e2613]:
+                        - generic [ref=e2615]: Poll answer number
+                      - group [ref=e2622]:
+                        - generic [ref=e2624]: Comment owner username
+                      - group [ref=e2631]:
+                        - generic [ref=e2633]: Language or region
+                      - group [ref=e2640]:
+                        - generic [ref=e2642]: Targeting
+                      - group [ref=e2649]:
+                        - generic [ref=e2651]: Region
+                      - group [ref=e2658]:
+                        - generic [ref=e2660]: Region
+                      - group [ref=e2667]:
+                        - generic [ref=e2669]: Language or region
+                      - group [ref=e2676]:
+                        - generic [ref=e2678]: Package size
+                      - group [ref=e2685]:
+                        - generic [ref=e2687]: Package size
+                      - group [ref=e2694]:
+                        - generic [ref=e2696]: Comment style
+                      - group [ref=e2703]:
+                        - generic [ref=e2705]: Relevance
+                      - group [ref=e2712]:
+                        - generic [ref=e2714]: Audience
+                      - group [ref=e2721]:
+                        - generic [ref=e2723]: Language or region
+                      - group [ref=e2730]:
+                        - generic [ref=e2732]: Audience
+                      - group [ref=e2739]:
+                        - generic [ref=e2741]: Audience
+                      - group [ref=e2748]:
+                        - generic [ref=e2750]: Language or region
+                      - group [ref=e2757]:
+                        - generic [ref=e2759]: Audience
+                      - group [ref=e2766]:
+                        - generic [ref=e2768]: Language or region
+                      - group [ref=e2775]:
+                        - generic [ref=e2777]: Quality
+                      - group [ref=e2784]:
+                        - generic [ref=e2786]: Audience
+                      - group [ref=e2793]:
+                        - generic [ref=e2795]: Audience
+                      - group [ref=e2802]:
+                        - generic [ref=e2804]: Language or region
+                      - group [ref=e2811]:
+                        - generic [ref=e2813]: Comment style
+                      - group [ref=e2820]:
+                        - generic [ref=e2822]: Audience
+                      - group [ref=e2829]:
+                        - generic [ref=e2831]: Custom comments
+                      - group [ref=e2838]:
+                        - generic [ref=e2840]: Language or region
+                      - group [ref=e2847]:
+                        - generic [ref=e2849]: Audience
+                      - group [ref=e2856]:
+                        - generic [ref=e2858]: Relevance
+                      - group [ref=e2865]:
+                        - generic [ref=e2867]: Service type
+                      - group [ref=e2874]:
+                        - generic [ref=e2876]: Audience
+                      - group [ref=e2883]:
+                        - generic [ref=e2885]: Language or region
+                      - group [ref=e2892]:
+                        - generic [ref=e2894]: Quality
+                      - group [ref=e2901]:
+                        - generic [ref=e2903]: Package comments
+                      - group [ref=e2910]:
+                        - generic [ref=e2912]: Reply text
+                      - group [ref=e2919]:
+                        - generic [ref=e2921]: Poll quantity
+                      - group [ref=e2928]:
+                        - generic [ref=e2930]: Comment style
+                      - group [ref=e2937]:
+                        - generic [ref=e2939]: Delivery
+                      - group [ref=e2946]:
+                        - generic [ref=e2948]: Delivery
+                      - group [ref=e2955]:
+                        - generic [ref=e2957]: Delivery
+                      - group [ref=e2964]:
+                        - generic [ref=e2966]: Fixed-quantity comment options
+                      - group [ref=e2973]:
+                        - generic [ref=e2974]:
+                          - generic [ref=e2975]: Service context
+                          - generic [ref=e2976]: "Active tag: Instagram Comments"
+                          - generic [ref=e2977]: "Selected buttons: 0"
+                          - generic [ref=e2979]:
+                            - generic [ref=e2980]:
+                              - generic [ref=e2981]: "Instagram Comments [RANDOM] [Max: 75K] [Start Time: 0-1 Hour] [Speed: 10K/Day] 💧"
+                              - generic [ref=e2982]: Rate 5.625
+                            - generic [ref=e2983]: Meets filter capabilities
+              - generic [aria-hidden]:
+                - generic:
+                  - generic [ref=e2984]:
+                    - button [ref=e3222]
+                    - button [ref=e3223]
+                    - button [ref=e3224]
+                  - button [ref=e3225]
+                  - button [ref=e3226]
+              - generic [aria-hidden]:
+                - generic [ref=e2992]:
+                  - button [ref=e3227]
+                  - button [ref=e3228]
+                - generic [ref=e2996]:
+                  - button [ref=e3229]
+                  - button [disabled]
+                  - button [disabled]
+                  - button [ref=e3230]
+                  - button [ref=e3231]
+                  - button [ref=e3232]
+                  - button [ref=e3233]
+                  - button [ref=e3234]
+              - generic [aria-hidden]:
+                - link:
+                  - /url: https://reactflow.dev
+                  - text: React Flow
+        - generic [aria-hidden]:
+          - generic:
+            - generic:
+              - generic:
+                - button
+                - button
+              - button
+            - generic:
+              - tablist:
+                - tab: Comments
+                - tab: Properties
+                - tab [selected]: Wireframe
+              - tabpanel:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: "Tags:"
+                                  - generic:
+                                    - button:
+                                      - generic: Instagram Comments
+                                    - button:
+                                      - generic: Default
+                                    - button:
+                                      - generic: Custom Comments
+                                    - button:
+                                      - generic: Package
+                                    - button:
+                                      - generic: Custom Comments Package
+                                    - button:
+                                      - generic: Poll
+                                    - button:
+                                      - generic: Comment Replies
+                                    - button:
+                                      - generic: Others
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - group:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - text: Instagram content link
+                                              - generic: "*"
+                                        - generic:
+                                          - generic:
+                                            - textbox:
+                                              - /placeholder: Paste an Instagram link
+                                        - paragraph: Link to the Instagram content receiving comments.
+                                  - generic:
+                                    - generic:
+                                      - group:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - text: Quantity
+                                              - generic: "*"
+                                          - generic:
+                                            - generic:
+                                              - generic: "Min: 10"
+                                              - generic: "Max: 100000"
+                                        - generic:
+                                          - generic:
+                                            - spinbutton
+                                        - paragraph: Number of comments requested.
+                                  - generic:
+                                    - generic:
+                                      - group:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - switch
+                                                    - checkbox [aria-hidden]
+                                          - generic:
+                                            - generic: Drip feed
+                                            - paragraph: Deliver the order in multiple runs.
+                                - generic: 2 customer input issues in this preview.
+                    - generic:
+                      - button [expanded]:
+                        - generic: Order preview summary
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: "Tag:"
+                            - generic: Instagram Comments
+                        - generic:
+                          - generic:
+                            - generic: "Visible fields:"
+                            - generic: "3"
+                        - generic:
+                          - generic:
+                            - generic: "Selected options:"
+                            - generic: "0"
+                        - generic:
+                          - generic:
+                            - generic: "Quantity:"
+                            - generic: "1"
+                        - generic:
+                          - generic:
+                            - generic: "Min/Max:"
+                            - generic: 10 - 100,000
+                        - button:
+                          - generic:
+                            - generic: "Services:"
+                            - generic: "1"
+                        - button:
+                          - generic:
+                            - generic: "Base:"
+                            - generic: "5.625"
+                        - button:
+                          - generic:
+                            - generic: "Utilities:"
+                            - generic: "0"
+                        - button:
+                          - generic:
+                            - generic: "Total:"
+                            - generic: "5.625"
+                        - button:
+                          - generic:
+                            - generic: "Utility lines:"
+                            - generic: "0"
+      - generic [aria-hidden]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - button:
+                  - generic: Console
+                  - generic: "0"
+                - button:
+                  - generic: Active Services
+                  - generic: "211"
+                - button:
+                  - generic: All Services
+                  - generic: "233"
+              - generic:
+                - button:
+                  - generic: Drag panel
+                - button: Close
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - paragraph: Validation Console
+                              - paragraph: Validation rows reflect canonical definition and publication consistency checks.
+                              - generic:
+                                - generic: Console idle
+                                - generic: Ctrl/Cmd + J
+                                - generic: Press Escape to close
+                            - generic:
+                              - button: Minimize
+                              - button: Dismiss
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button:
+                                - generic: Validation
+                                - generic: "0"
+                              - button:
+                                - generic: Logs
+                                - generic: "0"
+                              - button:
+                                - generic: Notices
+                                - generic: "0"
+                          - generic:
+                            - generic: Scope
+                            - button: All items
+                            - button: Active node
+                            - generic: Severity
+                            - button: all
+                            - button: error
+                            - button: warning
+                            - button: info
+                        - generic:
+                          - heading [level=4]: No validation rows for this filter
+                          - paragraph: No validation rows match the current severity filter.
+  - dialog [active] [ref=e3236]:
+    - generic [ref=e3237]:
+      - generic [ref=e3238]:
+        - heading "Preview Order" [level=2] [ref=e3239]
+        - paragraph [ref=e3240]: Preview the customer order form for this branch.
+        - button "Close" [ref=e3241]
+      - generic [ref=e3246]:
+        - generic [ref=e3247]:
+          - generic "Order tags" [ref=e3248]:
+            - generic [ref=e3249]: "Tags:"
+            - button "Back to parent tag" [ref=e3319]
+            - button "Others" [pressed] [ref=e3322] [cursor=pointer]
+          - generic [ref=e3257]:
+            - group [ref=e3260]:
+              - generic [ref=e3263]:
+                - text: Instagram content link
+                - generic [ref=e3264]: "*"
+              - textbox "Instagram content link *" [ref=e3267]:
+                - /placeholder: Paste an Instagram link
+              - paragraph [ref=e3268]: Link to the Instagram content receiving comments.
+            - group [ref=e3325]:
+              - generic [ref=e3328]:
+                - text: Fixed-quantity comment options
+                - generic [ref=e3329]: "*"
+              - generic [ref=e3332]:
+                - combobox [ref=e3333]:
+                  - generic [ref=e3334]: Choose a fixed-quantity comment option
+                - combobox [aria-hidden] [ref=e3337]
+              - paragraph [ref=e3338]: The order quantity is fixed at 1,000 for these offers. The provider lists a separate comment count. Confirm delivered counts before ordering.
+        - generic [ref=e3301]:
+          - generic "Order preview summary" [ref=e3302]:
+            - generic [ref=e3303]:
+              - generic [ref=e3304]: Quantity
+              - generic [ref=e3305]: 1,000
+            - generic [ref=e3306]:
+              - generic [ref=e3307]: Amount to pay
+              - generic [ref=e3308]: "7.20"
+            - generic [ref=e3309]:
+              - generic [ref=e3310]: "Catalog rate: 7.2 per 1,000"
+              - status "Not ready to submit" [ref=e3311]
+            - group [ref=e3316]:
+              - generic "Preview details" [ref=e3317] [cursor=pointer]
+          - paragraph [ref=e3318]: Preview only. Orders cannot be submitted from this lab.
