@@ -1,0 +1,502 @@
+{
+  "id": "instagram-mentions-mentions",
+  "name": "Instagram Mentions",
+  "description": "Instagram mentions by custom username list, account followers, hashtags, or post engagement.",
+  "schema_version": "1",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "Custom List",
+      "service_id": 830
+    },
+    {
+      "id": "t:account-followers",
+      "label": "Account Followers",
+      "service_id": 829,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:custom-list-choice"
+      ]
+    },
+    {
+      "id": "t:reels",
+      "label": "Reels",
+      "service_id": 832,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:custom-list-choice"
+      ]
+    },
+    {
+      "id": "t:hashtags",
+      "label": "Hashtags",
+      "service_id": 837,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:custom-list-choice"
+      ]
+    },
+    {
+      "id": "t:post-likers",
+      "label": "Post Likers",
+      "service_id": 838,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:custom-list-choice"
+      ]
+    },
+    {
+      "id": "t:others",
+      "label": "Others",
+      "service_id": 840,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:custom-list-choice"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:custom-list-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      },
+      "options": [
+        {
+          "id": "o:custom-list:50k-day",
+          "label": "50K/day · Starts within 24 hours",
+          "value": "50k-day",
+          "service_id": 830
+        },
+        {
+          "id": "o:custom-list:10k-day-higher-limit",
+          "label": "10K/day · Starts within 24 hours · Higher order limit",
+          "value": "10k-day-higher-limit",
+          "service_id": 831
+        },
+        {
+          "id": "o:custom-list:10k-day",
+          "label": "10K/day · Starts within 24 hours",
+          "value": "10k-day",
+          "service_id": 834
+        }
+      ]
+    },
+    {
+      "id": "f:account-followers-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:account-followers",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      },
+      "options": [
+        {
+          "id": "o:account-followers:50k-day",
+          "label": "50K/day · Starts within 24 hours",
+          "value": "50k-day",
+          "service_id": 829
+        },
+        {
+          "id": "o:account-followers:flexible-pace",
+          "label": "Delivery pace varies · Starts within 24 hours",
+          "value": "flexible-pace",
+          "service_id": 836
+        }
+      ]
+    },
+    {
+      "id": "f:reels-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Audience source",
+      "bind_id": "t:reels",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an audience source"
+      },
+      "options": [
+        {
+          "id": "o:reels:custom-list",
+          "label": "Custom username list",
+          "value": "custom-list",
+          "service_id": 832
+        },
+        {
+          "id": "o:reels:account-followers",
+          "label": "Followers of an account",
+          "value": "account-followers",
+          "service_id": 835
+        }
+      ]
+    },
+    {
+      "id": "f:hashtags-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Audience source",
+      "bind_id": "t:hashtags",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an audience source"
+      },
+      "options": [
+        {
+          "id": "o:hashtags:one-hashtag",
+          "label": "One hashtag",
+          "value": "one-hashtag",
+          "service_id": 837
+        },
+        {
+          "id": "o:hashtags:multiple-hashtags-usernames",
+          "label": "Multiple hashtags and usernames",
+          "value": "multiple-hashtags-usernames",
+          "service_id": 842
+        }
+      ]
+    },
+    {
+      "id": "f:post-likers-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:post-likers",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      },
+      "options": [
+        {
+          "id": "o:post-likers:1k-day",
+          "label": "1K/day · Starts in 24–72 hours",
+          "value": "1k-day",
+          "service_id": 838
+        },
+        {
+          "id": "o:post-likers:5k-day",
+          "label": "5K/day · Provider lists support for all post types",
+          "value": "5k-day",
+          "service_id": 839
+        }
+      ]
+    },
+    {
+      "id": "f:others-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Audience source",
+      "bind_id": "t:others",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an audience source",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:others:location",
+          "label": "Location audience",
+          "value": "location",
+          "service_id": 840
+        },
+        {
+          "id": "o:others:post-commenters",
+          "label": "Post commenters",
+          "value": "post-commenters",
+          "service_id": 841
+        },
+        {
+          "id": "o:others:female-account-followers",
+          "label": "Female followers of an account",
+          "value": "female-account-followers",
+          "service_id": 843
+        },
+        {
+          "id": "o:others:custom-list-five-person",
+          "label": "Custom list · Five-person format",
+          "value": "custom-list-five-person",
+          "service_id": 844
+        },
+        {
+          "id": "o:others:account-followers-five-person",
+          "label": "Account followers · Five-person format",
+          "value": "account-followers-five-person",
+          "service_id": 845
+        },
+        {
+          "id": "o:others:custom-list-single-person",
+          "label": "Custom list · Single-person format",
+          "value": "custom-list-single-person",
+          "service_id": 846
+        },
+        {
+          "id": "o:others:account-followers-within-hour",
+          "label": "Account followers · Provider lists 0–1 hour start",
+          "value": "account-followers-within-hour",
+          "service_id": 847
+        },
+        {
+          "id": "o:others:account-followers-single-person",
+          "label": "Account followers · Single-person format",
+          "value": "account-followers-single-person",
+          "service_id": 848
+        }
+      ]
+    },
+    {
+      "id": "f:link",
+      "type": "text",
+      "variant": "default",
+      "label": "Destination Instagram link",
+      "name": "link",
+      "required": true,
+      "defaults": {
+        "placeholder": "Paste the destination Instagram link"
+      },
+      "bind_id": "t:root"
+    },
+    {
+      "id": "f:quantity",
+      "type": "number",
+      "variant": "default",
+      "label": "Quantity",
+      "name": "quantity",
+      "required": true,
+      "defaults": {
+        "placeholder": "Enter the number of mentions",
+        "step": 1,
+        "tags": [
+          {
+            "label": "Min: {preview.min ?? \"—\"}"
+          },
+          {
+            "label": "Max: {preview.max ?? \"—\"}"
+          }
+        ]
+      },
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "value"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:usernames",
+      "type": "chips",
+      "variant": "default",
+      "label": "Usernames",
+      "name": "usernames",
+      "required": true,
+      "defaults": {
+        "placeholder": "Type a username and press Enter",
+        "separators": [
+          "Enter"
+        ],
+        "allowDuplicates": true,
+        "textareaMode": true
+      },
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "length"
+      },
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.selection.trigger_ids.some(id => [\"o:custom-list:50k-day\", \"o:custom-list:10k-day-higher-limit\", \"o:custom-list:10k-day\", \"o:reels:custom-list\", \"o:hashtags:multiple-hashtags-usernames\", \"o:others:custom-list-five-person\", \"o:others:custom-list-single-person\"].includes(id))"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return values.length > 0 && values.every(username => typeof username === \"string\" && /^[^\\s,;]+$/.test(username));"
+          },
+          "op": "truthy",
+          "message": "Enter one username per chip without spaces, commas, or semicolons."
+        }
+      ]
+    },
+    {
+      "id": "f:username",
+      "type": "text",
+      "variant": "default",
+      "label": "Source account or location",
+      "name": "username",
+      "required": true,
+      "defaults": {
+        "placeholder": "Enter the source profile URL or location value"
+      },
+      "description": "For account-follower options, use the source Instagram profile URL."
+    },
+    {
+      "id": "f:hashtag",
+      "type": "text",
+      "variant": "default",
+      "label": "Hashtag",
+      "name": "hashtag",
+      "required": true,
+      "defaults": {
+        "placeholder": "Enter one hashtag"
+      }
+    },
+    {
+      "id": "f:hashtags",
+      "type": "chips",
+      "variant": "default",
+      "label": "Hashtags",
+      "name": "hashtags",
+      "required": true,
+      "defaults": {
+        "placeholder": "Type a hashtag and press Enter",
+        "separators": [
+          "Enter"
+        ],
+        "allowDuplicates": true,
+        "textareaMode": true
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return values.length > 0 && values.every(hashtag => typeof hashtag === \"string\" && /^[^\\s,;]+$/.test(hashtag));"
+          },
+          "op": "truthy",
+          "message": "Enter one hashtag per chip without spaces, commas, or semicolons."
+        }
+      ]
+    },
+    {
+      "id": "f:media",
+      "type": "text",
+      "variant": "default",
+      "label": "Source Instagram post",
+      "name": "media",
+      "required": true,
+      "defaults": {
+        "placeholder": "Paste the source Instagram post link"
+      }
+    }
+  ],
+  "order_for_tags": {
+    "t:root": [
+      "f:custom-list-choice"
+    ],
+    "t:account-followers": [
+      "f:account-followers-choice"
+    ],
+    "t:reels": [
+      "f:reels-choice"
+    ],
+    "t:hashtags": [
+      "f:hashtags-choice"
+    ],
+    "t:post-likers": [
+      "f:post-likers-choice"
+    ],
+    "t:others": [
+      "f:others-choice"
+    ]
+  },
+  "includes_for_buttons": {
+    "o:custom-list:50k-day": [
+      "f:usernames"
+    ],
+    "o:custom-list:10k-day-higher-limit": [
+      "f:usernames"
+    ],
+    "o:custom-list:10k-day": [
+      "f:usernames"
+    ],
+    "o:account-followers:50k-day": [
+      "f:quantity",
+      "f:username"
+    ],
+    "o:account-followers:flexible-pace": [
+      "f:quantity",
+      "f:username"
+    ],
+    "o:reels:custom-list": [
+      "f:usernames"
+    ],
+    "o:reels:account-followers": [
+      "f:quantity",
+      "f:username"
+    ],
+    "o:hashtags:one-hashtag": [
+      "f:quantity",
+      "f:hashtag"
+    ],
+    "o:hashtags:multiple-hashtags-usernames": [
+      "f:quantity",
+      "f:usernames",
+      "f:hashtags"
+    ],
+    "o:post-likers:1k-day": [
+      "f:quantity",
+      "f:media"
+    ],
+    "o:post-likers:5k-day": [
+      "f:quantity",
+      "f:media"
+    ],
+    "o:others:location": [
+      "f:quantity",
+      "f:username"
+    ],
+    "o:others:post-commenters": [
+      "f:quantity",
+      "f:media"
+    ],
+    "o:others:female-account-followers": [
+      "f:quantity",
+      "f:username"
+    ],
+    "o:others:custom-list-five-person": [
+      "f:usernames"
+    ],
+    "o:others:account-followers-five-person": [
+      "f:quantity",
+      "f:username"
+    ],
+    "o:others:custom-list-single-person": [
+      "f:usernames"
+    ],
+    "o:others:account-followers-within-hour": [
+      "f:quantity",
+      "f:username"
+    ],
+    "o:others:account-followers-single-person": [
+      "f:quantity",
+      "f:username"
+    ]
+  },
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {},
+  "fallbacks": {
+    "nodes": {
+      "o:account-followers:flexible-pace": [
+        833
+      ]
+    },
+    "global": {}
+  },
+  "notices": [],
+  "meta": {}
+}

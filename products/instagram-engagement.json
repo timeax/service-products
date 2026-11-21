@@ -1,0 +1,84 @@
+{
+  "id": 232,
+  "name": "Instagram Engagement",
+  "description": "Choose likes, reach and impressions, with 30-day refill and an audience that may include bot accounts, or choose the engagement and shares bundle.",
+  "schema_version": "1",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "Likes + Reach + Impressions",
+      "service_id": 182
+    },
+    {
+      "id": "t:engagement-shares",
+      "label": "Engagement + Shares",
+      "service_id": 1151,
+      "bind_id": "t:root"
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:link",
+      "type": "text",
+      "variant": "default",
+      "label": "Instagram link",
+      "name": "link",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Paste the Instagram link"
+      }
+    },
+    {
+      "id": "f:quantity",
+      "type": "number",
+      "variant": "default",
+      "label": "Quantity",
+      "name": "quantity",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Enter a quantity",
+        "step": 1,
+        "tags": [
+          {
+            "label": "Min: {preview.min ?? \"—\"}"
+          },
+          {
+            "label": "Max: {preview.max ?? \"—\"}"
+          }
+        ]
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "op": "truthy",
+          "message": "Enter a positive whole number.",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          }
+        }
+      ],
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "value"
+      }
+    }
+  ],
+  "order_for_tags": {},
+  "includes_for_buttons": {},
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {},
+  "fallbacks": {
+    "nodes": {
+      "t:root": [
+        267
+      ]
+    },
+    "global": {}
+  },
+  "notices": [],
+  "meta": {}
+}

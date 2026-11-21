@@ -1,0 +1,71 @@
+{
+  "id": 236,
+  "name": "Instagram Members",
+  "description": "Add members to an Instagram broadcast channel.",
+  "schema_version": "1",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "Channel Members",
+      "service_id": 1157
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:link",
+      "type": "text",
+      "variant": "default",
+      "label": "Instagram channel link",
+      "name": "link",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Paste the Instagram channel link"
+      }
+    },
+    {
+      "id": "f:quantity",
+      "type": "number",
+      "variant": "default",
+      "label": "Quantity",
+      "name": "quantity",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Enter a quantity",
+        "step": 1,
+        "tags": [
+          {
+            "label": "Min: {preview.min ?? \"—\"}"
+          },
+          {
+            "label": "Max: {preview.max ?? \"—\"}"
+          }
+        ]
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "op": "truthy",
+          "message": "Enter a positive whole number.",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          }
+        }
+      ],
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "value"
+      }
+    }
+  ],
+  "order_for_tags": {},
+  "includes_for_buttons": {},
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {},
+  "fallbacks": null,
+  "notices": [],
+  "meta": {}
+}

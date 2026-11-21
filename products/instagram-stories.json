@@ -1,0 +1,324 @@
+{
+  "id": "instagram-stories-stories",
+  "name": "Instagram Stories",
+  "description": "Instagram Story Views for all stories, the latest story, regional audiences, and 30-day automatic delivery.",
+  "schema_version": "1",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "All Stories",
+      "service_id": 1055
+    },
+    {
+      "id": "t:story-views",
+      "label": "Story Views",
+      "bind_id": "t:root",
+      "service_id": 1049
+    },
+    {
+      "id": "t:latest-story",
+      "label": "Latest Story",
+      "bind_id": "t:root",
+      "service_id": 1061
+    },
+    {
+      "id": "t:regional",
+      "label": "Regional",
+      "bind_id": "t:root",
+      "service_id": 52
+    },
+    {
+      "id": "t:automatic",
+      "label": "Automatic · 30 days",
+      "bind_id": "t:root",
+      "service_id": 1103
+    },
+    {
+      "id": "t:others",
+      "label": "Others",
+      "bind_id": "t:root",
+      "service_id": 1053
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:story-views-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:story-views",
+      "required": true,
+      "description": "Start times and speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:story-views:100k-day",
+          "label": "100K/day · Starts within 1 hour",
+          "value": "100k-day",
+          "service_id": 1049
+        },
+        {
+          "id": "o:story-views:50k-day",
+          "label": "50K/day · Starts within 1 hour",
+          "value": "50k-day",
+          "service_id": 1052
+        },
+        {
+          "id": "o:story-views:4k-day",
+          "label": "4K/day · Starts in 1 hour",
+          "value": "4k-day",
+          "service_id": 1054
+        },
+        {
+          "id": "o:story-views:80k-to-100k-day",
+          "label": "80K–100K/day · Starts within 1 hour",
+          "value": "80k-to-100k-day",
+          "service_id": 1059
+        },
+        {
+          "id": "o:story-views:instant",
+          "label": "Instant delivery · Starts within 1 hour",
+          "value": "instant",
+          "service_id": 1060
+        }
+      ],
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      }
+    },
+    {
+      "id": "f:regional-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Region",
+      "bind_id": "t:regional",
+      "required": true,
+      "options": [
+        {
+          "id": "o:regional:usa-europe",
+          "label": "USA / Europe",
+          "value": "usa-europe",
+          "service_id": 52
+        },
+        {
+          "id": "o:regional:gulf-arab",
+          "label": "Gulf Arab",
+          "value": "gulf-arab",
+          "service_id": 1080
+        }
+      ],
+      "defaults": {
+        "placeholder": "Choose a region"
+      }
+    },
+    {
+      "id": "f:others-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:others",
+      "required": true,
+      "description": "Speeds are provider estimates. For the audience-flexible option, views may come from male or female accounts.",
+      "defaults": {
+        "searchable": true,
+        "placeholder": "Choose a delivery option"
+      },
+      "options": [
+        {
+          "id": "o:others:40k-day-cancellation-drip-feed",
+          "label": "40K/day · Cancellation and drip feed",
+          "value": "40k-day-cancellation-drip-feed",
+          "service_id": 1053
+        },
+        {
+          "id": "o:others:30k-day-from-ten",
+          "label": "30K/day · Orders from 10",
+          "value": "30k-day-from-ten",
+          "service_id": 1062
+        },
+        {
+          "id": "o:others:instant-from-fifty",
+          "label": "Instant delivery · Orders from 50 · Cancellation and drip feed",
+          "value": "instant-from-fifty",
+          "service_id": 1063
+        },
+        {
+          "id": "o:others:30k-day-cancellation-drip-feed",
+          "label": "30K/day · Cancellation and drip feed",
+          "value": "30k-day-cancellation-drip-feed",
+          "service_id": 1065
+        },
+        {
+          "id": "o:others:instant-one-hour-start",
+          "label": "Instant delivery · One-hour start · Cancellation and drip feed",
+          "value": "instant-one-hour-start",
+          "service_id": 1066
+        },
+        {
+          "id": "o:others:40k-day-standard",
+          "label": "40K/day · Standard delivery",
+          "value": "40k-day-standard",
+          "service_id": 1068
+        },
+        {
+          "id": "o:others:20k-day-drip-feed",
+          "label": "20K/day · Drip feed",
+          "value": "20k-day-drip-feed",
+          "service_id": 1069
+        },
+        {
+          "id": "o:others:30k-day-audience-flexible",
+          "label": "30K/day · Audience varies by availability",
+          "value": "30k-day-audience-flexible",
+          "service_id": 1072
+        },
+        {
+          "id": "o:others:30k-day-standard",
+          "label": "30K/day · Standard delivery",
+          "value": "30k-day-standard",
+          "service_id": 1075
+        }
+      ]
+    },
+    {
+      "id": "f:link",
+      "type": "text",
+      "variant": "default",
+      "label": "Instagram link",
+      "name": "link",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Paste an Instagram link"
+      }
+    },
+    {
+      "id": "f:quantity",
+      "type": "number",
+      "variant": "default",
+      "label": "Quantity",
+      "name": "quantity",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "step": 1,
+        "tags": [
+          {
+            "label": "Min: {preview.min ?? \"—\"}"
+          },
+          {
+            "label": "Max: {preview.max ?? \"—\"}"
+          }
+        ],
+        "placeholder": "e.g. 1,000"
+      },
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "value"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:drip_feed",
+      "type": "toggle",
+      "variant": "default",
+      "label": "Drip feed",
+      "description": "Schedule multiple deliveries by setting the number of runs and the minutes between them.",
+      "name": "drip_feed",
+      "bind_id": "t:root",
+      "button": true,
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.capabilities?.dripfeed?.enabled === true)"
+      }
+    },
+    {
+      "id": "f:runs",
+      "type": "number",
+      "variant": "default",
+      "label": "Runs",
+      "name": "runs",
+      "required": true,
+      "defaults": {
+        "step": 1,
+        "placeholder": "e.g. 5"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:interval",
+      "type": "number",
+      "variant": "default",
+      "label": "Interval (minutes)",
+      "name": "interval",
+      "required": true,
+      "defaults": {
+        "step": 1,
+        "placeholder": "e.g. 60"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    }
+  ],
+  "order_for_tags": {
+    "t:story-views": [
+      "f:story-views-choice"
+    ],
+    "t:regional": [
+      "f:regional-choice"
+    ],
+    "t:others": [
+      "f:others-choice"
+    ]
+  },
+  "includes_for_buttons": {
+    "f:drip_feed": [
+      "f:runs",
+      "f:interval"
+    ]
+  },
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {},
+  "fallbacks": {
+    "nodes": {
+      "o:story-views:80k-to-100k-day": [
+        1058
+      ],
+      "o:others:30k-day-audience-flexible": [
+        1073
+      ]
+    },
+    "global": {}
+  },
+  "notices": [],
+  "meta": {}
+}

@@ -4,6 +4,8 @@ This user-provided guide is host-specific context for TygerBooster. Use it with 
 
 Every JAP `add` request needs an API `key`, `action=add`, and the selected provider `service` ID. The fields below are additional inputs for the specified type. Required fields are listed for that order type; optional and conditional fields are identified separately. Always check the selected service's minimum, maximum, and available features.
 
+Use the Builder's `chips/default` control for every input the JAP API expects as a newline-separated list. Set `defaults.textareaMode` to `true` and `defaults.separators` to `["Enter"]`. The host adapter must join chip values with newlines for the JAP request.
+
 ## General services
 
 ### Default

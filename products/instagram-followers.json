@@ -1,0 +1,3947 @@
+{
+  "id": "instagram-followers-followers",
+  "name": "Instagram Followers",
+  "description": "Instagram follower options by audience, account type, and delivery.",
+  "schema_version": "1",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "Instagram Followers",
+      "service_id": 526
+    },
+    {
+      "id": "t:guaranteed",
+      "label": "Guaranteed",
+      "bind_id": "t:root",
+      "service_id": 344
+    },
+    {
+      "id": "t:guaranteed-refill",
+      "label": "Refill by Duration",
+      "bind_id": "t:guaranteed",
+      "service_id": 344
+    },
+    {
+      "id": "t:guaranteed-retention",
+      "label": "Guaranteed Drop & Retention",
+      "bind_id": "t:guaranteed",
+      "service_id": 346
+    },
+    {
+      "id": "t:guaranteed-quality",
+      "label": "Guaranteed Account Quality",
+      "bind_id": "t:guaranteed",
+      "service_id": 406
+    },
+    {
+      "id": "t:not-guaranteed",
+      "label": "Not Guaranteed",
+      "bind_id": "t:root",
+      "service_id": 526
+    },
+    {
+      "id": "t:general",
+      "label": "General Delivery",
+      "bind_id": "t:not-guaranteed",
+      "service_id": 526
+    },
+    {
+      "id": "t:retention",
+      "label": "Not Guaranteed Drop & Retention",
+      "bind_id": "t:not-guaranteed",
+      "service_id": 507
+    },
+    {
+      "id": "t:quality",
+      "label": "Not Guaranteed Account Quality",
+      "bind_id": "t:not-guaranteed",
+      "service_id": 535
+    },
+    {
+      "id": "t:region",
+      "label": "Followers by Region",
+      "bind_id": "t:root",
+      "service_id": 630
+    },
+    {
+      "id": "t:account",
+      "label": "Followers by Account Type",
+      "bind_id": "t:root",
+      "service_id": 696
+    },
+    {
+      "id": "t:bots",
+      "label": "Bot Followers",
+      "bind_id": "t:root",
+      "service_id": 562
+    },
+    {
+      "id": "t:packages",
+      "label": "Verified Follower Packages",
+      "bind_id": "t:root",
+      "service_id": 1462,
+      "quantity_default": 1,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed"
+      ]
+    },
+    {
+      "id": "t:packages-egypt",
+      "label": "Egypt",
+      "bind_id": "t:packages",
+      "service_id": 1462,
+      "quantity_default": 1,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed",
+        "f:packages"
+      ]
+    },
+    {
+      "id": "t:packages-turkey",
+      "label": "Turkey",
+      "bind_id": "t:packages",
+      "service_id": 1451,
+      "quantity_default": 1,
+      "excludes": [
+        "f:quantity",
+        "f:drip_feed",
+        "f:packages"
+      ]
+    },
+    {
+      "id": "t:others",
+      "label": "Others",
+      "bind_id": "t:root",
+      "service_id": 545
+    },
+    {
+      "id": "t:others-package",
+      "label": "Türkiye · Verified followers",
+      "bind_id": "t:others",
+      "service_id": 1453,
+      "quantity_default": 1,
+      "excludes": [
+        "f:others",
+        "f:quantity",
+        "f:drip_feed"
+      ]
+    },
+    {
+      "id": "t:others-delivery",
+      "label": "Delivery alternatives",
+      "bind_id": "t:others",
+      "service_id": 510,
+      "excludes": [
+        "f:others"
+      ]
+    },
+    {
+      "id": "t:others-fixed",
+      "label": "Fixed-quantity followers",
+      "bind_id": "t:others",
+      "service_id": 72,
+      "excludes": [
+        "f:others",
+        "f:quantity"
+      ],
+      "quantity_default": 1000
+    },
+    {
+      "id": "t:others-refill-review",
+      "label": "Refill label discrepancies",
+      "bind_id": "t:others",
+      "service_id": 342,
+      "excludes": [
+        "f:others"
+      ]
+    },
+    {
+      "id": "t:others-instructions",
+      "label": "Account setup and delivery",
+      "bind_id": "t:others",
+      "service_id": 47,
+      "excludes": [
+        "f:others"
+      ]
+    },
+    {
+      "id": "t:others-spam-off",
+      "label": "Spam Off",
+      "bind_id": "t:others",
+      "service_id": 386,
+      "excludes": [
+        "f:others"
+      ]
+    },
+    {
+      "id": "t:others-spam-on",
+      "label": "Spam On",
+      "bind_id": "t:others",
+      "service_id": 372,
+      "excludes": [
+        "f:others"
+      ]
+    },
+    {
+      "id": "t:others-spam-workflow",
+      "label": "Spam On waiting / Spam Off success",
+      "bind_id": "t:others",
+      "service_id": 428,
+      "excludes": [
+        "f:others"
+      ]
+    },
+    {
+      "id": "t:more-profiles",
+      "label": "More account profiles",
+      "bind_id": "t:account",
+      "service_id": 73,
+      "excludes": [
+        "f:account"
+      ]
+    },
+    {
+      "id": "t:bot-delivery",
+      "label": "Bot delivery variants",
+      "bind_id": "t:bots",
+      "service_id": 1180,
+      "excludes": [
+        "f:bots"
+      ]
+    },
+    {
+      "id": "t:bot-profiles",
+      "label": "Bot accounts with profile details",
+      "bind_id": "t:bots",
+      "service_id": 1190,
+      "excludes": [
+        "f:bots"
+      ]
+    },
+    {
+      "id": "t:fast-start-over-100k",
+      "label": "Within one hour · Over 100K/day",
+      "bind_id": "t:general",
+      "service_id": 568,
+      "excludes": [
+        "f:general"
+      ]
+    },
+    {
+      "id": "t:fast-start-up-to-100k",
+      "label": "Within one hour · 20K–100K/day",
+      "bind_id": "t:general",
+      "service_id": 543,
+      "excludes": [
+        "f:general"
+      ]
+    },
+    {
+      "id": "t:fast-start-up-to-20k",
+      "label": "Within one hour · Up to 20K/day",
+      "bind_id": "t:general",
+      "service_id": 534,
+      "excludes": [
+        "f:general"
+      ]
+    },
+    {
+      "id": "t:faster-start",
+      "label": "Within one hour · Other delivery rates",
+      "bind_id": "t:general",
+      "service_id": 541,
+      "excludes": [
+        "f:general"
+      ]
+    },
+    {
+      "id": "t:one-hour-start",
+      "label": "One-hour start",
+      "bind_id": "t:general",
+      "service_id": 629,
+      "excludes": [
+        "f:general"
+      ]
+    },
+    {
+      "id": "t:other-start-times",
+      "label": "Other start times",
+      "bind_id": "t:general",
+      "service_id": 625,
+      "excludes": [
+        "f:general"
+      ]
+    },
+    {
+      "id": "t:guaranteed-extra-quality",
+      "label": "More guaranteed account profiles",
+      "bind_id": "t:guaranteed-quality",
+      "service_id": 454,
+      "excludes": [
+        "f:guaranteed-quality"
+      ]
+    },
+    {
+      "id": "t:refill-30",
+      "label": "30-day refill delivery",
+      "bind_id": "t:guaranteed-refill",
+      "service_id": 451,
+      "excludes": [
+        "f:guaranteed-refill"
+      ]
+    },
+    {
+      "id": "t:refill-365",
+      "label": "365-day refill delivery",
+      "bind_id": "t:guaranteed-refill",
+      "service_id": 374,
+      "excludes": [
+        "f:guaranteed-refill"
+      ]
+    },
+    {
+      "id": "t:refill-other",
+      "label": "Other refill durations",
+      "bind_id": "t:guaranteed-refill",
+      "service_id": 456,
+      "excludes": [
+        "f:guaranteed-refill"
+      ]
+    },
+    {
+      "id": "t:guaranteed-extra-drop",
+      "label": "More guaranteed drop and refill choices",
+      "bind_id": "t:guaranteed-retention",
+      "service_id": 446,
+      "excludes": [
+        "f:guaranteed-retention"
+      ]
+    },
+    {
+      "id": "t:more-no-guarantee-quality",
+      "label": "More non-guaranteed account profiles",
+      "bind_id": "t:quality",
+      "service_id": 561,
+      "excludes": [
+        "f:quality"
+      ]
+    },
+    {
+      "id": "t:asia",
+      "label": "Asian audiences",
+      "bind_id": "t:region",
+      "service_id": 664,
+      "excludes": [
+        "f:region"
+      ]
+    },
+    {
+      "id": "t:brazil",
+      "label": "Brazilian audiences",
+      "bind_id": "t:region",
+      "service_id": 1413,
+      "excludes": [
+        "f:region"
+      ]
+    },
+    {
+      "id": "t:europe",
+      "label": "European audiences",
+      "bind_id": "t:region",
+      "service_id": 634,
+      "excludes": [
+        "f:region"
+      ]
+    },
+    {
+      "id": "t:middle-east",
+      "label": "Middle East and Egypt",
+      "bind_id": "t:region",
+      "service_id": 1440,
+      "excludes": [
+        "f:region"
+      ]
+    },
+    {
+      "id": "t:more-regions",
+      "label": "Other regional audiences",
+      "bind_id": "t:region",
+      "service_id": 654,
+      "excludes": [
+        "f:region"
+      ]
+    },
+    {
+      "id": "t:usa",
+      "label": "USA and Mixed USA",
+      "bind_id": "t:region",
+      "service_id": 83,
+      "excludes": [
+        "f:region"
+      ]
+    },
+    {
+      "id": "t:usa-uk-europe",
+      "label": "USA and UK or Europe mixes",
+      "bind_id": "t:region",
+      "service_id": 1018,
+      "excludes": [
+        "f:region"
+      ]
+    },
+    {
+      "id": "t:more-no-guarantee-retention",
+      "label": "More non-guaranteed drop choices",
+      "bind_id": "t:retention",
+      "service_id": 594,
+      "excludes": [
+        "f:retention"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:guaranteed-refill",
+      "type": "select",
+      "variant": "default",
+      "label": "Refill duration and delivery",
+      "bind_id": "t:guaranteed-refill",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose refill duration and delivery"
+      },
+      "description": "Start times and delivery speeds are estimates.",
+      "options": [
+        {
+          "id": "o:guaranteed-refill:15-day-100k",
+          "label": "15-day refill · Starts within 3 hours · Up to 100K/day",
+          "value": "15-day-100k",
+          "service_id": 363
+        },
+        {
+          "id": "o:guaranteed-refill:20-day-5k",
+          "label": "20-day refill · Starts in 6 hours · 5K/day",
+          "value": "20-day-5k",
+          "service_id": 459
+        },
+        {
+          "id": "o:guaranteed-refill:30-day-10k",
+          "label": "30-day refill · Starts within 2 hours · Up to 10K/day",
+          "value": "30-day-10k",
+          "service_id": 344
+        },
+        {
+          "id": "o:guaranteed-refill:30-day-200k",
+          "label": "30-day refill · Starts within 2 hours · Up to 200K/day",
+          "value": "30-day-200k",
+          "service_id": 348
+        },
+        {
+          "id": "o:guaranteed-refill:60-day-2500",
+          "label": "60-day refill · Starts in 1 hour · 2.5K/day",
+          "value": "60-day-2500",
+          "service_id": 462
+        },
+        {
+          "id": "o:guaranteed-refill:90-day-100k",
+          "label": "90-day refill · Starts within 3 hours · Up to 100K/day",
+          "value": "90-day-100k",
+          "service_id": 365
+        },
+        {
+          "id": "o:guaranteed-refill:365-day-200k",
+          "label": "365-day refill · Starts within 2 hours · Up to 200K/day",
+          "value": "365-day-200k",
+          "service_id": 343
+        }
+      ]
+    },
+    {
+      "id": "f:guaranteed-retention",
+      "type": "select",
+      "variant": "default",
+      "label": "Retention option",
+      "bind_id": "t:guaranteed-retention",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Drop and delivery figures are estimates.",
+      "options": [
+        {
+          "id": "o:guaranteed-retention:low-30-day",
+          "label": "Low Drop · 30-day refill · Up to 20K/day",
+          "value": "low-30-day",
+          "service_id": 346
+        },
+        {
+          "id": "o:guaranteed-retention:low-365-day",
+          "label": "Low Drop · 365-day refill · Up to 20K/day",
+          "value": "low-365-day",
+          "service_id": 347
+        },
+        {
+          "id": "o:guaranteed-retention:high-30-day",
+          "label": "High Drop · 30-day refill · 25K/day",
+          "value": "high-30-day",
+          "service_id": 362
+        },
+        {
+          "id": "o:guaranteed-retention:up-to-40-percent",
+          "label": "Up to 40% drop · 30-day refill · Up to 4K/day",
+          "value": "up-to-40-percent",
+          "service_id": 11623
+        },
+        {
+          "id": "o:guaranteed-retention:up-to-60-percent",
+          "label": "Up to 60% drop · 30-day refill · Up to 1K/day",
+          "value": "up-to-60-percent",
+          "service_id": 11625
+        }
+      ]
+    },
+    {
+      "id": "f:guaranteed-quality",
+      "type": "select",
+      "variant": "default",
+      "label": "Account quality",
+      "bind_id": "t:guaranteed-quality",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose account quality"
+      },
+      "options": [
+        {
+          "id": "o:guaranteed-quality:hq-30-day",
+          "label": "HQ · 30-day refill · Up to 80K/day",
+          "value": "hq-30-day",
+          "service_id": 406
+        },
+        {
+          "id": "o:guaranteed-quality:hq-120-day",
+          "label": "HQ · 120-day refill · 2.5–5K/day",
+          "value": "hq-120-day",
+          "service_id": 464
+        },
+        {
+          "id": "o:guaranteed-quality:super-hq-low-drop",
+          "label": "Super HQ · Low Drop · 30-day refill · 300K/day",
+          "value": "super-hq-low-drop",
+          "service_id": 368
+        },
+        {
+          "id": "o:guaranteed-quality:real",
+          "label": "Real · 30-day refill · 100K/day",
+          "value": "real",
+          "service_id": 352
+        },
+        {
+          "id": "o:guaranteed-quality:real-looking",
+          "label": "Real Looking · 30-day refill · Up to 100K/day",
+          "value": "real-looking",
+          "service_id": 448
+        }
+      ]
+    },
+    {
+      "id": "f:general",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery option",
+      "bind_id": "t:general",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Start times and delivery speeds are estimates.",
+      "options": [
+        {
+          "id": "o:general:instant-100k",
+          "label": "Instant start · Up to 100K/day",
+          "value": "instant-100k",
+          "service_id": 526
+        },
+        {
+          "id": "o:general:from-1",
+          "label": "From 1 follower · Starts in 1 hour · Up to 150K/day",
+          "value": "from-1",
+          "service_id": 524
+        },
+        {
+          "id": "o:general:within-hour-200k",
+          "label": "Starts within 1 hour · Up to 200K/day",
+          "value": "within-hour-200k",
+          "service_id": 519
+        },
+        {
+          "id": "o:general:within-hour-100k",
+          "label": "Starts within 1 hour · Up to 100K/day",
+          "value": "within-hour-100k",
+          "service_id": 501
+        }
+      ]
+    },
+    {
+      "id": "f:retention",
+      "type": "select",
+      "variant": "default",
+      "label": "Drop option",
+      "bind_id": "t:retention",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Drop and delivery figures are estimates.",
+      "options": [
+        {
+          "id": "o:retention:low",
+          "label": "Low Drop · Starts within 2 hours · Up to 20K/day",
+          "value": "low",
+          "service_id": 507
+        },
+        {
+          "id": "o:retention:10-to-20",
+          "label": "10–20% drop · Starts within 1 hour · 10–15K/day",
+          "value": "10-to-20",
+          "service_id": 520
+        },
+        {
+          "id": "o:retention:up-to-30",
+          "label": "Up to 30% drop · Starts within 12 hours · 30K/day",
+          "value": "up-to-30",
+          "service_id": 503
+        },
+        {
+          "id": "o:retention:high",
+          "label": "High Drop · Starts in 1 hour · 1K/day",
+          "value": "high",
+          "service_id": 557
+        }
+      ]
+    },
+    {
+      "id": "f:quality",
+      "type": "select",
+      "variant": "default",
+      "label": "Profile quality",
+      "bind_id": "t:quality",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose profile quality"
+      },
+      "options": [
+        {
+          "id": "o:quality:hq",
+          "label": "HQ · Up to 100K/day",
+          "value": "hq",
+          "service_id": 535
+        },
+        {
+          "id": "o:quality:hq-15-posts",
+          "label": "HQ · 15+ posts · Up to 100K/day",
+          "value": "hq-15-posts",
+          "service_id": 602
+        },
+        {
+          "id": "o:quality:super-hq-low-drop",
+          "label": "Super HQ · Low Drop · 100K/day",
+          "value": "super-hq-low-drop",
+          "service_id": 539
+        },
+        {
+          "id": "o:quality:lq",
+          "label": "LQ · 3K/day",
+          "value": "lq",
+          "service_id": 628
+        },
+        {
+          "id": "o:quality:real-users",
+          "label": "Real Users · 50K/day",
+          "value": "real-users",
+          "service_id": 555
+        }
+      ]
+    },
+    {
+      "id": "f:region",
+      "type": "select",
+      "variant": "default",
+      "label": "Region",
+      "bind_id": "t:region",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose region"
+      },
+      "options": [
+        {
+          "id": "o:region:usa",
+          "label": "USA · Up to 5K/day",
+          "value": "usa",
+          "service_id": 630
+        },
+        {
+          "id": "o:region:mixed-usa",
+          "label": "Mixed USA · 50K/day",
+          "value": "mixed-usa",
+          "service_id": 12
+        },
+        {
+          "id": "o:region:latin-america",
+          "label": "Latin America · Up to 15K/day",
+          "value": "latin-america",
+          "service_id": 632
+        },
+        {
+          "id": "o:region:brazil",
+          "label": "Brazil · From 1 follower · Up to 1K/day",
+          "value": "brazil",
+          "service_id": 1392
+        },
+        {
+          "id": "o:region:brazil-mq",
+          "label": "Brazil · MQ · 10K/day",
+          "value": "brazil-mq",
+          "service_id": 1397
+        },
+        {
+          "id": "o:region:arab",
+          "label": "Arab · 5K/day",
+          "value": "arab",
+          "service_id": 635
+        },
+        {
+          "id": "o:region:korea-hq",
+          "label": "Korea · HQ · 10K/day",
+          "value": "korea-hq",
+          "service_id": 657
+        },
+        {
+          "id": "o:region:japan",
+          "label": "Japan · 2K/day",
+          "value": "japan",
+          "service_id": 682
+        },
+        {
+          "id": "o:region:turkey",
+          "label": "Turkey · 30-day refill · 5K/day",
+          "value": "turkey",
+          "service_id": 1439
+        },
+        {
+          "id": "o:region:nigeria",
+          "label": "Nigeria · 1.5K/day",
+          "value": "nigeria",
+          "service_id": 1429
+        }
+      ]
+    },
+    {
+      "id": "f:account",
+      "type": "select",
+      "variant": "default",
+      "label": "Account type",
+      "bind_id": "t:account",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose account type"
+      },
+      "options": [
+        {
+          "id": "o:account:raf-female",
+          "label": "RAF · Female · 1K/day",
+          "value": "raf-female",
+          "service_id": 696
+        },
+        {
+          "id": "o:account:raf-male",
+          "label": "RAF · Male · 1K/day",
+          "value": "raf-male",
+          "service_id": 697
+        },
+        {
+          "id": "o:account:verified",
+          "label": "Verified accounts · 1–16 followers · Listed within 24 hours",
+          "value": "verified",
+          "service_id": 1153
+        },
+        {
+          "id": "o:account:turkey-female",
+          "label": "Turkey · 90% female · 5K/day",
+          "value": "turkey-female",
+          "service_id": 1441
+        }
+      ]
+    },
+    {
+      "id": "f:bots",
+      "type": "select",
+      "variant": "default",
+      "label": "Bot delivery option",
+      "bind_id": "t:bots",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Start times and delivery speeds are estimates.",
+      "options": [
+        {
+          "id": "o:bots:within-hour-1k",
+          "label": "Bots · Starts within 1 hour · 1K/day",
+          "value": "within-hour-1k",
+          "service_id": 562
+        },
+        {
+          "id": "o:bots:within-hour-15k",
+          "label": "Bots · Starts within 1 hour · 15K/day",
+          "value": "within-hour-15k",
+          "service_id": 570
+        },
+        {
+          "id": "o:bots:high-drop",
+          "label": "Mixed bots · High Drop · 5K/day",
+          "value": "high-drop",
+          "service_id": 558
+        },
+        {
+          "id": "o:bots:profile-and-posts",
+          "label": "Bots with profile pictures and posts · 500/hour",
+          "value": "profile-and-posts",
+          "service_id": 1185
+        }
+      ]
+    },
+    {
+      "id": "f:more-profiles",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:more-profiles",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:more-profiles:row-73",
+          "label": "MALE · Afro-Americans · NO DROP · 250/day · 30–2,500 · No refill · No drip feed",
+          "value": "row-73",
+          "service_id": 73
+        },
+        {
+          "id": "o:more-profiles:row-49",
+          "label": "RAF™ · No-drop estimate · 1K/day · 50–12K · Within 8h start",
+          "value": "row-49",
+          "service_id": 49
+        },
+        {
+          "id": "o:more-profiles:row-688",
+          "label": "RAF™ · No-drop estimate · 1K/day · 50–12K · Within 8h start · No refill",
+          "value": "row-688",
+          "service_id": 688
+        },
+        {
+          "id": "o:more-profiles:row-48",
+          "label": "RAF™ · No-drop estimate · Up to 5K/day · 50–10K · Within 8h start",
+          "value": "row-48",
+          "service_id": 48
+        },
+        {
+          "id": "o:more-profiles:row-45",
+          "label": "RAF™ · 3K/day · 5–1B · Within 3h start",
+          "value": "row-45",
+          "service_id": 45
+        },
+        {
+          "id": "o:more-profiles:row-19",
+          "label": "VIP · WW · Up to 20K/day · 20–2M · Within 1h start · 90-day refill",
+          "value": "row-19",
+          "service_id": 19
+        }
+      ]
+    },
+    {
+      "id": "f:bot-delivery",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:bot-delivery",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:bot-delivery:row-1180",
+          "label": "10K/day · 10–1M · 1h start · No refill · No drip feed",
+          "value": "row-1180",
+          "service_id": 1180
+        },
+        {
+          "id": "o:bot-delivery:row-1191",
+          "label": "500/h · 10–10K · 1h start · No refill · No drip feed",
+          "value": "row-1191",
+          "service_id": 1191
+        },
+        {
+          "id": "o:bot-delivery:row-1196",
+          "label": "500/h · 10–50K · 1h start · No refill · No drip feed",
+          "value": "row-1196",
+          "service_id": 1196
+        },
+        {
+          "id": "o:bot-delivery:row-1193",
+          "label": "500/h · 20–10K · 1h start · No refill · No drip feed",
+          "value": "row-1193",
+          "service_id": 1193
+        }
+      ]
+    },
+    {
+      "id": "f:bot-profiles",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:bot-profiles",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:bot-profiles:row-1190",
+          "label": "With profile pictures and posts · 500/h · 50–100K · 1h start · No refill · No drip feed",
+          "value": "row-1190",
+          "service_id": 1190
+        },
+        {
+          "id": "o:bot-profiles:row-1187",
+          "label": "With profile pictures and posts · 500/h · 50–25K · 1h start · No refill · No drip feed",
+          "value": "row-1187",
+          "service_id": 1187
+        }
+      ]
+    },
+    {
+      "id": "f:fast-start-over-100k",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:fast-start-over-100k",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:fast-start-over-100k:row-568",
+          "label": "150K/day · 10–10M · Within 1h start · No refill · No drip feed",
+          "value": "row-568",
+          "service_id": 568
+        },
+        {
+          "id": "o:fast-start-over-100k:row-527",
+          "label": "Up to 200K/day · 10–1M · Within 1h start · No refill",
+          "value": "row-527",
+          "service_id": 527
+        },
+        {
+          "id": "o:fast-start-over-100k:row-509",
+          "label": "Up to 500K/day · 10–10M · Within 1h start · No refill",
+          "value": "row-509",
+          "service_id": 509
+        },
+        {
+          "id": "o:fast-start-over-100k:row-538",
+          "label": "Up to 150K/day · 10–10M · Instant start · No refill",
+          "value": "row-538",
+          "service_id": 538
+        }
+      ]
+    },
+    {
+      "id": "f:fast-start-up-to-100k",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:fast-start-up-to-100k",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:fast-start-up-to-100k:row-543",
+          "label": "100K/day · 10–10M · Instant start · No refill · No drip feed",
+          "value": "row-543",
+          "service_id": 543
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-593",
+          "label": "Mix · 50K/day · 10–60K · Within 1h start · No refill",
+          "value": "row-593",
+          "service_id": 593
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-597",
+          "label": "100K/day · 10–1M · Within 1h start · No refill",
+          "value": "row-597",
+          "service_id": 597
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-600",
+          "label": "100K/day · 10–10M · Within 1h start · No refill · No drip feed",
+          "value": "row-600",
+          "service_id": 600
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-563",
+          "label": "100K/day · 10–250K · Within 1h start · No refill · No drip feed",
+          "value": "row-563",
+          "service_id": 563
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-595",
+          "label": "30K/day · 10–300K · Within 1h start · No refill",
+          "value": "row-595",
+          "service_id": 595
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-537",
+          "label": "30K/day · 50–5M · Within 1h start · No refill",
+          "value": "row-537",
+          "service_id": 537
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-598",
+          "label": "50K/day · 10–200K · Within 1h start · No refill",
+          "value": "row-598",
+          "service_id": 598
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-590",
+          "label": "50K/day · 10–250K · Within 1h start · No refill",
+          "value": "row-590",
+          "service_id": 590
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-518",
+          "label": "Up to 100K/day · 10–10M · Within 1h start · No refill",
+          "value": "row-518",
+          "service_id": 518
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-531",
+          "label": "Up to 100K/day · 10–100K · Within 1h start · No refill",
+          "value": "row-531",
+          "service_id": 531
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-530",
+          "label": "Up to 100K/day · 50–500K · Within 1h start · No refill",
+          "value": "row-530",
+          "service_id": 530
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-516",
+          "label": "Up to 100K/day · 10–1M · Within 1h start · No refill · No drip feed",
+          "value": "row-516",
+          "service_id": 516
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-601",
+          "label": "Up to 100K/day · 10–10M · Within 1h start · No refill · No drip feed",
+          "value": "row-601",
+          "service_id": 601
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-515",
+          "label": "Up to 50K/day · 10–10M · Within 1h start · No refill",
+          "value": "row-515",
+          "service_id": 515
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-540",
+          "label": "Up to 50K/day · 20–100K · Within 1h start · No refill",
+          "value": "row-540",
+          "service_id": 540
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-514",
+          "label": "Up to 50K/day · 10–100K · Within 1h start · No refill · No drip feed",
+          "value": "row-514",
+          "service_id": 514
+        },
+        {
+          "id": "o:fast-start-up-to-100k:row-512",
+          "label": "Up to 50K/day · 10–500K · Within 1h start · No refill · No drip feed",
+          "value": "row-512",
+          "service_id": 512
+        }
+      ]
+    },
+    {
+      "id": "f:fast-start-up-to-20k",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:fast-start-up-to-20k",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:fast-start-up-to-20k:row-534",
+          "label": "20K/day · 20–10K · Within 1h start · No refill",
+          "value": "row-534",
+          "service_id": 534
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-588",
+          "label": "Mix · 3K/day · 10–3K · Within 1h start · No refill",
+          "value": "row-588",
+          "service_id": 588
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-586",
+          "label": "10K/day · 10–50K · Within 1h start · No refill",
+          "value": "row-586",
+          "service_id": 586
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-626",
+          "label": "10K/day · 10–100K · Within 1h start · No refill · No drip feed",
+          "value": "row-626",
+          "service_id": 626
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-589",
+          "label": "1K/day · 20–3K · Within 1h start · No refill",
+          "value": "row-589",
+          "service_id": 589
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-592",
+          "label": "1K/day · 20–50K · Within 1h start · No refill",
+          "value": "row-592",
+          "service_id": 592
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-585",
+          "label": "20K/day · 10–20K · Within 1h start · No refill",
+          "value": "row-585",
+          "service_id": 585
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-522",
+          "label": "20K/day · 10–100K · Within 1h start · No refill · No drip feed",
+          "value": "row-522",
+          "service_id": 522
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-596",
+          "label": "5K/day · 10–100K · Within 1h start · No refill",
+          "value": "row-596",
+          "service_id": 596
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-554",
+          "label": "10K/day · 10–5M · Within 1h start · No refill",
+          "value": "row-554",
+          "service_id": 554
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-536",
+          "label": "Up to 0K/day · 50–500K · Within 1h start · No refill",
+          "value": "row-536",
+          "service_id": 536
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-612",
+          "label": "Up to 10K/day · 10–55K · Within 1h start · No refill · No drip feed",
+          "value": "row-612",
+          "service_id": 612
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-521",
+          "label": "Up to 20K/day · 100–100K · Within 1h start · No refill",
+          "value": "row-521",
+          "service_id": 521
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-523",
+          "label": "Up to 20K/day · 50–1M · Within 1h start · No refill",
+          "value": "row-523",
+          "service_id": 523
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-513",
+          "label": "Up to 20K/day · 50–250K · Within 1h start · No refill",
+          "value": "row-513",
+          "service_id": 513
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-525",
+          "label": "Up to 20K/day · 10–10M · Within 1h start · No refill · No drip feed",
+          "value": "row-525",
+          "service_id": 525
+        },
+        {
+          "id": "o:fast-start-up-to-20k:row-502",
+          "label": "Up to 5K/day · 10–50K · Within 1h start · No refill",
+          "value": "row-502",
+          "service_id": 502
+        }
+      ]
+    },
+    {
+      "id": "f:faster-start",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:faster-start",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:faster-start:row-541",
+          "label": "EMERGENCY · 5K–10K/day · 10–100K · Within 1h start · No refill · No drip feed",
+          "value": "row-541",
+          "service_id": 541
+        }
+      ]
+    },
+    {
+      "id": "f:one-hour-start",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:one-hour-start",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:one-hour-start:row-629",
+          "label": "10K/day · 10–50K · No refill",
+          "value": "row-629",
+          "service_id": 629
+        },
+        {
+          "id": "o:one-hour-start:row-627",
+          "label": "1K/day · 100–1K · No refill",
+          "value": "row-627",
+          "service_id": 627
+        },
+        {
+          "id": "o:one-hour-start:row-560",
+          "label": "1K/day · 10–25K · No refill",
+          "value": "row-560",
+          "service_id": 560
+        },
+        {
+          "id": "o:one-hour-start:row-620",
+          "label": "50K/day · 10–10M · No refill",
+          "value": "row-620",
+          "service_id": 620
+        },
+        {
+          "id": "o:one-hour-start:row-621",
+          "label": "5K/day · 10–23K · No refill",
+          "value": "row-621",
+          "service_id": 621
+        },
+        {
+          "id": "o:one-hour-start:row-604",
+          "label": "5K/day · 10–50K · No refill",
+          "value": "row-604",
+          "service_id": 604
+        },
+        {
+          "id": "o:one-hour-start:row-613",
+          "label": "5K/day · 20–10K · No refill",
+          "value": "row-613",
+          "service_id": 613
+        },
+        {
+          "id": "o:one-hour-start:row-608",
+          "label": "5K/day · 20–100K · No refill",
+          "value": "row-608",
+          "service_id": 608
+        },
+        {
+          "id": "o:one-hour-start:row-615",
+          "label": "5K/day · 20–50K · No refill",
+          "value": "row-615",
+          "service_id": 615
+        },
+        {
+          "id": "o:one-hour-start:row-559",
+          "label": "5K/day · 100–5K · No refill · No drip feed",
+          "value": "row-559",
+          "service_id": 559
+        }
+      ]
+    },
+    {
+      "id": "f:other-start-times",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:other-start-times",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:other-start-times:row-625",
+          "label": "MIX · 5K/day · 10–300K · 3h start · No refill",
+          "value": "row-625",
+          "service_id": 625
+        },
+        {
+          "id": "o:other-start-times:row-571",
+          "label": "2K/day · 100–100K · 6h start · No refill",
+          "value": "row-571",
+          "service_id": 571
+        },
+        {
+          "id": "o:other-start-times:row-572",
+          "label": "20K/day · 100–200K · Within 2h start · No refill",
+          "value": "row-572",
+          "service_id": 572
+        },
+        {
+          "id": "o:other-start-times:row-511",
+          "label": "Up to 100K/day · 50–500K · Within 2h start · No refill",
+          "value": "row-511",
+          "service_id": 511
+        },
+        {
+          "id": "o:other-start-times:row-517",
+          "label": "Up to 200K/day · 20–1M · Within 2h start · No refill",
+          "value": "row-517",
+          "service_id": 517
+        },
+        {
+          "id": "o:other-start-times:row-532",
+          "label": "Up to 500K/day · 10–100K · Within 2h start · No refill",
+          "value": "row-532",
+          "service_id": 532
+        },
+        {
+          "id": "o:other-start-times:row-528",
+          "label": "Up to 50K/day · 50–1M · Within 2h start · No refill",
+          "value": "row-528",
+          "service_id": 528
+        },
+        {
+          "id": "o:other-start-times:row-544",
+          "label": "100K/day · 10–200K · Within 3h start · No refill · No drip feed",
+          "value": "row-544",
+          "service_id": 544
+        },
+        {
+          "id": "o:other-start-times:row-599",
+          "label": "20K/day · 10–600K · Within 3h start · No refill",
+          "value": "row-599",
+          "service_id": 599
+        },
+        {
+          "id": "o:other-start-times:row-545",
+          "label": "20K/day · 100–100K · Within 3h start · No refill · No drip feed",
+          "value": "row-545",
+          "service_id": 545
+        },
+        {
+          "id": "o:other-start-times:row-581",
+          "label": "2K/day · 10–10M · Within 3h start · No refill · No drip feed",
+          "value": "row-581",
+          "service_id": 581
+        }
+      ]
+    },
+    {
+      "id": "f:guaranteed-extra-quality",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:guaranteed-extra-quality",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:guaranteed-extra-quality:row-454",
+          "label": "HQ · 5K/day · 10–100K · 6h start · 15-day refill · No drip feed",
+          "value": "row-454",
+          "service_id": 454
+        },
+        {
+          "id": "o:guaranteed-extra-quality:row-465",
+          "label": "HQ · 5K/day · 10–10M · 6h start · 20-day refill · No drip feed",
+          "value": "row-465",
+          "service_id": 465
+        },
+        {
+          "id": "o:guaranteed-extra-quality:row-369",
+          "label": "HQ · Up to 10K/day · 50–1M · Within 1h start · 30-day refill",
+          "value": "row-369",
+          "service_id": 369
+        }
+      ]
+    },
+    {
+      "id": "f:refill-30",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery option",
+      "bind_id": "t:refill-30",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:refill-30:row-451",
+          "label": "15K/day · 10–100K · 1h start",
+          "value": "row-451",
+          "service_id": 451
+        },
+        {
+          "id": "o:refill-30:row-483",
+          "label": "1K/day · 10–500K · 1h start",
+          "value": "row-483",
+          "service_id": 483
+        },
+        {
+          "id": "o:refill-30:row-478",
+          "label": "2K/day · 25–10K · 1h start",
+          "value": "row-478",
+          "service_id": 478
+        },
+        {
+          "id": "o:refill-30:row-463",
+          "label": "2K/day · 10–1M · 1h start · No drip feed",
+          "value": "row-463",
+          "service_id": 463
+        },
+        {
+          "id": "o:refill-30:row-466",
+          "label": "5K/day · 100–200K · 1h start",
+          "value": "row-466",
+          "service_id": 466
+        },
+        {
+          "id": "o:refill-30:row-452",
+          "label": "5K/day · 50–50K · 1h start · No drip feed",
+          "value": "row-452",
+          "service_id": 452
+        },
+        {
+          "id": "o:refill-30:row-445",
+          "label": "50K/day · 50–300K · 2h start",
+          "value": "row-445",
+          "service_id": 445
+        },
+        {
+          "id": "o:refill-30:row-444",
+          "label": "5K/day · 50–200K · 2h start",
+          "value": "row-444",
+          "service_id": 444
+        },
+        {
+          "id": "o:refill-30:row-481",
+          "label": "1.5K/day · 10–10M · 3h start · No drip feed",
+          "value": "row-481",
+          "service_id": 481
+        },
+        {
+          "id": "o:refill-30:row-480",
+          "label": "3K/day · 25–10K · 3h start · No drip feed",
+          "value": "row-480",
+          "service_id": 480
+        },
+        {
+          "id": "o:refill-30:row-450",
+          "label": "50K/day · 10–200K · 4h start · No drip feed",
+          "value": "row-450",
+          "service_id": 450
+        },
+        {
+          "id": "o:refill-30:row-479",
+          "label": "10K/day · 10–10K · 6h start · No drip feed",
+          "value": "row-479",
+          "service_id": 479
+        },
+        {
+          "id": "o:refill-30:row-442",
+          "label": "20K/day · 10–1M · 6h start",
+          "value": "row-442",
+          "service_id": 442
+        },
+        {
+          "id": "o:refill-30:row-437",
+          "label": "50K/day · 10–1M · Within 1h start",
+          "value": "row-437",
+          "service_id": 437
+        },
+        {
+          "id": "o:refill-30:row-371",
+          "label": "50K/day · 20–1M · Within 1h start",
+          "value": "row-371",
+          "service_id": 371
+        },
+        {
+          "id": "o:refill-30:row-453",
+          "label": "Up to 5K/day · 50–3M · Within 1h start",
+          "value": "row-453",
+          "service_id": 453
+        },
+        {
+          "id": "o:refill-30:row-351",
+          "label": "10–10M · Within 2h · Variable speed · No drip feed",
+          "value": "row-351",
+          "service_id": 351
+        },
+        {
+          "id": "o:refill-30:row-364",
+          "label": "Up to 100K/day · 10–1M · Within 3h start",
+          "value": "row-364",
+          "service_id": 364
+        },
+        {
+          "id": "o:refill-30:row-443",
+          "label": "20K/day · 50–100K · Within 4h start",
+          "value": "row-443",
+          "service_id": 443
+        }
+      ]
+    },
+    {
+      "id": "f:refill-365",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery option",
+      "bind_id": "t:refill-365",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:refill-365:row-374",
+          "label": "25K/day · 10–100K · Within 1h start",
+          "value": "row-374",
+          "service_id": 374
+        },
+        {
+          "id": "o:refill-365:row-366",
+          "label": "Up to 100K/day · 20–1M · Within 1h start",
+          "value": "row-366",
+          "service_id": 366
+        },
+        {
+          "id": "o:refill-365:row-359",
+          "label": "Up to 500K/day · 20–1M · Within 2h start · No drip feed",
+          "value": "row-359",
+          "service_id": 359
+        },
+        {
+          "id": "o:refill-365:row-441",
+          "label": "Up to 30K/day · 10–1M · Within 3h start",
+          "value": "row-441",
+          "service_id": 441
+        }
+      ]
+    },
+    {
+      "id": "f:refill-other",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery option",
+      "bind_id": "t:refill-other",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:refill-other:row-456",
+          "label": "1K/day · 10–10M · 3h start · 15-day refill · No drip feed",
+          "value": "row-456",
+          "service_id": 456
+        },
+        {
+          "id": "o:refill-other:row-455",
+          "label": "5K/day · 10–10M · 6h start · 20-day refill · No drip feed",
+          "value": "row-455",
+          "service_id": 455
+        }
+      ]
+    },
+    {
+      "id": "f:guaranteed-extra-drop",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:guaranteed-extra-drop",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:guaranteed-extra-drop:row-446",
+          "label": "High Drop · 3K/day · 10–100K · 1h start · 30-day refill",
+          "value": "row-446",
+          "service_id": 446
+        },
+        {
+          "id": "o:guaranteed-extra-drop:row-402",
+          "label": "High Drop · Up to 200K/day · 10–100K · Within 3h start · 30-day refill · No drip feed",
+          "value": "row-402",
+          "service_id": 402
+        },
+        {
+          "id": "o:guaranteed-extra-drop:row-350",
+          "label": "High drop · 30-day refill · 10–100K · Within 1h · Variable speed",
+          "value": "row-350",
+          "service_id": 350
+        },
+        {
+          "id": "o:guaranteed-extra-drop:row-11624",
+          "label": "Up to 40% DROP · Up to 2K/day · 10–3M · Within 1h start · 30-day refill",
+          "value": "row-11624",
+          "service_id": 11624
+        }
+      ]
+    },
+    {
+      "id": "f:more-no-guarantee-quality",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:more-no-guarantee-quality",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:more-no-guarantee-quality:row-561",
+          "label": "HQ · 10K/day · 10–10M · Within 1h start · No refill · No drip feed",
+          "value": "row-561",
+          "service_id": 561
+        },
+        {
+          "id": "o:more-no-guarantee-quality:row-533",
+          "label": "HQ · 10K/day · 20–10K · Within 2h start · No refill",
+          "value": "row-533",
+          "service_id": 533
+        },
+        {
+          "id": "o:more-no-guarantee-quality:row-569",
+          "label": "OLD Accs 15+ Posts · Up to 100K/day · 10–10M · Within 1h start · No refill · No drip feed",
+          "value": "row-569",
+          "service_id": 569
+        }
+      ]
+    },
+    {
+      "id": "f:asia",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:asia",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:asia:row-664",
+          "label": "70% INDIA · 5K/day · 10–50K · 1h start · No refill · No drip feed",
+          "value": "row-664",
+          "service_id": 664
+        },
+        {
+          "id": "o:asia:row-671",
+          "label": "HONG KONG · 1K/day · 50–1K · Within 1h start · No refill · No drip feed",
+          "value": "row-671",
+          "service_id": 671
+        },
+        {
+          "id": "o:asia:row-643",
+          "label": "INDIA · Up to 5K/day · 100–1B · Within 24h start · No refill",
+          "value": "row-643",
+          "service_id": 643
+        },
+        {
+          "id": "o:asia:row-659",
+          "label": "INDIA · 5K/day · 50–150K · Within 6h start · No refill",
+          "value": "row-659",
+          "service_id": 659
+        },
+        {
+          "id": "o:asia:row-667",
+          "label": "Indonesia · 500/day · 50–50K · 12h start · 30-day refill · No drip feed",
+          "value": "row-667",
+          "service_id": 667
+        },
+        {
+          "id": "o:asia:row-683",
+          "label": "INDONESIA · 5K/day · 50–50K · Within 3h start · 30-day refill · No drip feed",
+          "value": "row-683",
+          "service_id": 683
+        },
+        {
+          "id": "o:asia:row-655",
+          "label": "Korea · HQ · 1K/day · 10–20K · Within 1h start · No refill",
+          "value": "row-655",
+          "service_id": 655
+        },
+        {
+          "id": "o:asia:row-656",
+          "label": "Korea · HQ · Up to 1K/day · 25–1K · Within 1h start · No refill",
+          "value": "row-656",
+          "service_id": 656
+        },
+        {
+          "id": "o:asia:row-658",
+          "label": "Korea · HQ · 1K/day · 10–50K · Within 3h start · No refill",
+          "value": "row-658",
+          "service_id": 658
+        },
+        {
+          "id": "o:asia:row-672",
+          "label": "KOREA · 2K/day · 20–3K · Within 1h start · No refill · No drip feed",
+          "value": "row-672",
+          "service_id": 672
+        },
+        {
+          "id": "o:asia:row-649",
+          "label": "PAK · Up to 20K/day · 20–10K · Within 2h start · No refill",
+          "value": "row-649",
+          "service_id": 649
+        },
+        {
+          "id": "o:asia:row-648",
+          "label": "PAK · Up to 20K/day · 50–20K · Within 2h start · No refill",
+          "value": "row-648",
+          "service_id": 648
+        },
+        {
+          "id": "o:asia:row-1319",
+          "label": "TAIWAN · 1K/day · 20–1K · Within 1h start · No refill · No drip feed",
+          "value": "row-1319",
+          "service_id": 1319
+        }
+      ]
+    },
+    {
+      "id": "f:brazil",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:brazil",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:brazil:row-1413",
+          "label": "55% Brazil · 20K/day · 10–100K · Within 1h start · No refill",
+          "value": "row-1413",
+          "service_id": 1413
+        },
+        {
+          "id": "o:brazil:row-1414",
+          "label": "75% Brazil · 20K/day · 10–100K · Within 1h start · No refill",
+          "value": "row-1414",
+          "service_id": 1414
+        },
+        {
+          "id": "o:brazil:row-1394",
+          "label": "Brazil · Up to 1K/day · 1–50K · Within 2h start · No refill",
+          "value": "row-1394",
+          "service_id": 1394
+        },
+        {
+          "id": "o:brazil:row-1399",
+          "label": "Brazil · Up to 2K/day · 1–50K · Within 2h start · No refill",
+          "value": "row-1399",
+          "service_id": 1399
+        },
+        {
+          "id": "o:brazil:row-1406",
+          "label": "BRAZIL - Female · 5K/day · 100–5K · 1h start · No refill",
+          "value": "row-1406",
+          "service_id": 1406
+        },
+        {
+          "id": "o:brazil:row-1407",
+          "label": "BRAZIL - Male · 5K/day · 100–5K · 1h start · No refill",
+          "value": "row-1407",
+          "service_id": 1407
+        },
+        {
+          "id": "o:brazil:row-1411",
+          "label": "Brazil · 3K/day · 10–100K · 1h start · 30-day refill",
+          "value": "row-1411",
+          "service_id": 1411
+        },
+        {
+          "id": "o:brazil:row-1415",
+          "label": "30-day refill · 10–100K · Within 3h · Variable speed",
+          "value": "row-1415",
+          "service_id": 1415
+        },
+        {
+          "id": "o:brazil:row-1378",
+          "label": "Brazil · Drop: Up to 30% · Up to 20K/day · 10–100K · Within 1h start · No refill",
+          "value": "row-1378",
+          "service_id": 1378
+        },
+        {
+          "id": "o:brazil:row-1375",
+          "label": "Brazil · Drop: Up to 30% · Up to 10K/day · 10–100K · Within 2h start · No refill",
+          "value": "row-1375",
+          "service_id": 1375
+        },
+        {
+          "id": "o:brazil:row-1405",
+          "label": "10K/day · 10–100K · Within 1h · No refill",
+          "value": "row-1405",
+          "service_id": 1405
+        },
+        {
+          "id": "o:brazil:row-1409",
+          "label": "Brazil · 10K/day · 10–100K · 1h start · No refill · No drip feed",
+          "value": "row-1409",
+          "service_id": 1409
+        },
+        {
+          "id": "o:brazil:row-1412",
+          "label": "Brazil · 5K/day · 50–1K · 1h start · No refill",
+          "value": "row-1412",
+          "service_id": 1412
+        },
+        {
+          "id": "o:brazil:row-1416",
+          "label": "Brazil · 2K/day · 50–200K · 2h start · No refill · No drip feed",
+          "value": "row-1416",
+          "service_id": 1416
+        },
+        {
+          "id": "o:brazil:row-1417",
+          "label": "Brazil · SLOW · 50/day · 50–199,999 · 24h start · No refill · No drip feed",
+          "value": "row-1417",
+          "service_id": 1417
+        },
+        {
+          "id": "o:brazil:row-685",
+          "label": "Brazil · 10K/day · 50–100K · Within 1h start · No refill",
+          "value": "row-685",
+          "service_id": 685
+        },
+        {
+          "id": "o:brazil:row-1408",
+          "label": "Brazil · Up to 10K/day · 10–85K · Within 1h start · No refill",
+          "value": "row-1408",
+          "service_id": 1408
+        },
+        {
+          "id": "o:brazil:row-651",
+          "label": "Brazil · 10K/day · 10–20K · Within 3h start · No refill",
+          "value": "row-651",
+          "service_id": 651
+        },
+        {
+          "id": "o:brazil:row-1396",
+          "label": "Brazil · 25K/day · 50–200K · Within 3h start · No refill",
+          "value": "row-1396",
+          "service_id": 1396
+        },
+        {
+          "id": "o:brazil:row-1393",
+          "label": "Brazil · 25K/day · 10–100K · Within 3h start · No refill · No drip feed",
+          "value": "row-1393",
+          "service_id": 1393
+        },
+        {
+          "id": "o:brazil:row-1418",
+          "label": "FEMALE - BRAZIL · 1K/day · 50–1M · 2h start · No refill",
+          "value": "row-1418",
+          "service_id": 1418
+        },
+        {
+          "id": "o:brazil:row-1419",
+          "label": "MALE - BRAZIL · 1K/day · 50–10M · 2h start · No refill · No drip feed",
+          "value": "row-1419",
+          "service_id": 1419
+        }
+      ]
+    },
+    {
+      "id": "f:europe",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:europe",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:europe:row-634",
+          "label": "EU · Up to 5K/day · 10–1B · Within 24h start · 30-day refill",
+          "value": "row-634",
+          "service_id": 634
+        },
+        {
+          "id": "o:europe:row-669",
+          "label": "Europe · 2K/day · 10–300K · 1h start · No refill",
+          "value": "row-669",
+          "service_id": 669
+        },
+        {
+          "id": "o:europe:row-1027",
+          "label": "Europe · Up to 500/day · 5–800 · Within 1h start · No refill · No drip feed",
+          "value": "row-1027",
+          "service_id": 1027
+        },
+        {
+          "id": "o:europe:row-1368",
+          "label": "France · 50/day · 5–200 · Instant start · No refill · No drip feed",
+          "value": "row-1368",
+          "service_id": 1368
+        },
+        {
+          "id": "o:europe:row-1355",
+          "label": "France · 500/day · 20–5K · Instant start · No refill · No drip feed",
+          "value": "row-1355",
+          "service_id": 1355
+        },
+        {
+          "id": "o:europe:row-1029",
+          "label": "FRANCE · NON DROP · 50/day · 5–200 · 12h start · No refill",
+          "value": "row-1029",
+          "service_id": 1029
+        },
+        {
+          "id": "o:europe:row-1024",
+          "label": "FRANCE · No-drop estimate · Up to 200/day · 25–1K · Within 3h start · No refill",
+          "value": "row-1024",
+          "service_id": 1024
+        },
+        {
+          "id": "o:europe:row-1363",
+          "label": "FRANCE · No-drop estimate · Up to 100/day · 25–1K · Within 8h start · No refill",
+          "value": "row-1363",
+          "service_id": 1363
+        },
+        {
+          "id": "o:europe:row-1344",
+          "label": "France · 100/day · 20–5K · Within 6h start · No refill · No drip feed",
+          "value": "row-1344",
+          "service_id": 1344
+        },
+        {
+          "id": "o:europe:row-1362",
+          "label": "GERMANY MIX · NON DROP · 25–1K · Within 12h start · No refill",
+          "value": "row-1362",
+          "service_id": 1362
+        },
+        {
+          "id": "o:europe:row-1369",
+          "label": "Germany · 50/day · 5–500 · Instant start · No refill · No drip feed",
+          "value": "row-1369",
+          "service_id": 1369
+        },
+        {
+          "id": "o:europe:row-1031",
+          "label": "GERMANY · NON DROP · 50/day · 5–500 · 12h start · No refill · No drip feed",
+          "value": "row-1031",
+          "service_id": 1031
+        },
+        {
+          "id": "o:europe:row-1021",
+          "label": "GERMANY · No-drop estimate · Up to 200/day · 25–5K · Within 3h start · No refill",
+          "value": "row-1021",
+          "service_id": 1021
+        },
+        {
+          "id": "o:europe:row-1340",
+          "label": "GERMANY · No-drop estimate · Up to 100/day · 25–2,500 · Within 8h start · No refill",
+          "value": "row-1340",
+          "service_id": 1340
+        },
+        {
+          "id": "o:europe:row-71",
+          "label": "GERMANY · 50/day · 10–4K · 48h start · No refill · No drip feed",
+          "value": "row-71",
+          "service_id": 71
+        },
+        {
+          "id": "o:europe:row-1322",
+          "label": "Instagram Ukraine Followers · Drop: ±5% · 500/day · 50–500K · Within 1h start · No refill · No drip feed",
+          "value": "row-1322",
+          "service_id": 1322
+        },
+        {
+          "id": "o:europe:row-1434",
+          "label": "ITALY 16-21 YO · 200/day · 10–5K · 12h start · No refill · No drip feed",
+          "value": "row-1434",
+          "service_id": 1434
+        },
+        {
+          "id": "o:europe:row-1433",
+          "label": "ITALY 18+ · 100/day · 10–5K · 4h start · No refill · No drip feed",
+          "value": "row-1433",
+          "service_id": 1433
+        },
+        {
+          "id": "o:europe:row-1356",
+          "label": "ITALY · 500/day · 10–2K · Within 1h start · No refill",
+          "value": "row-1356",
+          "service_id": 1356
+        },
+        {
+          "id": "o:europe:row-660",
+          "label": "RUSSIAN · NON-DROP · 1K/day · 50–500K · 1h start · No refill",
+          "value": "row-660",
+          "service_id": 660
+        },
+        {
+          "id": "o:europe:row-1028",
+          "label": "SCANDINAVIA · Up to 400/day · 5–400 · Within 1h start · No refill",
+          "value": "row-1028",
+          "service_id": 1028
+        },
+        {
+          "id": "o:europe:row-1349",
+          "label": "SPAIN · 2K/day · 20–2K · Within 1h start · No refill · No drip feed",
+          "value": "row-1349",
+          "service_id": 1349
+        },
+        {
+          "id": "o:europe:row-1038",
+          "label": "Spain · 50/day · 5–50 · Instant start · No refill · No drip feed",
+          "value": "row-1038",
+          "service_id": 1038
+        },
+        {
+          "id": "o:europe:row-1357",
+          "label": "SPAIN · 500/day · 20–2K · Within 1h start · No refill",
+          "value": "row-1357",
+          "service_id": 1357
+        },
+        {
+          "id": "o:europe:row-1370",
+          "label": "Sweden · 50/day · 5–200 · Instant start · No refill · No drip feed",
+          "value": "row-1370",
+          "service_id": 1370
+        },
+        {
+          "id": "o:europe:row-1032",
+          "label": "SWEDEN · NON DROP · 50/day · 5–200 · 12h start · No refill · No drip feed",
+          "value": "row-1032",
+          "service_id": 1032
+        },
+        {
+          "id": "o:europe:row-1353",
+          "label": "UK · 2K/day · 20–2K · Within 1h start · No refill",
+          "value": "row-1353",
+          "service_id": 1353
+        },
+        {
+          "id": "o:europe:row-633",
+          "label": "UK · Up to 10K/day · 10–1B · Within 24h start · No refill",
+          "value": "row-633",
+          "service_id": 633
+        },
+        {
+          "id": "o:europe:row-20",
+          "label": "VIP · FRANCE · Up to 10K/day · 20–20K · Within 1h start · 30-day refill",
+          "value": "row-20",
+          "service_id": 20
+        },
+        {
+          "id": "o:europe:row-21",
+          "label": "VIP · ITALY · Up to 10K/day · 20–25K · Within 1h start · 90-day refill",
+          "value": "row-21",
+          "service_id": 21
+        }
+      ]
+    },
+    {
+      "id": "f:middle-east",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:middle-east",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:middle-east:row-1440",
+          "label": "75% Turkey · 4K/day · 50–15K · 1h start · No refill",
+          "value": "row-1440",
+          "service_id": 1440
+        },
+        {
+          "id": "o:middle-east:row-665",
+          "label": "ARAB - GULF · 3K/day · 20–5K · Within 1h start · No refill",
+          "value": "row-665",
+          "service_id": 665
+        },
+        {
+          "id": "o:middle-east:row-668",
+          "label": "ARAB - IRAN MIX · 3K/day · 100–5K · 1h start · No refill · No drip feed",
+          "value": "row-668",
+          "service_id": 668
+        },
+        {
+          "id": "o:middle-east:row-663",
+          "label": "ARAB - خليجي حقيقي متفاعلين · Start: Up to 48 Hours · 200/day · 2K–100K · No refill",
+          "value": "row-663",
+          "service_id": 663
+        },
+        {
+          "id": "o:middle-east:row-681",
+          "label": "ARAB - خليجي حقيقي متفاعلين · Start: Up to 48 Hours · 400 - 800/day · 1K–5K · No refill · No drip feed",
+          "value": "row-681",
+          "service_id": 681
+        },
+        {
+          "id": "o:middle-east:row-662",
+          "label": "ARAB - خليجي حقيقي متفاعلين · Start: Up to 48 Hours · 500 - 1K/day · 1K–25K · No refill · No drip feed",
+          "value": "row-662",
+          "service_id": 662
+        },
+        {
+          "id": "o:middle-east:row-650",
+          "label": "ARAB - متابعين عرب متفاعلين · Start: 12 - 24 Hrs · 1K/day · 1K–10K · No refill",
+          "value": "row-650",
+          "service_id": 650
+        },
+        {
+          "id": "o:middle-east:row-645",
+          "label": "ARAB / INDIA / TURK MIX · 20K/day · 100–5K · Within 1h start · No refill",
+          "value": "row-645",
+          "service_id": 645
+        },
+        {
+          "id": "o:middle-east:row-642",
+          "label": "ARAB · 25K/day · 100–5K · Within 1h start · 30-day refill",
+          "value": "row-642",
+          "service_id": 642
+        },
+        {
+          "id": "o:middle-east:row-661",
+          "label": "ARAB · Up to 10K/day · 50–300 · Within 12h start · No refill",
+          "value": "row-661",
+          "service_id": 661
+        },
+        {
+          "id": "o:middle-east:row-673",
+          "label": "IRAN · 1K/day · 20–7K · Within 1h start · No refill · No drip feed",
+          "value": "row-673",
+          "service_id": 673
+        },
+        {
+          "id": "o:middle-east:row-641",
+          "label": "IRAQ · Up to 20K/day · 50–1M · Within 2h start · 30-day refill",
+          "value": "row-641",
+          "service_id": 641
+        },
+        {
+          "id": "o:middle-east:row-639",
+          "label": "IRAQ · Up to 20K/day · 50–5K · Within 2h start · No refill",
+          "value": "row-639",
+          "service_id": 639
+        },
+        {
+          "id": "o:middle-east:row-647",
+          "label": "KSA · Up to 20K/day · 20–10K · Within 2h start · 30-day refill",
+          "value": "row-647",
+          "service_id": 647
+        },
+        {
+          "id": "o:middle-east:row-646",
+          "label": "KSA · Up to 20K/day · 50–20K · Within 2h start · No refill",
+          "value": "row-646",
+          "service_id": 646
+        },
+        {
+          "id": "o:middle-east:row-75",
+          "label": "LEBANON · 100/day · 25–500 · 12h start · No refill · No drip feed",
+          "value": "row-75",
+          "service_id": 75
+        },
+        {
+          "id": "o:middle-east:row-1442",
+          "label": "REAL - TURKEY · 40K/day · 20–100K · 1h start · No refill",
+          "value": "row-1442",
+          "service_id": 1442
+        },
+        {
+          "id": "o:middle-east:row-644",
+          "label": "UAE - ARAB · 5K/day · 100–10K · Within 1h start · No refill",
+          "value": "row-644",
+          "service_id": 644
+        },
+        {
+          "id": "o:middle-east:row-16",
+          "label": "VIP · ARAB · 10K/day · 20–100K · Within 1h start · 30-day refill",
+          "value": "row-16",
+          "service_id": 16
+        }
+      ]
+    },
+    {
+      "id": "f:more-regions",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:more-regions",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:more-regions:row-654",
+          "label": "15K/day · 10–300K · Within 1h start · 180-day refill · No drip feed",
+          "value": "row-654",
+          "service_id": 654
+        },
+        {
+          "id": "o:more-regions:row-637",
+          "label": "EG · Up to 20K/day · 20–10K · Within 2h start · 30-day refill",
+          "value": "row-637",
+          "service_id": 637
+        },
+        {
+          "id": "o:more-regions:row-636",
+          "label": "EG · Up to 20K/day · 50–20K · Within 2h start · No refill",
+          "value": "row-636",
+          "service_id": 636
+        },
+        {
+          "id": "o:more-regions:row-666",
+          "label": "English Names - HQ · 5K/day · 10–50K · 1h start · No refill",
+          "value": "row-666",
+          "service_id": 666
+        },
+        {
+          "id": "o:more-regions:row-676",
+          "label": "NIGERIA · NON DROP · 100/day · 200–10K · 2h start · No refill · No drip feed",
+          "value": "row-676",
+          "service_id": 676
+        },
+        {
+          "id": "o:more-regions:row-1341",
+          "label": "AUSTRALIA · 3K/day · 20–3K · Within 1h start · No refill (listed as 30-day refill) · No refill",
+          "value": "row-1341",
+          "service_id": 1341
+        },
+        {
+          "id": "o:more-regions:row-652",
+          "label": "10K/day · 10–200K · Within 1h start · No refill",
+          "value": "row-652",
+          "service_id": 652
+        },
+        {
+          "id": "o:more-regions:row-653",
+          "label": "15K/day · 10–250K · Within 1h start · No refill · No drip feed",
+          "value": "row-653",
+          "service_id": 653
+        }
+      ]
+    },
+    {
+      "id": "f:usa",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:usa",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:usa:row-83",
+          "label": "FEMALE · Afro-Americans · USA · NO DROP · 250/day · 30–2,500 · No refill · No drip feed",
+          "value": "row-83",
+          "service_id": 83
+        },
+        {
+          "id": "o:usa:row-1020",
+          "label": "USA - AFRO · No-drop estimate · Up to 1K/day · 50–5K · Within 3h start · No refill",
+          "value": "row-1020",
+          "service_id": 1020
+        },
+        {
+          "id": "o:usa:row-1351",
+          "label": "USA · 1K/day · 20–2K · Within 1h start · No refill · No drip feed",
+          "value": "row-1351",
+          "service_id": 1351
+        },
+        {
+          "id": "o:usa:row-58",
+          "label": "USA · MIX · 5K/day · 5–1B · Within 24h start · 30-day refill",
+          "value": "row-58",
+          "service_id": 58
+        },
+        {
+          "id": "o:usa:row-631",
+          "label": "USA · MIX · 5K/day · 10–1B · Within 24h start · No refill",
+          "value": "row-631",
+          "service_id": 631
+        },
+        {
+          "id": "o:usa:row-1336",
+          "label": "USA · No-drop estimate · 1K/day · 5–1B · Within 1h start · No refill · No drip feed",
+          "value": "row-1336",
+          "service_id": 1336
+        },
+        {
+          "id": "o:usa:row-1332",
+          "label": "USA · 100/day · 10–15K · Within 1h start · No refill · No drip feed",
+          "value": "row-1332",
+          "service_id": 1332
+        },
+        {
+          "id": "o:usa:row-13",
+          "label": "USA · 10K/day · 10–10K · Within 1h start · No refill",
+          "value": "row-13",
+          "service_id": 13
+        },
+        {
+          "id": "o:usa:row-686",
+          "label": "USA · 10K/day · 10–10K · Within 1h start · No refill · No drip feed",
+          "value": "row-686",
+          "service_id": 686
+        },
+        {
+          "id": "o:usa:row-102",
+          "label": "USA · 2K/day · 10–100K · Within 1h start · No refill · No drip feed",
+          "value": "row-102",
+          "service_id": 102
+        },
+        {
+          "id": "o:usa:row-1335",
+          "label": "USA · 4K/day · 20–10K · Within 1h start · No refill · No drip feed",
+          "value": "row-1335",
+          "service_id": 1335
+        },
+        {
+          "id": "o:usa:row-98",
+          "label": "USA · 5K/day · 100–50K · Within 1h start · No refill",
+          "value": "row-98",
+          "service_id": 98
+        },
+        {
+          "id": "o:usa:row-59",
+          "label": "USA · SUPER QUALITY · No-drop estimate · 5K/day · 5–1B · Within 24h start · No refill · No drip feed",
+          "value": "row-59",
+          "service_id": 59
+        },
+        {
+          "id": "o:usa:row-17",
+          "label": "VIP · USA · 20K/day · 20–100K · Within 1h start · 30-day refill",
+          "value": "row-17",
+          "service_id": 17
+        },
+        {
+          "id": "o:usa:row-18",
+          "label": "VIP · USA · 10K/day · 20–100K · Within 1h start · 90-day refill",
+          "value": "row-18",
+          "service_id": 18
+        }
+      ]
+    },
+    {
+      "id": "f:usa-uk-europe",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:usa-uk-europe",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:usa-uk-europe:row-1018",
+          "label": "Female · USA/UK · No-drop estimate · Up to 3K/day · 50–9K · Within 3h start · No refill",
+          "value": "row-1018",
+          "service_id": 1018
+        },
+        {
+          "id": "o:usa-uk-europe:row-1017",
+          "label": "Male · USA/UK · No-drop estimate · Up to 3K/day · 50–6K · Within 3h start · No refill",
+          "value": "row-1017",
+          "service_id": 1017
+        },
+        {
+          "id": "o:usa-uk-europe:row-69",
+          "label": "USA / EUROPE · FEMALE · EXCLUSIVE - NON DROP · 50–9K · No refill",
+          "value": "row-69",
+          "service_id": 69
+        },
+        {
+          "id": "o:usa-uk-europe:row-68",
+          "label": "USA / EUROPE · MALE · EXCLUSIVE - NON DROP · 50–6K · No refill",
+          "value": "row-68",
+          "service_id": 68
+        },
+        {
+          "id": "o:usa-uk-europe:row-62",
+          "label": "USA / EUROPE · 50–12K · No refill",
+          "value": "row-62",
+          "service_id": 62
+        },
+        {
+          "id": "o:usa-uk-europe:row-67",
+          "label": "USA / EUROPE · SMALL QUANTITY · EXCLUSIVE - NON DROP · 15–30 · No refill",
+          "value": "row-67",
+          "service_id": 67
+        },
+        {
+          "id": "o:usa-uk-europe:row-54",
+          "label": "USA/Europe · Non Drop · 1.5K/day · 100–15K · Within 4h start · No refill · No drip feed",
+          "value": "row-54",
+          "service_id": 54
+        },
+        {
+          "id": "o:usa-uk-europe:row-1030",
+          "label": "USA/UK · NON DROP · 50/day · 5–200 · 12h start · No refill · No drip feed",
+          "value": "row-1030",
+          "service_id": 1030
+        },
+        {
+          "id": "o:usa-uk-europe:row-1016",
+          "label": "USA/UK · No-drop estimate · Up to 3K/day · 50–12K · Within 3h start · No refill",
+          "value": "row-1016",
+          "service_id": 1016
+        }
+      ]
+    },
+    {
+      "id": "f:more-no-guarantee-retention",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:more-no-guarantee-retention",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:more-no-guarantee-retention:row-594",
+          "label": "10-20% Drop · 10–15K/day · 10–50K · Within 1h start · No refill",
+          "value": "row-594",
+          "service_id": 594
+        },
+        {
+          "id": "o:more-no-guarantee-retention:row-603",
+          "label": "10-20% Drop · 10–15K/day · 20–300K · Within 1h start · No refill",
+          "value": "row-603",
+          "service_id": 603
+        },
+        {
+          "id": "o:more-no-guarantee-retention:row-607",
+          "label": "15-20% Drop · 30–50K/day · 20–3M · Within 1h start · No refill",
+          "value": "row-607",
+          "service_id": 607
+        },
+        {
+          "id": "o:more-no-guarantee-retention:row-609",
+          "label": "15-20% Drop · 30–50K/day · 20–300K · Within 1h start · No refill",
+          "value": "row-609",
+          "service_id": 609
+        },
+        {
+          "id": "o:more-no-guarantee-retention:row-505",
+          "label": "Drop: Up to 30% · 30K/day · 10–100K · Within 1h start · No refill · No drip feed",
+          "value": "row-505",
+          "service_id": 505
+        },
+        {
+          "id": "o:more-no-guarantee-retention:row-504",
+          "label": "Drop: Up to 30% · 30K/day · 10–100K · Within 3h start · No refill · No drip feed",
+          "value": "row-504",
+          "service_id": 504
+        },
+        {
+          "id": "o:more-no-guarantee-retention:row-606",
+          "label": "Low Drop · 1K/day · 50–50K · 1h start · No refill · No drip feed",
+          "value": "row-606",
+          "service_id": 606
+        },
+        {
+          "id": "o:more-no-guarantee-retention:row-618",
+          "label": "Low Drop · 5K/day · 100–100K · 1h start · No refill",
+          "value": "row-618",
+          "service_id": 618
+        },
+        {
+          "id": "o:more-no-guarantee-retention:row-610",
+          "label": "Low Drop · 5K/day · 50–5K · 1h start · No refill",
+          "value": "row-610",
+          "service_id": 610
+        },
+        {
+          "id": "o:more-no-guarantee-retention:row-619",
+          "label": "Low Drop · 5K/day · 50–50K · 1h start · No refill",
+          "value": "row-619",
+          "service_id": 619
+        },
+        {
+          "id": "o:more-no-guarantee-retention:row-614",
+          "label": "Low Drop · 5K/day · 10–100K · 1h start · No refill · No drip feed",
+          "value": "row-614",
+          "service_id": 614
+        },
+        {
+          "id": "o:more-no-guarantee-retention:row-506",
+          "label": "Low Drop · Up to 20K/day · 10–10K · Within 2h start · No refill",
+          "value": "row-506",
+          "service_id": 506
+        }
+      ]
+    },
+    {
+      "id": "f:packages",
+      "type": "select",
+      "variant": "default",
+      "label": "Verified follower package",
+      "bind_id": "t:packages",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a follower package"
+      },
+      "options": [
+        {
+          "id": "o:packages:egypt-2",
+          "label": "Egypt · 2 followers",
+          "value": "egypt-2",
+          "service_id": 1462,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages:egypt-3",
+          "label": "Egypt · 3 followers",
+          "value": "egypt-3",
+          "service_id": 1463,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages:egypt-4",
+          "label": "Egypt · 4 followers",
+          "value": "egypt-4",
+          "service_id": 1464,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages:egypt-5",
+          "label": "Egypt · 5 followers",
+          "value": "egypt-5",
+          "service_id": 1465,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages:egypt-6",
+          "label": "Egypt · 6 followers",
+          "value": "egypt-6",
+          "service_id": 1466,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages:egypt-7",
+          "label": "Egypt · 7 followers",
+          "value": "egypt-7",
+          "service_id": 1467,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages:egypt-10",
+          "label": "Egypt · 10 followers",
+          "value": "egypt-10",
+          "service_id": 1468,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages:egypt-15",
+          "label": "Egypt · 15 followers",
+          "value": "egypt-15",
+          "service_id": 1469,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages:egypt-20",
+          "label": "Egypt · 20 followers",
+          "value": "egypt-20",
+          "service_id": 1470,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages:egypt-25",
+          "label": "Egypt · 25 followers",
+          "value": "egypt-25",
+          "service_id": 1471,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages:turkey-1",
+          "label": "Turkey · 1 follower",
+          "value": "turkey-1",
+          "service_id": 1451,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages:turkey-2",
+          "label": "Turkey · 2 followers",
+          "value": "turkey-2",
+          "service_id": 1452,
+          "quantity_default": 1
+        }
+      ]
+    },
+    {
+      "id": "f:packages-egypt",
+      "type": "select",
+      "variant": "default",
+      "label": "Verified follower package",
+      "bind_id": "t:packages-egypt",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a follower package"
+      },
+      "options": [
+        {
+          "id": "o:packages-egypt:egypt-2",
+          "label": "Egypt · 2 followers",
+          "value": "egypt-2",
+          "service_id": 1462,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages-egypt:egypt-3",
+          "label": "Egypt · 3 followers",
+          "value": "egypt-3",
+          "service_id": 1463,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages-egypt:egypt-4",
+          "label": "Egypt · 4 followers",
+          "value": "egypt-4",
+          "service_id": 1464,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages-egypt:egypt-5",
+          "label": "Egypt · 5 followers",
+          "value": "egypt-5",
+          "service_id": 1465,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages-egypt:egypt-6",
+          "label": "Egypt · 6 followers",
+          "value": "egypt-6",
+          "service_id": 1466,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages-egypt:egypt-7",
+          "label": "Egypt · 7 followers",
+          "value": "egypt-7",
+          "service_id": 1467,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages-egypt:egypt-10",
+          "label": "Egypt · 10 followers",
+          "value": "egypt-10",
+          "service_id": 1468,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages-egypt:egypt-15",
+          "label": "Egypt · 15 followers",
+          "value": "egypt-15",
+          "service_id": 1469,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages-egypt:egypt-20",
+          "label": "Egypt · 20 followers",
+          "value": "egypt-20",
+          "service_id": 1470,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages-egypt:egypt-25",
+          "label": "Egypt · 25 followers",
+          "value": "egypt-25",
+          "service_id": 1471,
+          "quantity_default": 1
+        }
+      ]
+    },
+    {
+      "id": "f:packages-turkey",
+      "type": "select",
+      "variant": "default",
+      "label": "Verified follower package",
+      "bind_id": "t:packages-turkey",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a follower package"
+      },
+      "options": [
+        {
+          "id": "o:packages-turkey:turkey-1",
+          "label": "Turkey · 1 follower",
+          "value": "turkey-1",
+          "service_id": 1451,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:packages-turkey:turkey-2",
+          "label": "Turkey · 2 followers",
+          "value": "turkey-2",
+          "service_id": 1452,
+          "quantity_default": 1
+        }
+      ]
+    },
+    {
+      "id": "f:others",
+      "type": "select",
+      "variant": "default",
+      "label": "Flexible delivery",
+      "bind_id": "t:others",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose flexible delivery"
+      },
+      "description": "Delivery speeds and retention estimates can vary on these routes.",
+      "options": [
+        {
+          "id": "o:others:from-100",
+          "label": "100–100K followers",
+          "value": "from-100",
+          "service_id": 545
+        },
+        {
+          "id": "o:others:from-10",
+          "label": "10–100K followers",
+          "value": "from-10",
+          "service_id": 503
+        }
+      ]
+    },
+    {
+      "id": "f:others-delivery",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:others-delivery",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:others-delivery:row-510",
+          "label": "Up to 500K/day · 10–10M · Within 1h start · No refill",
+          "value": "row-510",
+          "service_id": 510
+        },
+        {
+          "id": "o:others-delivery:row-566",
+          "label": "100K/day · 10–10M · Within 1h start · No refill",
+          "value": "row-566",
+          "service_id": 566
+        },
+        {
+          "id": "o:others-delivery:row-684",
+          "label": "Brazil · 10K/day · 10–100K · Within 1h start · No refill",
+          "value": "row-684",
+          "service_id": 684
+        },
+        {
+          "id": "o:others-delivery:row-1400",
+          "label": "Brazil · Up to 2K/day · 1–50K · Within 2h start · No refill (listed as 30-day refill)",
+          "value": "row-1400",
+          "service_id": 1400
+        },
+        {
+          "id": "o:others-delivery:row-1410",
+          "label": "Brazil · 10K/day · 10–100K · Within 1h start · No refill (listed as 30-day auto-refill)",
+          "value": "row-1410",
+          "service_id": 1410
+        }
+      ]
+    },
+    {
+      "id": "f:others-fixed",
+      "type": "select",
+      "variant": "default",
+      "label": "Fixed order quantity",
+      "bind_id": "t:others-fixed",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose fixed order quantity"
+      },
+      "description": "Each option sets the exact quantity for the order.",
+      "options": [
+        {
+          "id": "o:others-fixed:row-72",
+          "label": "1,000 order units · FEMALE TOP ACCOUNTS · PRICE IS FOR 50 FOLLOWERS · 50/day · Within 9h start",
+          "value": "row-72",
+          "service_id": 72,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others-fixed:row-74",
+          "label": "1,000 order units · FEMALE TOP ACCOUNTS · PRICE IS FOR 300 FOLLOWERS · 300/day · Within 9h start",
+          "value": "row-74",
+          "service_id": 74,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others-fixed:row-484",
+          "label": "11,000 order units · Spam On · 5–10K/day · Within 1h start · No refill (listed as 65-day refill)",
+          "value": "row-484",
+          "service_id": 484,
+          "quantity_default": 11000
+        },
+        {
+          "id": "o:others-fixed:row-485",
+          "label": "12,000 order units · Spam On · 5–10K/day · Within 1h start · No refill (listed as 65-day refill)",
+          "value": "row-485",
+          "service_id": 485,
+          "quantity_default": 12000
+        },
+        {
+          "id": "o:others-fixed:row-486",
+          "label": "13,000 order units · Spam On · 5–10K/day · Within 1h start · No refill (listed as 65-day refill)",
+          "value": "row-486",
+          "service_id": 486,
+          "quantity_default": 13000
+        },
+        {
+          "id": "o:others-fixed:row-487",
+          "label": "700 order units · Spam On · 700/day · Within 1h start · No refill (listed as 65-day refill)",
+          "value": "row-487",
+          "service_id": 487,
+          "quantity_default": 700
+        },
+        {
+          "id": "o:others-fixed:row-488",
+          "label": "290 order units · Spam On · 290/day · Within 1h start · No refill (listed as 65-day refill)",
+          "value": "row-488",
+          "service_id": 488,
+          "quantity_default": 290
+        },
+        {
+          "id": "o:others-fixed:row-489",
+          "label": "140 order units · Spam On · 140/day · Within 1h start · No refill (listed as 65-day refill)",
+          "value": "row-489",
+          "service_id": 489,
+          "quantity_default": 140
+        },
+        {
+          "id": "o:others-fixed:row-490",
+          "label": "1,000 order units · Spam On · 1K/day · Within 1h start · No refill (listed as 65-day refill)",
+          "value": "row-490",
+          "service_id": 490,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others-fixed:row-491",
+          "label": "9,100 order units · Spam On · 9.1K/day · Within 1h start · No refill (listed as 65-day refill)",
+          "value": "row-491",
+          "service_id": 491,
+          "quantity_default": 9100
+        },
+        {
+          "id": "o:others-fixed:row-492",
+          "label": "8,400 order units · Spam On · 8.4K/day · Within 1h start · No refill (listed as 65-day refill)",
+          "value": "row-492",
+          "service_id": 492,
+          "quantity_default": 8400
+        },
+        {
+          "id": "o:others-fixed:row-493",
+          "label": "7,500 order units · Spam On · 7.5K/day · Within 1h start · No refill (listed as 65-day refill)",
+          "value": "row-493",
+          "service_id": 493,
+          "quantity_default": 7500
+        },
+        {
+          "id": "o:others-fixed:row-494",
+          "label": "5,900 order units · Spam On · 5.9K/day · Within 1h start · No refill (listed as 65-day refill)",
+          "value": "row-494",
+          "service_id": 494,
+          "quantity_default": 5900
+        },
+        {
+          "id": "o:others-fixed:row-495",
+          "label": "4,400 order units · Spam On · 4.4K/day · Within 1h start · No refill (listed as 365-day refill)",
+          "value": "row-495",
+          "service_id": 495,
+          "quantity_default": 4400
+        },
+        {
+          "id": "o:others-fixed:row-496",
+          "label": "2,900 order units · Spam On · 2.9K/day · Within 1h start · No refill (listed as 65-day refill)",
+          "value": "row-496",
+          "service_id": 496,
+          "quantity_default": 2900
+        },
+        {
+          "id": "o:others-fixed:row-497",
+          "label": "1,400 order units · Spam On · 1.4K/day · Within 1h start · No refill (listed as 65-day refill)",
+          "value": "row-497",
+          "service_id": 497,
+          "quantity_default": 1400
+        },
+        {
+          "id": "o:others-fixed:row-498",
+          "label": "15,000 order units · Spam On · 5–10K/day · Within 1h start · No refill (listed as 365-day refill)",
+          "value": "row-498",
+          "service_id": 498,
+          "quantity_default": 15000
+        },
+        {
+          "id": "o:others-fixed:row-499",
+          "label": "14,000 order units · Spam On · 5–10K/day · Within 1h start · No refill (listed as 65-day refill)",
+          "value": "row-499",
+          "service_id": 499,
+          "quantity_default": 14000
+        },
+        {
+          "id": "o:others-fixed:row-678",
+          "label": "1,000 order units · EAST AFRICA · 1K/day · 4h start · Refill: No Drop",
+          "value": "row-678",
+          "service_id": 678,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others-fixed:row-679",
+          "label": "1,000 order units · WEST AFRICA · 1K/day · 4h start · Refill: No Drop",
+          "value": "row-679",
+          "service_id": 679,
+          "quantity_default": 1000
+        }
+      ]
+    },
+    {
+      "id": "f:others-refill-review",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:others-refill-review",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Refill availability varies by option.",
+      "options": [
+        {
+          "id": "o:others-refill-review:row-342",
+          "label": "Very low drop · No refill · Up to 15K/day · 10–100K · Within 1h start",
+          "value": "row-342",
+          "service_id": 342
+        },
+        {
+          "id": "o:others-refill-review:row-355",
+          "label": "No refill · Up to 50K/day · 10–100K · Within 2h start",
+          "value": "row-355",
+          "service_id": 355
+        },
+        {
+          "id": "o:others-refill-review:row-358",
+          "label": "High drop · No refill · Up to 500K/day · 10–100K · Within 2h start",
+          "value": "row-358",
+          "service_id": 358
+        },
+        {
+          "id": "o:others-refill-review:row-360",
+          "label": "No refill · 10–100K · Within 3h · Variable speed",
+          "value": "row-360",
+          "service_id": 360
+        },
+        {
+          "id": "o:others-refill-review:row-361",
+          "label": "No refill · Up to 100K/day · 50–500K · Within 2h start",
+          "value": "row-361",
+          "service_id": 361
+        },
+        {
+          "id": "o:others-refill-review:row-367",
+          "label": "HQ · No refill · Up to 40K/day · 10–500K · Within 1h start",
+          "value": "row-367",
+          "service_id": 367
+        },
+        {
+          "id": "o:others-refill-review:row-370",
+          "label": "No refill · Up to 50K/day · 20–1M · Within 1h start",
+          "value": "row-370",
+          "service_id": 370
+        },
+        {
+          "id": "o:others-refill-review:row-399",
+          "label": "No refill · Up to 10K/day · 10–56K · Within 1h start",
+          "value": "row-399",
+          "service_id": 399
+        },
+        {
+          "id": "o:others-refill-review:row-435",
+          "label": "High drop · No refill · 25K/day · 10–1M · Within 3h start",
+          "value": "row-435",
+          "service_id": 435
+        },
+        {
+          "id": "o:others-refill-review:row-438",
+          "label": "No refill · 10–15K/day · 20–5K · Within 1h start",
+          "value": "row-438",
+          "service_id": 438
+        },
+        {
+          "id": "o:others-refill-review:row-439",
+          "label": "High drop · No refill · 20K/day · 10–500K · 2h start",
+          "value": "row-439",
+          "service_id": 439
+        },
+        {
+          "id": "o:others-refill-review:row-449",
+          "label": "No refill · 25K/day · 10–200K · Within 1h start",
+          "value": "row-449",
+          "service_id": 449
+        },
+        {
+          "id": "o:others-refill-review:row-457",
+          "label": "No refill · 6K/day · 100–6K · 1h start",
+          "value": "row-457",
+          "service_id": 457
+        },
+        {
+          "id": "o:others-refill-review:row-458",
+          "label": "No refill · 12K/day · 100–12K · 1h start",
+          "value": "row-458",
+          "service_id": 458
+        },
+        {
+          "id": "o:others-refill-review:row-460",
+          "label": "No refill · 5K/day · 100–5K · 1h start",
+          "value": "row-460",
+          "service_id": 460
+        },
+        {
+          "id": "o:others-refill-review:row-461",
+          "label": "No refill · Up to 10K/day · 10–85K · Within 1h start",
+          "value": "row-461",
+          "service_id": 461
+        },
+        {
+          "id": "o:others-refill-review:row-467",
+          "label": "No refill · 5K/day · 100–10K · 1h start",
+          "value": "row-467",
+          "service_id": 467
+        },
+        {
+          "id": "o:others-refill-review:row-468",
+          "label": "No refill · 5K/day · 100–15K · 1h start",
+          "value": "row-468",
+          "service_id": 468
+        },
+        {
+          "id": "o:others-refill-review:row-470",
+          "label": "No refill · 5K/day · 100–30K · 1h start",
+          "value": "row-470",
+          "service_id": 470
+        },
+        {
+          "id": "o:others-refill-review:row-471",
+          "label": "5–20% drop · No refill · 5K/day · 10–10M · Within 1h start",
+          "value": "row-471",
+          "service_id": 471
+        },
+        {
+          "id": "o:others-refill-review:row-473",
+          "label": "No refill · 1K/day · 50–75K · 1h start",
+          "value": "row-473",
+          "service_id": 473
+        },
+        {
+          "id": "o:others-refill-review:row-475",
+          "label": "5–20% drop · No refill · 5K/day · 20–20K · 1h start",
+          "value": "row-475",
+          "service_id": 475
+        },
+        {
+          "id": "o:others-refill-review:row-477",
+          "label": "No refill · 20K/day · 10–100K · 6h start",
+          "value": "row-477",
+          "service_id": 477
+        },
+        {
+          "id": "o:others-refill-review:row-482",
+          "label": "No refill · 10–12K · Start and speed unclear",
+          "value": "row-482",
+          "service_id": 482
+        },
+        {
+          "id": "o:others-refill-review:row-567",
+          "label": "Refill available · 5K/day · 10–100K · Within 1h start",
+          "value": "row-567",
+          "service_id": 567
+        },
+        {
+          "id": "o:others-refill-review:row-1401",
+          "label": "Brazil · Refill available · 1K/day · 10–1M · Within 1h start",
+          "value": "row-1401",
+          "service_id": 1401
+        },
+        {
+          "id": "o:others-refill-review:row-1403",
+          "label": "Brazil · 60% · Refill available · 5K/day · 10–10K · 1h start",
+          "value": "row-1403",
+          "service_id": 1403
+        },
+        {
+          "id": "o:others-refill-review:row-11656",
+          "label": "USA · Low drop · No refill · 2K/day · 10–100K · Within 1h start",
+          "value": "row-11656",
+          "service_id": 11656
+        }
+      ]
+    },
+    {
+      "id": "f:others-instructions",
+      "type": "select",
+      "variant": "default",
+      "label": "Account setup option",
+      "bind_id": "t:others-instructions",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:others-instructions:row-47",
+          "label": "USA · Algorithm Tricking · 5K/day · 5–1B · Within 1h start · Refill: NON DROP",
+          "value": "row-47",
+          "service_id": 47
+        },
+        {
+          "id": "o:others-instructions:row-422",
+          "label": "SPAN ON · 100K/day · 10–500K · Within 1h start · 365-day refill",
+          "value": "row-422",
+          "service_id": 422
+        },
+        {
+          "id": "o:others-instructions:row-476",
+          "label": "SPAN ON · 25K/day · 10–10M · 1h start · 30-day refill",
+          "value": "row-476",
+          "service_id": 476
+        },
+        {
+          "id": "o:others-instructions:row-542",
+          "label": "FLAG OFF · 100K/day · 10–100K · Within 2h start · No refill",
+          "value": "row-542",
+          "service_id": 542
+        },
+        {
+          "id": "o:others-instructions:row-556",
+          "label": "Instagram PRANK Followers · READ DESCRIPTION · 10K/day · 10–25K · Within 1h start · No refill",
+          "value": "row-556",
+          "service_id": 556
+        },
+        {
+          "id": "o:others-instructions:row-564",
+          "label": "Spam On · NO REFUND · 50K/day · 10–10M · Within 1h start · No refill",
+          "value": "row-564",
+          "service_id": 564
+        },
+        {
+          "id": "o:others-instructions:row-575",
+          "label": "Instagram PRANK Followers · READ DESCRIPTION · 1K/day · 10–10M · Instant start · No refill",
+          "value": "row-575",
+          "service_id": 575
+        },
+        {
+          "id": "o:others-instructions:row-576",
+          "label": "Instagram PRANK Followers · READ DESCRIPTION · 5K/day · 10–10M · Instant start · No refill",
+          "value": "row-576",
+          "service_id": 576
+        },
+        {
+          "id": "o:others-instructions:row-1324",
+          "label": "USA · Algorithm Tricking · Alternative 2 · 5K/day · 5–1B · Within 1h start · Refill: NON DROP",
+          "value": "row-1324",
+          "service_id": 1324
+        },
+        {
+          "id": "o:others-instructions:row-1334",
+          "label": "USA · Private Accounts · 3K/day · 20–3K · Within 1h start · No refill (listed as 30-day refill)",
+          "value": "row-1334",
+          "service_id": 1334
+        },
+        {
+          "id": "o:others-instructions:row-1358",
+          "label": "EU/US · 500/day · 20–15K · Within 1h start · NO REFILL/NO REFUND",
+          "value": "row-1358",
+          "service_id": 1358
+        },
+        {
+          "id": "o:others-instructions:row-11664",
+          "label": "PRANK FOLLOWERS · READ DESCRIPTION · 5K–10K/day · 10–1M · Within 1h start · No refill",
+          "value": "row-11664",
+          "service_id": 11664
+        }
+      ]
+    },
+    {
+      "id": "f:others-spam-off",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:others-spam-off",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:others-spam-off:row-386",
+          "label": "Option 1 · Up to 100K/day · 10–1M · Within 1h start · 30-day refill",
+          "value": "row-386",
+          "service_id": 386
+        },
+        {
+          "id": "o:others-spam-off:row-391",
+          "label": "20K/day · 50–500K · Within 1h start · No refill (listed as 30-day refill)",
+          "value": "row-391",
+          "service_id": 391
+        },
+        {
+          "id": "o:others-spam-off:row-412",
+          "label": "Up to 100K/day · 10–5M · Within 1h start · 15-day refill",
+          "value": "row-412",
+          "service_id": 412
+        },
+        {
+          "id": "o:others-spam-off:row-413",
+          "label": "Option 2 · Up to 100K/day · 10–1M · Within 1h start · 30-day refill",
+          "value": "row-413",
+          "service_id": 413
+        },
+        {
+          "id": "o:others-spam-off:row-546",
+          "label": "Up to 20K/day · 10–50K · Within 1h start · No refill",
+          "value": "row-546",
+          "service_id": 546
+        },
+        {
+          "id": "o:others-spam-off:row-551",
+          "label": "Up to 5K/day · 10–5K · Within 1h start · No refill",
+          "value": "row-551",
+          "service_id": 551
+        },
+        {
+          "id": "o:others-spam-off:row-574",
+          "label": "Up to 100K/day · 10–100K · Within 1h · No refill",
+          "value": "row-574",
+          "service_id": 574
+        },
+        {
+          "id": "o:others-spam-off:row-577",
+          "label": "Up to 100K/day · 10–1M · Within 1h start · No refill",
+          "value": "row-577",
+          "service_id": 577
+        },
+        {
+          "id": "o:others-spam-off:row-579",
+          "label": "20K/day · 10–5M · Within 1h start · No refill",
+          "value": "row-579",
+          "service_id": 579
+        },
+        {
+          "id": "o:others-spam-off:row-580",
+          "label": "WORKING - SPAM OFF · 5K/day · 10–500K · Within 1h start · No refill",
+          "value": "row-580",
+          "service_id": 580
+        },
+        {
+          "id": "o:others-spam-off:row-583",
+          "label": "Up to 200K/day · 10–10M · Within 3h start · No refill",
+          "value": "row-583",
+          "service_id": 583
+        }
+      ]
+    },
+    {
+      "id": "f:others-spam-on",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:others-spam-on",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:others-spam-on:row-372",
+          "label": "TOP QUALITY · 500K · 50K/day · 10–500K · Within 1h start · No refill (listed as 30-day refill)",
+          "value": "row-372",
+          "service_id": 372
+        },
+        {
+          "id": "o:others-spam-on:row-375",
+          "label": "Up to 100K/day · 5–50K · Within 3h start · No refill (listed as 30-day refill)",
+          "value": "row-375",
+          "service_id": 375
+        },
+        {
+          "id": "o:others-spam-on:row-377",
+          "label": "Up to 100K/day · 10–1M · Within 1h start · No refill (listed as 30-day refill)",
+          "value": "row-377",
+          "service_id": 377
+        },
+        {
+          "id": "o:others-spam-on:row-378",
+          "label": "Up to 50K/day · 20–1M · Within 1h start · 365-day refill",
+          "value": "row-378",
+          "service_id": 378
+        },
+        {
+          "id": "o:others-spam-on:row-379",
+          "label": "Up to 100K/day · 10–20K · Within 1h start · 30-day refill",
+          "value": "row-379",
+          "service_id": 379
+        },
+        {
+          "id": "o:others-spam-on:row-380",
+          "label": "Up to 100K/day · 10–100K · Within 1h start · 30-day refill",
+          "value": "row-380",
+          "service_id": 380
+        },
+        {
+          "id": "o:others-spam-on:row-382",
+          "label": "30-day refill · 10–10M · Within 1h · Variable speed",
+          "value": "row-382",
+          "service_id": 382
+        },
+        {
+          "id": "o:others-spam-on:row-383",
+          "label": "365-day refill · 20–1M · Within 1h · Up to 100K/day",
+          "value": "row-383",
+          "service_id": 383
+        },
+        {
+          "id": "o:others-spam-on:row-384",
+          "label": "Up to 100K/day · 10–1M · Within 1h start · 30-day refill",
+          "value": "row-384",
+          "service_id": 384
+        },
+        {
+          "id": "o:others-spam-on:row-385",
+          "label": "30-day refill · 10–1M · Within 1h · Variable speed",
+          "value": "row-385",
+          "service_id": 385
+        },
+        {
+          "id": "o:others-spam-on:row-387",
+          "label": "Up to 5K/day · 50–1B · Within 1h start · 30-day refill",
+          "value": "row-387",
+          "service_id": 387
+        },
+        {
+          "id": "o:others-spam-on:row-388",
+          "label": "Up to 100K/day · 10–30M · Within 1h start · 30-day refill",
+          "value": "row-388",
+          "service_id": 388
+        },
+        {
+          "id": "o:others-spam-on:row-390",
+          "label": "10K/day · 50–1B · Within 24h start · 30-day auto-refill",
+          "value": "row-390",
+          "service_id": 390
+        },
+        {
+          "id": "o:others-spam-on:row-392",
+          "label": "No refill · 10–1M · Within 1h · Variable speed",
+          "value": "row-392",
+          "service_id": 392
+        },
+        {
+          "id": "o:others-spam-on:row-394",
+          "label": "30K/day · 10–50K · 4h start · No refill (listed as 30-day auto-refill)",
+          "value": "row-394",
+          "service_id": 394
+        },
+        {
+          "id": "o:others-spam-on:row-395",
+          "label": "20K/day · 10–1M · Within 1h start · 30-day refill",
+          "value": "row-395",
+          "service_id": 395
+        },
+        {
+          "id": "o:others-spam-on:row-396",
+          "label": "Up to 20K/day · 10–1M · Within 1h start · No refill (listed as 30-day refill)",
+          "value": "row-396",
+          "service_id": 396
+        },
+        {
+          "id": "o:others-spam-on:row-398",
+          "label": "50K/day · 10–100K · Within 1h start · 30-day refill",
+          "value": "row-398",
+          "service_id": 398
+        },
+        {
+          "id": "o:others-spam-on:row-400",
+          "label": "Up to 100K/day · 10–100K · Within 3h start · No refill (listed as 60-day refill)",
+          "value": "row-400",
+          "service_id": 400
+        },
+        {
+          "id": "o:others-spam-on:row-408",
+          "label": "25K/day · 10–10M · Within 1h start · No refill (listed as 30-day refill)",
+          "value": "row-408",
+          "service_id": 408
+        },
+        {
+          "id": "o:others-spam-on:row-409",
+          "label": "Up to 75K/day · 20–200K · Within 1h start · No refill (listed as 365-day refill)",
+          "value": "row-409",
+          "service_id": 409
+        },
+        {
+          "id": "o:others-spam-on:row-410",
+          "label": "30-day refill · 10–20K · Within 2h · Variable speed",
+          "value": "row-410",
+          "service_id": 410
+        },
+        {
+          "id": "o:others-spam-on:row-411",
+          "label": "Up to 50K/day · 10–100K · Within 3h start · No refill (listed as 30-day refill)",
+          "value": "row-411",
+          "service_id": 411
+        },
+        {
+          "id": "o:others-spam-on:row-415",
+          "label": "50K/day · 10–1M · Within 1h start · 365-day refill",
+          "value": "row-415",
+          "service_id": 415
+        },
+        {
+          "id": "o:others-spam-on:row-416",
+          "label": "Up to 50K/day · 10–10M · Within 1h start · 90-day refill",
+          "value": "row-416",
+          "service_id": 416
+        },
+        {
+          "id": "o:others-spam-on:row-417",
+          "label": "25K/day · 10–10M · Within 1h start · 365-day refill",
+          "value": "row-417",
+          "service_id": 417
+        },
+        {
+          "id": "o:others-spam-on:row-418",
+          "label": "50K/day · 10–500K · Within 1h start · 30-day refill",
+          "value": "row-418",
+          "service_id": 418
+        },
+        {
+          "id": "o:others-spam-on:row-419",
+          "label": "Up to 300K/day · 20–300K · Within 1h start · 30-day refill",
+          "value": "row-419",
+          "service_id": 419
+        },
+        {
+          "id": "o:others-spam-on:row-420",
+          "label": "Up to 500K/day · 20–10M · Within 1h start · No refill (listed as 365-day refill)",
+          "value": "row-420",
+          "service_id": 420
+        },
+        {
+          "id": "o:others-spam-on:row-421",
+          "label": "100K/day · 10–500K · Within 1h start · 30-day refill",
+          "value": "row-421",
+          "service_id": 421
+        },
+        {
+          "id": "o:others-spam-on:row-423",
+          "label": "50K/day · 10–10M · Within 1h start · 30-day refill",
+          "value": "row-423",
+          "service_id": 423
+        },
+        {
+          "id": "o:others-spam-on:row-424",
+          "label": "100K/day · 10–10M · Within 1h start · 365-day refill",
+          "value": "row-424",
+          "service_id": 424
+        },
+        {
+          "id": "o:others-spam-on:row-425",
+          "label": "OLD Accs 15+ Posts · Up to 200K/day · 10–20K · Within 1h start · 30-day refill",
+          "value": "row-425",
+          "service_id": 425
+        },
+        {
+          "id": "o:others-spam-on:row-426",
+          "label": "20K/day · 20–25K · Within 1h start · 15-day refill",
+          "value": "row-426",
+          "service_id": 426
+        },
+        {
+          "id": "o:others-spam-on:row-427",
+          "label": "5K/day · 10–1B · Within 24h start · No refill (listed as 30-day refill)",
+          "value": "row-427",
+          "service_id": 427
+        },
+        {
+          "id": "o:others-spam-on:row-429",
+          "label": "5K/day · 5–50K · Within 2h start · No refill (listed as 30-day auto-refill)",
+          "value": "row-429",
+          "service_id": 429
+        },
+        {
+          "id": "o:others-spam-on:row-430",
+          "label": "20K/day · 1–1M · Within 1h start · No refill (listed as 60-day refill)",
+          "value": "row-430",
+          "service_id": 430
+        },
+        {
+          "id": "o:others-spam-on:row-431",
+          "label": "20K/day · 20–40K · Within 1h start · 30-day refill",
+          "value": "row-431",
+          "service_id": 431
+        },
+        {
+          "id": "o:others-spam-on:row-436",
+          "label": "15K/day · 10–10M · Within 1h start · 60-day refill",
+          "value": "row-436",
+          "service_id": 436
+        },
+        {
+          "id": "o:others-spam-on:row-447",
+          "label": "Up to 50K/day · 10–1M · Within 1h start · 30-day refill",
+          "value": "row-447",
+          "service_id": 447
+        },
+        {
+          "id": "o:others-spam-on:row-474",
+          "label": "15K/day · 10–100M · 1h start · No refill (listed as 30-day refill)",
+          "value": "row-474",
+          "service_id": 474
+        },
+        {
+          "id": "o:others-spam-on:row-547",
+          "label": "Up to 100K/day · 10–50K · Within 1h start · No refill",
+          "value": "row-547",
+          "service_id": 547
+        },
+        {
+          "id": "o:others-spam-on:row-548",
+          "label": "Up to 500K/day · 10–100K · Within 1h start · No refill",
+          "value": "row-548",
+          "service_id": 548
+        },
+        {
+          "id": "o:others-spam-on:row-552",
+          "label": "No refill · 10–10M · Within 2h · Variable speed",
+          "value": "row-552",
+          "service_id": 552
+        },
+        {
+          "id": "o:others-spam-on:row-553",
+          "label": "Up to 50K/day · 10–5M · Within 1h start · No refill",
+          "value": "row-553",
+          "service_id": 553
+        },
+        {
+          "id": "o:others-spam-on:row-573",
+          "label": "Up to 50K/day · 10–200K · Within 1h start · No refill",
+          "value": "row-573",
+          "service_id": 573
+        },
+        {
+          "id": "o:others-spam-on:row-584",
+          "label": "Up to 100K/day · 10–100K · Within 1h start · No refill",
+          "value": "row-584",
+          "service_id": 584
+        },
+        {
+          "id": "o:others-spam-on:row-587",
+          "label": "WORKING - SPAM ON · 3K/day · 10–10K · Within 1h start · No refill",
+          "value": "row-587",
+          "service_id": 587
+        },
+        {
+          "id": "o:others-spam-on:row-605",
+          "label": "20K/day · 10–500K · Within 1h start · No refill",
+          "value": "row-605",
+          "service_id": 605
+        },
+        {
+          "id": "o:others-spam-on:row-611",
+          "label": "WORKING - SPAM ON · Up to 70K/day · 10–1M · Within 1h start · No refill",
+          "value": "row-611",
+          "service_id": 611
+        },
+        {
+          "id": "o:others-spam-on:row-622",
+          "label": "WORKING - SPAM ON · 50K/day · 10–1M · Within 1h start · No refill",
+          "value": "row-622",
+          "service_id": 622
+        },
+        {
+          "id": "o:others-spam-on:row-623",
+          "label": "No refill · 10–10M · Within 3h · Variable speed",
+          "value": "row-623",
+          "service_id": 623
+        }
+      ]
+    },
+    {
+      "id": "f:others-spam-workflow",
+      "type": "select",
+      "variant": "default",
+      "label": "Service option",
+      "bind_id": "t:others-spam-workflow",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose an option"
+      },
+      "description": "Ranges show order limits in followers. Start times and delivery speeds are provider estimates.",
+      "options": [
+        {
+          "id": "o:others-spam-workflow:row-428",
+          "label": "SPAM ON : WAITING / SPAM OFF SUCCESS · AI · 50K/day · 20–500K · Within 1h start · 15-day refill",
+          "value": "row-428",
+          "service_id": 428
+        },
+        {
+          "id": "o:others-spam-workflow:row-432",
+          "label": "SPAM ON : WAITING / SPAM OF SUCCESS · AI · 20K/day · 100–150K · Within 1h start · 15-day refill",
+          "value": "row-432",
+          "service_id": 432
+        },
+        {
+          "id": "o:others-spam-workflow:row-433",
+          "label": "Option 1 · SPAM ON : WAITING / SPAM OF SUCCESS · AI · 50K/day · 10–200K · Within 1h start · 30-day refill",
+          "value": "row-433",
+          "service_id": 433
+        },
+        {
+          "id": "o:others-spam-workflow:row-434",
+          "label": "Option 2 · SPAM ON : WAITING / SPAM OF SUCCESS · AI · 50K/day · 10–200K · Within 1h start · 30-day refill",
+          "value": "row-434",
+          "service_id": 434
+        },
+        {
+          "id": "o:others-spam-workflow:row-440",
+          "label": "SPAM ON : WAITING / SPAM OFF SUCCESS · AI · 10–15K/day · 10–100K · Within 1h start · 30-day refill",
+          "value": "row-440",
+          "service_id": 440
+        },
+        {
+          "id": "o:others-spam-workflow:row-578",
+          "label": "SPAM ON : WAITING / SPAM OF SUCCESS · AI · 5K/day · 10–5K · Within 1h start · No refill",
+          "value": "row-578",
+          "service_id": 578
+        },
+        {
+          "id": "o:others-spam-workflow:row-582",
+          "label": "SPAM ON : WAITING / SPAM OF SUCCESS · AI · 50K/day · 10–120K · Within 1h start · No refill",
+          "value": "row-582",
+          "service_id": 582
+        },
+        {
+          "id": "o:others-spam-workflow:row-591",
+          "label": "SPAM ON : WAITING / SPAM OF SUCCESS · AI · 10K/day · 10–500,100 · 1h start · No refill",
+          "value": "row-591",
+          "service_id": 591
+        },
+        {
+          "id": "o:others-spam-workflow:row-670",
+          "label": "SPAM ON : WAITING / SPAM OF SUCCESS · AI · 5K/day · 10–5K · Within 1h start",
+          "value": "row-670",
+          "service_id": 670
+        }
+      ]
+    },
+    {
+      "id": "f:link",
+      "type": "text",
+      "variant": "default",
+      "label": "Instagram profile link",
+      "name": "link",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Paste an Instagram profile link"
+      },
+      "validation": [
+        {
+          "op": "match",
+          "pattern": "^https?://(?:www\\.|m\\.)?instagram\\.com/[a-z0-9._]+/?(?:[?#]\\S*)?$",
+          "pattern_flags": "i",
+          "message": "Enter an Instagram profile link."
+        }
+      ]
+    },
+    {
+      "id": "f:quantity",
+      "type": "number",
+      "variant": "default",
+      "label": "Quantity",
+      "name": "quantity",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 100",
+        "step": 1,
+        "tags": [
+          {
+            "label": "Min: {preview.min ?? \"—\"}"
+          },
+          {
+            "label": "Max: {preview.max ?? \"—\"}"
+          }
+        ]
+      },
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "value"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:drip_feed",
+      "type": "toggle",
+      "variant": "default",
+      "label": "Drip feed",
+      "description": "Schedule multiple deliveries by setting the number of runs and the minutes between them.",
+      "name": "drip_feed",
+      "bind_id": "t:root",
+      "button": true,
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.capabilities?.dripfeed?.enabled === true)"
+      }
+    },
+    {
+      "id": "f:runs",
+      "type": "number",
+      "variant": "default",
+      "label": "Runs",
+      "name": "runs",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 5"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:interval",
+      "type": "number",
+      "variant": "default",
+      "label": "Interval (minutes)",
+      "name": "interval",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 60"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    }
+  ],
+  "order_for_tags": {},
+  "includes_for_buttons": {
+    "f:drip_feed": [
+      "f:runs",
+      "f:interval"
+    ]
+  },
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {},
+  "fallbacks": {
+    "nodes": {
+      "t:guaranteed": [
+        345
+      ],
+      "t:guaranteed-refill": [
+        345
+      ],
+      "o:guaranteed-refill:30-day-10k": [
+        345
+      ],
+      "o:bot-delivery:row-1191": [
+        1192,
+        1194,
+        1197,
+        1200
+      ],
+      "o:bot-delivery:row-1196": [
+        1199,
+        1202,
+        1204,
+        1205
+      ],
+      "o:bot-delivery:row-1193": [
+        1195,
+        1198,
+        1201,
+        1203
+      ],
+      "o:bot-profiles:row-1187": [
+        1188,
+        1189
+      ],
+      "o:fast-start-up-to-100k:row-563": [
+        550
+      ],
+      "o:brazil:row-1405": [
+        1402,
+        1398
+      ],
+      "o:others-refill-review:row-468": [
+        472
+      ],
+      "o:others-refill-review:row-470": [
+        472,
+        469
+      ],
+      "o:others-spam-off:row-574": [
+        624
+      ],
+      "o:others-spam-on:row-383": [
+        389
+      ],
+      "o:refill-30:row-351": [
+        354,
+        353
+      ],
+      "o:guaranteed-extra-drop:row-350": [
+        349
+      ],
+      "o:brazil:row-1415": [
+        1395
+      ],
+      "o:others-refill-review:row-360": [
+        356
+      ],
+      "o:others-spam-on:row-382": [
+        381,
+        376
+      ],
+      "o:others-spam-on:row-410": [
+        393
+      ],
+      "o:others-spam-on:row-392": [
+        397
+      ],
+      "o:others-spam-on:row-385": [
+        414
+      ],
+      "o:others-spam-on:row-552": [
+        549
+      ],
+      "o:others-spam-on:row-623": [
+        617
+      ],
+      "o:others:from-100": [
+        565
+      ],
+      "o:others:from-10": [
+        508
+      ]
+    },
+    "global": {}
+  },
+  "notices": [],
+  "meta": {}
+}

@@ -1,0 +1,538 @@
+{
+  "id": "instagram-impressions-impressions",
+  "name": "Instagram Impressions",
+  "description": "One-time Instagram impressions by placement, media type, and region, with reach and views bundles.",
+  "schema_version": "1",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "Impressions",
+      "service_id": 1104
+    },
+    {
+      "id": "t:placement",
+      "label": "Placement",
+      "service_id": 1110,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:impressions-choice"
+      ]
+    },
+    {
+      "id": "t:story-impressions",
+      "label": "Story Impressions",
+      "service_id": 1093,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:impressions-choice"
+      ]
+    },
+    {
+      "id": "t:impressions-reach",
+      "label": "Impressions + Reach",
+      "service_id": 1111,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:impressions-choice"
+      ]
+    },
+    {
+      "id": "t:views-impressions",
+      "label": "Views + Impressions",
+      "service_id": 745,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:impressions-choice"
+      ]
+    },
+    {
+      "id": "t:regional",
+      "label": "Regional",
+      "service_id": 1125,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:impressions-choice"
+      ]
+    },
+    {
+      "id": "t:others",
+      "label": "Others",
+      "service_id": 81,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:impressions-choice"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:impressions-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      },
+      "options": [
+        {
+          "id": "o:impressions:50k-day-starts-within-1-hour",
+          "label": "50K/day · Starts within 1 hour",
+          "value": "50k-day-starts-within-1-hour",
+          "service_id": 1104
+        },
+        {
+          "id": "o:impressions:instant-delivery-starts-within-1-hour",
+          "label": "Instant delivery · Starts within 1 hour",
+          "value": "instant-delivery-starts-within-1-hour",
+          "service_id": 1108
+        },
+        {
+          "id": "o:impressions:500k-day-starts-in-about-1-hour",
+          "label": "500K/day · Starts in about 1 hour",
+          "value": "500k-day-starts-in-about-1-hour",
+          "service_id": 1109
+        },
+        {
+          "id": "o:impressions:500k-day-starts-within-1-hour",
+          "label": "500K/day · Starts within 1 hour",
+          "value": "500k-day-starts-within-1-hour",
+          "service_id": 1112
+        },
+        {
+          "id": "o:impressions:starts-within-1-hour-delivery-pace-varies",
+          "label": "Starts within 1 hour · Delivery pace varies",
+          "value": "starts-within-1-hour-delivery-pace-varies",
+          "service_id": 1113
+        },
+        {
+          "id": "o:impressions:20k-day-starts-in-about-1-hour",
+          "label": "20K/day · Starts in about 1 hour",
+          "value": "20k-day-starts-in-about-1-hour",
+          "service_id": 1123
+        }
+      ]
+    },
+    {
+      "id": "f:placement-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:placement",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      },
+      "options": [
+        {
+          "id": "o:placement:photo-explore-and-home",
+          "label": "Photo · Explore and Home",
+          "value": "photo-explore-and-home",
+          "service_id": 1110
+        },
+        {
+          "id": "o:placement:explore-home-location-and-profile",
+          "label": "Explore, Home, Location and Profile",
+          "value": "explore-home-location-and-profile",
+          "service_id": 1114
+        },
+        {
+          "id": "o:placement:explore",
+          "label": "Explore",
+          "value": "explore",
+          "service_id": 1115
+        },
+        {
+          "id": "o:placement:home",
+          "label": "Home",
+          "value": "home",
+          "service_id": 1116
+        },
+        {
+          "id": "o:placement:home-explore-and-other-placements",
+          "label": "Home, Explore and other placements",
+          "value": "home-explore-and-other-placements",
+          "service_id": 1118
+        }
+      ]
+    },
+    {
+      "id": "f:story-impressions-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:story-impressions",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      },
+      "description": "Paste the link to the Instagram story you want to target.",
+      "options": [
+        {
+          "id": "o:story-impressions:impressions-1m-day",
+          "label": "Impressions · 1M/day",
+          "value": "impressions-1m-day",
+          "service_id": 1093
+        },
+        {
+          "id": "o:story-impressions:views-impressions-100k-day",
+          "label": "Views + Impressions · 100K/day",
+          "value": "views-impressions-100k-day",
+          "service_id": 1067
+        },
+        {
+          "id": "o:story-impressions:views-impressions-10k-day",
+          "label": "Views + Impressions · 10K/day",
+          "value": "views-impressions-10k-day",
+          "service_id": 1079
+        },
+        {
+          "id": "o:story-impressions:views-likes-impressions",
+          "label": "Views + Likes + Impressions",
+          "value": "views-likes-impressions",
+          "service_id": 1074
+        }
+      ]
+    },
+    {
+      "id": "f:impressions-reach-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:impressions-reach",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      },
+      "options": [
+        {
+          "id": "o:impressions-reach:100k250k-day-starts-within-1-hour",
+          "label": "100K–250K/day · Starts within 1 hour",
+          "value": "100k250k-day-starts-within-1-hour",
+          "service_id": 1111
+        },
+        {
+          "id": "o:impressions-reach:50k-day-starts-within-1-hour",
+          "label": "50K/day · Starts within 1 hour",
+          "value": "50k-day-starts-within-1-hour",
+          "service_id": 1105
+        },
+        {
+          "id": "o:impressions-reach:instant-delivery-starts-within-1-hour",
+          "label": "Instant delivery · Starts within 1 hour",
+          "value": "instant-delivery-starts-within-1-hour",
+          "service_id": 1119
+        },
+        {
+          "id": "o:impressions-reach:explore-impressions-40k-day",
+          "label": "Explore impressions · 40K/day",
+          "value": "explore-impressions-40k-day",
+          "service_id": 1142
+        },
+        {
+          "id": "o:impressions-reach:starts-within-1-hour-delivery-pace-varies",
+          "label": "Starts within 1 hour · Delivery pace varies",
+          "value": "starts-within-1-hour-delivery-pace-varies",
+          "service_id": 1144
+        },
+        {
+          "id": "o:impressions-reach:instant-start-100k-hour",
+          "label": "Instant start · 100K/hour",
+          "value": "instant-start-100k-hour",
+          "service_id": 1148
+        },
+        {
+          "id": "o:impressions-reach:100k-day-starts-within-1-hour",
+          "label": "100K/day · Starts within 1 hour",
+          "value": "100k-day-starts-within-1-hour",
+          "service_id": 1150
+        }
+      ]
+    },
+    {
+      "id": "f:views-impressions-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:views-impressions",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      },
+      "options": [
+        {
+          "id": "o:views-impressions:views-impressions-reach-may-be-included",
+          "label": "Views + Impressions · Reach may be included",
+          "value": "views-impressions-reach-may-be-included",
+          "service_id": 745
+        },
+        {
+          "id": "o:views-impressions:photo-views-impressions",
+          "label": "Photo Views + Impressions",
+          "value": "photo-views-impressions",
+          "service_id": 723
+        },
+        {
+          "id": "o:views-impressions:reel-views-impressions",
+          "label": "Reel Views + Impressions",
+          "value": "reel-views-impressions",
+          "service_id": 802
+        }
+      ]
+    },
+    {
+      "id": "f:regional-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:regional",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      },
+      "options": [
+        {
+          "id": "o:regional:usa-impressions",
+          "label": "USA Impressions",
+          "value": "usa-impressions",
+          "service_id": 1125
+        },
+        {
+          "id": "o:regional:south-korea-likes-reach-impressions",
+          "label": "South Korea · Likes + Reach + Impressions",
+          "value": "south-korea-likes-reach-impressions",
+          "service_id": 1423
+        },
+        {
+          "id": "o:regional:italy-likes-reach-impressions",
+          "label": "Italy · Likes + Reach + Impressions",
+          "value": "italy-likes-reach-impressions",
+          "service_id": 1432
+        },
+        {
+          "id": "o:regional:turkiye-likes-reach-impressions",
+          "label": "Türkiye · Likes + Reach + Impressions",
+          "value": "turkiye-likes-reach-impressions",
+          "service_id": 1443
+        }
+      ]
+    },
+    {
+      "id": "f:others-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:others",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:others:english-public-accounts-likes-reach-impressions",
+          "label": "English public accounts · Likes + Reach + Impressions",
+          "value": "english-public-accounts-likes-reach-impressions",
+          "service_id": 81
+        },
+        {
+          "id": "o:others:english-public-accounts-likes-reach-impressions-higher-rate",
+          "label": "English public accounts · Likes + Reach + Impressions · Higher rate",
+          "value": "english-public-accounts-likes-reach-impressions-higher-rate",
+          "service_id": 77
+        },
+        {
+          "id": "o:others:igtv-views-impressions",
+          "label": "IGTV Views + Impressions",
+          "value": "igtv-views-impressions",
+          "service_id": 776
+        },
+        {
+          "id": "o:others:other-placements-10k-day",
+          "label": "Other placements · 10K/day",
+          "value": "other-placements-10k-day",
+          "service_id": 1117
+        },
+        {
+          "id": "o:others:other-placements-500k-day",
+          "label": "Other placements · 500K/day",
+          "value": "other-placements-500k-day",
+          "service_id": 1121
+        },
+        {
+          "id": "o:others:50k-day-starts-in-about-1-hour",
+          "label": "50K/day · Starts in about 1 hour",
+          "value": "50k-day-starts-in-about-1-hour",
+          "service_id": 1120
+        },
+        {
+          "id": "o:others:engagement-shares-reach-impressions",
+          "label": "Engagement + Shares + Reach + Impressions",
+          "value": "engagement-shares-reach-impressions",
+          "service_id": 1154
+        }
+      ]
+    },
+    {
+      "id": "f:link",
+      "type": "text",
+      "variant": "default",
+      "label": "Instagram link",
+      "name": "link",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Paste the Instagram link"
+      }
+    },
+    {
+      "id": "f:quantity",
+      "type": "number",
+      "variant": "default",
+      "label": "Quantity",
+      "name": "quantity",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Enter a quantity",
+        "step": 1,
+        "tags": [
+          {
+            "label": "Min: {preview.min ?? \"—\"}"
+          },
+          {
+            "label": "Max: {preview.max ?? \"—\"}"
+          }
+        ]
+      },
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "value"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:drip_feed",
+      "type": "toggle",
+      "variant": "default",
+      "label": "Drip feed",
+      "description": "Schedule multiple deliveries by setting the number of runs and the minutes between them.",
+      "name": "drip_feed",
+      "bind_id": "t:root",
+      "button": true,
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.capabilities?.dripfeed?.enabled === true)"
+      }
+    },
+    {
+      "id": "f:runs",
+      "type": "number",
+      "variant": "default",
+      "label": "Runs",
+      "name": "runs",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 5",
+        "step": 1
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:interval",
+      "type": "number",
+      "variant": "default",
+      "label": "Interval (minutes)",
+      "name": "interval",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 60",
+        "step": 1
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    }
+  ],
+  "order_for_tags": {
+    "t:root": [
+      "f:impressions-choice"
+    ],
+    "t:placement": [
+      "f:placement-choice"
+    ],
+    "t:story-impressions": [
+      "f:story-impressions-choice"
+    ],
+    "t:impressions-reach": [
+      "f:impressions-reach-choice"
+    ],
+    "t:views-impressions": [
+      "f:views-impressions-choice"
+    ],
+    "t:regional": [
+      "f:regional-choice"
+    ],
+    "t:others": [
+      "f:others-choice"
+    ]
+  },
+  "includes_for_buttons": {
+    "f:drip_feed": [
+      "f:runs",
+      "f:interval"
+    ]
+  },
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {},
+  "fallbacks": {
+    "nodes": {
+      "o:impressions:starts-within-1-hour-delivery-pace-varies": [
+        1106
+      ],
+      "o:impressions-reach:100k250k-day-starts-within-1-hour": [
+        1143,
+        1141
+      ],
+      "o:impressions-reach:starts-within-1-hour-delivery-pace-varies": [
+        1146
+      ],
+      "o:views-impressions:views-impressions-reach-may-be-included": [
+        721
+      ]
+    },
+    "global": {}
+  },
+  "notices": [],
+  "meta": {}
+}

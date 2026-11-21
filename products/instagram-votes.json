@@ -1,0 +1,71 @@
+{
+  "id": 242,
+  "name": "Instagram Votes",
+  "description": "Add random slider votes from 0 to 100 to an Instagram story.",
+  "schema_version": "1",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "Story Slider Votes",
+      "service_id": 1098
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:link",
+      "type": "text",
+      "variant": "default",
+      "label": "Instagram story link",
+      "name": "link",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Paste the Instagram story link"
+      }
+    },
+    {
+      "id": "f:quantity",
+      "type": "number",
+      "variant": "default",
+      "label": "Quantity",
+      "name": "quantity",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Enter a quantity",
+        "step": 1,
+        "tags": [
+          {
+            "label": "Min: {preview.min ?? \"—\"}"
+          },
+          {
+            "label": "Max: {preview.max ?? \"—\"}"
+          }
+        ]
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "op": "truthy",
+          "message": "Enter a positive whole number.",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          }
+        }
+      ],
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "value"
+      }
+    }
+  ],
+  "order_for_tags": {},
+  "includes_for_buttons": {},
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {},
+  "fallbacks": null,
+  "notices": [],
+  "meta": {}
+}

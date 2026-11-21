@@ -1,0 +1,249 @@
+{
+  "id": "instagram-saves-saves",
+  "name": "Instagram Saves",
+  "description": "One-time saves for Instagram media with a choice of delivery speeds.",
+  "schema_version": "1",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "Saves",
+      "service_id": 1128
+    },
+    {
+      "id": "t:others",
+      "label": "Others",
+      "service_id": 1136,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:saves-choice"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:saves-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Save delivery",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      },
+      "options": [
+        {
+          "id": "o:saves:100k-day",
+          "label": "100K/day · Starts within 1 hour",
+          "value": "100k-day",
+          "service_id": 1128
+        },
+        {
+          "id": "o:saves:5k-day",
+          "label": "5K/day · Starts within 1 hour",
+          "value": "5k-day",
+          "service_id": 1129
+        },
+        {
+          "id": "o:saves:50k-day",
+          "label": "50K/day · Starts within 1 hour",
+          "value": "50k-day",
+          "service_id": 1127
+        },
+        {
+          "id": "o:saves:flexible-pace",
+          "label": "Starts within 1 hour · Delivery pace varies",
+          "value": "flexible-pace",
+          "service_id": 1126
+        },
+        {
+          "id": "o:saves:150k-day-from-one",
+          "label": "150K/day · Orders from 1",
+          "value": "150k-day-from-one",
+          "service_id": 1130
+        },
+        {
+          "id": "o:saves:15k-to-100k-day",
+          "label": "15K–100K/day · Starts within 1 hour",
+          "value": "15k-to-100k-day",
+          "service_id": 1138
+        }
+      ]
+    },
+    {
+      "id": "f:others-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Save delivery",
+      "bind_id": "t:others",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:others:50k-day-one-hour-start",
+          "label": "50K/day · Starts in about 1 hour",
+          "value": "50k-day-one-hour-start",
+          "service_id": 1136
+        },
+        {
+          "id": "o:others:3k-day",
+          "label": "3K/day · Starts within 1 hour",
+          "value": "3k-day",
+          "service_id": 1139
+        },
+        {
+          "id": "o:others:up-to-50k-day-from-100",
+          "label": "Up to 50K/day · Orders from 100",
+          "value": "up-to-50k-day-from-100",
+          "service_id": 1140
+        }
+      ]
+    },
+    {
+      "id": "f:link",
+      "type": "text",
+      "variant": "default",
+      "label": "Instagram link",
+      "name": "link",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Paste the Instagram link"
+      }
+    },
+    {
+      "id": "f:quantity",
+      "type": "number",
+      "variant": "default",
+      "label": "Quantity",
+      "name": "quantity",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Enter the number of saves",
+        "step": 1,
+        "tags": [
+          {
+            "label": "Min: {preview.min ?? \"—\"}"
+          },
+          {
+            "label": "Max: {preview.max ?? \"—\"}"
+          }
+        ]
+      },
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "value"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:drip_feed",
+      "type": "toggle",
+      "variant": "default",
+      "label": "Drip feed",
+      "description": "Schedule multiple deliveries by setting the number of runs and the minutes between them.",
+      "name": "drip_feed",
+      "bind_id": "t:root",
+      "button": true,
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.capabilities?.dripfeed?.enabled === true)"
+      }
+    },
+    {
+      "id": "f:runs",
+      "type": "number",
+      "variant": "default",
+      "label": "Runs",
+      "name": "runs",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 5",
+        "step": 1
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:interval",
+      "type": "number",
+      "variant": "default",
+      "label": "Interval (minutes)",
+      "name": "interval",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 60",
+        "step": 1
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    }
+  ],
+  "order_for_tags": {
+    "t:root": [
+      "f:saves-choice"
+    ],
+    "t:others": [
+      "f:others-choice"
+    ]
+  },
+  "includes_for_buttons": {
+    "f:drip_feed": [
+      "f:runs",
+      "f:interval"
+    ]
+  },
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {},
+  "fallbacks": {
+    "nodes": {
+      "o:saves:50k-day": [
+        1135
+      ],
+      "o:saves:flexible-pace": [
+        1131,
+        1132,
+        1134,
+        1133
+      ],
+      "o:saves:15k-to-100k-day": [
+        1137
+      ]
+    },
+    "global": {}
+  },
+  "notices": [],
+  "meta": {}
+}

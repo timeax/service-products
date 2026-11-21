@@ -1,0 +1,43 @@
+{
+  "id": 378,
+  "name": "Instagram NFT Services",
+  "description": "Choose a follower package from NFT accounts.",
+  "schema_version": "1",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "500 Followers",
+      "service_id": 113,
+      "quantity_default": 1
+    },
+    {
+      "id": "t:followers-2000-to-3000",
+      "label": "2K–3K Followers",
+      "service_id": 115,
+      "bind_id": "t:root",
+      "quantity_default": 1
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:link",
+      "type": "text",
+      "variant": "default",
+      "label": "Instagram profile link",
+      "name": "link",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Paste the Instagram profile link"
+      }
+    }
+  ],
+  "order_for_tags": {},
+  "includes_for_buttons": {},
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {},
+  "fallbacks": null,
+  "notices": [],
+  "meta": {}
+}

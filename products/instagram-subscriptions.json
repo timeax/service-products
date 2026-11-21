@@ -1,0 +1,1565 @@
+{
+  "id": "instagram-subscriptions-subscriptions",
+  "name": "Instagram Subscriptions",
+  "schema_version": "1",
+  "description": "Set up automatic engagement for future Instagram posts.",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "Automatic Likes",
+      "service_id": 1214
+    },
+    {
+      "id": "t:views",
+      "label": "Automatic Views",
+      "service_id": 1301,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:likes-choice"
+      ]
+    },
+    {
+      "id": "t:comments",
+      "label": "Automatic Comments",
+      "service_id": 1520,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:likes-choice"
+      ]
+    },
+    {
+      "id": "t:impressions",
+      "label": "Automatic Impressions",
+      "service_id": 1475,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:likes-choice"
+      ]
+    },
+    {
+      "id": "t:reach",
+      "label": "Automatic Reach",
+      "service_id": 1487,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:likes-choice"
+      ]
+    },
+    {
+      "id": "t:saves",
+      "label": "Automatic Saves",
+      "service_id": 1477,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:likes-choice"
+      ]
+    },
+    {
+      "id": "t:profile-visits",
+      "label": "Automatic Profile Visits",
+      "service_id": 1473,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:likes-choice"
+      ]
+    },
+    {
+      "id": "t:shares-reposts",
+      "label": "Automatic Shares and Reposts",
+      "service_id": 1510,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:likes-choice"
+      ]
+    },
+    {
+      "id": "t:bundles",
+      "label": "Bundles",
+      "service_id": 1474,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:likes-choice"
+      ]
+    },
+    {
+      "id": "t:others",
+      "label": "Others",
+      "service_id": 1509,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:likes-choice"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:likes-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Automatic likes",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose what to add to new posts",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:likes:service-1206",
+          "label": "Likes · 200K/day · Within 1 hour",
+          "value": "service-1206",
+          "service_id": 1206
+        },
+        {
+          "id": "o:likes:service-1207",
+          "label": "Likes · Delivery pace varies · Orders from 10 · Cancellation available · Option 1",
+          "value": "service-1207",
+          "service_id": 1207
+        },
+        {
+          "id": "o:likes:service-1208",
+          "label": "Likes · Up to 100K/day · Within 1 hour",
+          "value": "service-1208",
+          "service_id": 1208
+        },
+        {
+          "id": "o:likes:service-1209",
+          "label": "Likes · Female accounts · 10K/hour · Instant start",
+          "value": "service-1209",
+          "service_id": 1209
+        },
+        {
+          "id": "o:likes:service-1210",
+          "label": "Likes · 5K/day · About 1 hour to start · Orders from 10 · Cancellation available · Option 1",
+          "value": "service-1210",
+          "service_id": 1210
+        },
+        {
+          "id": "o:likes:service-1211",
+          "label": "Likes · 300K/day · Within 1 hour · Orders from 50",
+          "value": "service-1211",
+          "service_id": 1211
+        },
+        {
+          "id": "o:likes:service-1213",
+          "label": "Likes · 300K/day · Within 1 hour · Orders from 10",
+          "value": "service-1213",
+          "service_id": 1213
+        },
+        {
+          "id": "o:likes:service-1214",
+          "label": "Likes · Delivery pace varies · Orders from 10 · Cancellation available · Option 2",
+          "value": "service-1214",
+          "service_id": 1214
+        },
+        {
+          "id": "o:likes:service-1215",
+          "label": "Likes · 150K/day · Within 1 hour",
+          "value": "service-1215",
+          "service_id": 1215
+        },
+        {
+          "id": "o:likes:service-1216",
+          "label": "Likes · Up to 5K/day · Within 1 hour",
+          "value": "service-1216",
+          "service_id": 1216
+        },
+        {
+          "id": "o:likes:service-1217",
+          "label": "Likes · USA · 10K/day · Within 1 hour · Orders from 10",
+          "value": "service-1217",
+          "service_id": 1217
+        },
+        {
+          "id": "o:likes:service-1218",
+          "label": "Likes · USA · 10K/day · Within 1 hour · Orders from 20",
+          "value": "service-1218",
+          "service_id": 1218
+        },
+        {
+          "id": "o:likes:service-1219",
+          "label": "Likes · Bot accounts · 3K/day · Within 1 hour",
+          "value": "service-1219",
+          "service_id": 1219
+        },
+        {
+          "id": "o:likes:service-1220",
+          "label": "Likes · 3K/day · Within 1 hour",
+          "value": "service-1220",
+          "service_id": 1220
+        },
+        {
+          "id": "o:likes:service-1221",
+          "label": "Likes · 5K–8K/day",
+          "value": "service-1221",
+          "service_id": 1221
+        },
+        {
+          "id": "o:likes:service-1222",
+          "label": "Likes · 2K–5K/day",
+          "value": "service-1222",
+          "service_id": 1222
+        },
+        {
+          "id": "o:likes:service-1223",
+          "label": "Likes · 30K/hour · Within 1 hour",
+          "value": "service-1223",
+          "service_id": 1223
+        },
+        {
+          "id": "o:likes:service-1225",
+          "label": "Likes · 10K/day · Instant start",
+          "value": "service-1225",
+          "service_id": 1225
+        },
+        {
+          "id": "o:likes:service-1227",
+          "label": "Likes · 5 likes/minute · Within 1 hour",
+          "value": "service-1227",
+          "service_id": 1227
+        },
+        {
+          "id": "o:likes:service-1228",
+          "label": "Likes · 5K/day · About 1 hour to start · Orders from 10 · Cancellation available · Option 2",
+          "value": "service-1228",
+          "service_id": 1228
+        },
+        {
+          "id": "o:likes:service-1229",
+          "label": "Likes · 10 likes/minute · Within 1 hour",
+          "value": "service-1229",
+          "service_id": 1229
+        },
+        {
+          "id": "o:likes:service-1231",
+          "label": "Likes · Delivery pace varies · Orders from 10 · Cancellation available · Option 3",
+          "value": "service-1231",
+          "service_id": 1231
+        },
+        {
+          "id": "o:likes:service-1232",
+          "label": "Likes · 15K/day · Within 1 hour",
+          "value": "service-1232",
+          "service_id": 1232
+        },
+        {
+          "id": "o:likes:service-1233",
+          "label": "Likes · 30K/day",
+          "value": "service-1233",
+          "service_id": 1233
+        },
+        {
+          "id": "o:likes:service-1234",
+          "label": "Likes · 30K/day · Instant start",
+          "value": "service-1234",
+          "service_id": 1234
+        },
+        {
+          "id": "o:likes:service-1235",
+          "label": "Likes · 10K/day · About 1 hour to start · Orders from 50 · Cancellation available",
+          "value": "service-1235",
+          "service_id": 1235
+        },
+        {
+          "id": "o:likes:service-1236",
+          "label": "Likes · 20K–50K/day",
+          "value": "service-1236",
+          "service_id": 1236
+        },
+        {
+          "id": "o:likes:service-1239",
+          "label": "Likes · 5K/day · About 1 hour to start · Orders from 10 · Cancellation available · Option 3",
+          "value": "service-1239",
+          "service_id": 1239
+        },
+        {
+          "id": "o:likes:service-1240",
+          "label": "Likes · Instant delivery · Within 1 hour · Orders from 50 · Cancellation available",
+          "value": "service-1240",
+          "service_id": 1240
+        },
+        {
+          "id": "o:likes:service-1241",
+          "label": "Likes · 2K/day · Within 8 hours",
+          "value": "service-1241",
+          "service_id": 1241
+        },
+        {
+          "id": "o:likes:service-1242",
+          "label": "Likes · Up to 5K/day · Within 8 hours",
+          "value": "service-1242",
+          "service_id": 1242
+        },
+        {
+          "id": "o:likes:service-1245",
+          "label": "Likes · Within 1 hour",
+          "value": "service-1245",
+          "service_id": 1245
+        },
+        {
+          "id": "o:likes:service-1246",
+          "label": "Likes · Delivery pace varies · Orders from 50",
+          "value": "service-1246",
+          "service_id": 1246
+        },
+        {
+          "id": "o:likes:service-1247",
+          "label": "Likes · 10K/day · About 1 hour to start · Orders from 50",
+          "value": "service-1247",
+          "service_id": 1247
+        },
+        {
+          "id": "o:likes:service-1248",
+          "label": "Likes · Profile pictures · 1.5K/hour · Within 1 hour",
+          "value": "service-1248",
+          "service_id": 1248
+        },
+        {
+          "id": "o:likes:service-1249",
+          "label": "Likes · 5K/hour · Within 1 hour",
+          "value": "service-1249",
+          "service_id": 1249
+        },
+        {
+          "id": "o:likes:service-1250",
+          "label": "Likes · 5K/day · About 1 hour to start · Orders from 10 · Option 1",
+          "value": "service-1250",
+          "service_id": 1250
+        },
+        {
+          "id": "o:likes:service-1253",
+          "label": "Likes · USA · 3K/day · Within 1 hour",
+          "value": "service-1253",
+          "service_id": 1253
+        },
+        {
+          "id": "o:likes:service-1255",
+          "label": "Likes · 20K/day · About 2 hours to start",
+          "value": "service-1255",
+          "service_id": 1255
+        },
+        {
+          "id": "o:likes:service-1256",
+          "label": "Likes · 2K/hour · Within 1 hour",
+          "value": "service-1256",
+          "service_id": 1256
+        },
+        {
+          "id": "o:likes:service-1257",
+          "label": "Likes · 20K/day · Within 1 hour · Orders from 100",
+          "value": "service-1257",
+          "service_id": 1257
+        },
+        {
+          "id": "o:likes:service-1259",
+          "label": "Likes · 5K/day · About 1 hour to start · Orders from 10 · Option 2",
+          "value": "service-1259",
+          "service_id": 1259
+        },
+        {
+          "id": "o:likes:service-1260",
+          "label": "Likes · Nigeria · 2K/day · About 1 hour to start",
+          "value": "service-1260",
+          "service_id": 1260
+        },
+        {
+          "id": "o:likes:service-1261",
+          "label": "Likes · Arab audience · 500/day · Within 12 hours",
+          "value": "service-1261",
+          "service_id": 1261
+        },
+        {
+          "id": "o:likes:service-1263",
+          "label": "Likes · 20K/day · Within 1 hour · Orders from 10 · Cancellation available · Option 1",
+          "value": "service-1263",
+          "service_id": 1263
+        },
+        {
+          "id": "o:likes:service-1264",
+          "label": "Likes · 20K/day · Within 1 hour · Orders from 10 · Cancellation available · Option 2",
+          "value": "service-1264",
+          "service_id": 1264
+        },
+        {
+          "id": "o:likes:service-1265",
+          "label": "Likes · 5K/day · About 1 hour to start · Orders from 10 · Option 3",
+          "value": "service-1265",
+          "service_id": 1265
+        },
+        {
+          "id": "o:likes:service-1266",
+          "label": "Likes · 2-5K/day · Within 1 hour · Orders from 10 · Cancellation available · Option 1",
+          "value": "service-1266",
+          "service_id": 1266
+        },
+        {
+          "id": "o:likes:service-1267",
+          "label": "Likes · 2-5K/day · Within 1 hour · Orders from 10 · Cancellation available · Option 2",
+          "value": "service-1267",
+          "service_id": 1267
+        },
+        {
+          "id": "o:likes:service-1268",
+          "label": "Likes · 2K/day · Within 1 hour",
+          "value": "service-1268",
+          "service_id": 1268
+        },
+        {
+          "id": "o:likes:service-1269",
+          "label": "Likes · Korea · 1.5K/day · Within 1 hour",
+          "value": "service-1269",
+          "service_id": 1269
+        },
+        {
+          "id": "o:likes:service-1270",
+          "label": "Likes · 500/hour · Within 1 hour",
+          "value": "service-1270",
+          "service_id": 1270
+        },
+        {
+          "id": "o:likes:service-1271",
+          "label": "Likes · France · Up to 100/day · Within 8 hours",
+          "value": "service-1271",
+          "service_id": 1271
+        },
+        {
+          "id": "o:likes:service-1272",
+          "label": "Likes · Bot accounts · Profile pictures · Within 1 hour",
+          "value": "service-1272",
+          "service_id": 1272
+        },
+        {
+          "id": "o:likes:service-1275",
+          "label": "Likes · Iran / Arab audience · 10K/day · About 1 hour to start",
+          "value": "service-1275",
+          "service_id": 1275
+        },
+        {
+          "id": "o:likes:service-1277",
+          "label": "Likes · Instant delivery · Within 1 hour · Orders from 50",
+          "value": "service-1277",
+          "service_id": 1277
+        },
+        {
+          "id": "o:likes:service-1279",
+          "label": "Likes · 50K/day · Within 1 hour",
+          "value": "service-1279",
+          "service_id": 1279
+        },
+        {
+          "id": "o:likes:service-1281",
+          "label": "Likes · Instant delivery · Within 1 hour · Orders from 20",
+          "value": "service-1281",
+          "service_id": 1281
+        },
+        {
+          "id": "o:likes:service-1282",
+          "label": "Likes · Gulf Arab audience · 3K/day · Within 1 hour",
+          "value": "service-1282",
+          "service_id": 1282
+        },
+        {
+          "id": "o:likes:service-1283",
+          "label": "Likes · USA · 5K/day · Within 1 hour",
+          "value": "service-1283",
+          "service_id": 1283
+        },
+        {
+          "id": "o:likes:service-1284",
+          "label": "Likes · USA · 1K/day · Within 1 hour",
+          "value": "service-1284",
+          "service_id": 1284
+        },
+        {
+          "id": "o:likes:service-1285",
+          "label": "Likes · UK · 2K/day · Within 1 hour",
+          "value": "service-1285",
+          "service_id": 1285
+        },
+        {
+          "id": "o:likes:service-1286",
+          "label": "Likes · USA / Europe",
+          "value": "service-1286",
+          "service_id": 1286
+        },
+        {
+          "id": "o:likes:service-1287",
+          "label": "Likes · Female accounts · 24-hour delivery · Within 1 hour",
+          "value": "service-1287",
+          "service_id": 1287
+        },
+        {
+          "id": "o:likes:service-1288",
+          "label": "Likes · Korea · 2K/day · Within 3 hours",
+          "value": "service-1288",
+          "service_id": 1288
+        },
+        {
+          "id": "o:likes:service-1289",
+          "label": "Likes · Brazil · 10K/day · Within 1 hour",
+          "value": "service-1289",
+          "service_id": 1289
+        },
+        {
+          "id": "o:likes:service-1391",
+          "label": "Likes · Brazil · 200/hour · About 6 hours to start",
+          "value": "service-1391",
+          "service_id": 1391
+        },
+        {
+          "id": "o:likes:service-1404",
+          "label": "Likes · Brazil · 5K/day · Within 1 hour",
+          "value": "service-1404",
+          "service_id": 1404
+        }
+      ]
+    },
+    {
+      "id": "f:views-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Automatic views",
+      "bind_id": "t:views",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose what to add to new posts",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:views:service-1290",
+          "label": "Views · 1M/day",
+          "value": "service-1290",
+          "service_id": 1290
+        },
+        {
+          "id": "o:views:service-1292",
+          "label": "Views · 1M/day · Within 1 hour",
+          "value": "service-1292",
+          "service_id": 1292
+        },
+        {
+          "id": "o:views:service-1293",
+          "label": "Views · 500K/day · Within 1 hour",
+          "value": "service-1293",
+          "service_id": 1293
+        },
+        {
+          "id": "o:views:service-1294",
+          "label": "Views · 500K/day · Within 3 hours",
+          "value": "service-1294",
+          "service_id": 1294
+        },
+        {
+          "id": "o:views:service-1295",
+          "label": "Views · 100K/day · Within 1 hour · Orders from 100 · Cancellation available",
+          "value": "service-1295",
+          "service_id": 1295
+        },
+        {
+          "id": "o:views:service-1298",
+          "label": "All Video Views · 10K/hour · Within 1 hour",
+          "value": "service-1298",
+          "service_id": 1298
+        },
+        {
+          "id": "o:views:service-1299",
+          "label": "Views · 10M/day · Within 1 hour",
+          "value": "service-1299",
+          "service_id": 1299
+        },
+        {
+          "id": "o:views:service-1300",
+          "label": "Views · 100K/day · Within 1 hour · Orders from 100",
+          "value": "service-1300",
+          "service_id": 1300
+        },
+        {
+          "id": "o:views:service-1301",
+          "label": "Views · 500K–2M/day",
+          "value": "service-1301",
+          "service_id": 1301
+        },
+        {
+          "id": "o:views:service-1302",
+          "label": "Views · Instant delivery · Within 1 hour",
+          "value": "service-1302",
+          "service_id": 1302
+        },
+        {
+          "id": "o:views:service-1303",
+          "label": "All Post Views · 1M/day · Within 1 hour",
+          "value": "service-1303",
+          "service_id": 1303
+        },
+        {
+          "id": "o:views:service-1304",
+          "label": "Views · 50K/day · Instant start",
+          "value": "service-1304",
+          "service_id": 1304
+        },
+        {
+          "id": "o:views:service-1305",
+          "label": "Views · 50K/hour · Within 1 hour",
+          "value": "service-1305",
+          "service_id": 1305
+        },
+        {
+          "id": "o:views:service-1306",
+          "label": "Views · Delivery pace varies · Orders from 100 · Cancellation available · Option 1",
+          "value": "service-1306",
+          "service_id": 1306
+        },
+        {
+          "id": "o:views:service-1307",
+          "label": "Reel Views · 500K/day · Within 1 hour",
+          "value": "service-1307",
+          "service_id": 1307
+        },
+        {
+          "id": "o:views:service-1309",
+          "label": "Reel, IGTV and Post Views · 100K/day · Within 1 hour",
+          "value": "service-1309",
+          "service_id": 1309
+        },
+        {
+          "id": "o:views:service-1310",
+          "label": "Views · Up to 2M/day · Within 1 hour",
+          "value": "service-1310",
+          "service_id": 1310
+        },
+        {
+          "id": "o:views:service-1314",
+          "label": "Views · Delivery pace varies · Orders from 100 · Cancellation available · Option 2",
+          "value": "service-1314",
+          "service_id": 1314
+        },
+        {
+          "id": "o:views:service-1315",
+          "label": "All Post Views · 100K/hour",
+          "value": "service-1315",
+          "service_id": 1315
+        },
+        {
+          "id": "o:views:service-1316",
+          "label": "Reel Views · 5M/day · About 15 minutes to start",
+          "value": "service-1316",
+          "service_id": 1316
+        }
+      ]
+    },
+    {
+      "id": "f:comments-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Automatic comments",
+      "bind_id": "t:comments",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose what to add to new posts",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:comments:service-1476",
+          "label": "Random Comments · Male accounts · 1K/day · Within 6 hours",
+          "value": "service-1476",
+          "service_id": 1476
+        },
+        {
+          "id": "o:comments:service-1486",
+          "label": "Emoji Comments · Positive tone · 2K/day · Within 3 hours",
+          "value": "service-1486",
+          "service_id": 1486
+        },
+        {
+          "id": "o:comments:service-1488",
+          "label": "5 Random Comments · Explore · Accounts with 10K+ followers",
+          "value": "service-1488",
+          "service_id": 1488
+        },
+        {
+          "id": "o:comments:service-1489",
+          "label": "5 Random Arabic Comments · Explore · Accounts with 10K+ followers",
+          "value": "service-1489",
+          "service_id": 1489
+        },
+        {
+          "id": "o:comments:service-1490",
+          "label": "10 Random Comments · Explore · Accounts with 10K+ followers",
+          "value": "service-1490",
+          "service_id": 1490
+        },
+        {
+          "id": "o:comments:service-1491",
+          "label": "Random Comments · Middle East · 2.5K/day · About 6 hours to start",
+          "value": "service-1491",
+          "service_id": 1491
+        },
+        {
+          "id": "o:comments:service-1492",
+          "label": "10 Random Arabic Comments · Explore · Accounts with 10K+ followers",
+          "value": "service-1492",
+          "service_id": 1492
+        },
+        {
+          "id": "o:comments:service-1493",
+          "label": "40 Random Arabic Comments · Explore · Accounts with 10K+ followers",
+          "value": "service-1493",
+          "service_id": 1493
+        },
+        {
+          "id": "o:comments:service-1494",
+          "label": "20 Random Comments · Female accounts",
+          "value": "service-1494",
+          "service_id": 1494
+        },
+        {
+          "id": "o:comments:service-1495",
+          "label": "40 Random Comments · Female accounts",
+          "value": "service-1495",
+          "service_id": 1495
+        },
+        {
+          "id": "o:comments:service-1496",
+          "label": "Emoji Comments · 1K/day · Within 6 hours",
+          "value": "service-1496",
+          "service_id": 1496
+        },
+        {
+          "id": "o:comments:service-1497",
+          "label": "Random Comments · 10K/day · Within 1 hour",
+          "value": "service-1497",
+          "service_id": 1497
+        },
+        {
+          "id": "o:comments:service-1498",
+          "label": "Emoji Comments · 10K/day · Within 1 hour",
+          "value": "service-1498",
+          "service_id": 1498
+        },
+        {
+          "id": "o:comments:service-1499",
+          "label": "Random Comments · Instant delivery · Within 1 hour",
+          "value": "service-1499",
+          "service_id": 1499
+        },
+        {
+          "id": "o:comments:service-1500",
+          "label": "Random Comments · 90% English · 2K/day · Within 1 hour",
+          "value": "service-1500",
+          "service_id": 1500
+        },
+        {
+          "id": "o:comments:service-1501",
+          "label": "Random Comments · Audience varies",
+          "value": "service-1501",
+          "service_id": 1501
+        },
+        {
+          "id": "o:comments:service-1503",
+          "label": "Comments · 24-hour delivery · Within 1 hour",
+          "value": "service-1503",
+          "service_id": 1503
+        },
+        {
+          "id": "o:comments:service-1507",
+          "label": "Random Comments · Italy · 1K/day · About 4 hours to start",
+          "value": "service-1507",
+          "service_id": 1507
+        },
+        {
+          "id": "o:comments:service-1508",
+          "label": "80 Random Comments · Female accounts",
+          "value": "service-1508",
+          "service_id": 1508
+        },
+        {
+          "id": "o:comments:service-1513",
+          "label": "Random Comments · USA / Europe",
+          "value": "service-1513",
+          "service_id": 1513
+        },
+        {
+          "id": "o:comments:service-1514",
+          "label": "Random Comments · Female accounts · 1K/day · Within 6 hours",
+          "value": "service-1514",
+          "service_id": 1514
+        },
+        {
+          "id": "o:comments:service-1519",
+          "label": "Comments · Nigeria · 100/day · About 1 hour to start",
+          "value": "service-1519",
+          "service_id": 1519
+        },
+        {
+          "id": "o:comments:service-1520",
+          "label": "Random Comments · 5K/day · Within 1 hour",
+          "value": "service-1520",
+          "service_id": 1520
+        },
+        {
+          "id": "o:comments:service-1521",
+          "label": "Random Comments · USA / Europe · Verified accounts · 24-hour delivery · Within 12 hours",
+          "value": "service-1521",
+          "service_id": 1521
+        },
+        {
+          "id": "o:comments:service-1522",
+          "label": "20 Random Comments · Female accounts with 10K+ followers",
+          "value": "service-1522",
+          "service_id": 1522
+        },
+        {
+          "id": "o:comments:service-1523",
+          "label": "40 Random Comments · Female accounts with 10K+ followers",
+          "value": "service-1523",
+          "service_id": 1523
+        }
+      ]
+    },
+    {
+      "id": "f:impressions-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Automatic impressions",
+      "bind_id": "t:impressions",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose what to add to new posts",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:impressions:service-1475",
+          "label": "Impressions · Instant delivery · Within 1 hour",
+          "value": "service-1475",
+          "service_id": 1475
+        },
+        {
+          "id": "o:impressions:service-1479",
+          "label": "Impressions · 100K/day · About 1 hour to start",
+          "value": "service-1479",
+          "service_id": 1479
+        },
+        {
+          "id": "o:impressions:service-1481",
+          "label": "Impressions · 500K/day · Within 1 hour",
+          "value": "service-1481",
+          "service_id": 1481
+        },
+        {
+          "id": "o:impressions:service-1482",
+          "label": "Impressions · 1M/day · Instant start",
+          "value": "service-1482",
+          "service_id": 1482
+        },
+        {
+          "id": "o:impressions:service-1483",
+          "label": "Impressions · 20K/day · About 1 hour to start",
+          "value": "service-1483",
+          "service_id": 1483
+        }
+      ]
+    },
+    {
+      "id": "f:reach-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Automatic reach",
+      "bind_id": "t:reach",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose what to add to new posts",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:reach:service-1487",
+          "label": "Photo Reach · 30K/day · Within 1 hour",
+          "value": "service-1487",
+          "service_id": 1487
+        }
+      ]
+    },
+    {
+      "id": "f:saves-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Automatic saves",
+      "bind_id": "t:saves",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose what to add to new posts",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:saves:service-1477",
+          "label": "Saves · 5K–20K/day",
+          "value": "service-1477",
+          "service_id": 1477
+        },
+        {
+          "id": "o:saves:service-1478",
+          "label": "Saves · 50K/day · About 1 hour to start",
+          "value": "service-1478",
+          "service_id": 1478
+        },
+        {
+          "id": "o:saves:service-1485",
+          "label": "Saves · 35K/day · Within 1 hour",
+          "value": "service-1485",
+          "service_id": 1485
+        }
+      ]
+    },
+    {
+      "id": "f:profile-visits-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Automatic profile visits",
+      "bind_id": "t:profile-visits",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose what to add to new posts",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:profile-visits:service-1473",
+          "label": "Profile Visits · 50K/day · Within 1 hour",
+          "value": "service-1473",
+          "service_id": 1473
+        },
+        {
+          "id": "o:profile-visits:service-1518",
+          "label": "Profile Visits · 1M/day · About 1 hour to start",
+          "value": "service-1518",
+          "service_id": 1518
+        }
+      ]
+    },
+    {
+      "id": "f:shares-reposts-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Automatic shares or reposts",
+      "bind_id": "t:shares-reposts",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose what to add to new posts",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:shares-reposts:service-1179",
+          "label": "Reposts · Within 1 hour",
+          "value": "service-1179",
+          "service_id": 1179
+        },
+        {
+          "id": "o:shares-reposts:service-1506",
+          "label": "Reposts · Up to 50K/day · Within 1 hour",
+          "value": "service-1506",
+          "service_id": 1506
+        },
+        {
+          "id": "o:shares-reposts:service-1510",
+          "label": "Shares · 20K/day · Within 1 hour",
+          "value": "service-1510",
+          "service_id": 1510
+        },
+        {
+          "id": "o:shares-reposts:service-1511",
+          "label": "Shares · Up to 20K/day · Within 24 hours",
+          "value": "service-1511",
+          "service_id": 1511
+        },
+        {
+          "id": "o:shares-reposts:service-1512",
+          "label": "Shares · 5M/day · Within 1 hour",
+          "value": "service-1512",
+          "service_id": 1512
+        }
+      ]
+    },
+    {
+      "id": "f:bundles-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Automatic engagement bundle",
+      "bind_id": "t:bundles",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose what to add to new posts",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:bundles:service-1230",
+          "label": "Italy · Likes + Impressions + Reach",
+          "value": "service-1230",
+          "service_id": 1230
+        },
+        {
+          "id": "o:bundles:service-1243",
+          "label": "Likes + Reach + Impressions · 20K/day",
+          "value": "service-1243",
+          "service_id": 1243
+        },
+        {
+          "id": "o:bundles:service-1244",
+          "label": "Likes + Impressions + Reach · 1K/day",
+          "value": "service-1244",
+          "service_id": 1244
+        },
+        {
+          "id": "o:bundles:service-1273",
+          "label": "Likes + Impressions + Reach + Views · English private accounts",
+          "value": "service-1273",
+          "service_id": 1273
+        },
+        {
+          "id": "o:bundles:service-1274",
+          "label": "Likes + Impressions · 400–800/hour",
+          "value": "service-1274",
+          "service_id": 1274
+        },
+        {
+          "id": "o:bundles:service-1276",
+          "label": "Likes + Impressions + Profile Visits · 20K/day",
+          "value": "service-1276",
+          "service_id": 1276
+        },
+        {
+          "id": "o:bundles:service-1280",
+          "label": "Likes + Impressions + Profile Visits · Instant delivery",
+          "value": "service-1280",
+          "service_id": 1280
+        },
+        {
+          "id": "o:bundles:service-1297",
+          "label": "Views + Reach + Impressions · 500K/day",
+          "value": "service-1297",
+          "service_id": 1297
+        },
+        {
+          "id": "o:bundles:service-1308",
+          "label": "Views + Impressions · 500K/day",
+          "value": "service-1308",
+          "service_id": 1308
+        },
+        {
+          "id": "o:bundles:service-1472",
+          "label": "Impressions + Reach · 50K/day",
+          "value": "service-1472",
+          "service_id": 1472
+        },
+        {
+          "id": "o:bundles:service-1474",
+          "label": "Impressions + Reach · 100K–250K/day",
+          "value": "service-1474",
+          "service_id": 1474
+        },
+        {
+          "id": "o:bundles:service-1480",
+          "label": "Impressions + Reach + Profile Visits · Instant delivery",
+          "value": "service-1480",
+          "service_id": 1480
+        },
+        {
+          "id": "o:bundles:service-1515",
+          "label": "Reach + Impressions · 100K/day · About 1-hour start",
+          "value": "service-1515",
+          "service_id": 1515
+        },
+        {
+          "id": "o:bundles:service-1517",
+          "label": "Reach + Impressions · Instant delivery",
+          "value": "service-1517",
+          "service_id": 1517
+        }
+      ]
+    },
+    {
+      "id": "f:others-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Automatic engagement option",
+      "bind_id": "t:others",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose what to add to new posts",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:others:service-1254",
+          "label": "USA Likes · 5K/day",
+          "value": "service-1254",
+          "service_id": 1254
+        },
+        {
+          "id": "o:others:service-1278",
+          "label": "Ads Likes · 5K/day",
+          "value": "service-1278",
+          "service_id": 1278
+        },
+        {
+          "id": "o:others:service-1317",
+          "label": "Views · All video types",
+          "value": "service-1317",
+          "service_id": 1317
+        },
+        {
+          "id": "o:others:service-1509",
+          "label": "Impressions from Tags",
+          "value": "service-1509",
+          "service_id": 1509
+        },
+        {
+          "id": "o:others:service-1524",
+          "label": "Comments · Up to 3K/day",
+          "value": "service-1524",
+          "service_id": 1524
+        }
+      ]
+    },
+    {
+      "id": "f:username",
+      "type": "text",
+      "variant": "default",
+      "label": "Instagram username",
+      "name": "username",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Enter the Instagram username"
+      }
+    },
+    {
+      "id": "f:min",
+      "type": "number",
+      "variant": "default",
+      "label": "Minimum per post",
+      "name": "min",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Enter the minimum per post",
+        "step": 1
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:max",
+      "type": "number",
+      "variant": "default",
+      "label": "Maximum per post",
+      "name": "max",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Enter the maximum per post",
+        "step": 1
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ],
+      "description": "Enter a number at least as high as the minimum."
+    },
+    {
+      "id": "f:delay",
+      "type": "select",
+      "variant": "default",
+      "label": "Delay after each new post",
+      "name": "delay",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delay"
+      },
+      "options": [
+        {
+          "id": "o:delay:0",
+          "label": "No delay",
+          "value": 0
+        },
+        {
+          "id": "o:delay:5",
+          "label": "5 minutes",
+          "value": 5
+        },
+        {
+          "id": "o:delay:10",
+          "label": "10 minutes",
+          "value": 10
+        },
+        {
+          "id": "o:delay:15",
+          "label": "15 minutes",
+          "value": 15
+        },
+        {
+          "id": "o:delay:20",
+          "label": "20 minutes",
+          "value": 20
+        },
+        {
+          "id": "o:delay:30",
+          "label": "30 minutes",
+          "value": 30
+        },
+        {
+          "id": "o:delay:40",
+          "label": "40 minutes",
+          "value": 40
+        },
+        {
+          "id": "o:delay:50",
+          "label": "50 minutes",
+          "value": 50
+        },
+        {
+          "id": "o:delay:60",
+          "label": "60 minutes",
+          "value": 60
+        },
+        {
+          "id": "o:delay:90",
+          "label": "90 minutes",
+          "value": 90
+        },
+        {
+          "id": "o:delay:120",
+          "label": "120 minutes",
+          "value": 120
+        },
+        {
+          "id": "o:delay:150",
+          "label": "150 minutes",
+          "value": 150
+        },
+        {
+          "id": "o:delay:180",
+          "label": "180 minutes",
+          "value": 180
+        },
+        {
+          "id": "o:delay:210",
+          "label": "210 minutes",
+          "value": 210
+        },
+        {
+          "id": "o:delay:240",
+          "label": "240 minutes",
+          "value": 240
+        },
+        {
+          "id": "o:delay:270",
+          "label": "270 minutes",
+          "value": 270
+        },
+        {
+          "id": "o:delay:300",
+          "label": "300 minutes",
+          "value": 300
+        },
+        {
+          "id": "o:delay:360",
+          "label": "360 minutes",
+          "value": 360
+        },
+        {
+          "id": "o:delay:600",
+          "label": "600 minutes",
+          "value": 600
+        }
+      ],
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return value !== null && value !== \"\" && [0, 5, 10, 15, 20, 30, 40, 50, 60, 90, 120, 150, 180, 210, 240, 270, 300, 360, 600].includes(Number(value));"
+          },
+          "op": "truthy",
+          "message": "Choose one of the listed delays."
+        }
+      ]
+    },
+    {
+      "id": "f:posts",
+      "type": "number",
+      "variant": "default",
+      "label": "Number of future posts",
+      "name": "posts",
+      "bind_id": "t:root",
+      "required": false,
+      "defaults": {
+        "placeholder": "Enter a limit or leave blank",
+        "step": 1
+      },
+      "description": "Leave blank to keep the subscription open-ended.",
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return value === null || value === \"\" || (Number.isInteger(Number(value)) && Number(value) > 0);"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:expiry",
+      "type": "text",
+      "variant": "default",
+      "label": "End date",
+      "name": "expiry",
+      "bind_id": "t:root",
+      "required": false,
+      "defaults": {
+        "placeholder": "DD/MM/YYYY"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "if (value === null || value === \"\") return true; const match = /^(\\d{1,2})\\/(\\d{1,2})\\/(\\d{4})$/.exec(value); if (!match) return false; const [, d, m, y] = match.map(Number); const date = new Date(Date.UTC(y, m - 1, d)); return date.getUTCFullYear() === y && date.getUTCMonth() === m - 1 && date.getUTCDate() === d;"
+          },
+          "op": "truthy",
+          "message": "Enter a valid date in DD/MM/YYYY format."
+        }
+      ]
+    }
+  ],
+  "order_for_tags": {
+    "t:root": [
+      "f:likes-choice"
+    ],
+    "t:views": [
+      "f:views-choice"
+    ],
+    "t:comments": [
+      "f:comments-choice"
+    ],
+    "t:impressions": [
+      "f:impressions-choice"
+    ],
+    "t:reach": [
+      "f:reach-choice"
+    ],
+    "t:saves": [
+      "f:saves-choice"
+    ],
+    "t:profile-visits": [
+      "f:profile-visits-choice"
+    ],
+    "t:shares-reposts": [
+      "f:shares-reposts-choice"
+    ],
+    "t:bundles": [
+      "f:bundles-choice"
+    ],
+    "t:others": [
+      "f:others-choice"
+    ]
+  },
+  "includes_for_buttons": {},
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {
+    "o:comments:service-1488": {
+      "f:min": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      },
+      "f:max": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      }
+    },
+    "o:comments:service-1489": {
+      "f:min": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      },
+      "f:max": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      }
+    },
+    "o:comments:service-1490": {
+      "f:min": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      },
+      "f:max": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      }
+    },
+    "o:comments:service-1492": {
+      "f:min": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      },
+      "f:max": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      }
+    },
+    "o:comments:service-1493": {
+      "f:min": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      },
+      "f:max": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      }
+    },
+    "o:comments:service-1494": {
+      "f:min": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      },
+      "f:max": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      }
+    },
+    "o:comments:service-1495": {
+      "f:min": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      },
+      "f:max": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      }
+    },
+    "o:comments:service-1508": {
+      "f:min": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      },
+      "f:max": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      }
+    },
+    "o:comments:service-1522": {
+      "f:min": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      },
+      "f:max": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      }
+    },
+    "o:comments:service-1523": {
+      "f:min": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      },
+      "f:max": {
+        "value": 1000,
+        "mode": "always",
+        "clear_on_deactivate": true
+      }
+    }
+  },
+  "fallbacks": {
+    "nodes": {
+      "o:likes:service-1207": [
+        1238
+      ],
+      "o:likes:service-1214": [
+        1224
+      ],
+      "o:likes:service-1221": [
+        1258
+      ],
+      "o:likes:service-1222": [
+        1252,
+        1251
+      ],
+      "o:likes:service-1231": [
+        1237
+      ],
+      "o:likes:service-1236": [
+        1226
+      ],
+      "o:likes:service-1246": [
+        1212
+      ],
+      "o:views:service-1301": [
+        1291
+      ],
+      "o:views:service-1306": [
+        1296
+      ],
+      "o:views:service-1314": [
+        1313,
+        1312,
+        1311
+      ],
+      "o:comments:service-1501": [
+        1502
+      ],
+      "o:saves:service-1477": [
+        1484
+      ],
+      "o:bundles:service-1474": [
+        1516
+      ]
+    },
+    "global": {}
+  },
+  "notices": [],
+  "meta": {}
+}

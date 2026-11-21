@@ -1,0 +1,416 @@
+{
+  "id": "instagram-profile-visits-profile-visits",
+  "name": "Instagram Profile Visits",
+  "description": "One-time Instagram profile visits and bundles for stories, reels, and other Instagram media.",
+  "schema_version": "1",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "Profile Visits",
+      "service_id": 1163
+    },
+    {
+      "id": "t:story-profile-visits",
+      "label": "Story Profile Visits",
+      "service_id": 1097,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:profile-visits-choice"
+      ]
+    },
+    {
+      "id": "t:story-bundles",
+      "label": "Story Bundles",
+      "service_id": 1050,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:profile-visits-choice"
+      ]
+    },
+    {
+      "id": "t:reel-bundles",
+      "label": "Reel Bundles",
+      "service_id": 794,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:profile-visits-choice"
+      ]
+    },
+    {
+      "id": "t:impressions-reach",
+      "label": "Impressions + Reach",
+      "service_id": 1107,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:profile-visits-choice"
+      ]
+    },
+    {
+      "id": "t:others",
+      "label": "Others",
+      "service_id": 1124,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:profile-visits-choice"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:profile-visits-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      },
+      "description": "Paste the link to the Instagram profile you want to target.",
+      "options": [
+        {
+          "id": "o:profile-visits:50k-day",
+          "label": "50K/day",
+          "value": "50k-day",
+          "service_id": 1163
+        },
+        {
+          "id": "o:profile-visits:1m-day",
+          "label": "1M/day",
+          "value": "1m-day",
+          "service_id": 1165
+        }
+      ]
+    },
+    {
+      "id": "f:story-profile-visits-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:story-profile-visits",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      },
+      "description": "Paste the link to the Instagram story you want to target.",
+      "options": [
+        {
+          "id": "o:story-profile-visits:100k-day-from-ten",
+          "label": "100K/day · orders from 10",
+          "value": "100k-day-from-ten",
+          "service_id": 1097
+        }
+      ]
+    },
+    {
+      "id": "f:story-bundles-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:story-bundles",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      },
+      "description": "Paste the link to the Instagram story you want to target.",
+      "options": [
+        {
+          "id": "o:story-bundles:views-visits-flexible-pace",
+          "label": "Story Views + Profile Visits · delivery pace varies",
+          "value": "views-visits-flexible-pace",
+          "service_id": 1050
+        },
+        {
+          "id": "o:story-bundles:views-visits-6k-day",
+          "label": "Story Views + Profile Visits · 6K/day · drip feed",
+          "value": "views-visits-6k-day",
+          "service_id": 1057
+        },
+        {
+          "id": "o:story-bundles:views-impressions-visits",
+          "label": "Story Views + Impressions + Profile Visits",
+          "value": "views-impressions-visits",
+          "service_id": 1070
+        },
+        {
+          "id": "o:story-bundles:views-impressions-visits-interactions-100k-day",
+          "label": "Story Views + Impressions + Profile Visits + Interactions · 100K/day",
+          "value": "views-impressions-visits-interactions-100k-day",
+          "service_id": 1071
+        },
+        {
+          "id": "o:story-bundles:views-impressions-visits-interactions-instant",
+          "label": "Story Views + Impressions + Profile Visits + Interactions · instant delivery",
+          "value": "views-impressions-visits-interactions-instant",
+          "service_id": 1076
+        },
+        {
+          "id": "o:story-bundles:views-likes-impressions-visits",
+          "label": "Story Views + Likes + Impressions + Profile Visits",
+          "value": "views-likes-impressions-visits",
+          "service_id": 1077
+        },
+        {
+          "id": "o:story-bundles:views-likes-impressions-visits-interactions",
+          "label": "Story Views + Likes + Impressions + Profile Visits + Interactions",
+          "value": "views-likes-impressions-visits-interactions",
+          "service_id": 1078
+        }
+      ]
+    },
+    {
+      "id": "f:reel-bundles-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:reel-bundles",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      },
+      "description": "Paste the link to the Instagram reel you want to target.",
+      "options": [
+        {
+          "id": "o:reel-bundles:impressions-reach-visits-instant",
+          "label": "Impressions + Reach + Profile Visits · instant delivery",
+          "value": "impressions-reach-visits-instant",
+          "service_id": 794
+        },
+        {
+          "id": "o:reel-bundles:impressions-reach-visits-from-ten",
+          "label": "Impressions + Reach + Profile Visits · orders from 10",
+          "value": "impressions-reach-visits-from-ten",
+          "service_id": 798
+        }
+      ]
+    },
+    {
+      "id": "f:impressions-reach-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:impressions-reach",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option"
+      },
+      "options": [
+        {
+          "id": "o:impressions-reach:impressions-reach-visits-50k-day",
+          "label": "Impressions + Reach + Profile Visits · 50K/day",
+          "value": "impressions-reach-visits-50k-day",
+          "service_id": 1107
+        },
+        {
+          "id": "o:impressions-reach:impressions-reach-visits-instant",
+          "label": "Impressions + Reach + Profile Visits · instant delivery",
+          "value": "impressions-reach-visits-instant",
+          "service_id": 1122
+        },
+        {
+          "id": "o:impressions-reach:impressions-reach-visits-100k-hour",
+          "label": "Reach + Impressions + Profile Visits · 100K/hour",
+          "value": "impressions-reach-visits-100k-hour",
+          "service_id": 1149
+        }
+      ]
+    },
+    {
+      "id": "f:others-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Delivery",
+      "bind_id": "t:others",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a delivery option",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:others:impressions-reach-visits-instant-alternate",
+          "label": "Impressions + Reach + Profile Visits · instant delivery",
+          "value": "impressions-reach-visits-instant-alternate",
+          "service_id": 1124
+        },
+        {
+          "id": "o:others:engagement-shares-reach-impressions-visits",
+          "label": "Engagement + Shares + Reach + Impressions + Profile Visits",
+          "value": "engagement-shares-reach-impressions-visits",
+          "service_id": 1155
+        },
+        {
+          "id": "o:others:visits-reach-impressions-50k-day",
+          "label": "Profile Visits + Reach + Impressions · 50K/day",
+          "value": "visits-reach-impressions-50k-day",
+          "service_id": 1164
+        },
+        {
+          "id": "o:others:visits-reach-12k-day",
+          "label": "Profile Visits + Reach · 12K/day",
+          "value": "visits-reach-12k-day",
+          "service_id": 1166
+        },
+        {
+          "id": "o:others:visits-views-10k-hour",
+          "label": "Profile Visits / Views · 10K/hour",
+          "value": "visits-views-10k-hour",
+          "service_id": 1167
+        },
+        {
+          "id": "o:others:visits-views-100k-day",
+          "label": "Profile Visits / Views · 100K/day",
+          "value": "visits-views-100k-day",
+          "service_id": 1168
+        }
+      ]
+    },
+    {
+      "id": "f:link",
+      "type": "text",
+      "variant": "default",
+      "label": "Instagram link",
+      "name": "link",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Paste the Instagram link"
+      }
+    },
+    {
+      "id": "f:quantity",
+      "type": "number",
+      "variant": "default",
+      "label": "Quantity",
+      "name": "quantity",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Enter a quantity",
+        "step": 1,
+        "tags": [
+          {
+            "label": "Min: {preview.min ?? \"—\"}"
+          },
+          {
+            "label": "Max: {preview.max ?? \"—\"}"
+          }
+        ]
+      },
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "value"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:drip_feed",
+      "type": "toggle",
+      "variant": "default",
+      "label": "Drip feed",
+      "description": "Schedule multiple deliveries by setting the number of runs and the minutes between them.",
+      "name": "drip_feed",
+      "bind_id": "t:root",
+      "button": true,
+      "visibility_expression": {
+        "language": "javascript",
+        "body": "preview.service_context.length > 0 && preview.service_context.every(service => service.capabilities?.dripfeed?.enabled === true)"
+      }
+    },
+    {
+      "id": "f:runs",
+      "type": "number",
+      "variant": "default",
+      "label": "Runs",
+      "name": "runs",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 5",
+        "step": 1
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    },
+    {
+      "id": "f:interval",
+      "type": "number",
+      "variant": "default",
+      "label": "Interval (minutes)",
+      "name": "interval",
+      "required": true,
+      "defaults": {
+        "placeholder": "e.g. 60",
+        "step": 1
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    }
+  ],
+  "order_for_tags": {
+    "t:root": [
+      "f:profile-visits-choice"
+    ],
+    "t:story-profile-visits": [
+      "f:story-profile-visits-choice"
+    ],
+    "t:story-bundles": [
+      "f:story-bundles-choice"
+    ],
+    "t:reel-bundles": [
+      "f:reel-bundles-choice"
+    ],
+    "t:impressions-reach": [
+      "f:impressions-reach-choice"
+    ],
+    "t:others": [
+      "f:others-choice"
+    ]
+  },
+  "includes_for_buttons": {
+    "f:drip_feed": [
+      "f:runs",
+      "f:interval"
+    ]
+  },
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {},
+  "fallbacks": {
+    "nodes": {
+      "o:story-bundles:views-visits-flexible-pace": [
+        1056
+      ]
+    },
+    "global": {}
+  },
+  "notices": [],
+  "meta": {}
+}

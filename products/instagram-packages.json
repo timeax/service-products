@@ -1,0 +1,643 @@
+{
+  "id": "instagram-packages-packages",
+  "name": "Instagram Packages",
+  "schema_version": "1",
+  "description": "Instagram growth, engagement, custom comment and recent-post likes packages.",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "Growth",
+      "service_id": 103,
+      "quantity_default": 1
+    },
+    {
+      "id": "t:engagement-packs",
+      "label": "Engagement Packs",
+      "service_id": 90,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:growth-choice"
+      ],
+      "quantity_default": 1000
+    },
+    {
+      "id": "t:monthly-engagement",
+      "label": "Monthly Engagement",
+      "service_id": 121,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:growth-choice"
+      ],
+      "quantity_default": 1
+    },
+    {
+      "id": "t:custom-comment-bundles",
+      "label": "Custom Comment Bundles",
+      "service_id": 95,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:growth-choice"
+      ],
+      "quantity_default": 1
+    },
+    {
+      "id": "t:timed-packages",
+      "label": "Timed Packages",
+      "service_id": 55,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:growth-choice"
+      ],
+      "quantity_default": 1
+    },
+    {
+      "id": "t:recent-post-likes",
+      "label": "Likes on Recent Posts",
+      "service_id": 337,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:growth-choice"
+      ]
+    },
+    {
+      "id": "t:others",
+      "label": "Others",
+      "service_id": 998,
+      "bind_id": "t:root",
+      "excludes": [
+        "f:growth-choice"
+      ],
+      "quantity_default": 1000
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:growth-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Growth package",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a growth package",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:growth:usa-about-1k-followers-per-month",
+          "label": "USA follower growth · About 1K followers per month",
+          "value": "usa-about-1k-followers-per-month",
+          "service_id": 22,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:growth:usa-about-3k-followers-per-month",
+          "label": "USA follower growth · About 3K followers per month",
+          "value": "usa-about-3k-followers-per-month",
+          "service_id": 23,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:growth:usa-about-5k-followers-per-month",
+          "label": "USA follower growth · About 5K followers per month",
+          "value": "usa-about-5k-followers-per-month",
+          "service_id": 24,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:growth:worldwide-50-30-days",
+          "label": "Worldwide growth · Tier 50 · 30 days",
+          "value": "worldwide-50-30-days",
+          "service_id": 103,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:growth:worldwide-100-30-days",
+          "label": "Worldwide growth · Tier 100 · 30 days",
+          "value": "worldwide-100-30-days",
+          "service_id": 104,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:growth:worldwide-200-30-days",
+          "label": "Worldwide growth · Tier 200 · 30 days",
+          "value": "worldwide-200-30-days",
+          "service_id": 105,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:growth:usa-uk-50-30-days",
+          "label": "USA / UK growth · Tier 50 · 30 days",
+          "value": "usa-uk-50-30-days",
+          "service_id": 106,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:growth:usa-uk-100-30-days",
+          "label": "USA / UK growth · Tier 100 · 30 days",
+          "value": "usa-uk-100-30-days",
+          "service_id": 107,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:growth:brazil-50-30-days",
+          "label": "Brazil growth · Tier 50 · 30 days",
+          "value": "brazil-50-30-days",
+          "service_id": 108,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:growth:south-korea-50-30-days",
+          "label": "South Korea growth · Tier 50 · 30 days",
+          "value": "south-korea-50-30-days",
+          "service_id": 109,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:growth:arab-audience-50-30-days",
+          "label": "Arab audience growth · Tier 50 · 30 days",
+          "value": "arab-audience-50-30-days",
+          "service_id": 110,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:growth:arab-audience-100-30-days",
+          "label": "Arab audience growth · Tier 100 · 30 days",
+          "value": "arab-audience-100-30-days",
+          "service_id": 111,
+          "quantity_default": 1
+        }
+      ],
+      "description": "Monthly follower packages show estimated follower counts. Included results for the numbered 30-day tiers are unconfirmed."
+    },
+    {
+      "id": "f:engagement-packs-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Package",
+      "bind_id": "t:engagement-packs",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a package"
+      },
+      "options": [
+        {
+          "id": "o:engagement-packs:46-followers-2025-likes-and-812-comments",
+          "label": "4–6 followers, 20–25 likes and 8–12 comments",
+          "value": "46-followers-2025-likes-and-812-comments",
+          "service_id": 90,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:engagement-packs:710-followers-3545-likes-and-1520-comments",
+          "label": "7–10 followers, 35–45 likes and 15–20 comments",
+          "value": "710-followers-3545-likes-and-1520-comments",
+          "service_id": 91,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:engagement-packs:1113-followers-5565-likes-and-3035-comments-within-1-hour-start",
+          "label": "11–13 followers, 55–65 likes and 30–35 comments · Within 1-hour start",
+          "value": "1113-followers-5565-likes-and-3035-comments-within-1-hour-start",
+          "service_id": 92,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:engagement-packs:1518-followers-8090-likes-and-4552-comments-within-1-hour-start",
+          "label": "15–18 followers, 80–90 likes and 45–52 comments · Within 1-hour start",
+          "value": "1518-followers-8090-likes-and-4552-comments-within-1-hour-start",
+          "service_id": 93,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:engagement-packs:1820-followers-120130-likes-and-6572-comments-within-1-hour-start",
+          "label": "18–20 followers, 120–130 likes and 65–72 comments · Within 1-hour start",
+          "value": "1820-followers-120130-likes-and-6572-comments-within-1-hour-start",
+          "service_id": 94,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:engagement-packs:1113-followers-5565-likes-and-3035-comments-2-hour-start",
+          "label": "11–13 followers, 55–65 likes and 30–35 comments · 2-hour start",
+          "value": "1113-followers-5565-likes-and-3035-comments-2-hour-start",
+          "service_id": 118,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:engagement-packs:1518-followers-8090-likes-and-4552-comments-2-hour-start",
+          "label": "15–18 followers, 80–90 likes and 45–52 comments · 2-hour start",
+          "value": "1518-followers-8090-likes-and-4552-comments-2-hour-start",
+          "service_id": 119,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:engagement-packs:1820-followers-120130-likes-and-6572-comments-2-hour-start",
+          "label": "18–20 followers, 120–130 likes and 65–72 comments · 2-hour start",
+          "value": "1820-followers-120130-likes-and-6572-comments-2-hour-start",
+          "service_id": 120,
+          "quantity_default": 1000
+        }
+      ]
+    },
+    {
+      "id": "f:monthly-engagement-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Package",
+      "bind_id": "t:monthly-engagement",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a package"
+      },
+      "options": [
+        {
+          "id": "o:monthly-engagement:4050-followers-day-200300-views-video-100120-likes-post",
+          "label": "40–50 followers/day · 200–300 views/video · 100–120 likes/post",
+          "value": "4050-followers-day-200300-views-video-100120-likes-post",
+          "service_id": 121,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:monthly-engagement:90100-followers-day-500600-views-video-200250-likes-post",
+          "label": "90–100 followers/day · 500–600 views/video · 200–250 likes/post",
+          "value": "90100-followers-day-500600-views-video-200250-likes-post",
+          "service_id": 122,
+          "quantity_default": 1
+        }
+      ]
+    },
+    {
+      "id": "f:custom-comment-bundles-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Package",
+      "bind_id": "t:custom-comment-bundles",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a package"
+      },
+      "description": "The 100-comment bundle also includes 100 comment likes, 50 replies, 100 story views and 10 post shares. The 20-comment bundle also includes 20 comment likes and 10 replies.",
+      "options": [
+        {
+          "id": "o:custom-comment-bundles:400500-likes-100-comments-female-accounts",
+          "label": "400–500 likes + 100 comments · Female accounts",
+          "value": "400500-likes-100-comments-female-accounts",
+          "service_id": 95,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:custom-comment-bundles:150200-likes-20-comments-audience-varies",
+          "label": "150–200 likes + 20 comments · Audience varies",
+          "value": "150200-likes-20-comments-audience-varies",
+          "service_id": 96,
+          "quantity_default": 1
+        }
+      ]
+    },
+    {
+      "id": "f:timed-packages-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Package",
+      "bind_id": "t:timed-packages",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a package"
+      },
+      "options": [
+        {
+          "id": "o:timed-packages:usa-15-days",
+          "label": "USA · 15 days",
+          "value": "usa-15-days",
+          "service_id": 55,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:timed-packages:2-days",
+          "label": "2 days",
+          "value": "2-days",
+          "service_id": 124,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:timed-packages:5-days",
+          "label": "5 days",
+          "value": "5-days",
+          "service_id": 126,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:timed-packages:10-days",
+          "label": "10 days",
+          "value": "10-days",
+          "service_id": 125,
+          "quantity_default": 1
+        },
+        {
+          "id": "o:timed-packages:1-month",
+          "label": "1 month",
+          "value": "1-month",
+          "service_id": 123,
+          "quantity_default": 1
+        }
+      ]
+    },
+    {
+      "id": "f:recent-post-likes-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Package",
+      "bind_id": "t:recent-post-likes",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a package"
+      },
+      "options": [
+        {
+          "id": "o:recent-post-likes:last-5-posts",
+          "label": "Last 5 posts",
+          "value": "last-5-posts",
+          "service_id": 337
+        },
+        {
+          "id": "o:recent-post-likes:last-10-posts",
+          "label": "Last 10 posts",
+          "value": "last-10-posts",
+          "service_id": 338
+        },
+        {
+          "id": "o:recent-post-likes:last-15-posts",
+          "label": "Last 15 posts",
+          "value": "last-15-posts",
+          "service_id": 339
+        },
+        {
+          "id": "o:recent-post-likes:last-20-posts",
+          "label": "Last 20 posts",
+          "value": "last-20-posts",
+          "service_id": 340
+        },
+        {
+          "id": "o:recent-post-likes:last-25-posts",
+          "label": "Last 25 posts",
+          "value": "last-25-posts",
+          "service_id": 341
+        }
+      ]
+    },
+    {
+      "id": "f:others-choice",
+      "type": "select",
+      "variant": "default",
+      "label": "Regional engagement package",
+      "bind_id": "t:others",
+      "required": true,
+      "defaults": {
+        "placeholder": "Choose a region and tier",
+        "searchable": true
+      },
+      "options": [
+        {
+          "id": "o:others:spain-basic",
+          "label": "Spain · Basic",
+          "value": "spain-basic",
+          "service_id": 998,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others:spain-standard",
+          "label": "Spain · Standard",
+          "value": "spain-standard",
+          "service_id": 999,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others:spain-pro",
+          "label": "Spain · Pro",
+          "value": "spain-pro",
+          "service_id": 1000,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others:sweden-basic",
+          "label": "Sweden · Basic",
+          "value": "sweden-basic",
+          "service_id": 1001,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others:sweden-standard",
+          "label": "Sweden · Standard",
+          "value": "sweden-standard",
+          "service_id": 1002,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others:sweden-pro",
+          "label": "Sweden · Pro",
+          "value": "sweden-pro",
+          "service_id": 1003,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others:france-basic",
+          "label": "France · Basic",
+          "value": "france-basic",
+          "service_id": 1004,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others:france-standard",
+          "label": "France · Standard",
+          "value": "france-standard",
+          "service_id": 1005,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others:france-pro",
+          "label": "France · Pro",
+          "value": "france-pro",
+          "service_id": 1006,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others:germany-basic",
+          "label": "Germany · Basic",
+          "value": "germany-basic",
+          "service_id": 1007,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others:germany-standard",
+          "label": "Germany · Standard",
+          "value": "germany-standard",
+          "service_id": 1008,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others:germany-pro",
+          "label": "Germany · Pro",
+          "value": "germany-pro",
+          "service_id": 1009,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others:usa-uk-basic",
+          "label": "USA / UK · Basic",
+          "value": "usa-uk-basic",
+          "service_id": 1010,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others:usa-uk-standard",
+          "label": "USA / UK · Standard",
+          "value": "usa-uk-standard",
+          "service_id": 1011,
+          "quantity_default": 1000
+        },
+        {
+          "id": "o:others:usa-uk-pro",
+          "label": "USA / UK · Pro",
+          "value": "usa-uk-pro",
+          "service_id": 1012,
+          "quantity_default": 1000
+        }
+      ],
+      "description": "Choose the audience region and package tier. The included engagement and quantities are unconfirmed."
+    },
+    {
+      "id": "f:link",
+      "type": "text",
+      "variant": "default",
+      "label": "Instagram link",
+      "bind_id": "t:root",
+      "name": "link",
+      "required": true,
+      "defaults": {
+        "placeholder": "Paste the Instagram link"
+      }
+    },
+    {
+      "id": "f:comments",
+      "type": "chips",
+      "variant": "default",
+      "label": "Custom comments",
+      "bind_id": [
+        "t:custom-comment-bundles",
+        "t:timed-packages"
+      ],
+      "name": "comments",
+      "required": true,
+      "defaults": {
+        "placeholder": "Type a comment and press Enter",
+        "textareaMode": true,
+        "separators": [
+          "Enter"
+        ],
+        "allowDuplicates": true
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return values.length > 0 && values.every(comment => typeof comment === \"string\" && comment.trim() !== \"\" && !/[\\r\\n]/.test(comment));"
+          },
+          "op": "truthy",
+          "message": "Enter one non-empty comment per chip."
+        }
+      ]
+    },
+    {
+      "id": "f:quantity",
+      "type": "number",
+      "variant": "default",
+      "label": "Quantity",
+      "bind_id": "t:recent-post-likes",
+      "name": "quantity",
+      "required": true,
+      "defaults": {
+        "placeholder": "Enter a quantity",
+        "step": 1,
+        "tags": [
+          {
+            "label": "Min: {preview.min ?? \"—\"}"
+          },
+          {
+            "label": "Max: {preview.max ?? \"—\"}"
+          }
+        ]
+      },
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "value"
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          },
+          "op": "truthy",
+          "message": "Enter a positive whole number."
+        }
+      ]
+    }
+  ],
+  "order_for_tags": {
+    "t:root": [
+      "f:growth-choice"
+    ],
+    "t:engagement-packs": [
+      "f:engagement-packs-choice"
+    ],
+    "t:monthly-engagement": [
+      "f:monthly-engagement-choice"
+    ],
+    "t:custom-comment-bundles": [
+      "f:custom-comment-bundles-choice"
+    ],
+    "t:timed-packages": [
+      "f:timed-packages-choice"
+    ],
+    "t:recent-post-likes": [
+      "f:recent-post-likes-choice"
+    ],
+    "t:others": [
+      "f:others-choice"
+    ]
+  },
+  "includes_for_buttons": {},
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {},
+  "fallbacks": {
+    "nodes": {
+      "o:growth:worldwide-50-30-days": [
+        43
+      ],
+      "o:growth:worldwide-200-30-days": [
+        44
+      ],
+      "o:growth:brazil-50-30-days": [
+        1372
+      ],
+      "o:growth:south-korea-50-30-days": [
+        1424
+      ],
+      "o:engagement-packs:46-followers-2025-likes-and-812-comments": [
+        116
+      ],
+      "o:engagement-packs:710-followers-3545-likes-and-1520-comments": [
+        117
+      ],
+      "o:custom-comment-bundles:150200-likes-20-comments-audience-varies": [
+        1422
+      ]
+    },
+    "global": {}
+  },
+  "notices": [],
+  "meta": {}
+}

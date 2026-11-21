@@ -1,0 +1,77 @@
+{
+  "id": 234,
+  "name": "Instagram Reach",
+  "description": "Choose profile reach or video reach and enter the matching Instagram link. Delivery speeds are estimates.",
+  "schema_version": "1",
+  "filters": [
+    {
+      "id": "t:root",
+      "label": "Profile Reach · 12K/day",
+      "service_id": 1145
+    },
+    {
+      "id": "t:video",
+      "label": "Video Reach · 30K/day",
+      "service_id": 1147,
+      "bind_id": "t:root"
+    }
+  ],
+  "fields": [
+    {
+      "id": "f:link",
+      "type": "text",
+      "variant": "default",
+      "label": "Instagram link",
+      "name": "link",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Paste the profile or video link"
+      }
+    },
+    {
+      "id": "f:quantity",
+      "type": "number",
+      "variant": "default",
+      "label": "Quantity",
+      "name": "quantity",
+      "bind_id": "t:root",
+      "required": true,
+      "defaults": {
+        "placeholder": "Enter a quantity",
+        "step": 1,
+        "tags": [
+          {
+            "label": "Min: {preview.min ?? \"—\"}"
+          },
+          {
+            "label": "Max: {preview.max ?? \"—\"}"
+          }
+        ]
+      },
+      "validation": [
+        {
+          "value_by": "eval",
+          "op": "truthy",
+          "message": "Enter a positive whole number.",
+          "expression": {
+            "language": "javascript",
+            "body": "return Number.isInteger(Number(value)) && Number(value) > 0;"
+          }
+        }
+      ],
+      "pricing_role": "base",
+      "quantity": {
+        "value_by": "value"
+      }
+    }
+  ],
+  "order_for_tags": {},
+  "includes_for_buttons": {},
+  "excludes_for_buttons": {},
+  "option_effects_for_buttons": {},
+  "value_effects_for_triggers": {},
+  "fallbacks": null,
+  "notices": [],
+  "meta": {}
+}
